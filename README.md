@@ -44,9 +44,9 @@ Este evento se realiza gracias al iniciativa del Dr. Juan Ramiro Pacheco de la F
 
 
 
-## **Programa y temario**
+## Programa y temario V3.3
 
-### Sesión 1. Genómica y Bioinformática
+### Sesión 1. Genómica de hongos, secuenciación y bioinformática
 
 #### 	1.1 Presentación del taller
 
@@ -74,13 +74,65 @@ Navegación entre directorios, manipulación de archivos y filtrado de datos / O
 
 
 
+### Sesión 2. Ensamble, anotación y homología genética
+
+#### 2.1 Genómica de hongos fitopatógenos
+
+Arquitectura genómica y genómica funcional general. Rodolfo Ángeles.
+
+#### 2.2 Ensambles genómicos
+
+Ensambles con distintos tipos de librerías y su evaluación. Rodolfo Ángeles.
+
+#### 2.3 Predicción de genes
+
+Características de los genes eucariontes y otros elementos génicos / Uso de Augustus. Elena Flores.
+
+#### 2.4 Anotación funcional
+
+Teoría de mapeo y dominios / Uso de FunAnnotate e interpretación de sus salidas. Rodolfo Ángeles.
+
+#### 2.5 Clusters biosintéticos
+
+... Christian Quintero.
 
 
-Sesión 2 Genómica Funcional de Hongos
 
-Sesión 3 Genómica Ecológica
+### Sesión 3. Genómica Ecológica
 
-Sesión 4 Genómica Evolutiva
+#### 3.1 Genómica de hongos micorrízicos
+
+Ecología y evolución de arbusculares, ecto y ericoides. Roberto Garibay.
+
+#### 3.2 Metabarcode
+
+Marcadores moleculares y ecología de poblaciones / asignación taxonómica y uso de FunGild. Andrés Argüelles.
+
+#### 3.3 Metagenómica
+
+Secuenciación shotgun, ensambles y bineo. Diana Oaxaca
+
+#### 3.4 Metatranscriptómica
+
+Ensamble metatranscriptómico y asignación taxonómica y funcional. Valeria Flores.
+
+
+
+### Sesión 4. Genómica Evolutiva
+
+#### 4.1 Genómica de hongos simbióticos de plantas
+
+El continuo simbiótico. Valeria Flores.
+
+#### 4.2 Filogenómica y genómica de poblaciones
+
+Evolución, homología y filogenia / uso de programas. Christian Quintero.
+
+#### 4.3 Cierre del taller y retroalimentaciones
+
+Consideraciones finales. Rodolfo Ángeles.
+
+
 
 ### Participantes
 
