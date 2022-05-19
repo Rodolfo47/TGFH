@@ -38,7 +38,7 @@ Los participantes recibirán una cuenta en el servidor, acceso al repositorio bi
 
 ## **Sede**
 
-El taller será enteramente en línea. Usaremos los servicios de Discord para las videoconferencias, un repositorio en GitHub para compartir datos y materiales, así como espacio de almacenamiento y poder de computo de la Universidad Autónoma de Querétaro (UAQ). Este evento se realiza gracias al iniciativa del Dr. Juan Ramiro Pacheco de la Facultad de Química de la UAQ. Se agradece la participación del Dr. Juan Campos Guillén (UAQ), Dr. Carlos Saldaña Gutíerrez (LAVIS-UAQ), Dr. Marco Antonio Sánchez Ramos (UAQ), Ing. Luis Alberto Aguilar Bautista (UNAM), M. en C. Alejandro De León Cuevas (UNAM), Ing. Jair García Sotelo (UNAM), Dr. Alfredo Varela Echavarría (UNAM) por la asesoría y apoyo en tiempo real de los sistemas de cómputo para los análisis, así como préstamo de equipo e infraestructura.
+El taller será enteramente en línea. Usaremos los servicios de Discord para las videoconferencias, un repositorio en GitHub para compartir datos y materiales, así como espacio de almacenamiento y poder de computo de la Universidad Autónoma de Querétaro (UAQ). Este evento se realiza gracias al iniciativa del Dr. Juan Campos Guillén (UAQ), Dr. Carlos Saldaña Gutíerrez (LAVIS-UAQ), Dra. Verónica Morales-Tlalpan, (LAVIS-UAQ), Dr. Marco Antonio Sánchez Ramos (UAQ), Ing. Luis Alberto Aguilar Bautista (UNAM), M. en C. Alejandro De León Cuevas (UNAM), Ing. Jair García Sotelo (UNAM), Dr. Alfredo Varela Echavarría (UNAM) por la asesoría y apoyo en tiempo real de los sistemas de cómputo para los análisis, así como préstamo de equipo e infraestructura.
 
 
 
