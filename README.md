@@ -62,7 +62,7 @@ Christian Quintero Corrales
 
 ## Programa y temario V3.3
 
-### Sesión 1. Genómica de hongos, secuenciación y bioinformática
+### Sesión 1 de 9:00 a 16:30 horas. Genómica de hongos, secuenciación y bioinformática 
 
 #### 	1.1 Presentación del taller
 
@@ -90,7 +90,7 @@ Navegación entre directorios, manipulación de archivos y filtrado de datos / O
 
 
 
-### Sesión 2. Ensamble, anotación y homología genética
+### Sesión 2 de 10:00 a 17:00 horas. Ensamble, anotación y homología genética
 
 #### 2.1 Genómica de hongos fitopatógenos
 
@@ -114,7 +114,7 @@ Teoría de mapeo y dominios / Uso de FunAnnotate e interpretación de sus salida
 
 
 
-### Sesión 3. Genómica Ecológica
+### Sesión 3 de 10:00 a 17:00 horas. Genómica Ecológica
 
 #### 3.1 Genómica de hongos micorrízicos
 
@@ -134,7 +134,7 @@ Ensamble metatranscriptómico y asignación taxonómica y funcional. Valeria Flo
 
 
 
-### Sesión 4. Genómica Evolutiva
+### Sesión 4 de 10:00 a 15:00 horas. Genómica Evolutiva
 
 #### 4.1 Genómica de hongos simbióticos de plantas
 
