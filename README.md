@@ -26,7 +26,7 @@ b) Contar con un equipo de cómputo con terminal y conexión estable a internet
 
 c) Cubrir su cuota de inscripción a tiempo y a través de los métodos establecidos en [este enlace](https://quimica.uaq.mx/index.php/ofertaeducon/ec-cursos/861-genomica-hongos). (ver el [procedimiento de inscripción](https://quimica.uaq.mx/docs/edu_continua/Procedimiento_inscripcion(PA-INS-PR01).pdf) y llenar el [formulario de registro](https://forms.office.com/r/DzbDqpJiLw)).
 
-d) Completar el [formulario de sondeo]().
+d) Completar el [formulario de sondeo](https://forms.gle/7aXWTv3CeaAPgtbY7).
 
 
 
