@@ -1,0 +1,86 @@
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+-successfully changed directories to /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/P.pastoris_GS115/predict_misc/EVM_busco/scaffold_1/scaffold_1_270001-370000
+
+-reading genomic sequence.
+
+** Processing features (+)
+
+-finding all potential splice sites, looking for GT/GC donors and AG acceptors.
+-finding all potential starts and stops. (strand: +)
+-loading gene prediction evidence. (strand: +)Valid prediction for Augustus_gene598.t1
+
+-loading the search evidence (protein and EST search results, strand: +)alignment gap has misordered coords: 89350 - 88070
+$VAR1 = [
+          [
+            89349,
+            88701
+          ],
+          [
+            89651,
+            88071
+          ]
+        ];
+
+-scoring exons (strand: +)
+
+** Processing features (-)
+
+-finding all potential splice sites, looking for GT/GC donors and AG acceptors.
+-finding all potential starts and stops. (strand: -)
+-loading gene prediction evidence. (strand: -)
+-loading the search evidence (protein and EST search results, strand: -)alignment gap has misordered coords: 11931 - 10651
+$VAR1 = [
+          [
+            10350,
+            11930
+          ],
+          [
+            10652,
+            11300
+          ]
+        ];
+ERROR adding intron for ev_type:exonerate/ID=match.8382.126/Target=YMR217W: next end5 10652 < this end3 11930  mode -
+alignment gap has misordered coords: 89350 - 88070
+$VAR1 = [
+          [
+            89349,
+            88701
+          ],
+          [
+            89651,
+            88071
+          ]
+        ];
+alignment gap has misordered coords: 11931 - 10651
+$VAR1 = [
+          [
+            10350,
+            11930
+          ],
+          [
+            10652,
+            11300
+          ]
+        ];
+
+-scoring exons (strand: -)
+-building DP trellis
+
+-building trellis in range 1 - 100000
+-exon list size: 12
+
+
+building trellis
+7.1    14.3    21.4    28.6    35.7    42.9    50.0    57.1    64.3    71.4    78.6    85.7    92.9    
+-found 11 predictions from path traversal
+
+-reporting highest scoring path thru the trellis.
+-found 11 predictions persist after filtering for low support
+	-no exons in range 1 - 21286

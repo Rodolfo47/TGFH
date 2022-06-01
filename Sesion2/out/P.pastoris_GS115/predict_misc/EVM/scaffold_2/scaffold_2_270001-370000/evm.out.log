@@ -1,0 +1,116 @@
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+-successfully changed directories to /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/P.pastoris_GS115/predict_misc/EVM/scaffold_2/scaffold_2_270001-370000
+
+-reading genomic sequence.
+
+** Processing features (+)
+
+-finding all potential splice sites, looking for GT/GC donors and AG acceptors.
+-finding all potential starts and stops. (strand: +)
+-loading gene prediction evidence. (strand: +)Valid prediction for snap_scaffold_2-snap.95-T1
+Valid prediction for snap_scaffold_2-snap.125-T1
+Valid prediction for snap_scaffold_2-snap.123-T1
+Valid prediction for GlimmerHMM_glimmerT_1701-T1
+Valid prediction for snap_scaffold_2-snap.111-T1
+Valid prediction for snap_scaffold_2-snap.97-T1
+Valid prediction for Augustus_model.g1496.t1
+Valid prediction for snap_scaffold_2-snap.108-T1
+Valid prediction for Augustus_model.g1503.t1
+Valid prediction for Augustus_model.g1494.t1
+Valid prediction for snap_scaffold_2-snap.107-T1
+Valid prediction for GlimmerHMM_glimmerT_1696-T1
+Valid prediction for GlimmerHMM_glimmerT_1727-T1
+Valid prediction for GlimmerHMM_glimmerT_1714-T1
+Valid prediction for snap_scaffold_2-snap.105-T1
+Valid prediction for Augustus_model.g1493.t1
+Valid prediction for snap_scaffold_2-snap.121-T1
+Valid prediction for Augustus_model.g1473.t1
+Valid prediction for snap_scaffold_2-snap.115-T1
+Valid prediction for GlimmerHMM_glimmerT_1725-T1
+Valid prediction for snap_scaffold_2-snap.116-T1
+Valid prediction for Augustus_model.g1498.t1
+Valid prediction for snap_scaffold_2-snap.114-T1
+Valid prediction for Augustus_model.g1476.t1
+Valid prediction for Augustus_model.g1471.t1
+Valid prediction for snap_scaffold_2-snap.128-T1
+Valid prediction for snap_scaffold_2-snap.124-T1
+Valid prediction for snap_scaffold_2-snap.113-T1
+Valid prediction for GlimmerHMM_glimmerT_1721-T1
+Valid prediction for snap_scaffold_2-snap.126-T1
+Couldn't classify 98778, 99407
+Sorry, prediction snap_scaffold_2-snap.131-T1 fails validation.
+(ATG)	 AG	98175-98181	GT	AGG
+(AAT)	 AG	98778-99407	GT	CAG
+-recovered snap_scaffold_2-snap.131-T1, initial, 98175, 98181
+-recovered snap_scaffold_2-snap.131-T1, internal, 98175, 98181
+-recovered snap_scaffold_2-snap.131-T1, internal, 98778, 99407
+Valid prediction for snap_scaffold_2-snap.100-T1
+Valid prediction for Augustus_model.g1492.t1
+Valid prediction for snap_scaffold_2-snap.129-T1
+Valid prediction for GlimmerHMM_glimmerT_1732-T1
+Valid prediction for Augustus_model.g1468.t1
+Valid prediction for GlimmerHMM_glimmerT_1722-T1
+
+-loading the search evidence (protein and EST search results, strand: +)
+-scoring exons (strand: +)
+
+** Processing features (-)
+
+-finding all potential splice sites, looking for GT/GC donors and AG acceptors.
+-finding all potential starts and stops. (strand: -)
+-loading gene prediction evidence. (strand: -)Valid prediction for GlimmerHMM_glimmerT_1715-T1
+Valid prediction for Augustus_model.g1482.t1
+Valid prediction for snap_scaffold_2-snap.94-T1
+Valid prediction for snap_scaffold_2-snap.98-T1
+Valid prediction for snap_scaffold_2-snap.112-T1
+Valid prediction for GlimmerHMM_glimmerT_1690-T1
+Valid prediction for Augustus_model.g1489.t1
+Valid prediction for snap_scaffold_2-snap.127-T1
+Valid prediction for Augustus_model.g1487.t1
+Valid prediction for snap_scaffold_2-snap.101-T1
+Valid prediction for snap_scaffold_2-snap.118-T1
+Valid prediction for snap_scaffold_2-snap.104-T1
+Valid prediction for snap_scaffold_2-snap.117-T1
+Valid prediction for snap_scaffold_2-snap.122-T1
+Valid prediction for GlimmerHMM_glimmerT_1728-T1
+Valid prediction for snap_scaffold_2-snap.120-T1
+Valid prediction for snap_scaffold_2-snap.110-T1
+Valid prediction for snap_scaffold_2-snap.109-T1
+Valid prediction for snap_scaffold_2-snap.102-T1
+Valid prediction for snap_scaffold_2-snap.106-T1
+Valid prediction for Augustus_model.g1465.t1
+Valid prediction for snap_scaffold_2-snap.103-T1
+Sorry, intron length (6) is less than minimum required (10)
+Valid prediction for snap_scaffold_2-snap.99-T1
+Valid prediction for snap_scaffold_2-snap.96-T1
+Valid prediction for Augustus_model.g1499.t1
+Valid prediction for snap_scaffold_2-snap.130-T1
+Valid prediction for snap_scaffold_2-snap.119-T1
+
+-loading the search evidence (protein and EST search results, strand: -)
+-scoring exons (strand: -)Error with prediction: GlimmerHMM lend_intergenic: 37552, rend_intergenic: 37549  at /home/rangeles/.conda/envs/funannotate/opt/evidencemodeler-1.1.1/EvmUtils/.././evidence_modeler.pl line 3218.
+Error with prediction: GlimmerHMM lend_intergenic: 74926, rend_intergenic: 74923  at /home/rangeles/.conda/envs/funannotate/opt/evidencemodeler-1.1.1/EvmUtils/.././evidence_modeler.pl line 3218.
+Error with prediction: snap lend_intergenic: 30265, rend_intergenic: 29922  at /home/rangeles/.conda/envs/funannotate/opt/evidencemodeler-1.1.1/EvmUtils/.././evidence_modeler.pl line 3218.
+
+-building DP trellis
+
+-building trellis in range 1 - 100000
+-exon list size: 180
+
+
+building trellis
+0.5    1.1    1.6    2.2    2.7    3.3    3.8    4.4    4.9    5.5    6.0    6.6    7.1    7.7    8.2    8.8    9.3    9.9    10.4    11.0    11.5    12.1    12.6    13.2    13.7    14.3    14.8    15.4    15.9    16.5    17.0    17.6    18.1    18.7    19.2    19.8    20.3    20.9    21.4    22.0    22.5    23.1    23.6    24.2    24.7    25.3    25.8    26.4    26.9    27.5    28.0    28.6    29.1    29.7    30.2    30.8    31.3    31.9    32.4    33.0    33.5    34.1    34.6    35.2    35.7    36.3    36.8    37.4    37.9    38.5    39.0    39.6    40.1    40.7    41.2    41.8    42.3    42.9    43.4    44.0    44.5    45.1    45.6    46.2    46.7    47.3    47.8    48.4    48.9    49.5    50.0    50.5    51.1    51.6    52.2    52.7    53.3    53.8    54.4    54.9    55.5    56.0    56.6    57.1    57.7    58.2    58.8    59.3    59.9    60.4    61.0    61.5    62.1    62.6    63.2    63.7    64.3    64.8    65.4    65.9    66.5    67.0    67.6    68.1    68.7    69.2    69.8    70.3    70.9    71.4    72.0    72.5    73.1    73.6    74.2    74.7    75.3    75.8    76.4    76.9    77.5    78.0    78.6    79.1    79.7    80.2    80.8    81.3    81.9    82.4    83.0    83.5    84.1    84.6    85.2    85.7    86.3    86.8    87.4    87.9    88.5    89.0    89.6    90.1    90.7    91.2    91.8    92.3    92.9    93.4    94.0    94.5    95.1    95.6    96.2    96.7    97.3    97.8    98.4    98.9    99.5    
+-found 53 predictions from path traversal
+Error with prediction: GlimmerHMM lend_intergenic: 37552, rend_intergenic: 37549  at /home/rangeles/.conda/envs/funannotate/opt/evidencemodeler-1.1.1/EvmUtils/.././evidence_modeler.pl line 3218.
+Error with prediction: GlimmerHMM lend_intergenic: 74926, rend_intergenic: 74923  at /home/rangeles/.conda/envs/funannotate/opt/evidencemodeler-1.1.1/EvmUtils/.././evidence_modeler.pl line 3218.
+Error with prediction: snap lend_intergenic: 30265, rend_intergenic: 29922  at /home/rangeles/.conda/envs/funannotate/opt/evidencemodeler-1.1.1/EvmUtils/.././evidence_modeler.pl line 3218.
+
+-reporting highest scoring path thru the trellis.
+-found 53 predictions persist after filtering for low support

@@ -1,0 +1,74 @@
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+-successfully changed directories to /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.cerevisiae_M3836/predict_misc/EVM/scaffold_2/scaffold_2_810001-892757
+
+-reading genomic sequence.
+
+** Processing features (+)
+
+-finding all potential splice sites, looking for GT/GC donors and AG acceptors.
+-finding all potential starts and stops. (strand: +)
+-loading gene prediction evidence. (strand: +)Valid prediction for snap_scaffold_2-snap.345-T1
+Sorry, intron length (3) is less than minimum required (10)
+Valid prediction for snap_scaffold_2-snap.337-T1
+Valid prediction for snap_scaffold_2-snap.334-T1
+Valid prediction for snap_scaffold_2-snap.322-T1
+Valid prediction for snap_scaffold_2-snap.342-T1
+Sorry, intron length (3) is less than minimum required (10)
+Valid prediction for snap_scaffold_2-snap.323-T1
+Valid prediction for snap_scaffold_2-snap.330-T1
+Valid prediction for snap_scaffold_2-snap.336-T1
+Valid prediction for snap_scaffold_2-snap.352-T1
+Valid prediction for snap_scaffold_2-snap.328-T1
+Valid prediction for snap_scaffold_2-snap.324-T1
+Valid prediction for snap_scaffold_2-snap.326-T1
+Valid prediction for snap_scaffold_2-snap.344-T1
+
+-loading the search evidence (protein and EST search results, strand: +)
+-scoring exons (strand: +)
+
+** Processing features (-)
+
+-finding all potential splice sites, looking for GT/GC donors and AG acceptors.
+-finding all potential starts and stops. (strand: -)
+-loading gene prediction evidence. (strand: -)Valid prediction for snap_scaffold_2-snap.348-T1
+Valid prediction for snap_scaffold_2-snap.339-T1
+Valid prediction for snap_scaffold_2-snap.350-T1
+Valid prediction for snap_scaffold_2-snap.325-T1
+Valid prediction for snap_scaffold_2-snap.340-T1
+Valid prediction for snap_scaffold_2-snap.346-T1
+Valid prediction for snap_scaffold_2-snap.327-T1
+Valid prediction for snap_scaffold_2-snap.332-T1
+Valid prediction for snap_scaffold_2-snap.333-T1
+Valid prediction for snap_scaffold_2-snap.331-T1
+Valid prediction for snap_scaffold_2-snap.349-T1
+Valid prediction for snap_scaffold_2-snap.335-T1
+Valid prediction for snap_scaffold_2-snap.341-T1
+Valid prediction for snap_scaffold_2-snap.347-T1
+Valid prediction for Augustus_model.g842.t1
+Valid prediction for snap_scaffold_2-snap.329-T1
+Valid prediction for Augustus_model.g827.t1
+Valid prediction for snap_scaffold_2-snap.338-T1
+Valid prediction for snap_scaffold_2-snap.343-T1
+Valid prediction for snap_scaffold_2-snap.351-T1
+
+-loading the search evidence (protein and EST search results, strand: -)
+-scoring exons (strand: -)
+-building DP trellis
+
+-building trellis in range 1 - 82757
+-exon list size: 109
+
+
+building trellis
+0.9    1.8    2.7    3.6    4.5    5.4    6.3    7.2    8.1    9.0    9.9    10.8    11.7    12.6    13.5    14.4    15.3    16.2    17.1    18.0    18.9    19.8    20.7    21.6    22.5    23.4    24.3    25.2    26.1    27.0    27.9    28.8    29.7    30.6    31.5    32.4    33.3    34.2    35.1    36.0    36.9    37.8    38.7    39.6    40.5    41.4    42.3    43.2    44.1    45.0    45.9    46.8    47.7    48.6    49.5    50.5    51.4    52.3    53.2    54.1    55.0    55.9    56.8    57.7    58.6    59.5    60.4    61.3    62.2    63.1    64.0    64.9    65.8    66.7    67.6    68.5    69.4    70.3    71.2    72.1    73.0    73.9    74.8    75.7    76.6    77.5    78.4    79.3    80.2    81.1    82.0    82.9    83.8    84.7    85.6    86.5    87.4    88.3    89.2    90.1    91.0    91.9    92.8    93.7    94.6    95.5    96.4    97.3    98.2    99.1    
+-found 37 predictions from path traversal
+
+-reporting highest scoring path thru the trellis.
+-found 37 predictions persist after filtering for low support

@@ -1,0 +1,89 @@
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+-successfully changed directories to /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/C.albicans_SC5314/predict_misc/EVM/scaffold_4/scaffold_4_90001-190000
+
+-reading genomic sequence.
+
+** Processing features (+)
+
+-finding all potential splice sites, looking for GT/GC donors and AG acceptors.
+-finding all potential starts and stops. (strand: +)
+-loading gene prediction evidence. (strand: +)Valid prediction for snap_scaffold_4-snap.50-T1
+Valid prediction for snap_scaffold_4-snap.60-T1
+Valid prediction for snap_scaffold_4-snap.59-T1
+Valid prediction for snap_scaffold_4-snap.42-T1
+Valid prediction for snap_scaffold_4-snap.37-T1
+Valid prediction for snap_scaffold_4-snap.34-T1
+Valid prediction for snap_scaffold_4-snap.49-T1
+Valid prediction for snap_scaffold_4-snap.39-T1
+Valid prediction for snap_scaffold_4-snap.48-T1
+Valid prediction for snap_scaffold_4-snap.61-T1
+Valid prediction for snap_scaffold_4-snap.47-T1
+Valid prediction for snap_scaffold_4-snap.38-T1
+Valid prediction for snap_scaffold_4-snap.35-T1
+Valid prediction for snap_scaffold_4-snap.33-T1
+Sorry, intron length (4) is less than minimum required (10)
+Valid prediction for snap_scaffold_4-snap.57-T1
+Valid prediction for snap_scaffold_4-snap.53-T1
+Valid prediction for snap_scaffold_4-snap.46-T1
+Valid prediction for snap_scaffold_4-snap.43-T1
+Couldn't classify 576, 2632
+Sorry, prediction GlimmerHMM_glimmerT_3292-T1 fails validation.
+(TAA)	 AG	576-2632	GT	TGG
+(ATG)	 AG	5652-7187	AA	AAA
+-recovered GlimmerHMM_glimmerT_3292-T1, terminal, 5652, 7187
+-recovered GlimmerHMM_glimmerT_3292-T1, internal, 576, 2632
+Couldn't classify 702, 1822
+Sorry, prediction Augustus_model.g2928.t1 fails validation.
+(ATA)	 AG	702-1822	GT	CAG
+(GAT)	 AG	2093-2647	AA	AGA
+-recovered Augustus_model.g2928.t1, terminal, 2093, 2647
+-recovered Augustus_model.g2928.t1, internal, 702, 1822
+Valid prediction for snap_scaffold_4-snap.51-T1
+Valid prediction for Augustus_model.g2955.t1
+Valid prediction for snap_scaffold_4-snap.44-T1
+Valid prediction for snap_scaffold_4-snap.45-T1
+Valid prediction for Augustus_model.g2938.t1
+
+-loading the search evidence (protein and EST search results, strand: +)
+-scoring exons (strand: +)
+
+** Processing features (-)
+
+-finding all potential splice sites, looking for GT/GC donors and AG acceptors.
+-finding all potential starts and stops. (strand: -)
+-loading gene prediction evidence. (strand: -)Valid prediction for GlimmerHMM_glimmerT_3294-T1
+Valid prediction for Augustus_model.g2949.t1
+Valid prediction for GlimmerHMM_glimmerT_3311-T1
+Valid prediction for Augustus_model.g2931.t1
+Valid prediction for snap_scaffold_4-snap.36-T1
+Valid prediction for snap_scaffold_4-snap.52-T1
+Valid prediction for snap_scaffold_4-snap.40-T1
+Valid prediction for snap_scaffold_4-snap.41-T1
+Valid prediction for Augustus_model.g2936.t1
+Valid prediction for snap_scaffold_4-snap.58-T1
+Valid prediction for snap_scaffold_4-snap.54-T1
+Valid prediction for snap_scaffold_4-snap.56-T1
+Valid prediction for snap_scaffold_4-snap.55-T1
+
+-loading the search evidence (protein and EST search results, strand: -)
+-scoring exons (strand: -)
+-building DP trellis
+
+-building trellis in range 1 - 100000
+-exon list size: 107
+
+
+building trellis
+0.9    1.8    2.8    3.7    4.6    5.5    6.4    7.3    8.3    9.2    10.1    11.0    11.9    12.8    13.8    14.7    15.6    16.5    17.4    18.3    19.3    20.2    21.1    22.0    22.9    23.9    24.8    25.7    26.6    27.5    28.4    29.4    30.3    31.2    32.1    33.0    33.9    34.9    35.8    36.7    37.6    38.5    39.4    40.4    41.3    42.2    43.1    44.0    45.0    45.9    46.8    47.7    48.6    49.5    50.5    51.4    52.3    53.2    54.1    55.0    56.0    56.9    57.8    58.7    59.6    60.6    61.5    62.4    63.3    64.2    65.1    66.1    67.0    67.9    68.8    69.7    70.6    71.6    72.5    73.4    74.3    75.2    76.1    77.1    78.0    78.9    79.8    80.7    81.7    82.6    83.5    84.4    85.3    86.2    87.2    88.1    89.0    89.9    90.8    91.7    92.7    93.6    94.5    95.4    96.3    97.2    98.2    99.1    
+-found 33 predictions from path traversal
+GOT 5prime partial gene.
+
+-reporting highest scoring path thru the trellis.
+-found 32 predictions persist after filtering for low support

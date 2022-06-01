@@ -1,0 +1,37 @@
+# Please cite: Mario Stanke, Mark Diekhans, Robert Baertsch, David Haussler (2008),
+# Using native and syntenically mapped cDNA alignments to improve de novo gene finding
+# Bioinformatics 24: 637-644, doi 10.1093/bioinformatics/btn013
+# No extrinsic information on sequences given.
+# Initializing the parameters using config directory /home/rangeles/.conda/envs/funannotate/config/ ...
+# Using protein profile unknown
+# --[0..154]--> unknown_A (58) <--[2..23]--> unknown_B (11) <--[6..16]--> unknown_C (9) <--[0..71]--
+# anidulans version. Using default transition matrix.
+# Looks like ./tmp/scaffold_3c.albicans_sc5314_xxx_722612634_.temp is in fasta format.
+# We have hints for 0 sequences and for 0 of the sequences in the input set.
+#
+# ----- prediction on sequence number 1 (length = 10291, name = scaffold_3) -----
+#
+# Predicted genes for sequence number 1 on both strands
+# start gene g1
+scaffold_3	AUGUSTUS	gene	1042890	1043339	0.01	+	.	g1
+scaffold_3	AUGUSTUS	transcript	1042890	1043339	0.01	+	.	g1.t1
+scaffold_3	AUGUSTUS	start_codon	1042890	1042892	.	+	0	transcript_id "g1.t1"; gene_id "g1";
+scaffold_3	AUGUSTUS	CDS	1042890	1043339	0.01	+	0	transcript_id "g1.t1"; gene_id "g1";
+scaffold_3	AUGUSTUS	stop_codon	1043337	1043339	.	+	0	transcript_id "g1.t1"; gene_id "g1";
+scaffold_3	AUGUSTUS	protein_match	1042995	1043168	4.02	+	0	target "unknown_A[1..58]"; target_start 35; transcript_id "g1.t1"; gene_id "g1";
+scaffold_3	AUGUSTUS	protein_match	1043229	1043261	3.22	+	0	target "unknown_B[1..11]"; target_start 113; transcript_id "g1.t1"; gene_id "g1";
+scaffold_3	AUGUSTUS	protein_match	1043280	1043306	7.88	+	0	target "unknown_C[1..9]"; target_start 130; transcript_id "g1.t1"; gene_id "g1";
+# coding sequence = [atgagtaaagatgataaagatttagaagagatttggaaattgtttcaagattcaaatgaagatgtacagaaaagaagaa
+# aagaaataacaaaatctattcaaaaagatacaagtttgaatgaataccctggactggtgtcgatgatgactgcattagacgagttaatcgcttgcttt
+# gcattgggaggtcaagtgaaaaactattatagatatggaacttatgactcatgtacaagacagagagaaaaattttggtttgctataaaacatggatc
+# atttagagaacaggaagaaagaccgcttgaagaatcgagcgaaagggagttgaccaatcgtatcaaagtgcaagaattttataaaaagagattccttg
+# aagataaagccaagggaagctcagaggatatttggaacaaacgtgaggaattattaagtaaccctttcaagaaataa]
+# protein sequence = [MSKDDKDLEEIWKLFQDSNEDVQKRRKEITKSIQKDTSLNEYPGLVSMMTALDELIACFALGGQVKNYYRYGTYDSCT
+# RQREKFWFAIKHGSFREQEERPLEESSERELTNRIKVQEFYKKRFLEDKAKGSSEDIWNKREELLSNPFKK]
+# sequence of block unknown_A    35 [DTSLNEYPGLVSMMTALDELIACFALGGQVKNYYRYGTYDSCTRQREKFWFAIKHGSF] 93
+# sequence of block unknown_B   113 [KVQEFYKKRFL] 124
+# sequence of block unknown_C   130 [SSEDIWNKR] 139
+# end gene g1
+###
+# command line:
+# augustus --stopCodonExcludedFromCDS=False --codingseq=1 --proteinprofile=/space21/PGE/rangeles/bin/funannotate_db/dikarya/prfl/EOG092656IY.prfl --predictionStart=1038016 --predictionEnd=1048306 --species=anidulans ./tmp/scaffold_3c.albicans_sc5314_xxx_722612634_.temp

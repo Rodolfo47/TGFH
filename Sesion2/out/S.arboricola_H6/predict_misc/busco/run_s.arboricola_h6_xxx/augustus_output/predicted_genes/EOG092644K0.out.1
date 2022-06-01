@@ -1,0 +1,48 @@
+# Please cite: Mario Stanke, Mark Diekhans, Robert Baertsch, David Haussler (2008),
+# Using native and syntenically mapped cDNA alignments to improve de novo gene finding
+# Bioinformatics 24: 637-644, doi 10.1093/bioinformatics/btn013
+# No extrinsic information on sequences given.
+# Initializing the parameters using config directory /home/rangeles/.conda/envs/funannotate/config/ ...
+# Using protein profile unknown
+# --[17..119]--> unknown_B (24) <--[0..9]--> unknown_C (34) <--[11..75]--> unknown_E (61) <--[2..11]--> unknown_F (27) <--[1..4]--> unknown_G (22) <--[0..16]--> unknown_H (11) <--[0..122]--
+# anidulans version. Using default transition matrix.
+# Looks like ./tmp/scaffold_3s.arboricola_h6_xxx_916416112_.temp is in fasta format.
+# We have hints for 0 sequences and for 0 of the sequences in the input set.
+#
+# ----- prediction on sequence number 1 (length = 10543, name = scaffold_3) -----
+#
+# Predicted genes for sequence number 1 on both strands
+# start gene g1
+scaffold_3	AUGUSTUS	gene	345116	345940	0.01	+	.	g1
+scaffold_3	AUGUSTUS	transcript	345116	345940	0.01	+	.	g1.t1
+scaffold_3	AUGUSTUS	start_codon	345116	345118	.	+	0	transcript_id "g1.t1"; gene_id "g1";
+scaffold_3	AUGUSTUS	CDS	345116	345462	0.01	+	0	transcript_id "g1.t1"; gene_id "g1";
+scaffold_3	AUGUSTUS	CDS	345541	345940	0.01	+	1	transcript_id "g1.t1"; gene_id "g1";
+scaffold_3	AUGUSTUS	stop_codon	345938	345940	.	+	0	transcript_id "g1.t1"; gene_id "g1";
+scaffold_3	AUGUSTUS	protein_match	345194	345265	2.88	+	0	target "unknown_B[1..24]"; target_start 26; transcript_id "g1.t1"; gene_id "g1";
+scaffold_3	AUGUSTUS	protein_match	345266	345367	9.71	+	0	target "unknown_C[1..34]"; target_start 50; transcript_id "g1.t1"; gene_id "g1";
+scaffold_3	AUGUSTUS	protein_match	345554	345736	6.82	+	0	target "unknown_E[1..61]"; target_start 120; transcript_id "g1.t1"; gene_id "g1";
+scaffold_3	AUGUSTUS	protein_match	345752	345832	5.87	+	0	target "unknown_F[1..27]"; target_start 186; transcript_id "g1.t1"; gene_id "g1";
+scaffold_3	AUGUSTUS	protein_match	345836	345901	4.73	+	0	target "unknown_G[1..22]"; target_start 214; transcript_id "g1.t1"; gene_id "g1";
+scaffold_3	AUGUSTUS	protein_match	345902	345934	7.81	+	0	target "unknown_H[1..11]"; target_start 236; transcript_id "g1.t1"; gene_id "g1";
+# coding sequence = [atgaaggatagtaactctgacttaaggaagcctgcggatgttgcggtattatcaatcatcctaacgggttcgactttaa
+# cgttgatttacacctataaaagatttcttactcaatttaaaaggacaaatgatatcccacaacgcatatttcgtaaacaatggctatacggcaaagtc
+# acatctgtcggtgatggtgacaattttcatttcttccacatgccaggaggcataagaggtggatgggggtggttgcgatccatcccacaaatggtaaa
+# gaatgattctactgcagaaaagctagccaccagcgatgagaatatgaactttttcaatttaaatagatttatgaagaacctgccgacaattcccataa
+# gattgtgtggaattgatgccccagaaagagcacatttcggtaatccagcgcaaccgtttgggaatgaagcgctaatctggctacaaaactgtgttttg
+# ggtagaaagatttgggtgaagcctctgtctgtagatcaatataatcgctgtgtggcgcgagtctcgtactgggattggtttggtggctggaaagattt
+# gagcctggaaatgctcaaagatgggttagcggttgtttatgaaggtaaagtaaatacagaattcgatggtagagaagataagtaccgttactatgaat
+# ttttggcaaagtccaggaaaaagggactatgggtccaaaagaaatttgaaacacccggtgaatataagagacgtatttga]
+# protein sequence = [MKDSNSDLRKPADVAVLSIILTGSTLTLIYTYKRFLTQFKRTNDIPQRIFRKQWLYGKVTSVGDGDNFHFFHMPGGIR
+# GGWGWLRSIPQMVKNDSTAEKLATSDENMNFFNLNRFMKNLPTIPIRLCGIDAPERAHFGNPAQPFGNEALIWLQNCVLGRKIWVKPLSVDQYNRCVA
+# RVSYWDWFGGWKDLSLEMLKDGLAVVYEGKVNTEFDGREDKYRYYEFLAKSRKKGLWVQKKFETPGEYKRRI]
+# sequence of block unknown_B    26 [TLIYTYKRFLTQFKRTNDIPQRIF] 50
+# sequence of block unknown_C    50 [RKQWLYGKVTSVGDGDNFHFFHMPGGIRGGWGWL] 84
+# sequence of block unknown_E   120 [TIPIRLCGIDAPERAHFGNPAQPFGNEALIWLQNCVLGRKIWVKPLSVDQYNRCVARVSYW] 181
+# sequence of block unknown_F   186 [WKDLSLEMLKDGLAVVYEGKVNTEFDG] 213
+# sequence of block unknown_G   214 [EDKYRYYEFLAKSRKKGLWVQK] 236
+# sequence of block unknown_H   236 [KFETPGEYKRR] 247
+# end gene g1
+###
+# command line:
+# augustus --stopCodonExcludedFromCDS=False --codingseq=1 --proteinprofile=/space21/PGE/rangeles/bin/funannotate_db/dikarya/prfl/EOG092644K0.prfl --predictionStart=340284 --predictionEnd=350826 --species=anidulans ./tmp/scaffold_3s.arboricola_h6_xxx_916416112_.temp

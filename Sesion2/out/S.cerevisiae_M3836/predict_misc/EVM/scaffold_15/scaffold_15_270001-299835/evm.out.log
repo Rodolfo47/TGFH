@@ -1,0 +1,67 @@
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+-successfully changed directories to /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.cerevisiae_M3836/predict_misc/EVM/scaffold_15/scaffold_15_270001-299835
+
+-reading genomic sequence.
+
+** Processing features (+)
+
+-finding all potential splice sites, looking for GT/GC donors and AG acceptors.
+-finding all potential starts and stops. (strand: +)
+-loading gene prediction evidence. (strand: +)Valid prediction for snap_scaffold_15-snap.109-T1
+Valid prediction for snap_scaffold_15-snap.112-T1
+Valid prediction for snap_scaffold_15-snap.106-T1
+Valid prediction for snap_scaffold_15-snap.113-T1
+Valid prediction for snap_scaffold_15-snap.105-T1
+Valid prediction for Augustus_model.g3953.t1
+Couldn't classify 29295, 29835
+Sorry, prediction GlimmerHMM_glimmerT_4290-T1 fails validation.
+(ATG)	 TA	29295-29835		TG
+Valid prediction for snap_scaffold_15-snap.103-T1
+Valid prediction for GlimmerHMM_glimmerT_4288-T1
+Valid prediction for snap_scaffold_15-snap.111-T1
+Valid prediction for Augustus_model.g3959.t1
+Couldn't classify 29293, 29714
+Sorry, prediction Augustus_model.g3961.t1 fails validation.
+(ATG)	 AA	29213-29237	GT	CGG
+(TAA)	 AG	29293-29714	GT	AAG
+-recovered Augustus_model.g3961.t1, initial, 29213, 29237
+-recovered Augustus_model.g3961.t1, internal, 29293, 29714
+Valid prediction for snap_scaffold_15-snap.110-T1
+
+-loading the search evidence (protein and EST search results, strand: +)
+-scoring exons (strand: +)
+
+** Processing features (-)
+
+-finding all potential splice sites, looking for GT/GC donors and AG acceptors.
+-finding all potential starts and stops. (strand: -)
+-loading gene prediction evidence. (strand: -)Valid prediction for GlimmerHMM_glimmerT_4278-T1
+Valid prediction for GlimmerHMM_glimmerT_4285-T1
+Valid prediction for Augustus_model.g3952.t1
+Valid prediction for snap_scaffold_15-snap.107-T1
+Valid prediction for snap_scaffold_15-snap.108-T1
+Valid prediction for snap_scaffold_15-snap.104-T1
+
+-loading the search evidence (protein and EST search results, strand: -)
+-scoring exons (strand: -)Error with prediction: snap lend_intergenic: 17456, rend_intergenic: 15350  at /home/rangeles/.conda/envs/funannotate/opt/evidencemodeler-1.1.1/EvmUtils/.././evidence_modeler.pl line 3218.
+
+-building DP trellis
+
+-building trellis in range 1 - 29835
+-exon list size: 45
+
+
+building trellis
+2.1    4.3    6.4    8.5    10.6    12.8    14.9    17.0    19.1    21.3    23.4    25.5    27.7    29.8    31.9    34.0    36.2    38.3    40.4    42.6    44.7    46.8    48.9    51.1    53.2    55.3    57.4    59.6    61.7    63.8    66.0    68.1    70.2    72.3    74.5    76.6    78.7    80.9    83.0    85.1    87.2    89.4    91.5    93.6    95.7    97.9    
+-found 13 predictions from path traversal
+Error with prediction: snap lend_intergenic: 17456, rend_intergenic: 15350  at /home/rangeles/.conda/envs/funannotate/opt/evidencemodeler-1.1.1/EvmUtils/.././evidence_modeler.pl line 3218.
+
+-reporting highest scoring path thru the trellis.
+-found 13 predictions persist after filtering for low support

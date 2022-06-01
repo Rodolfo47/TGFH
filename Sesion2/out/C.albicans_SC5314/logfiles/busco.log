@@ -1,0 +1,125 @@
+
+INFO	****************** Start a BUSCO 2.0 analysis, current time: 06/01/2022 00:24:21 ******************
+INFO	The lineage dataset is: dikarya_odb9 (eukaryota)
+INFO	Mode is: genome
+INFO	Maximum number of regions limited to: 3
+INFO	To reproduce this run: python /home/rangeles/.conda/envs/funannotate/lib/python2.7/site-packages/funannotate/aux_scripts/funannotate-BUSCO2.py -i /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/C.albicans_SC5314/predict_misc/genome.softmasked.fa -o c.albicans_sc5314_xxx -l /space21/PGE/rangeles/bin/funannotate_db/dikarya/ -m genome -c 28 -sp anidulans
+INFO	Check dependencies...
+INFO	Check input file...
+INFO	Temp directory is ./tmp/
+
+INFO	****** Phase 1 of 2, initial predictions ******
+INFO	****** Step 1/3, current time: 06/01/2022 00:24:21 ******
+INFO	Create blast database...
+INFO	[makeblastdb]	Building a new DB, current time: 06/01/2022 00:24:21
+INFO	[makeblastdb]	New DB name:   /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/C.albicans_SC5314/predict_misc/busco/tmp/c.albicans_sc5314_xxx_722612634
+INFO	[makeblastdb]	New DB title:  /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/C.albicans_SC5314/predict_misc/genome.softmasked.fa
+INFO	[makeblastdb]	Sequence type: Nucleotide
+INFO	[makeblastdb]	Keep Linkouts: T
+INFO	[makeblastdb]	Keep MBits: T
+INFO	[makeblastdb]	Maximum file size: 1000000000B
+INFO	[makeblastdb]	Adding sequences from FASTA; added 8 sequences in 0.158008 seconds.
+INFO	Running tblastn, writing output to /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/C.albicans_SC5314/predict_misc/busco/run_c.albicans_sc5314_xxx/blast_output/tblastn_c.albicans_sc5314_xxx.tsv...
+INFO	****** Step 2/3, current time: 06/01/2022 00:24:40 ******
+INFO	Getting coordinates for candidate regions...
+INFO	Pre-Augustus scaffold extraction...
+INFO	Running Augustus prediction using anidulans as species:
+INFO	[augustus] Please find all logs related to Augustus here: /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/C.albicans_SC5314/predict_misc/busco/run_c.albicans_sc5314_xxx/augustus_output/augustus.log
+INFO	06/01/2022 00:24:40 =>	0% of predictions performed (1566 to be done)
+INFO	06/01/2022 00:25:10 =>	10% of predictions performed (173/1566 candidate regions)
+INFO	06/01/2022 00:25:41 =>	20% of predictions performed (329/1566 candidate regions)
+INFO	06/01/2022 00:26:14 =>	30% of predictions performed (486/1566 candidate regions)
+INFO	06/01/2022 00:26:46 =>	40% of predictions performed (643/1566 candidate regions)
+INFO	06/01/2022 00:27:18 =>	50% of predictions performed (799/1566 candidate regions)
+INFO	06/01/2022 00:27:48 =>	60% of predictions performed (956/1566 candidate regions)
+INFO	06/01/2022 00:28:18 =>	70% of predictions performed (1112/1566 candidate regions)
+INFO	06/01/2022 00:28:47 =>	80% of predictions performed (1269/1566 candidate regions)
+INFO	06/01/2022 00:29:16 =>	90% of predictions performed (1426/1566 candidate regions)
+INFO	06/01/2022 00:30:02 =>	100% of predictions performed
+INFO	Extracting predicted proteins...
+INFO	****** Step 3/3, current time: 06/01/2022 00:30:10 ******
+INFO	Running HMMER to confirm orthology of predicted proteins:
+INFO	06/01/2022 00:30:10 =>	0% of predictions performed (1360 to be done)
+INFO	06/01/2022 00:30:11 =>	10% of predictions performed (151/1360 candidate proteins)
+INFO	06/01/2022 00:30:12 =>	20% of predictions performed (287/1360 candidate proteins)
+INFO	06/01/2022 00:30:13 =>	30% of predictions performed (424/1360 candidate proteins)
+INFO	06/01/2022 00:30:14 =>	40% of predictions performed (560/1360 candidate proteins)
+INFO	06/01/2022 00:30:15 =>	50% of predictions performed (697/1360 candidate proteins)
+INFO	06/01/2022 00:30:16 =>	60% of predictions performed (830/1360 candidate proteins)
+INFO	06/01/2022 00:30:18 =>	70% of predictions performed (967/1360 candidate proteins)
+INFO	06/01/2022 00:30:20 =>	80% of predictions performed (1104/1360 candidate proteins)
+INFO	06/01/2022 00:30:22 =>	90% of predictions performed (1239/1360 candidate proteins)
+INFO	06/01/2022 00:30:23 =>	100% of predictions performed
+INFO	Results:
+INFO	C:89.3%[S:88.9%,D:0.4%],F:1.4%,M:9.3%,n:1312
+INFO	1172 Complete BUSCOs (C)
+INFO	1167 Complete and single-copy BUSCOs (S)
+INFO	5 Complete and duplicated BUSCOs (D)
+INFO	19 Fragmented BUSCOs (F)
+INFO	121 Missing BUSCOs (M)
+INFO	1312 Total BUSCO groups searched
+
+INFO	****** Phase 2 of 2, predictions using species specific training ******
+INFO	****** Step 1/3, current time: 06/01/2022 00:30:23 ******
+INFO	Extracting missing and fragmented buscos from the ancestral_variants file...
+WARNING	The busco id(s) ['EOG092621CP', 'EOG092658NW', 'EOG09260R9L', 'EOG092602UY', 'EOG09263MEM', 'EOG09261M78', 'EOG09261N20', 'EOG09261UOJ', 'EOG09260HS3', 'EOG09264RBX', 'EOG0926129I', 'EOG092657UN', 'EOG09262387', 'EOG0926312D', 'EOG09264G1F', 'EOG092646EZ', 'EOG092646C6', 'EOG09261ZXZ', 'EOG09260A6Q', 'EOG09265RGI', 'EOG0926534P', 'EOG09260274', 'EOG09260V8Q', 'EOG09262PZ9', 'EOG09261VUC', 'EOG09260EPQ', 'EOG09260EPS', 'EOG0926004Z', 'EOG0926388H', 'EOG092600S9', 'EOG09260JT9', 'EOG09261XNU', 'EOG09260TPT', 'EOG09262NNS', 'EOG09260LI6', 'EOG09264XUV', 'EOG092630MJ', 'EOG09264NDD', 'EOG09260SRF', 'EOG09261JWS', 'EOG09263MR4', 'EOG09263EQZ', 'EOG092605T6', 'EOG09261PNZ', 'EOG09260PJ9', 'EOG09263QPR', 'EOG09260OQ8', 'EOG09262E3Q', 'EOG09261O7R', 'EOG09260FPA', 'EOG09262MOO', 'EOG09265K60', 'EOG09263GSR', 'EOG09261EY9', 'EOG09261IBJ', 'EOG092612J3', 'EOG092642UD', 'EOG09265PWR', 'EOG092652KR', 'EOG092628FW', 'EOG09263UCR', 'EOG092640IZ', 'EOG09263OZR', 'EOG09260K4V', 'EOG09260NWN', 'EOG09264DT4', 'EOG09263FGN', 'EOG09265CQO', 'EOG092635DF', 'EOG09260M44', 'EOG09264HTG', 'EOG092624JL', 'EOG092619RJ', 'EOG09265JNA', 'EOG09260H81', 'EOG09265HPJ', 'EOG09263ROQ', 'EOG09261N64', 'EOG09261NLY', 'EOG09261MMR', 'EOG09264JW6', 'EOG09263LNF', 'EOG09260NJW', 'EOG09261AMX', 'EOG092648O6', 'EOG0926357F', 'EOG09260R84', 'EOG09262CXO', 'EOG09260NY2', 'EOG09260JO5', 'EOG092620IA', 'EOG0926448Q', 'EOG09260A27', 'EOG09265B95', 'EOG09260DUR', 'EOG09263U71', 'EOG092611HB', 'EOG09263WM5', 'EOG09262LYR', 'EOG09264L0C', 'EOG09260SAH', 'EOG09262341', 'EOG09262KN8', 'EOG09264LBC', 'EOG09260075', 'EOG09263FKC', 'EOG09260APA', 'EOG09261ONU', 'EOG09264B3O', 'EOG09260RRN', 'EOG09264C3V', 'EOG0926457R', 'EOG09262V8E', 'EOG092645QN', 'EOG0926077L', 'EOG09263S2P', 'EOG092641G3', 'EOG092615SM', 'EOG09265BG5', 'EOG09264398', 'EOG09262QL6', 'EOG09263ULA', 'EOG09261660', 'EOG092635SS', 'EOG092626HU', 'EOG09264B2X', 'EOG09262ILV', 'EOG09262QS5', 'EOG09264XOZ', 'EOG09260S2Z', 'EOG09262N47', 'EOG0926195C', 'EOG09260OE9', 'EOG09260W8D', 'EOG09264G4X', 'EOG09264JK1', 'EOG092629RT', 'EOG09264SQJ', 'EOG09261DGU', 'EOG092603JK'] were not found in the ancestral_variants file
+INFO	Running tblastn, writing output to /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/C.albicans_SC5314/predict_misc/busco/run_c.albicans_sc5314_xxx/blast_output/tblastn_c.albicans_sc5314_xxx_missing_and_frag_rerun.tsv...
+INFO	[tblastn]	Warning: [tblastn] Query is Empty!
+INFO	Getting coordinates for candidate regions...
+INFO	****** Step 2/3, current time: 06/01/2022 00:30:24 ******
+INFO	Training Augustus using Single-Copy Complete BUSCOs:
+INFO	06/01/2022 00:30:24 =>	Converting predicted genes to short genbank files...
+INFO	06/01/2022 00:30:30 =>	All files converted to short genbank files, now running the training scripts...
+INFO	Pre-Augustus scaffold extraction...
+INFO	Re-running Augustus with the new metaparameters, number of target BUSCOs: 140
+INFO	06/01/2022 00:30:31 =>	0% of predictions performed (0 to be done)
+INFO	06/01/2022 00:30:31 =>	100% of predictions performed
+INFO	Extracting predicted proteins...
+INFO	****** Step 3/3, current time: 06/01/2022 00:30:31 ******
+INFO	Running HMMER to confirm orthology of predicted proteins:
+INFO	06/01/2022 00:30:31 =>	0% of predictions performed (0 to be done)
+INFO	06/01/2022 00:30:31 =>	100% of predictions performed
+INFO	Results:
+INFO	C:89.3%[S:88.9%,D:0.4%],F:1.4%,M:9.3%,n:1312
+INFO	1172 Complete BUSCOs (C)
+INFO	1167 Complete and single-copy BUSCOs (S)
+INFO	5 Complete and duplicated BUSCOs (D)
+INFO	19 Fragmented BUSCOs (F)
+INFO	121 Missing BUSCOs (M)
+INFO	1312 Total BUSCO groups searched
+
+INFO	BUSCO analysis done with WARNING(s). Total running time: 372.873989105 seconds
+INFO	Results written in /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/C.albicans_SC5314/predict_misc/busco/run_c.albicans_sc5314_xxx/
+
+
+INFO	****************** Start a BUSCO 2.0 analysis, current time: 06/01/2022 00:31:25 ******************
+INFO	The lineage dataset is: dikarya_odb9 (eukaryota)
+INFO	Mode is: proteins
+INFO	To reproduce this run: python /home/rangeles/.conda/envs/funannotate/lib/python2.7/site-packages/funannotate/aux_scripts/funannotate-BUSCO2.py -i /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/C.albicans_SC5314/predict_misc/busco.evm.proteins.fa -o c.albicans_sc5314_xxx -l /space21/PGE/rangeles/bin/funannotate_db/dikarya/ -m proteins -c 28 -sp anidulans
+INFO	Check dependencies...
+INFO	Check input file...
+INFO	Temp directory is ./tmp/
+INFO	Running HMMER on the proteins:
+INFO	06/01/2022 00:31:25 =>	0% of predictions performed (1312 to be done)
+INFO	06/01/2022 00:31:26 =>	10% of predictions performed (146/1312 candidate proteins)
+INFO	06/01/2022 00:31:27 =>	20% of predictions performed (277/1312 candidate proteins)
+INFO	06/01/2022 00:31:28 =>	30% of predictions performed (408/1312 candidate proteins)
+INFO	06/01/2022 00:31:28 =>	40% of predictions performed (539/1312 candidate proteins)
+INFO	06/01/2022 00:31:30 =>	50% of predictions performed (670/1312 candidate proteins)
+INFO	06/01/2022 00:31:31 =>	60% of predictions performed (802/1312 candidate proteins)
+INFO	06/01/2022 00:31:32 =>	70% of predictions performed (934/1312 candidate proteins)
+INFO	06/01/2022 00:31:34 =>	80% of predictions performed (1063/1312 candidate proteins)
+INFO	06/01/2022 00:31:36 =>	90% of predictions performed (1194/1312 candidate proteins)
+INFO	06/01/2022 00:31:37 =>	100% of predictions performed
+INFO	Results:
+INFO	C:87.0%[S:87.0%,D:0.0%],F:0.0%,M:13.0%,n:1312
+INFO	1142 Complete BUSCOs (C)
+INFO	1142 Complete and single-copy BUSCOs (S)
+INFO	0 Complete and duplicated BUSCOs (D)
+INFO	0 Fragmented BUSCOs (F)
+INFO	170 Missing BUSCOs (M)
+INFO	1312 Total BUSCO groups searched
+
+INFO	BUSCO analysis done. Total running time: 12.2367429733 seconds
+INFO	Results written in /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/C.albicans_SC5314/predict_misc/busco_proteins/run_c.albicans_sc5314_xxx/
+

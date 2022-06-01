@@ -1,0 +1,48 @@
+# Please cite: Mario Stanke, Mark Diekhans, Robert Baertsch, David Haussler (2008),
+# Using native and syntenically mapped cDNA alignments to improve de novo gene finding
+# Bioinformatics 24: 637-644, doi 10.1093/bioinformatics/btn013
+# No extrinsic information on sequences given.
+# Initializing the parameters using config directory /home/rangeles/.conda/envs/funannotate/config/ ...
+# Using protein profile unknown
+# --[0..90]--> unknown_A (14) <--[0..22]--> unknown_B (9) <--[15..67]--> unknown_E (16) <--[2..14]--> unknown_F (20) <--[13..83]--> unknown_I (18) <--[1..7]--> unknown_J (21) <--[0..1]--> unknown_K (9) <--[1..4]--> unknown_L (15) <--[0..35]--
+# anidulans version. Using default transition matrix.
+# Looks like ./tmp/scaffold_4c.albicans_sc5314_xxx_722612634_.temp is in fasta format.
+# We have hints for 0 sequences and for 0 of the sequences in the input set.
+#
+# ----- prediction on sequence number 1 (length = 10435, name = scaffold_4) -----
+#
+# Predicted genes for sequence number 1 on both strands
+# start gene g1
+scaffold_4	AUGUSTUS	gene	807802	808329	0.01	+	.	g1
+scaffold_4	AUGUSTUS	transcript	807802	808329	0.01	+	.	g1.t1
+scaffold_4	AUGUSTUS	start_codon	807802	807804	.	+	0	transcript_id "g1.t1"; gene_id "g1";
+scaffold_4	AUGUSTUS	CDS	807802	808329	0.01	+	0	transcript_id "g1.t1"; gene_id "g1";
+scaffold_4	AUGUSTUS	stop_codon	808327	808329	.	+	0	transcript_id "g1.t1"; gene_id "g1";
+scaffold_4	AUGUSTUS	protein_match	807817	807858	9.13	+	0	target "unknown_A[1..14]"; target_start 5; transcript_id "g1.t1"; gene_id "g1";
+scaffold_4	AUGUSTUS	protein_match	807859	807885	9.41	+	0	target "unknown_B[1..9]"; target_start 19; transcript_id "g1.t1"; gene_id "g1";
+scaffold_4	AUGUSTUS	protein_match	807937	807984	3.64	+	0	target "unknown_E[1..16]"; target_start 45; transcript_id "g1.t1"; gene_id "g1";
+scaffold_4	AUGUSTUS	protein_match	807994	808053	4.66	+	0	target "unknown_F[1..20]"; target_start 64; transcript_id "g1.t1"; gene_id "g1";
+scaffold_4	AUGUSTUS	protein_match	808096	808149	4.38	+	0	target "unknown_I[1..18]"; target_start 98; transcript_id "g1.t1"; gene_id "g1";
+scaffold_4	AUGUSTUS	protein_match	808165	808227	5.31	+	0	target "unknown_J[1..21]"; target_start 121; transcript_id "g1.t1"; gene_id "g1";
+scaffold_4	AUGUSTUS	protein_match	808228	808254	5.51	+	0	target "unknown_K[1..9]"; target_start 142; transcript_id "g1.t1"; gene_id "g1";
+scaffold_4	AUGUSTUS	protein_match	808267	808311	2.75	+	0	target "unknown_L[1..15]"; target_start 155; transcript_id "g1.t1"; gene_id "g1";
+# coding sequence = [atgacacttgcgagataccccaaagcagtagtttttgatctagactatactttatggccatgttggtgcgacactcaca
+# ttatgactccgttgaaatcggtctcgccaacaactgtcgttgatcgttacgatttccagctatcattttataaagatgtcgaatcaattattcgggaa
+# ctagttgaaaatgatgtgaagattatagctgctagtagaactgcaacaccccatattgctaagcagctattgtcaatgttgcatattcagggaaggcc
+# agcaatcgagtactttcatagtttacaatggggcacgggatcaaagacaaagcatatcaaagcagcagcgaaaaatctaaaaatgacaacagagttaa
+# cagacggtgaattcattttatttgacgacgaatggagaaatagagatgtcgagtcgatcaattgtcattttgctcatgttcccgatgaatcagtaggt
+# ttaacacgacacatttttgttcaagaattgagacaatggaacaaacggaatttatag]
+# protein sequence = [MTLARYPKAVVFDLDYTLWPCWCDTHIMTPLKSVSPTTVVDRYDFQLSFYKDVESIIRELVENDVKIIAASRTATPHI
+# AKQLLSMLHIQGRPAIEYFHSLQWGTGSKTKHIKAAAKNLKMTTELTDGEFILFDDEWRNRDVESINCHFAHVPDESVGLTRHIFVQELRQWNKRNL]
+# sequence of block unknown_A     5 [YPKAVVFDLDYTLW] 19
+# sequence of block unknown_B    19 [PCWCDTHIM] 28
+# sequence of block unknown_E    45 [QLSFYKDVESIIRELV] 61
+# sequence of block unknown_F    64 [VKIIAASRTATPHIAKQLLS] 84
+# sequence of block unknown_I    98 [SLQWGTGSKTKHIKAAAK] 116
+# sequence of block unknown_J   121 [TELTDGEFILFDDEWRNRDVE] 142
+# sequence of block unknown_K   142 [SINCHFAHV] 151
+# sequence of block unknown_L   155 [VGLTRHIFVQELRQW] 170
+# end gene g1
+###
+# command line:
+# augustus --stopCodonExcludedFromCDS=False --codingseq=1 --proteinprofile=/space21/PGE/rangeles/bin/funannotate_db/dikarya/prfl/EOG092651OF.prfl --predictionStart=802820 --predictionEnd=813254 --species=anidulans ./tmp/scaffold_4c.albicans_sc5314_xxx_722612634_.temp

@@ -1,0 +1,49 @@
+# Please cite: Mario Stanke, Mark Diekhans, Robert Baertsch, David Haussler (2008),
+# Using native and syntenically mapped cDNA alignments to improve de novo gene finding
+# Bioinformatics 24: 637-644, doi 10.1093/bioinformatics/btn013
+# No extrinsic information on sequences given.
+# Initializing the parameters using config directory /home/rangeles/.conda/envs/funannotate/config/ ...
+# Using protein profile unknown
+# --[17..666]--> unknown_A (16) <--[30..62]--> unknown_C (14) <--[19..68]--> unknown_E (17) <--[0..2]--> unknown_F (34) <--[1..15]--> unknown_G (22) <--[1..17]--> unknown_H (31) <--[0..1]--> unknown_I (66) <--[0..18]--> unknown_J (42) <--[4..95]--> unknown_K (39) <--[32..463]--
+# anidulans version. Using default transition matrix.
+# Looks like ./tmp/scaffold_20s.cerevisiae_m3836_xxx_4012073205_.temp is in fasta format.
+# We have hints for 0 sequences and for 0 of the sequences in the input set.
+#
+# ----- prediction on sequence number 1 (length = 10534, name = scaffold_20) -----
+#
+# Predicted genes for sequence number 1 on both strands
+# start gene g1
+scaffold_20	AUGUSTUS	gene	143575	145562	0.02	-	.	g1
+scaffold_20	AUGUSTUS	transcript	143575	145562	0.02	-	.	g1.t1
+scaffold_20	AUGUSTUS	stop_codon	143575	143577	.	-	0	transcript_id "g1.t1"; gene_id "g1";
+scaffold_20	AUGUSTUS	CDS	143575	143584	0.16	-	1	transcript_id "g1.t1"; gene_id "g1";
+scaffold_20	AUGUSTUS	CDS	143655	144419	0.28	-	1	transcript_id "g1.t1"; gene_id "g1";
+scaffold_20	AUGUSTUS	CDS	144657	144729	0.29	-	2	transcript_id "g1.t1"; gene_id "g1";
+scaffold_20	AUGUSTUS	CDS	144959	145562	0.74	-	0	transcript_id "g1.t1"; gene_id "g1";
+scaffold_20	AUGUSTUS	start_codon	145560	145562	.	-	0	transcript_id "g1.t1"; gene_id "g1";
+# coding sequence = [atgttcagaaagagattagtgaacaaaagctcttctgatgaaaagaaccagaaaaagaggcagaaaattaattttagcg
+# aagagaaactagtggccagcgatgaagaaaagggttccagtgacctcatgagcttagccaagagtggaaatagcaggacacttcaactttcacatgag
+# aatgaaggtaaactacagaaaaagggtgaggatttagataaatacactttaacggtcaacgacgacagcactaaagaagatcttctaaactttgagag
+# aaaagagctggctgagaaggcaaagaagaggcgacctagtgatgacaatgagctggtactgaacatgagcggtaaaaataaacgcctcactaaacaga
+# ttaaccaaccaacgaatatccggaccacggtgctgatggattttcagcccgacgtttgcaaagattacaaacagacgggatattgtggttacggagat
+# agctgcaagttcttacactcgagggatgatttcaagactggctggaagctgaaccaagaatggaatgcggataaagaggactccaaagcggttactct
+# agacttggaaaagataccgtttaagtgcactctttgaattctagagcacatgacccatagatttatcgagcattgttgcaatttcgaaagactctttc
+# acataataaaattgacaaacgaagatgatggtatccccatctttacaatggctcaacaaacaaggcagcataaaagggctaaagtggtcaactatgcg
+# gaatatgacaacgatctctttgatgaattcaatatgaacggttctaatttcaacaatgctgatacacactataaagataatgcagtgtctcatgaaaa
+# tactccggcacttacaaatggtgttaccatggacggttccgaatacaatgtcctagagaacatgaatggagctgatagtattatctctaacaacaaat
+# acgatgcgggttcaaacatggttgtggaatctttatctggtttgaatagcaataacaacgccagcaatggtccgagcaacaaagcgcaggcacaggat
+# attggaaacgccgttctaccggatctgcaagaccaacaccacaaccccttcaacatattgagataccctaaaataagagatactttcattaacggaaa
+# agtggtgtctccatatagactcaacactgatcaagaaacgaaggcaaacgccaattctggagaggcaatcatgataccaattactttggatatagaac
+# atatgggtcataccataaaagaccagtttctctggaactacaatgacgactccatatctcccgaggaatttgcctctatatactgtaaagatcttgat
+# atgacttccgctaccttgcaaactcaaattgcgaatataataaaagagcagttgaaagacctcgaaaatattgcagccactgagataattggaacttg
+# a]
+# protein sequence = [MFRKRLVNKSSSDEKNQKKRQKINFSEEKLVASDEEKGSSDLMSLAKSGNSRTLQLSHENEGKLQKKGEDLDKYTLTV
+# NDDSTKEDLLNFERKELAEKAKKRRPSDDNELVLNMSGKNKRLTKQINQPTNIRTTVLMDFQPDVCKDYKQTGYCGYGDSCKFLHSRDDFKTGWKLNQ
+# EWNADKEDSKAVTLDLEKIPFKCTLXILEHMTHRFIEHCCNFERLFHIIKLTNEDDGIPIFTMAQQTRQHKRAKVVNYAEYDNDLFDEFNMNGSNFNN
+# ADTHYKDNAVSHENTPALTNGVTMDGSEYNVLENMNGADSIISNNKYDAGSNMVVESLSGLNSNNNASNGPSNKAQAQDIGNAVLPDLQDQHHNPFNI
+# LRYPKIRDTFINGKVVSPYRLNTDQETKANANSGEAIMIPITLDIEHMGHTIKDQFLWNYNDDSISPEEFASIYCKDLDMTSATLQTQIANIIKEQLK
+# DLENIAATEIIGT]
+# end gene g1
+###
+# command line:
+# augustus --stopCodonExcludedFromCDS=False --codingseq=1 --proteinprofile=/space21/PGE/rangeles/bin/funannotate_db/dikarya/prfl/EOG0926115P.prfl --predictionStart=138435 --predictionEnd=148968 --species=anidulans ./tmp/scaffold_20s.cerevisiae_m3836_xxx_4012073205_.temp

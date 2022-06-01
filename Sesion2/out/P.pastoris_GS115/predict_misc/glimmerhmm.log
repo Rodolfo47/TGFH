@@ -1,0 +1,36 @@
+Training data created successfully! Check exons.dat and seqs for accuracy.
+
+
+Acceptor sites for training: 571
+False acceptor sites for training: 33652
+Donor sites for training: 571
+False donor sites for training: 33498
+
+Default threshold value for the acceptor sites: -6.335201
+Default threshold value for the donor sites: -5.824469
+
+Start sites for training: 1122
+False start sites for training: 36748
+
+Default threshold value for the start sites: -4.384390
+
+
+Stop sites for training: 1122
+False stop sites for training: 60116
+
+Default threshold value for the stop sites: -4.824776
+
+
+IMMs trained successfully.
+
+
+GlimmerHMM was trained successfully! All training files are in:
+../out/P.pastoris_GS115/predict_misc/glimmerhmm.
+
+Different thresholds that can be chosen for the splice sites
+can be consulted in:
+- false.acc for acceptor sites
+- false.don for donor sites.
+
+Different threshold that can be chosen for the start sites
+can be consulted in false.atg

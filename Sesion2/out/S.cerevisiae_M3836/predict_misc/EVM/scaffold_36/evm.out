@@ -1,0 +1,24 @@
+!! Predictions spanning range 846 - 15000 [R1]
+# EVM prediction: Mode:STANDARD S-ratio: 22.34 846-1208 orient(-) score(8629.00) noncoding_equivalent(386.30) raw_noncoding(386.30) offset(0.00) 
+1208	846	single-	4	6	{GlimmerHMM_glimmerT_5487-T1;GlimmerHMM},{HiQ_model.g5075.t1;HiQ}
+
+# EVM prediction: Mode:STANDARD S-ratio: 4.26 4564-4836 orient(-) score(1327.00) noncoding_equivalent(311.33) raw_noncoding(311.33) offset(0.00) 
+4836	4564	single-	4	6	{HiQ_model.g5076.t1;HiQ},{GlimmerHMM_glimmerT_5488-T1;GlimmerHMM}
+
+# EVM prediction: Mode:STANDARD S-ratio: 4.52 6609-7124 orient(-) score(2536.00) noncoding_equivalent(560.60) raw_noncoding(560.60) offset(0.00) 
+7124	6609	single-	4	6	{HiQ_model.g5077.t1;HiQ},{GlimmerHMM_glimmerT_5489-T1;GlimmerHMM}
+
+# EVM prediction: Mode:STANDARD S-ratio: 10000.00 8071-8949 orient(-) score(3516.00) noncoding_equivalent(0.35) raw_noncoding(0.00) offset(0.00) 
+8949	8071	single-	4	6	{Augustus_model.g5078.t1;Augustus},{GlimmerHMM_glimmerT_5490-T1;GlimmerHMM}
+
+# EVM prediction: Mode:STANDARD S-ratio: 2.30 8971-9891 orient(-) score(2568.00) noncoding_equivalent(1116.00) raw_noncoding(1116.00) offset(0.00) 
+9891	8971	single-	4	6	{GlimmerHMM_glimmerT_5491-T1;GlimmerHMM}
+
+# EVM prediction: Mode:STANDARD S-ratio: 7.92 10989-12758 orient(-) score(14145.00) noncoding_equivalent(1785.00) raw_noncoding(1785.00) offset(0.00) 
+12758	10989	single-	4	6	{GlimmerHMM_glimmerT_5492-T1;GlimmerHMM},{HiQ_model.g5079.t1;HiQ}
+
+# EVM prediction: Mode:STANDARD S-ratio: 10.70 13724-15000 orient(+) score(3477.00) noncoding_equivalent(324.96) raw_noncoding(354.00) offset(29.04) 
+13724	13973	initial+	1	1	{snap_scaffold_36-snap.6-T1;snap}
+13974	14001	INTRON			{snap_scaffold_36-snap.6-T1;snap}
+14002	15000	internal+	2	1	{snap_scaffold_36-snap.6-T1;snap},{GlimmerHMM_glimmerT_5493-T1;GlimmerHMM}
+

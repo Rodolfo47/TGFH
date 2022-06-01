@@ -1,0 +1,48 @@
+# Please cite: Mario Stanke, Mark Diekhans, Robert Baertsch, David Haussler (2008),
+# Using native and syntenically mapped cDNA alignments to improve de novo gene finding
+# Bioinformatics 24: 637-644, doi 10.1093/bioinformatics/btn013
+# No extrinsic information on sequences given.
+# Initializing the parameters using config directory /home/rangeles/.conda/envs/funannotate/config/ ...
+# Using protein profile unknown
+# --[0..81]--> unknown_A (25) <--[3..11]--> unknown_B (39) <--[0..21]--> unknown_C (29) <--[2..20]--> unknown_D (34) <--[1..41]--> unknown_E (77) <--[4..32]--> unknown_F (7) <--[3..7]--> unknown_G (43) <--[2..3]--> unknown_H (35) <--[0..42]--
+# anidulans version. Using default transition matrix.
+# Looks like ./tmp/scaffold_8s.cerevisiae_m3836_xxx_4012073205_.temp is in fasta format.
+# We have hints for 0 sequences and for 0 of the sequences in the input set.
+#
+# ----- prediction on sequence number 1 (length = 10558, name = scaffold_8) -----
+#
+# Predicted genes for sequence number 1 on both strands
+# start gene g1
+scaffold_8	AUGUSTUS	gene	179454	181127	0.53	+	.	g1
+scaffold_8	AUGUSTUS	transcript	179454	181127	0.53	+	.	g1.t1
+scaffold_8	AUGUSTUS	start_codon	179454	179456	.	+	0	transcript_id "g1.t1"; gene_id "g1";
+scaffold_8	AUGUSTUS	CDS	179454	181127	0.53	+	0	transcript_id "g1.t1"; gene_id "g1";
+scaffold_8	AUGUSTUS	stop_codon	181125	181127	.	+	0	transcript_id "g1.t1"; gene_id "g1";
+# coding sequence = [atggggttggtgcaggctttatccgctcatttagggaaaccatccattgcgaacgttagacaaccatctcttggcccaa
+# ccctgggtgtcaaaggtggtgctgctggtggtggttatgcccaagttattcctatggacgagttcaatttacatttgaccggggatattcatgctatc
+# agcgctgcgaacaatcttcttgcagcagctatcgacactagaatgttccatgaagccactcagaagaatgatagtacattttacaagagactagttcc
+# aagaaaaaaagacatcagaaagtttaccccatccatgcagagaaggcttaaaagattgggtattgaaaaagaagaccctgatgctttaacacctgaag
+# aagtcaaaagatttgctagattgaacataaatcccgatactatcactatcagaagagttgtcgacatcaatgacaggatgttaagacaaattaccatt
+# ggcgaagccgctacggagaagggttttacaaggaccactggattcgatatcactgttgcctctgaattaatggccattttagctctatctaaaagctt
+# acacgagatgaaggaacgtattggacgcatggttattggtgctgattatgataacaaaccagtaacagtagaagatattggctgtaccggtgctctga
+# ctgcattattacgtgacgctataaagcctaacttaatgcaaactttggaagggacccccgtaatggttcacgctggtcctttcgccaacatctccatc
+# ggcgcatcatcagtaattgcagacttaatggcattgaagcttgttggttcagaaaagaacccgttaaatgacaagaacatccatgaacctggttatgt
+# agttactgaagcaggattcgattttgccatgggtggtgaaagattctttgatatcaaatgtcgttcctctggattggtgccagatgcagttgtcttag
+# tcgcaaccgtaagagctttgaaatctcatggaggtgctccaaatgttaagcccggacaatcattaccaaaagaatacacagaggaaaacatcgatttt
+# gttgccaagggtgttagtaatttggttaagcagattgaaaacatcaaaacgtttggaataccagtcgttgtagcaatcaacagatttgaaacagactc
+# acaggcagagattgaggtaatcaagaaagcagccttgaatgctggcgcatctcataccgttacttctaatcactggatggaaggtggtaaaggtgcag
+# tagaattagcacatgctgtggtagatgcaacgaaagaaccaaagaactttaactttttgtacgacgtcaatagctccatcgaggacaagcttaccagc
+# atcgtccaaaaaatgtatggtggggcaaaaatcgaagtatcaccagaagcccaaaaaaagatagacacctacaaaaaacaaggcttcggtaatcttcc
+# catctgtattgctaagacacaatattcattatcccatgatccatcattaaagggtgttcctagaggttttacgttccccatcagggatgtgagagctt
+# caataggtgcaggttatttatacgctttggctgcagaaattcaaaccataccgggtctatcgacatatgctggttacatggcagtagaagtcgacgac
+# gacggtgaaattgaaggtctattttaa]
+# protein sequence = [MGLVQALSAHLGKPSIANVRQPSLGPTLGVKGGAAGGGYAQVIPMDEFNLHLTGDIHAISAANNLLAAAIDTRMFHEA
+# TQKNDSTFYKRLVPRKKDIRKFTPSMQRRLKRLGIEKEDPDALTPEEVKRFARLNINPDTITIRRVVDINDRMLRQITIGEAATEKGFTRTTGFDITV
+# ASELMAILALSKSLHEMKERIGRMVIGADYDNKPVTVEDIGCTGALTALLRDAIKPNLMQTLEGTPVMVHAGPFANISIGASSVIADLMALKLVGSEK
+# NPLNDKNIHEPGYVVTEAGFDFAMGGERFFDIKCRSSGLVPDAVVLVATVRALKSHGGAPNVKPGQSLPKEYTEENIDFVAKGVSNLVKQIENIKTFG
+# IPVVVAINRFETDSQAEIEVIKKAALNAGASHTVTSNHWMEGGKGAVELAHAVVDATKEPKNFNFLYDVNSSIEDKLTSIVQKMYGGAKIEVSPEAQK
+# KIDTYKKQGFGNLPICIAKTQYSLSHDPSLKGVPRGFTFPIRDVRASIGAGYLYALAAEIQTIPGLSTYAGYMAVEVDDDGEIEGLF]
+# end gene g1
+###
+# command line:
+# augustus --stopCodonExcludedFromCDS=False --codingseq=1 --proteinprofile=/space21/PGE/rangeles/bin/funannotate_db/dikarya/prfl/EOG09263RW3.prfl --predictionStart=173572 --predictionEnd=184129 --species=anidulans ./tmp/scaffold_8s.cerevisiae_m3836_xxx_4012073205_.temp

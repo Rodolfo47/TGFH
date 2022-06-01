@@ -1,0 +1,101 @@
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+-successfully changed directories to /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.cerevisiae_M3707/predict_misc/EVM/scaffold_3/scaffold_3_270001-370000
+
+-reading genomic sequence.
+
+** Processing features (+)
+
+-finding all potential splice sites, looking for GT/GC donors and AG acceptors.
+-finding all potential starts and stops. (strand: +)
+-loading gene prediction evidence. (strand: +)Valid prediction for Augustus_model.g1109.t1
+Valid prediction for snap_scaffold_3-snap.146-T1
+Valid prediction for snap_scaffold_3-snap.125-T1
+Sorry, intron length (4) is less than minimum required (10)
+Valid prediction for snap_scaffold_3-snap.154-T1
+Valid prediction for snap_scaffold_3-snap.143-T1
+Valid prediction for Augustus_model.g1070.t1
+Valid prediction for GlimmerHMM_glimmerT_1178-T1
+Valid prediction for snap_scaffold_3-snap.131-T1
+Valid prediction for snap_scaffold_3-snap.138-T1
+Valid prediction for snap_scaffold_3-snap.139-T1
+Valid prediction for snap_scaffold_3-snap.150-T1
+Valid prediction for snap_scaffold_3-snap.119-T1
+Valid prediction for snap_scaffold_3-snap.123-T1
+Valid prediction for Augustus_model.g1085.t1
+Valid prediction for Augustus_model.g1090.t1
+Valid prediction for snap_scaffold_3-snap.147-T1
+Valid prediction for Augustus_model.g1074.t1
+Valid prediction for GlimmerHMM_glimmerT_1173-T1
+Valid prediction for snap_scaffold_3-snap.135-T1
+Valid prediction for snap_scaffold_3-snap.134-T1
+Valid prediction for snap_scaffold_3-snap.120-T1
+Valid prediction for snap_scaffold_3-snap.140-T1
+Sorry, intron length (4) is less than minimum required (10)
+Valid prediction for snap_scaffold_3-snap.157-T1
+Valid prediction for snap_scaffold_3-snap.117-T1
+Valid prediction for snap_scaffold_3-snap.153-T1
+Valid prediction for Augustus_model.g1068.t1
+Valid prediction for snap_scaffold_3-snap.144-T1
+Valid prediction for snap_scaffold_3-snap.124-T1
+Valid prediction for Augustus_model.g1089.t1
+Valid prediction for snap_scaffold_3-snap.137-T1
+
+-loading the search evidence (protein and EST search results, strand: +)
+-scoring exons (strand: +)
+
+** Processing features (-)
+
+-finding all potential splice sites, looking for GT/GC donors and AG acceptors.
+-finding all potential starts and stops. (strand: -)
+-loading gene prediction evidence. (strand: -)Valid prediction for snap_scaffold_3-snap.141-T1
+Valid prediction for Augustus_model.g1104.t1
+Valid prediction for snap_scaffold_3-snap.151-T1
+Valid prediction for snap_scaffold_3-snap.136-T1
+Valid prediction for snap_scaffold_3-snap.132-T1
+Valid prediction for snap_scaffold_3-snap.122-T1
+Valid prediction for snap_scaffold_3-snap.148-T1
+Valid prediction for snap_scaffold_3-snap.127-T1
+Valid prediction for snap_scaffold_3-snap.152-T1
+Valid prediction for snap_scaffold_3-snap.133-T1
+Valid prediction for HiQ_model.g1108.t1
+Valid prediction for snap_scaffold_3-snap.115-T1
+Valid prediction for snap_scaffold_3-snap.130-T1
+Valid prediction for snap_scaffold_3-snap.145-T1
+Valid prediction for snap_scaffold_3-snap.114-T1
+Valid prediction for snap_scaffold_3-snap.142-T1
+Valid prediction for snap_scaffold_3-snap.121-T1
+Valid prediction for snap_scaffold_3-snap.128-T1
+Sorry, intron length (4) is less than minimum required (10)
+Valid prediction for snap_scaffold_3-snap.113-T1
+Valid prediction for snap_scaffold_3-snap.155-T1
+Valid prediction for snap_scaffold_3-snap.116-T1
+Valid prediction for snap_scaffold_3-snap.129-T1
+Valid prediction for snap_scaffold_3-snap.156-T1
+Valid prediction for snap_scaffold_3-snap.118-T1
+Valid prediction for snap_scaffold_3-snap.149-T1
+Valid prediction for snap_scaffold_3-snap.126-T1
+Valid prediction for HiQ_model.g1064.t1
+
+-loading the search evidence (protein and EST search results, strand: -)
+-scoring exons (strand: -)Error with prediction: snap lend_intergenic: 79779, rend_intergenic: 78341  at /home/rangeles/.conda/envs/funannotate/opt/evidencemodeler-1.1.1/EvmUtils/.././evidence_modeler.pl line 3218.
+
+-building DP trellis
+
+-building trellis in range 1 - 100000
+-exon list size: 165
+
+
+building trellis
+0.6    1.2    1.8    2.4    3.0    3.6    4.2    4.8    5.4    6.0    6.6    7.2    7.8    8.4    9.0    9.6    10.2    10.8    11.4    12.0    12.6    13.2    13.8    14.4    15.0    15.6    16.2    16.8    17.4    18.0    18.6    19.2    19.8    20.4    21.0    21.6    22.2    22.8    23.4    24.0    24.6    25.1    25.7    26.3    26.9    27.5    28.1    28.7    29.3    29.9    30.5    31.1    31.7    32.3    32.9    33.5    34.1    34.7    35.3    35.9    36.5    37.1    37.7    38.3    38.9    39.5    40.1    40.7    41.3    41.9    42.5    43.1    43.7    44.3    44.9    45.5    46.1    46.7    47.3    47.9    48.5    49.1    49.7    50.3    50.9    51.5    52.1    52.7    53.3    53.9    54.5    55.1    55.7    56.3    56.9    57.5    58.1    58.7    59.3    59.9    60.5    61.1    61.7    62.3    62.9    63.5    64.1    64.7    65.3    65.9    66.5    67.1    67.7    68.3    68.9    69.5    70.1    70.7    71.3    71.9    72.5    73.1    73.7    74.3    74.9    75.4    76.0    76.6    77.2    77.8    78.4    79.0    79.6    80.2    80.8    81.4    82.0    82.6    83.2    83.8    84.4    85.0    85.6    86.2    86.8    87.4    88.0    88.6    89.2    89.8    90.4    91.0    91.6    92.2    92.8    93.4    94.0    94.6    95.2    95.8    96.4    97.0    97.6    98.2    98.8    99.4    
+-found 52 predictions from path traversal
+Error with prediction: snap lend_intergenic: 79779, rend_intergenic: 78341  at /home/rangeles/.conda/envs/funannotate/opt/evidencemodeler-1.1.1/EvmUtils/.././evidence_modeler.pl line 3218.
+
+-reporting highest scoring path thru the trellis.
+-found 50 predictions persist after filtering for low support

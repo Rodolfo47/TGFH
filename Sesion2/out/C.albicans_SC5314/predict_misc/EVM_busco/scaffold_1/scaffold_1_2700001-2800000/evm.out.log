@@ -1,0 +1,58 @@
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+-successfully changed directories to /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/C.albicans_SC5314/predict_misc/EVM_busco/scaffold_1/scaffold_1_2700001-2800000
+
+-reading genomic sequence.
+
+** Processing features (+)
+
+-finding all potential splice sites, looking for GT/GC donors and AG acceptors.
+-finding all potential starts and stops. (strand: +)
+-loading gene prediction evidence. (strand: +)Valid prediction for Augustus_gene855.t1
+Valid prediction for Augustus_gene77.t1
+
+-loading the search evidence (protein and EST search results, strand: +)
+-scoring exons (strand: +)
+
+** Processing features (-)
+
+-finding all potential splice sites, looking for GT/GC donors and AG acceptors.
+-finding all potential starts and stops. (strand: -)
+-loading gene prediction evidence. (strand: -)Valid prediction for Augustus_gene196.t1
+Valid prediction for Augustus_gene341.t1
+Valid prediction for Augustus_gene270.t1
+
+-loading the search evidence (protein and EST search results, strand: -)
+-scoring exons (strand: -)
+-building DP trellis
+
+-building trellis in range 1 - 100000
+-exon list size: 34
+
+
+building trellis
+2.8    5.6    8.3    11.1    13.9    16.7    19.4    22.2    25.0    27.8    30.6    33.3    36.1    38.9    41.7    44.4    47.2    50.0    52.8    55.6    58.3    61.1    63.9    66.7    69.4    72.2    75.0    77.8    80.6    83.3    86.1    88.9    91.7    94.4    97.2    
+-found 6 predictions from path traversal
+GOT 5prime partial gene.
+
+-reporting highest scoring path thru the trellis.
+-found 6 predictions persist after filtering for low support
+
+-building DP trellis
+
+-building trellis in range 1 - 30029
+-exon list size: 14
+
+
+building trellis
+6.2    12.5    18.8    25.0    31.2    37.5    43.8    50.0    56.2    62.5    68.8    75.0    81.2    87.5    93.8    
+-found 2 predictions from path traversal
+
+-reporting highest scoring path thru the trellis.
+-found 2 predictions persist after filtering for low support

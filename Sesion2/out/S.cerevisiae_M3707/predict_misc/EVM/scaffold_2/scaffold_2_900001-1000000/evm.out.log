@@ -1,0 +1,101 @@
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+-successfully changed directories to /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.cerevisiae_M3707/predict_misc/EVM/scaffold_2/scaffold_2_900001-1000000
+
+-reading genomic sequence.
+
+** Processing features (+)
+
+-finding all potential splice sites, looking for GT/GC donors and AG acceptors.
+-finding all potential starts and stops. (strand: +)
+-loading gene prediction evidence. (strand: +)Valid prediction for Augustus_model.g916.t1
+Valid prediction for snap_scaffold_2-snap.371-T1
+Valid prediction for snap_scaffold_2-snap.381-T1
+Valid prediction for snap_scaffold_2-snap.402-T1
+Valid prediction for snap_scaffold_2-snap.390-T1
+Valid prediction for snap_scaffold_2-snap.379-T1
+Valid prediction for snap_scaffold_2-snap.363-T1
+Valid prediction for snap_scaffold_2-snap.401-T1
+Valid prediction for snap_scaffold_2-snap.395-T1
+Valid prediction for snap_scaffold_2-snap.384-T1
+Valid prediction for GlimmerHMM_glimmerT_990-T1
+Valid prediction for snap_scaffold_2-snap.370-T1
+Valid prediction for snap_scaffold_2-snap.373-T1
+Valid prediction for snap_scaffold_2-snap.391-T1
+Valid prediction for snap_scaffold_2-snap.362-T1
+Valid prediction for Augustus_model.g898.t1
+Valid prediction for snap_scaffold_2-snap.368-T1
+Couldn't classify 99518, 99525
+Sorry, prediction snap_scaffold_2-snap.409-T1 fails validation.
+(ATG)	 AA	99112-99118	GT	AAG
+(TTC)	 AG	99518-99525	GT	TTG
+-recovered snap_scaffold_2-snap.409-T1, initial, 99112, 99118
+-recovered snap_scaffold_2-snap.409-T1, internal, 99518, 99525
+Valid prediction for snap_scaffold_2-snap.367-T1
+Valid prediction for snap_scaffold_2-snap.404-T1
+Valid prediction for Augustus_model.g917.t1
+Valid prediction for snap_scaffold_2-snap.375-T1
+Valid prediction for snap_scaffold_2-snap.403-T1
+Valid prediction for snap_scaffold_2-snap.389-T1
+Valid prediction for snap_scaffold_2-snap.408-T1
+Valid prediction for snap_scaffold_2-snap.369-T1
+Valid prediction for snap_scaffold_2-snap.378-T1
+Valid prediction for snap_scaffold_2-snap.388-T1
+
+-loading the search evidence (protein and EST search results, strand: +)
+-scoring exons (strand: +)
+
+** Processing features (-)
+
+-finding all potential splice sites, looking for GT/GC donors and AG acceptors.
+-finding all potential starts and stops. (strand: -)
+-loading gene prediction evidence. (strand: -)Valid prediction for snap_scaffold_2-snap.386-T1
+Valid prediction for snap_scaffold_2-snap.406-T1
+Valid prediction for snap_scaffold_2-snap.407-T1
+Valid prediction for snap_scaffold_2-snap.364-T1
+Valid prediction for snap_scaffold_2-snap.399-T1
+Valid prediction for snap_scaffold_2-snap.394-T1
+Valid prediction for snap_scaffold_2-snap.365-T1
+Valid prediction for snap_scaffold_2-snap.372-T1
+Sorry, intron length (5) is less than minimum required (10)
+Valid prediction for snap_scaffold_2-snap.380-T1
+Valid prediction for snap_scaffold_2-snap.377-T1
+Valid prediction for Augustus_model.g923.t1
+Valid prediction for snap_scaffold_2-snap.396-T1
+Valid prediction for snap_scaffold_2-snap.385-T1
+Valid prediction for snap_scaffold_2-snap.400-T1
+Valid prediction for snap_scaffold_2-snap.405-T1
+Valid prediction for snap_scaffold_2-snap.387-T1
+Valid prediction for snap_scaffold_2-snap.376-T1
+Valid prediction for snap_scaffold_2-snap.397-T1
+Valid prediction for snap_scaffold_2-snap.366-T1
+Valid prediction for snap_scaffold_2-snap.383-T1
+Sorry, intron length (7) is less than minimum required (10)
+Valid prediction for snap_scaffold_2-snap.398-T1
+Valid prediction for snap_scaffold_2-snap.393-T1
+Valid prediction for snap_scaffold_2-snap.374-T1
+Valid prediction for snap_scaffold_2-snap.382-T1
+Valid prediction for snap_scaffold_2-snap.392-T1
+Valid prediction for Augustus_model.g927.t1
+Valid prediction for GlimmerHMM_glimmerT_997-T1
+
+-loading the search evidence (protein and EST search results, strand: -)
+-scoring exons (strand: -)
+-building DP trellis
+
+-building trellis in range 1 - 100000
+-exon list size: 165
+
+
+building trellis
+0.6    1.2    1.8    2.4    3.0    3.6    4.2    4.8    5.4    6.0    6.6    7.2    7.8    8.4    9.0    9.6    10.2    10.8    11.4    12.0    12.6    13.2    13.8    14.4    15.0    15.6    16.2    16.8    17.4    18.0    18.6    19.2    19.8    20.4    21.0    21.6    22.2    22.8    23.4    24.0    24.6    25.1    25.7    26.3    26.9    27.5    28.1    28.7    29.3    29.9    30.5    31.1    31.7    32.3    32.9    33.5    34.1    34.7    35.3    35.9    36.5    37.1    37.7    38.3    38.9    39.5    40.1    40.7    41.3    41.9    42.5    43.1    43.7    44.3    44.9    45.5    46.1    46.7    47.3    47.9    48.5    49.1    49.7    50.3    50.9    51.5    52.1    52.7    53.3    53.9    54.5    55.1    55.7    56.3    56.9    57.5    58.1    58.7    59.3    59.9    60.5    61.1    61.7    62.3    62.9    63.5    64.1    64.7    65.3    65.9    66.5    67.1    67.7    68.3    68.9    69.5    70.1    70.7    71.3    71.9    72.5    73.1    73.7    74.3    74.9    75.4    76.0    76.6    77.2    77.8    78.4    79.0    79.6    80.2    80.8    81.4    82.0    82.6    83.2    83.8    84.4    85.0    85.6    86.2    86.8    87.4    88.0    88.6    89.2    89.8    90.4    91.0    91.6    92.2    92.8    93.4    94.0    94.6    95.2    95.8    96.4    97.0    97.6    98.2    98.8    99.4    
+-found 53 predictions from path traversal
+
+-reporting highest scoring path thru the trellis.
+-found 53 predictions persist after filtering for low support

@@ -1,0 +1,62 @@
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+-successfully changed directories to /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.arboricola_H6/predict_misc/EVM/scaffold_13/scaffold_13_360001-407361
+
+-reading genomic sequence.
+
+** Processing features (+)
+
+-finding all potential splice sites, looking for GT/GC donors and AG acceptors.
+-finding all potential starts and stops. (strand: +)
+-loading gene prediction evidence. (strand: +)Valid prediction for snap_scaffold_13-snap.153-T1
+Valid prediction for GlimmerHMM_glimmerT_5115-T1
+Valid prediction for snap_scaffold_13-snap.149-T1
+Valid prediction for Augustus_model.g4507.t1
+Valid prediction for snap_scaffold_13-snap.146-T1
+Valid prediction for snap_scaffold_13-snap.152-T1
+Valid prediction for snap_scaffold_13-snap.147-T1
+Valid prediction for snap_scaffold_13-snap.156-T1
+Valid prediction for snap_scaffold_13-snap.159-T1
+
+-loading the search evidence (protein and EST search results, strand: +)
+-scoring exons (strand: +)
+
+** Processing features (-)
+
+-finding all potential splice sites, looking for GT/GC donors and AG acceptors.
+-finding all potential starts and stops. (strand: -)
+-loading gene prediction evidence. (strand: -)Valid prediction for snap_scaffold_13-snap.151-T1
+Valid prediction for snap_scaffold_13-snap.158-T1
+Valid prediction for snap_scaffold_13-snap.157-T1
+Valid prediction for snap_scaffold_13-snap.154-T1
+Valid prediction for snap_scaffold_13-snap.155-T1
+Valid prediction for GlimmerHMM_glimmerT_5096-T1
+Valid prediction for Augustus_model.g4506.t1
+Valid prediction for snap_scaffold_13-snap.145-T1
+Valid prediction for snap_scaffold_13-snap.150-T1
+Sorry, intron length (7) is less than minimum required (10)
+Valid prediction for snap_scaffold_13-snap.148-T1
+Valid prediction for snap_scaffold_13-snap.160-T1
+Sorry, intron length (9) is less than minimum required (10)
+Valid prediction for Augustus_model.g4521.t1
+
+-loading the search evidence (protein and EST search results, strand: -)
+-scoring exons (strand: -)
+-building DP trellis
+
+-building trellis in range 1 - 47361
+-exon list size: 62
+
+
+building trellis
+1.6    3.1    4.7    6.2    7.8    9.4    10.9    12.5    14.1    15.6    17.2    18.8    20.3    21.9    23.4    25.0    26.6    28.1    29.7    31.2    32.8    34.4    35.9    37.5    39.1    40.6    42.2    43.8    45.3    46.9    48.4    50.0    51.6    53.1    54.7    56.2    57.8    59.4    60.9    62.5    64.1    65.6    67.2    68.8    70.3    71.9    73.4    75.0    76.6    78.1    79.7    81.2    82.8    84.4    85.9    87.5    89.1    90.6    92.2    93.8    95.3    96.9    98.4    
+-found 19 predictions from path traversal
+
+-reporting highest scoring path thru the trellis.
+-found 19 predictions persist after filtering for low support

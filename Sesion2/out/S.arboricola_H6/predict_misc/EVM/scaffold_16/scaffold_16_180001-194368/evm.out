@@ -1,0 +1,23 @@
+!! Predictions spanning range 848 - 14018 [R1]
+# EVM prediction: Mode:STANDARD S-ratio: 3.92 848-1614 orient(+) score(1521.00) noncoding_equivalent(388.27) raw_noncoding(874.50) offset(486.23) 
+848	917	initial+	1	1	{Augustus_model.g4814.t1;Augustus}
+918	1237	INTRON			{Augustus_model.g4814.t1;Augustus}
+1238	1614	terminal+	2	3	{snap_scaffold_16-snap.64-T1;snap},{Augustus_model.g4814.t1;Augustus}
+
+# EVM prediction: Mode:STANDARD S-ratio: 3.14 1696-3390 orient(+) score(3791.00) noncoding_equivalent(1208.09) raw_noncoding(1361.08) offset(152.99) 
+1696	1893	initial+	1	3	{Augustus_model.g4815.t1;Augustus},{GlimmerHMM_glimmerT_5446-T1;GlimmerHMM}
+1894	1942	INTRON			{Augustus_model.g4815.t1;Augustus},{GlimmerHMM_glimmerT_5446-T1;GlimmerHMM}
+1943	2237	internal+	1	1	{Augustus_model.g4815.t1;Augustus}
+2238	2320	INTRON			{Augustus_model.g4815.t1;Augustus}
+2321	2769	internal+	2	3	{Augustus_model.g4815.t1;Augustus}
+2770	2817	INTRON			{Augustus_model.g4815.t1;Augustus}
+2818	3390	terminal+	1	3	{Augustus_model.g4815.t1;Augustus},{snap_scaffold_16-snap.66-T1;snap}
+
+# EVM prediction: Mode:STANDARD S-ratio: 2.48 8011-12869 orient(+) score(2746.00) noncoding_equivalent(1105.88) raw_noncoding(1331.04) offset(225.16) 
+8011	8760	initial+	1	3	{Augustus_model.g4816.t1;Augustus}
+8761	12410	INTRON			{GlimmerHMM_glimmerT_5447-T1;GlimmerHMM}
+12411	12869	terminal+	1	3	{GlimmerHMM_glimmerT_5447-T1;GlimmerHMM}
+
+# EVM prediction: Mode:STANDARD S-ratio: 461.60 13248-14018 orient(-) score(2308.00) noncoding_equivalent(5.00) raw_noncoding(5.00) offset(0.00) 
+14018	13248	single-	4	6	{Augustus_model.g4817.t1;Augustus},{GlimmerHMM_glimmerT_5448-T1;GlimmerHMM}
+

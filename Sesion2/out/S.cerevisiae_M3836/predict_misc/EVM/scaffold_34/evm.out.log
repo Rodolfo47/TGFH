@@ -1,0 +1,46 @@
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+-successfully changed directories to /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.cerevisiae_M3836/predict_misc/EVM/scaffold_34
+
+-reading genomic sequence.
+
+** Processing features (+)
+
+-finding all potential splice sites, looking for GT/GC donors and AG acceptors.
+-finding all potential starts and stops. (strand: +)
+-loading gene prediction evidence. (strand: +)Valid prediction for snap_scaffold_34-snap.3-T1
+Valid prediction for snap_scaffold_34-snap.4-T1
+Valid prediction for snap_scaffold_34-snap.2-T1
+Valid prediction for Augustus_model.g5065.t1
+Valid prediction for snap_scaffold_34-snap.5-T1
+Valid prediction for snap_scaffold_34-snap.6-T1
+Valid prediction for snap_scaffold_34-snap.1-T1
+
+-loading the search evidence (protein and EST search results, strand: +)
+-scoring exons (strand: +)
+
+** Processing features (-)
+
+-finding all potential splice sites, looking for GT/GC donors and AG acceptors.
+-finding all potential starts and stops. (strand: -)
+-loading gene prediction evidence. (strand: -)
+-loading the search evidence (protein and EST search results, strand: -)
+-scoring exons (strand: -)
+-building DP trellis
+
+-building trellis in range 1 - 18079
+-exon list size: 25
+
+
+building trellis
+3.7    7.4    11.1    14.8    18.5    22.2    25.9    29.6    33.3    37.0    40.7    44.4    48.1    51.9    55.6    59.3    63.0    66.7    70.4    74.1    77.8    81.5    85.2    88.9    92.6    96.3    
+-found 7 predictions from path traversal
+
+-reporting highest scoring path thru the trellis.
+-found 7 predictions persist after filtering for low support

@@ -1,0 +1,28 @@
+!! Predictions spanning range 5500 - 42570 [R1]
+# EVM prediction: Mode:STANDARD S-ratio: 10000.00 5500-7533 orient(+) score(4068.00) noncoding_equivalent(0.41) raw_noncoding(0.00) offset(0.00) 
+5500	6466	initial+	1	1	{Augustus_gene746.t1;Augustus}
+6467	6634	INTRON			{Augustus_gene746.t1;Augustus}
+6635	7533	terminal+	2	3	{Augustus_gene746.t1;Augustus}
+
+# EVM prediction: Mode:STANDARD S-ratio: 10000.00 12914-13369 orient(+) score(912.00) noncoding_equivalent(0.09) raw_noncoding(0.00) offset(0.00) 
+12914	13369	single+	1	3	{Augustus_gene602.t1;Augustus}
+
+# EVM prediction: Mode:STANDARD S-ratio: 10000.00 18575-20680 orient(-) score(4212.00) noncoding_equivalent(0.42) raw_noncoding(0.00) offset(0.00) 
+20680	18575	single-	4	6	{Augustus_gene838.t1;Augustus}
+
+# EVM prediction: Mode:STANDARD S-ratio: 10000.00 21140-23711 orient(-) score(5144.00) noncoding_equivalent(0.51) raw_noncoding(0.00) offset(0.00) 
+22769	21140	terminal-	6	6	{Augustus_gene295.t1;Augustus}
+23015	22770	INTRON			{Augustus_gene295.t1;Augustus}
+23079	23016	internal-	5	5	{Augustus_gene295.t1;Augustus}
+23668	23080	INTRON			{Augustus_gene295.t1;Augustus}
+23711	23669	initial-	4	4	{Augustus_gene295.t1;Augustus}
+
+# EVM prediction: Mode:STANDARD S-ratio: 10000.00 40854-42570 orient(-) score(3434.00) noncoding_equivalent(0.34) raw_noncoding(0.00) offset(0.00) 
+40858	40854	terminal-	5	6	{Augustus_gene199.t1;Augustus}
+41030	40859	INTRON			{Augustus_gene199.t1;Augustus}
+41297	41031	internal-	5	4	{Augustus_gene199.t1;Augustus}
+41363	41298	INTRON			{Augustus_gene199.t1;Augustus}
+41516	41364	internal-	5	4	{Augustus_gene199.t1;Augustus}
+41588	41517	INTRON			{Augustus_gene199.t1;Augustus}
+42570	41589	initial-	4	4	{Augustus_gene199.t1;Augustus}
+

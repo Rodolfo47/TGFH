@@ -1,0 +1,52 @@
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+-successfully changed directories to /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.cerevisiae_M3836/predict_misc/EVM/scaffold_24/scaffold_24_90001-114762
+
+-reading genomic sequence.
+
+** Processing features (+)
+
+-finding all potential splice sites, looking for GT/GC donors and AG acceptors.
+-finding all potential starts and stops. (strand: +)
+-loading gene prediction evidence. (strand: +)Valid prediction for snap_scaffold_24-snap.40-T1
+Valid prediction for snap_scaffold_24-snap.43-T1
+Valid prediction for snap_scaffold_24-snap.41-T1
+Valid prediction for snap_scaffold_24-snap.37-T1
+Valid prediction for snap_scaffold_24-snap.35-T1
+Valid prediction for snap_scaffold_24-snap.33-T1
+Sorry, intron length (9) is less than minimum required (10)
+Valid prediction for snap_scaffold_24-snap.39-T1
+Valid prediction for snap_scaffold_24-snap.32-T1
+
+-loading the search evidence (protein and EST search results, strand: +)
+-scoring exons (strand: +)
+
+** Processing features (-)
+
+-finding all potential splice sites, looking for GT/GC donors and AG acceptors.
+-finding all potential starts and stops. (strand: -)
+-loading gene prediction evidence. (strand: -)Valid prediction for snap_scaffold_24-snap.36-T1
+Valid prediction for snap_scaffold_24-snap.34-T1
+Valid prediction for snap_scaffold_24-snap.42-T1
+Valid prediction for snap_scaffold_24-snap.38-T1
+
+-loading the search evidence (protein and EST search results, strand: -)
+-scoring exons (strand: -)
+-building DP trellis
+
+-building trellis in range 1 - 24762
+-exon list size: 38
+
+
+building trellis
+2.5    5.0    7.5    10.0    12.5    15.0    17.5    20.0    22.5    25.0    27.5    30.0    32.5    35.0    37.5    40.0    42.5    45.0    47.5    50.0    52.5    55.0    57.5    60.0    62.5    65.0    67.5    70.0    72.5    75.0    77.5    80.0    82.5    85.0    87.5    90.0    92.5    95.0    97.5    
+-found 14 predictions from path traversal
+
+-reporting highest scoring path thru the trellis.
+-found 14 predictions persist after filtering for low support

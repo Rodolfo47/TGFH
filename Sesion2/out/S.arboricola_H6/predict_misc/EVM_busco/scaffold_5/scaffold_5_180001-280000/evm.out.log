@@ -1,0 +1,78 @@
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+-successfully changed directories to /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.arboricola_H6/predict_misc/EVM_busco/scaffold_5/scaffold_5_180001-280000
+
+-reading genomic sequence.
+
+** Processing features (+)
+
+-finding all potential splice sites, looking for GT/GC donors and AG acceptors.
+-finding all potential starts and stops. (strand: +)
+-loading gene prediction evidence. (strand: +)
+-loading the search evidence (protein and EST search results, strand: +)
+-scoring exons (strand: +)
+
+** Processing features (-)
+
+-finding all potential splice sites, looking for GT/GC donors and AG acceptors.
+-finding all potential starts and stops. (strand: -)
+-loading gene prediction evidence. (strand: -)Couldn't classify 496, 590
+Sorry, prediction Augustus_gene860.t1 fails validation.
+(AGA)	 AG	496-590	GT	AAG
+(GAT)	 AG	678-875	GT	TGG
+(TTT)	 AG	957-968	GT	CGG
+(CTC)	 AG	1082-1093	GT	TTG
+(CTT)	 AG	1180-1219	GT	AAG
+(GGC)	 AG	1651-1667	GT	AGG
+(GAG)	 AG	1787-1797	GT	TTG
+(CAA)	 AG	1859-1941	GT	GAG
+(CTG)	 AG	2049-2059	GT	AAG
+(GCT)	 AG	2112-2122	GT	AGG
+(TTG)	 AG	2322-2341	GT	CAG
+(TTT)	 AG	2424-2440	GT	CCG
+(CCA)	 AG	3189-3218	GT	TGG
+(TCA)	 AG	3336-3410	GT	AGG
+(TTC)	 AG	3461-3492	GT	TTG
+(CTT)	 AG	3794-3818	GT	TAG
+(TTT)	 AG	3869-3885	AT	AAA
+-recovered Augustus_gene860.t1, terminal, 496, 590
+-recovered Augustus_gene860.t1, terminal, 3869, 3885
+-recovered Augustus_gene860.t1, internal, 496, 590
+-recovered Augustus_gene860.t1, internal, 678, 875
+-recovered Augustus_gene860.t1, internal, 957, 968
+-recovered Augustus_gene860.t1, internal, 1082, 1093
+-recovered Augustus_gene860.t1, internal, 1180, 1219
+-recovered Augustus_gene860.t1, internal, 1651, 1667
+-recovered Augustus_gene860.t1, internal, 1787, 1797
+-recovered Augustus_gene860.t1, internal, 1859, 1941
+-recovered Augustus_gene860.t1, internal, 2049, 2059
+-recovered Augustus_gene860.t1, internal, 2112, 2122
+-recovered Augustus_gene860.t1, internal, 2322, 2341
+-recovered Augustus_gene860.t1, internal, 2424, 2440
+-recovered Augustus_gene860.t1, internal, 3189, 3218
+-recovered Augustus_gene860.t1, internal, 3336, 3410
+-recovered Augustus_gene860.t1, internal, 3461, 3492
+-recovered Augustus_gene860.t1, internal, 3794, 3818
+Valid prediction for Augustus_gene704.t1
+
+-loading the search evidence (protein and EST search results, strand: -)
+-scoring exons (strand: -)
+-building DP trellis
+
+-building trellis in range 1 - 100000
+-exon list size: 51
+
+
+building trellis
+1.9    3.8    5.7    7.5    9.4    11.3    13.2    15.1    17.0    18.9    20.8    22.6    24.5    26.4    28.3    30.2    32.1    34.0    35.8    37.7    39.6    41.5    43.4    45.3    47.2    49.1    50.9    52.8    54.7    56.6    58.5    60.4    62.3    64.2    66.0    67.9    69.8    71.7    73.6    75.5    77.4    79.2    81.1    83.0    84.9    86.8    88.7    90.6    92.5    94.3    96.2    98.1    
+-found 14 predictions from path traversal
+GOT 5prime partial gene.
+
+-reporting highest scoring path thru the trellis.
+-found 14 predictions persist after filtering for low support

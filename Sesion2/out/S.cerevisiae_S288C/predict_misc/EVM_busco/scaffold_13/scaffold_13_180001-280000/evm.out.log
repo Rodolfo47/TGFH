@@ -1,0 +1,58 @@
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+-successfully changed directories to /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.cerevisiae_S288C/predict_misc/EVM_busco/scaffold_13/scaffold_13_180001-280000
+
+-reading genomic sequence.
+
+** Processing features (+)
+
+-finding all potential splice sites, looking for GT/GC donors and AG acceptors.
+-finding all potential starts and stops. (strand: +)
+-loading gene prediction evidence. (strand: +)
+-loading the search evidence (protein and EST search results, strand: +)
+-scoring exons (strand: +)
+
+** Processing features (-)
+
+-finding all potential splice sites, looking for GT/GC donors and AG acceptors.
+-finding all potential starts and stops. (strand: -)
+-loading gene prediction evidence. (strand: -)Valid prediction for Augustus_gene62.t1
+Couldn't classify 40650, 40958
+Sorry, prediction Augustus_gene123.t1 fails validation.
+(ATG)	 CA	35542-35952	GT	AAG
+(CTC)	 AG	36188-37184	GT	TGG
+(TCC)	 AG	37865-37999	GT	GAG
+(ATT)	 AG	38242-38692	GT	AGG
+(CAG)	 AG	39265-40461	GT	TGG
+(GAA)	 AG	40531-40553	GT	AGG
+(CAT)	 AG	40650-40958	GT	AGG
+-recovered Augustus_gene123.t1, initial, 35542, 35952
+-recovered Augustus_gene123.t1, terminal, 37865, 37999
+-recovered Augustus_gene123.t1, terminal, 40531, 40553
+-recovered Augustus_gene123.t1, internal, 36188, 37184
+-recovered Augustus_gene123.t1, internal, 37865, 37999
+-recovered Augustus_gene123.t1, internal, 38242, 38692
+-recovered Augustus_gene123.t1, internal, 39265, 40461
+-recovered Augustus_gene123.t1, internal, 40531, 40553
+-recovered Augustus_gene123.t1, internal, 40650, 40958
+
+-loading the search evidence (protein and EST search results, strand: -)
+-scoring exons (strand: -)
+-building DP trellis
+
+-building trellis in range 1 - 100000
+-exon list size: 25
+
+
+building trellis
+3.7    7.4    11.1    14.8    18.5    22.2    25.9    29.6    33.3    37.0    40.7    44.4    48.1    51.9    55.6    59.3    63.0    66.7    70.4    74.1    77.8    81.5    85.2    88.9    92.6    96.3    
+-found 13 predictions from path traversal
+
+-reporting highest scoring path thru the trellis.
+-found 13 predictions persist after filtering for low support

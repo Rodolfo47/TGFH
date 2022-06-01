@@ -1,0 +1,30 @@
+# Please cite: Mario Stanke, Mark Diekhans, Robert Baertsch, David Haussler (2008),
+# Using native and syntenically mapped cDNA alignments to improve de novo gene finding
+# Bioinformatics 24: 637-644, doi 10.1093/bioinformatics/btn013
+# No extrinsic information on sequences given.
+# Initializing the parameters using config directory /home/rangeles/.conda/envs/funannotate/config/ ...
+# Using protein profile unknown
+# --[0..88]--> unknown_A (49) <--[0..5]--> unknown_B (9) <--[1..28]--> unknown_C (10) <--[0..1]--> unknown_D (20) <--[0..1]--> unknown_E (77) <--[0..2]--> unknown_F (17) <--[0..1]--> unknown_G (19) <--[0..6]--> unknown_H (13) <--[0..1]--> unknown_I (14) <--[0..1]--> unknown_J (26) <--[0..2]--> unknown_K (16) <--[5..35]--
+# anidulans version. Using default transition matrix.
+# Looks like ./tmp/scaffold_12s.cerevisiae_s288c_xxx_2361545640_.temp is in fasta format.
+# We have hints for 0 sequences and for 0 of the sequences in the input set.
+#
+# ----- prediction on sequence number 1 (length = 10654, name = scaffold_12) -----
+#
+# Predicted genes for sequence number 1 on both strands
+# start gene g1
+scaffold_12	AUGUSTUS	gene	280822	281157	0.71	+	.	g1
+scaffold_12	AUGUSTUS	transcript	280822	281157	0.71	+	.	g1.t1
+scaffold_12	AUGUSTUS	start_codon	280822	280824	.	+	0	transcript_id "g1.t1"; gene_id "g1";
+scaffold_12	AUGUSTUS	CDS	280822	281157	0.71	+	0	transcript_id "g1.t1"; gene_id "g1";
+scaffold_12	AUGUSTUS	stop_codon	281155	281157	.	+	0	transcript_id "g1.t1"; gene_id "g1";
+# coding sequence = [atgtctactgtaaccaaatacttttacaagggtgaaaatacagatttgattgtcttcgctgcatccgaagagcttgtag
+# acgaatatttgaaaaatccatcaattggtaagctatctgaagttgtcgaactcttcgaagttttcactcctcaggacggtaggggtgccgagggtgag
+# ttgggcgctgcctccaaggcccaagtggaaaatgagttcggtaagggcaagaagatcgaagaagttatcgatttgatattgagaaatggtaagccaaa
+# ctctaccacctctagtctcaaaaccaaagggggtaacgccggaaccaaagcctacaattga]
+# protein sequence = [MSTVTKYFYKGENTDLIVFAASEELVDEYLKNPSIGKLSEVVELFEVFTPQDGRGAEGELGAASKAQVENEFGKGKKI
+# EEVIDLILRNGKPNSTTSSLKTKGGNAGTKAYN]
+# end gene g1
+###
+# command line:
+# augustus --stopCodonExcludedFromCDS=False --codingseq=1 --proteinprofile=/space21/PGE/rangeles/bin/funannotate_db/dikarya/prfl/EOG09263LR1.prfl --predictionStart=276692 --predictionEnd=287345 --species=anidulans ./tmp/scaffold_12s.cerevisiae_s288c_xxx_2361545640_.temp

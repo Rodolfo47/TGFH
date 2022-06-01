@@ -1,0 +1,14 @@
+scaffold_48	Augustus	gene	1	1375	.	+	.	ID=gene.g5101.t1;Name=Augustus%20prediction
+scaffold_48	Augustus	mRNA	1	1375	.	+	.	ID=model.g5101.t1;Parent=gene.g5101.t1;Name=Augustus%20prediction
+scaffold_48	Augustus	exon	1	1321	.	+	.	ID=model.g5101.t1.exon1;Parent=model.g5101.t1
+scaffold_48	Augustus	CDS	1	1321	.	+	.	ID=cds.model.g5101.t1;Parent=model.g5101.t1
+scaffold_48	Augustus	exon	1371	1375	.	+	.	ID=model.g5101.t1.exon2;Parent=model.g5101.t1
+scaffold_48	Augustus	CDS	1371	1375	.	+	.	ID=cds.model.g5101.t1;Parent=model.g5101.t1
+scaffold_48	GlimmerHMM	gene	229	1424	.	+	.	ID=glimmerG_5514;Alias=scaffold_48.path1.gene1;
+scaffold_48	GlimmerHMM	mRNA	229	1424	.	+	.	ID=glimmerT_5514-T1;Parent=glimmerG_5514;Alias=scaffold_48.path1.gene1;
+scaffold_48	GlimmerHMM	exon	229	1424	.	+	.	ID=glimmerT_5514-T1.exon1;Parent=glimmerT_5514-T1;
+scaffold_48	GlimmerHMM	CDS	229	1424	.	+	0	ID=glimmerT_5514-T1.cds;Parent=glimmerT_5514-T1;
+scaffold_48	snap	gene	229	1424	.	+	.	ID=scaffold_48-snap.1;
+scaffold_48	snap	mRNA	229	1424	.	+	.	ID=scaffold_48-snap.1-T1;Parent=scaffold_48-snap.1;product=[];
+scaffold_48	snap	exon	229	1424	.	+	.	ID=scaffold_48-snap.1-T1.exon1;Parent=scaffold_48-snap.1-T1;
+scaffold_48	snap	CDS	229	1424	.	+	0	ID=scaffold_48-snap.1-T1.cds;Parent=scaffold_48-snap.1-T1;

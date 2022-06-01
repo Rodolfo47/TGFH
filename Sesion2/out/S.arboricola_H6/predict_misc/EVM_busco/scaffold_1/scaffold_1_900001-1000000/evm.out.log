@@ -1,0 +1,1352 @@
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+-successfully changed directories to /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.arboricola_H6/predict_misc/EVM_busco/scaffold_1/scaffold_1_900001-1000000
+
+-reading genomic sequence.
+
+** Processing features (+)
+
+-finding all potential splice sites, looking for GT/GC donors and AG acceptors.
+-finding all potential starts and stops. (strand: +)
+-loading gene prediction evidence. (strand: +)Valid prediction for Augustus_gene932.t1
+
+-loading the search evidence (protein and EST search results, strand: +)alignment gap has misordered coords: 21317 - 20228
+$VAR1 = [
+          [
+            20162,
+            21316
+          ],
+          [
+            20229,
+            21316
+          ],
+          [
+            20813,
+            '21316'
+          ]
+        ];
+alignment gap has misordered coords: 21317 - 20812
+$VAR1 = [
+          [
+            20162,
+            21316
+          ],
+          [
+            20229,
+            21316
+          ],
+          [
+            20813,
+            21316
+          ]
+        ];
+alignment gap has misordered coords: 42490 - 42158
+$VAR1 = [
+          [
+            42159,
+            42489
+          ],
+          [
+            42159,
+            42482
+          ],
+          [
+            42746,
+            '42824'
+          ]
+        ];
+alignment gap has misordered coords: 6215 - 6181
+$VAR1 = [
+          [
+            6166,
+            6214
+          ],
+          [
+            6182,
+            6214
+          ]
+        ];
+alignment gap has misordered coords: 98867 - 98763
+$VAR1 = [
+          [
+            96935,
+            98866
+          ],
+          [
+            98764,
+            98866
+          ]
+        ];
+alignment gap has misordered coords: 83957 - 82558
+$VAR1 = [
+          [
+            81992,
+            83956
+          ],
+          [
+            82559,
+            83956
+          ]
+        ];
+alignment gap has misordered coords: 52528 - 51954
+$VAR1 = [
+          [
+            51955,
+            52527
+          ],
+          [
+            51955,
+            52527
+          ]
+        ];
+alignment gap has misordered coords: 56159 - 56035
+$VAR1 = [
+          [
+            56036,
+            56158
+          ],
+          [
+            56036,
+            57505
+          ],
+          [
+            56279,
+            '57344'
+          ]
+        ];
+alignment gap has misordered coords: 57506 - 56278
+$VAR1 = [
+          [
+            56036,
+            56158
+          ],
+          [
+            56036,
+            57505
+          ],
+          [
+            56279,
+            57344
+          ]
+        ];
+alignment gap has misordered coords: 44072 - 43821
+$VAR1 = [
+          [
+            43133,
+            44071
+          ],
+          [
+            43822,
+            44071
+          ]
+        ];
+alignment gap has misordered coords: 66014 - 65728
+$VAR1 = [
+          [
+            65729,
+            66013
+          ],
+          [
+            65729,
+            66013
+          ],
+          [
+            66835,
+            '66990'
+          ],
+          [
+            66835,
+            '67165'
+          ],
+          [
+            66937,
+            '67230'
+          ]
+        ];
+alignment gap has misordered coords: 66991 - 66834
+$VAR1 = [
+          [
+            65729,
+            66013
+          ],
+          [
+            65729,
+            66013
+          ],
+          [
+            66835,
+            66990
+          ],
+          [
+            66835,
+            67165
+          ],
+          [
+            66937,
+            '67230'
+          ]
+        ];
+alignment gap has misordered coords: 67166 - 66936
+$VAR1 = [
+          [
+            65729,
+            66013
+          ],
+          [
+            65729,
+            66013
+          ],
+          [
+            66835,
+            66990
+          ],
+          [
+            66835,
+            67165
+          ],
+          [
+            66937,
+            67230
+          ]
+        ];
+alignment gap has misordered coords: 54220 - 53949
+$VAR1 = [
+          [
+            53950,
+            54219
+          ],
+          [
+            53950,
+            54219
+          ]
+        ];
+ERROR adding intron for ev_type:exonerate/ID=match.177006.1863/Target=YDR354W: next end5 20229 < this end3 21316  mode +
+ERROR adding intron for ev_type:exonerate/ID=match.177006.1863/Target=YDR354W: next end5 20813 < this end3 21316  mode +
+ERROR adding intron for ev_type:exonerate/ID=match.177006.1639/Target=YDR367W: next end5 42159 < this end3 42489  mode +
+ERROR adding intron for ev_type:exonerate/ID=match.177006.1981/Target=YDR347W: next end5 6182 < this end3 6214  mode +
+ERROR adding intron for ev_type:exonerate/ID=match.177006.1915/Target=YDR398W: next end5 98764 < this end3 98866  mode +
+ERROR adding intron for ev_type:exonerate/ID=match.177006.3281/Target=YDR389W: next end5 82559 < this end3 83956  mode +
+ERROR adding intron for ev_type:exonerate/ID=match.177006.1745/Target=YDR373W: next end5 51955 < this end3 52527  mode +
+ERROR adding intron for ev_type:exonerate/ID=match.177006.3201/Target=YDR376W: next end5 56036 < this end3 56158  mode +
+ERROR adding intron for ev_type:exonerate/ID=match.177006.3201/Target=YDR376W: next end5 56279 < this end3 57505  mode +
+ERROR adding intron for ev_type:exonerate/ID=match.177006.2472/Target=YDR368W: next end5 43822 < this end3 44071  mode +
+ERROR adding intron for ev_type:exonerate/ID=match.177006.2095/Target=YDR381W: next end5 65729 < this end3 66013  mode +
+ERROR adding intron for ev_type:exonerate/ID=match.177006.2095/Target=YDR381W: next end5 66835 < this end3 66990  mode +
+ERROR adding intron for ev_type:exonerate/ID=match.177006.2095/Target=YDR381W: next end5 66937 < this end3 67165  mode +
+ERROR adding intron for ev_type:exonerate/ID=match.177006.1865/Target=YDR374W-A: next end5 53950 < this end3 54219  mode +
+alignment gap has misordered coords: 98867 - 98763
+$VAR1 = [
+          [
+            96935,
+            98866
+          ],
+          [
+            98764,
+            98866
+          ]
+        ];
+alignment gap has misordered coords: 6215 - 6181
+$VAR1 = [
+          [
+            6166,
+            6214
+          ],
+          [
+            6182,
+            6214
+          ]
+        ];
+alignment gap has misordered coords: 42490 - 42158
+$VAR1 = [
+          [
+            42159,
+            42489
+          ],
+          [
+            42159,
+            42482
+          ],
+          [
+            42746,
+            '42824'
+          ]
+        ];
+alignment gap has misordered coords: 31706 - 30859
+$VAR1 = [
+          [
+            31705,
+            30860
+          ],
+          [
+            31705,
+            30860
+          ]
+        ];
+alignment gap has misordered coords: 38758 - 38301
+$VAR1 = [
+          [
+            38757,
+            37941
+          ],
+          [
+            39130,
+            38302
+          ],
+          [
+            39311,
+            '37941'
+          ]
+        ];
+alignment gap has misordered coords: 39131 - 37940
+$VAR1 = [
+          [
+            38757,
+            37941
+          ],
+          [
+            39130,
+            38302
+          ],
+          [
+            39311,
+            37941
+          ]
+        ];
+alignment gap has misordered coords: 21317 - 20228
+$VAR1 = [
+          [
+            20162,
+            21316
+          ],
+          [
+            20229,
+            21316
+          ],
+          [
+            20813,
+            '21316'
+          ]
+        ];
+alignment gap has misordered coords: 21317 - 20812
+$VAR1 = [
+          [
+            20162,
+            21316
+          ],
+          [
+            20229,
+            21316
+          ],
+          [
+            20813,
+            21316
+          ]
+        ];
+alignment gap has misordered coords: 83957 - 82558
+$VAR1 = [
+          [
+            81992,
+            83956
+          ],
+          [
+            82559,
+            83956
+          ]
+        ];
+alignment gap has misordered coords: 71273 - 70683
+$VAR1 = [
+          [
+            71272,
+            70524
+          ],
+          [
+            71351,
+            70684
+          ],
+          [
+            71351,
+            '71102'
+          ]
+        ];
+alignment gap has misordered coords: 71352 - 71101
+$VAR1 = [
+          [
+            71272,
+            70524
+          ],
+          [
+            71351,
+            70684
+          ],
+          [
+            71351,
+            71102
+          ]
+        ];
+alignment gap has misordered coords: 41501 - 41015
+$VAR1 = [
+          [
+            41500,
+            39608
+          ],
+          [
+            41500,
+            41016
+          ],
+          [
+            41500,
+            '40508'
+          ]
+        ];
+alignment gap has misordered coords: 41501 - 40507
+$VAR1 = [
+          [
+            41500,
+            39608
+          ],
+          [
+            41500,
+            41016
+          ],
+          [
+            41500,
+            40508
+          ]
+        ];
+alignment gap has misordered coords: 56159 - 56035
+$VAR1 = [
+          [
+            56036,
+            56158
+          ],
+          [
+            56036,
+            57505
+          ],
+          [
+            56279,
+            '57344'
+          ]
+        ];
+alignment gap has misordered coords: 57506 - 56278
+$VAR1 = [
+          [
+            56036,
+            56158
+          ],
+          [
+            56036,
+            57505
+          ],
+          [
+            56279,
+            57344
+          ]
+        ];
+alignment gap has misordered coords: 52528 - 51954
+$VAR1 = [
+          [
+            51955,
+            52527
+          ],
+          [
+            51955,
+            52527
+          ]
+        ];
+alignment gap has misordered coords: 54220 - 53949
+$VAR1 = [
+          [
+            53950,
+            54219
+          ],
+          [
+            53950,
+            54219
+          ]
+        ];
+alignment gap has misordered coords: 66014 - 65728
+$VAR1 = [
+          [
+            65729,
+            66013
+          ],
+          [
+            65729,
+            66013
+          ],
+          [
+            66835,
+            '66990'
+          ],
+          [
+            66835,
+            '67165'
+          ],
+          [
+            66937,
+            '67230'
+          ]
+        ];
+alignment gap has misordered coords: 66991 - 66834
+$VAR1 = [
+          [
+            65729,
+            66013
+          ],
+          [
+            65729,
+            66013
+          ],
+          [
+            66835,
+            66990
+          ],
+          [
+            66835,
+            67165
+          ],
+          [
+            66937,
+            '67230'
+          ]
+        ];
+alignment gap has misordered coords: 67166 - 66936
+$VAR1 = [
+          [
+            65729,
+            66013
+          ],
+          [
+            65729,
+            66013
+          ],
+          [
+            66835,
+            66990
+          ],
+          [
+            66835,
+            67165
+          ],
+          [
+            66937,
+            67230
+          ]
+        ];
+alignment gap has misordered coords: 44072 - 43821
+$VAR1 = [
+          [
+            43133,
+            44071
+          ],
+          [
+            43822,
+            44071
+          ]
+        ];
+alignment gap has misordered coords: 85014 - 84445
+$VAR1 = [
+          [
+            85013,
+            84446
+          ],
+          [
+            86341,
+            84446
+          ]
+        ];
+alignment gap has misordered coords: 21317 - 20228
+$VAR1 = [
+          [
+            20162,
+            21316
+          ],
+          [
+            20229,
+            21316
+          ],
+          [
+            20813,
+            '21316'
+          ]
+        ];
+alignment gap has misordered coords: 21317 - 20812
+$VAR1 = [
+          [
+            20162,
+            21316
+          ],
+          [
+            20229,
+            21316
+          ],
+          [
+            20813,
+            21316
+          ]
+        ];
+alignment gap has misordered coords: 6215 - 6181
+$VAR1 = [
+          [
+            6166,
+            6214
+          ],
+          [
+            6182,
+            6214
+          ]
+        ];
+alignment gap has misordered coords: 98867 - 98763
+$VAR1 = [
+          [
+            96935,
+            98866
+          ],
+          [
+            98764,
+            98866
+          ]
+        ];
+alignment gap has misordered coords: 42490 - 42158
+$VAR1 = [
+          [
+            42159,
+            42489
+          ],
+          [
+            42159,
+            42482
+          ],
+          [
+            42746,
+            '42824'
+          ]
+        ];
+alignment gap has misordered coords: 83957 - 82558
+$VAR1 = [
+          [
+            81992,
+            83956
+          ],
+          [
+            82559,
+            83956
+          ]
+        ];
+alignment gap has misordered coords: 56159 - 56035
+$VAR1 = [
+          [
+            56036,
+            56158
+          ],
+          [
+            56036,
+            57505
+          ],
+          [
+            56279,
+            '57344'
+          ]
+        ];
+alignment gap has misordered coords: 57506 - 56278
+$VAR1 = [
+          [
+            56036,
+            56158
+          ],
+          [
+            56036,
+            57505
+          ],
+          [
+            56279,
+            57344
+          ]
+        ];
+alignment gap has misordered coords: 52528 - 51954
+$VAR1 = [
+          [
+            51955,
+            52527
+          ],
+          [
+            51955,
+            52527
+          ]
+        ];
+alignment gap has misordered coords: 44072 - 43821
+$VAR1 = [
+          [
+            43133,
+            44071
+          ],
+          [
+            43822,
+            44071
+          ]
+        ];
+alignment gap has misordered coords: 66014 - 65728
+$VAR1 = [
+          [
+            65729,
+            66013
+          ],
+          [
+            65729,
+            66013
+          ],
+          [
+            66835,
+            '66990'
+          ],
+          [
+            66835,
+            '67165'
+          ],
+          [
+            66937,
+            '67230'
+          ]
+        ];
+alignment gap has misordered coords: 66991 - 66834
+$VAR1 = [
+          [
+            65729,
+            66013
+          ],
+          [
+            65729,
+            66013
+          ],
+          [
+            66835,
+            66990
+          ],
+          [
+            66835,
+            67165
+          ],
+          [
+            66937,
+            '67230'
+          ]
+        ];
+alignment gap has misordered coords: 67166 - 66936
+$VAR1 = [
+          [
+            65729,
+            66013
+          ],
+          [
+            65729,
+            66013
+          ],
+          [
+            66835,
+            66990
+          ],
+          [
+            66835,
+            67165
+          ],
+          [
+            66937,
+            67230
+          ]
+        ];
+alignment gap has misordered coords: 54220 - 53949
+$VAR1 = [
+          [
+            53950,
+            54219
+          ],
+          [
+            53950,
+            54219
+          ]
+        ];
+
+-scoring exons (strand: +)
+
+** Processing features (-)
+
+-finding all potential splice sites, looking for GT/GC donors and AG acceptors.
+-finding all potential starts and stops. (strand: -)
+-loading gene prediction evidence. (strand: -)Valid prediction for Augustus_gene824.t1
+
+-loading the search evidence (protein and EST search results, strand: -)alignment gap has misordered coords: 29318 - 28649
+$VAR1 = [
+          [
+            28650,
+            29317
+          ],
+          [
+            28650,
+            28899
+          ],
+          [
+            28729,
+            29477
+          ]
+        ];
+alignment gap has misordered coords: 28900 - 28728
+$VAR1 = [
+          [
+            28650,
+            29317
+          ],
+          [
+            28650,
+            28899
+          ],
+          [
+            28729,
+            29477
+          ]
+        ];
+alignment gap has misordered coords: 62061 - 60870
+$VAR1 = [
+          [
+            60690,
+            62060
+          ],
+          [
+            60871,
+            61699
+          ],
+          [
+            61244,
+            62060
+          ]
+        ];
+alignment gap has misordered coords: 61700 - 61243
+$VAR1 = [
+          [
+            60690,
+            62060
+          ],
+          [
+            60871,
+            61699
+          ],
+          [
+            61244,
+            62060
+          ]
+        ];
+alignment gap has misordered coords: 69142 - 68295
+$VAR1 = [
+          [
+            68296,
+            69141
+          ],
+          [
+            68296,
+            69141
+          ]
+        ];
+alignment gap has misordered coords: 15556 - 14987
+$VAR1 = [
+          [
+            13660,
+            15555
+          ],
+          [
+            14988,
+            15555
+          ]
+        ];
+alignment gap has misordered coords: 60394 - 58500
+$VAR1 = [
+          [
+            58501,
+            60393
+          ],
+          [
+            58501,
+            58985
+          ],
+          [
+            58501,
+            59493
+          ]
+        ];
+alignment gap has misordered coords: 58986 - 58500
+$VAR1 = [
+          [
+            58501,
+            60393
+          ],
+          [
+            58501,
+            58985
+          ],
+          [
+            58501,
+            59493
+          ]
+        ];
+ERROR adding intron for ev_type:exonerate/ID=match.177006.3766/Target=YDR384C: next end5 28650 < this end3 29317  mode -
+ERROR adding intron for ev_type:exonerate/ID=match.177006.3766/Target=YDR384C: next end5 28729 < this end3 28899  mode -
+ERROR adding intron for ev_type:exonerate/ID=match.177006.919/Target=YDR364C: next end5 60871 < this end3 62060  mode -
+ERROR adding intron for ev_type:exonerate/ID=match.177006.919/Target=YDR364C: next end5 61244 < this end3 61699  mode -
+ERROR adding intron for ev_type:exonerate/ID=match.177006.2159/Target=YDR361C: next end5 68296 < this end3 69141  mode -
+ERROR adding intron for ev_type:exonerate/ID=match.177006.536/Target=YDR390C: next end5 14988 < this end3 15555  mode -
+ERROR adding intron for ev_type:exonerate/ID=match.177006.1929/Target=YDR365C: next end5 58501 < this end3 60393  mode -
+ERROR adding intron for ev_type:exonerate/ID=match.177006.1929/Target=YDR365C: next end5 58501 < this end3 58985  mode -
+alignment gap has misordered coords: 98867 - 98763
+$VAR1 = [
+          [
+            96935,
+            98866
+          ],
+          [
+            98764,
+            98866
+          ]
+        ];
+alignment gap has misordered coords: 6215 - 6181
+$VAR1 = [
+          [
+            6166,
+            6214
+          ],
+          [
+            6182,
+            6214
+          ]
+        ];
+alignment gap has misordered coords: 42490 - 42158
+$VAR1 = [
+          [
+            42159,
+            42489
+          ],
+          [
+            42159,
+            42482
+          ],
+          [
+            42746,
+            '42824'
+          ]
+        ];
+alignment gap has misordered coords: 31706 - 30859
+$VAR1 = [
+          [
+            31705,
+            30860
+          ],
+          [
+            31705,
+            30860
+          ]
+        ];
+alignment gap has misordered coords: 21317 - 20228
+$VAR1 = [
+          [
+            20162,
+            21316
+          ],
+          [
+            20229,
+            21316
+          ],
+          [
+            20813,
+            '21316'
+          ]
+        ];
+alignment gap has misordered coords: 21317 - 20812
+$VAR1 = [
+          [
+            20162,
+            21316
+          ],
+          [
+            20229,
+            21316
+          ],
+          [
+            20813,
+            21316
+          ]
+        ];
+alignment gap has misordered coords: 38758 - 38301
+$VAR1 = [
+          [
+            38757,
+            37941
+          ],
+          [
+            39130,
+            38302
+          ],
+          [
+            39311,
+            '37941'
+          ]
+        ];
+alignment gap has misordered coords: 39131 - 37940
+$VAR1 = [
+          [
+            38757,
+            37941
+          ],
+          [
+            39130,
+            38302
+          ],
+          [
+            39311,
+            37941
+          ]
+        ];
+alignment gap has misordered coords: 83957 - 82558
+$VAR1 = [
+          [
+            81992,
+            83956
+          ],
+          [
+            82559,
+            83956
+          ]
+        ];
+alignment gap has misordered coords: 71273 - 70683
+$VAR1 = [
+          [
+            71272,
+            70524
+          ],
+          [
+            71351,
+            70684
+          ],
+          [
+            71351,
+            '71102'
+          ]
+        ];
+alignment gap has misordered coords: 71352 - 71101
+$VAR1 = [
+          [
+            71272,
+            70524
+          ],
+          [
+            71351,
+            70684
+          ],
+          [
+            71351,
+            71102
+          ]
+        ];
+alignment gap has misordered coords: 41501 - 41015
+$VAR1 = [
+          [
+            41500,
+            39608
+          ],
+          [
+            41500,
+            41016
+          ],
+          [
+            41500,
+            '40508'
+          ]
+        ];
+alignment gap has misordered coords: 41501 - 40507
+$VAR1 = [
+          [
+            41500,
+            39608
+          ],
+          [
+            41500,
+            41016
+          ],
+          [
+            41500,
+            40508
+          ]
+        ];
+alignment gap has misordered coords: 56159 - 56035
+$VAR1 = [
+          [
+            56036,
+            56158
+          ],
+          [
+            56036,
+            57505
+          ],
+          [
+            56279,
+            '57344'
+          ]
+        ];
+alignment gap has misordered coords: 57506 - 56278
+$VAR1 = [
+          [
+            56036,
+            56158
+          ],
+          [
+            56036,
+            57505
+          ],
+          [
+            56279,
+            57344
+          ]
+        ];
+alignment gap has misordered coords: 52528 - 51954
+$VAR1 = [
+          [
+            51955,
+            52527
+          ],
+          [
+            51955,
+            52527
+          ]
+        ];
+alignment gap has misordered coords: 66014 - 65728
+$VAR1 = [
+          [
+            65729,
+            66013
+          ],
+          [
+            65729,
+            66013
+          ],
+          [
+            66835,
+            '66990'
+          ],
+          [
+            66835,
+            '67165'
+          ],
+          [
+            66937,
+            '67230'
+          ]
+        ];
+alignment gap has misordered coords: 66991 - 66834
+$VAR1 = [
+          [
+            65729,
+            66013
+          ],
+          [
+            65729,
+            66013
+          ],
+          [
+            66835,
+            66990
+          ],
+          [
+            66835,
+            67165
+          ],
+          [
+            66937,
+            '67230'
+          ]
+        ];
+alignment gap has misordered coords: 67166 - 66936
+$VAR1 = [
+          [
+            65729,
+            66013
+          ],
+          [
+            65729,
+            66013
+          ],
+          [
+            66835,
+            66990
+          ],
+          [
+            66835,
+            67165
+          ],
+          [
+            66937,
+            67230
+          ]
+        ];
+alignment gap has misordered coords: 54220 - 53949
+$VAR1 = [
+          [
+            53950,
+            54219
+          ],
+          [
+            53950,
+            54219
+          ]
+        ];
+alignment gap has misordered coords: 44072 - 43821
+$VAR1 = [
+          [
+            43133,
+            44071
+          ],
+          [
+            43822,
+            44071
+          ]
+        ];
+alignment gap has misordered coords: 85014 - 84445
+$VAR1 = [
+          [
+            85013,
+            84446
+          ],
+          [
+            86341,
+            84446
+          ]
+        ];
+alignment gap has misordered coords: 62061 - 60870
+$VAR1 = [
+          [
+            60690,
+            62060
+          ],
+          [
+            60871,
+            61699
+          ],
+          [
+            61244,
+            62060
+          ]
+        ];
+alignment gap has misordered coords: 61700 - 61243
+$VAR1 = [
+          [
+            60690,
+            62060
+          ],
+          [
+            60871,
+            61699
+          ],
+          [
+            61244,
+            62060
+          ]
+        ];
+alignment gap has misordered coords: 69142 - 68295
+$VAR1 = [
+          [
+            68296,
+            69141
+          ],
+          [
+            68296,
+            69141
+          ]
+        ];
+alignment gap has misordered coords: 29318 - 28649
+$VAR1 = [
+          [
+            28650,
+            29317
+          ],
+          [
+            28650,
+            28899
+          ],
+          [
+            28729,
+            29477
+          ]
+        ];
+alignment gap has misordered coords: 28900 - 28728
+$VAR1 = [
+          [
+            28650,
+            29317
+          ],
+          [
+            28650,
+            28899
+          ],
+          [
+            28729,
+            29477
+          ]
+        ];
+alignment gap has misordered coords: 60394 - 58500
+$VAR1 = [
+          [
+            58501,
+            60393
+          ],
+          [
+            58501,
+            58985
+          ],
+          [
+            58501,
+            59493
+          ]
+        ];
+alignment gap has misordered coords: 58986 - 58500
+$VAR1 = [
+          [
+            58501,
+            60393
+          ],
+          [
+            58501,
+            58985
+          ],
+          [
+            58501,
+            59493
+          ]
+        ];
+alignment gap has misordered coords: 15556 - 14987
+$VAR1 = [
+          [
+            13660,
+            15555
+          ],
+          [
+            14988,
+            15555
+          ]
+        ];
+
+-scoring exons (strand: -)
+-building DP trellis
+
+-building trellis in range 1 - 100000
+-exon list size: 14
+
+
+building trellis
+6.2    12.5    18.8    25.0    31.2    37.5    43.8    50.0    56.2    62.5    68.8    75.0    81.2    87.5    93.8    
+-found 12 predictions from path traversal
+
+-reporting highest scoring path thru the trellis.
+-found 12 predictions persist after filtering for low support
+	-no exons in range 1 - 20161

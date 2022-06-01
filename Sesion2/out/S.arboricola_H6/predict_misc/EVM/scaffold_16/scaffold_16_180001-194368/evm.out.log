@@ -1,0 +1,50 @@
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+-successfully changed directories to /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.arboricola_H6/predict_misc/EVM/scaffold_16/scaffold_16_180001-194368
+
+-reading genomic sequence.
+
+** Processing features (+)
+
+-finding all potential splice sites, looking for GT/GC donors and AG acceptors.
+-finding all potential starts and stops. (strand: +)
+-loading gene prediction evidence. (strand: +)Valid prediction for GlimmerHMM_glimmerT_5447-T1
+Valid prediction for Augustus_model.g4816.t1
+Valid prediction for Augustus_model.g4815.t1
+Valid prediction for GlimmerHMM_glimmerT_5446-T1
+Valid prediction for snap_scaffold_16-snap.64-T1
+Valid prediction for snap_scaffold_16-snap.67-T1
+Valid prediction for snap_scaffold_16-snap.66-T1
+Valid prediction for Augustus_model.g4814.t1
+Valid prediction for snap_scaffold_16-snap.65-T1
+
+-loading the search evidence (protein and EST search results, strand: +)
+-scoring exons (strand: +)
+
+** Processing features (-)
+
+-finding all potential splice sites, looking for GT/GC donors and AG acceptors.
+-finding all potential starts and stops. (strand: -)
+-loading gene prediction evidence. (strand: -)Valid prediction for snap_scaffold_16-snap.68-T1
+add_exon() Sorry, snap_scaffold_16-snap.68-T1 356-1121-terminal-1 is invalid.
+
+-loading the search evidence (protein and EST search results, strand: -)
+-scoring exons (strand: -)
+-building DP trellis
+
+-building trellis in range 1 - 14368
+-exon list size: 22
+
+
+building trellis
+4.2    8.3    12.5    16.7    20.8    25.0    29.2    33.3    37.5    41.7    45.8    50.0    54.2    58.3    62.5    66.7    70.8    75.0    79.2    83.3    87.5    91.7    95.8    
+-found 4 predictions from path traversal
+
+-reporting highest scoring path thru the trellis.
+-found 4 predictions persist after filtering for low support

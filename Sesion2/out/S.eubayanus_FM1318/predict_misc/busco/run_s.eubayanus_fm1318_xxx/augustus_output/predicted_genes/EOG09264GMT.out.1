@@ -1,0 +1,78 @@
+# Please cite: Mario Stanke, Mark Diekhans, Robert Baertsch, David Haussler (2008),
+# Using native and syntenically mapped cDNA alignments to improve de novo gene finding
+# Bioinformatics 24: 637-644, doi 10.1093/bioinformatics/btn013
+# No extrinsic information on sequences given.
+# Initializing the parameters using config directory /home/rangeles/.conda/envs/funannotate/config/ ...
+# Using protein profile unknown
+# --[2..78]--> unknown_A (19) <--[1..79]--> unknown_B (49) <--[0..1]--> unknown_C (9) <--[0..12]--> unknown_D (12) <--[8..32]--> unknown_E (28) <--[0..1]--> unknown_F (15) <--[10..23]--> unknown_G (10) <--[0..1]--> unknown_H (37) <--[0..57]--> unknown_I (21) <--[0..18]--> unknown_J (36) <--[4..7]--> unknown_K (7) <--[0..218]--
+# anidulans version. Using default transition matrix.
+# Looks like ./tmp/scaffold_5s.eubayanus_fm1318_xxx_200919163_.temp is in fasta format.
+# We have hints for 0 sequences and for 0 of the sequences in the input set.
+#
+# ----- prediction on sequence number 1 (length = 10714, name = scaffold_5) -----
+#
+# Predicted genes for sequence number 1 on both strands
+# start gene g1
+scaffold_5	AUGUSTUS	gene	229557	230120	0.95	+	.	g1
+scaffold_5	AUGUSTUS	transcript	229557	230120	0.95	+	.	g1.t1
+scaffold_5	AUGUSTUS	start_codon	229557	229559	.	+	0	transcript_id "g1.t1"; gene_id "g1";
+scaffold_5	AUGUSTUS	CDS	229557	230120	0.95	+	0	transcript_id "g1.t1"; gene_id "g1";
+scaffold_5	AUGUSTUS	stop_codon	230118	230120	.	+	0	transcript_id "g1.t1"; gene_id "g1";
+# coding sequence = [atgtccatagcaagttacgcccaagagttaaagctagccctacatcaatatccaaactttccaagtgagggtattctat
+# ttgaagatttcttgcctatcttcagaaatccaggccttttcaagaaactagtggatgctttcaagctgcatttggaagaagcgttcccagaaactaaa
+# atcgactacatcattggtctggaatcccgtgggttcttgtttggcccaactctagccatggctttaggtgtcggtttcgttccagttagaaaggcagg
+# taaactgcctggtgagtgtgcccaggcctcgtacgaaaaggaatacggtactgacgttttcgaaatgcagaaaaacgcaattccagtaggttccaacg
+# ttgttatcgtcgatgacatcatcgccactggtggctccgcagttgctgctggtgaattggttgaccaaattggtgctaacattttggaatacgacttc
+# gtcatggaattggatttcttgaagggtagagataagttgaatgccccagtgttcactctattgaacgctcaacaggaggctttgaagaaatga]
+# protein sequence = [MSIASYAQELKLALHQYPNFPSEGILFEDFLPIFRNPGLFKKLVDAFKLHLEEAFPETKIDYIIGLESRGFLFGPTLA
+# MALGVGFVPVRKAGKLPGECAQASYEKEYGTDVFEMQKNAIPVGSNVVIVDDIIATGGSAVAAGELVDQIGANILEYDFVMELDFLKGRDKLNAPVFT
+# LLNAQQEALKK]
+# end gene g1
+###
+# start gene g2
+scaffold_5	AUGUSTUS	gene	230330	231373	0.01	-	.	g2
+scaffold_5	AUGUSTUS	transcript	230330	231373	0.01	-	.	g2.t1
+scaffold_5	AUGUSTUS	stop_codon	230330	230332	.	-	0	transcript_id "g2.t1"; gene_id "g2";
+scaffold_5	AUGUSTUS	CDS	230330	231373	0.01	-	0	transcript_id "g2.t1"; gene_id "g2";
+scaffold_5	AUGUSTUS	start_codon	231371	231373	.	-	0	transcript_id "g2.t1"; gene_id "g2";
+scaffold_5	AUGUSTUS	protein_match	230399	230419	7.7	-	0	target "unknown_K[1..7]"; target_start 318; transcript_id "g2.t1"; gene_id "g2";
+scaffold_5	AUGUSTUS	protein_match	230435	230542	7.43	-	0	target "unknown_J[1..36]"; target_start 277; transcript_id "g2.t1"; gene_id "g2";
+scaffold_5	AUGUSTUS	protein_match	230576	230638	4.97	-	0	target "unknown_I[1..21]"; target_start 245; transcript_id "g2.t1"; gene_id "g2";
+scaffold_5	AUGUSTUS	protein_match	230651	230761	6.76	-	0	target "unknown_H[1..37]"; target_start 204; transcript_id "g2.t1"; gene_id "g2";
+scaffold_5	AUGUSTUS	protein_match	230762	230791	5.61	-	0	target "unknown_G[1..10]"; target_start 194; transcript_id "g2.t1"; gene_id "g2";
+scaffold_5	AUGUSTUS	protein_match	230825	230869	10.1	-	0	target "unknown_F[1..15]"; target_start 168; transcript_id "g2.t1"; gene_id "g2";
+scaffold_5	AUGUSTUS	protein_match	230870	230953	11.3	-	0	target "unknown_E[1..28]"; target_start 140; transcript_id "g2.t1"; gene_id "g2";
+scaffold_5	AUGUSTUS	protein_match	230981	231016	6.14	-	0	target "unknown_D[1..12]"; target_start 119; transcript_id "g2.t1"; gene_id "g2";
+scaffold_5	AUGUSTUS	protein_match	231023	231049	5.63	-	0	target "unknown_C[1..9]"; target_start 108; transcript_id "g2.t1"; gene_id "g2";
+scaffold_5	AUGUSTUS	protein_match	231050	231196	3.08	-	0	target "unknown_B[1..49]"; target_start 59; transcript_id "g2.t1"; gene_id "g2";
+scaffold_5	AUGUSTUS	protein_match	231293	231349	3.26	-	0	target "unknown_A[1..19]"; target_start 8; transcript_id "g2.t1"; gene_id "g2";
+# coding sequence = [atgacggtgaatcaaaagaggaaacagaccaccattgaggatttctttggtgccaaaaagactgctactgggacaccca
+# gtaagaaagctaagacgagcgccacttttacgagcgtgacaaaagatgcagttacgaagattgaaacaaaggacgtcgtaaaggaggccactgctagc
+# aaagatcttgtgaattcagatgttaaaggtgatttttcaggacatttaagcacgaatttgcgtgacttactatcattagagatcaacacaatcgatga
+# ttcgtggttcccacacttgatggatgaattcaaaaagccatactttgtgaagttaaaacagtttgtcactaaagaacagactgatcacaccgtattcc
+# cgccacctaatgacatttactcgtggagccggctgacaccattcaataaggttaaagtcgtggttatcggccaggacccatatcataaccataaccag
+# gcacatggtttggcgtttagcgtcaaaccccccacgccagccccaccttctttgaagaacatatataaagaactgaagcaagagtatcctgattttgt
+# tcaggataataaagtcggagatttaacgcactgggcttcacaaggtgttctattgcttaacacgtcattgagtgtgagggcgcacaatgcaaactcac
+# attctaagcatggatgggaaacgttcacgaaaagagttgtccaactgttgctccgggacagagaagctgacgggaaaagtttggtgtttctcttatgg
+# gggaataatgccattaagctagtagagtctttgttgggttccacttccgtgggagctagtagtaagtatccgaatatcatggtgttgaagtcggtaca
+# tccatctccactaagtgcaagtaggggtttttttggtactaatcattttaaaaagatcaacgattggctatataatgctcgaggagaaaaaatgatag
+# attggagcgtagttcctggaacgtctctaaaggaagttgaagaggcaaatgcgcgactggagccaaactcagaagagctttaa]
+# protein sequence = [MTVNQKRKQTTIEDFFGAKKTATGTPSKKAKTSATFTSVTKDAVTKIETKDVVKEATASKDLVNSDVKGDFSGHLSTN
+# LRDLLSLEINTIDDSWFPHLMDEFKKPYFVKLKQFVTKEQTDHTVFPPPNDIYSWSRLTPFNKVKVVVIGQDPYHNHNQAHGLAFSVKPPTPAPPSLK
+# NIYKELKQEYPDFVQDNKVGDLTHWASQGVLLLNTSLSVRAHNANSHSKHGWETFTKRVVQLLLRDREADGKSLVFLLWGNNAIKLVESLLGSTSVGA
+# SSKYPNIMVLKSVHPSPLSASRGFFGTNHFKKINDWLYNARGEKMIDWSVVPGTSLKEVEEANARLEPNSEEL]
+# sequence of block unknown_K   318 [MIDWSVV] 325
+# sequence of block unknown_J   277 [YPNIMVLKSVHPSPLSASRGFFGTNHFKKINDWLYN] 313
+# sequence of block unknown_I   245 [DGKSLVFLLWGNNAIKLVESL] 266
+# sequence of block unknown_H   204 [GVLLLNTSLSVRAHNANSHSKHGWETFTKRVVQLLLR] 241
+# sequence of block unknown_G   194 [VGDLTHWASQ] 204
+# sequence of block unknown_F   168 [TPAPPSLKNIYKELK] 183
+# sequence of block unknown_E   140 [KVKVVVIGQDPYHNHNQAHGLAFSVKPP] 168
+# sequence of block unknown_D   119 [DHTVFPPPNDIY] 131
+# sequence of block unknown_C   108 [KLKQFVTKE] 117
+# sequence of block unknown_B    59 [KDLVNSDVKGDFSGHLSTNLRDLLSLEINTIDDSWFPHLMDEFKKPYFV] 108
+# sequence of block unknown_A     8 [QTTIEDFFGAKKTATGTPS] 27
+# end gene g2
+###
+# command line:
+# augustus --stopCodonExcludedFromCDS=False --codingseq=1 --proteinprofile=/space21/PGE/rangeles/bin/funannotate_db/dikarya/prfl/EOG09264GMT.prfl --predictionStart=225402 --predictionEnd=236115 --species=anidulans ./tmp/scaffold_5s.eubayanus_fm1318_xxx_200919163_.temp

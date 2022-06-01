@@ -1,0 +1,50 @@
+# Please cite: Mario Stanke, Mark Diekhans, Robert Baertsch, David Haussler (2008),
+# Using native and syntenically mapped cDNA alignments to improve de novo gene finding
+# Bioinformatics 24: 637-644, doi 10.1093/bioinformatics/btn013
+# No extrinsic information on sequences given.
+# Initializing the parameters using config directory /home/rangeles/.conda/envs/funannotate/config/ ...
+# Using protein profile unknown
+# --[0..16]--> unknown_A (20) <--[1..3]--> unknown_B (18) <--[0..7]--> unknown_C (135) <--[0..1]--> unknown_D (36) <--[1..12]--> unknown_E (34) <--[9..45]--
+# anidulans version. Using default transition matrix.
+# Looks like ./tmp/scaffold_16s.cerevisiae_m3707_xxx_2158574492_.temp is in fasta format.
+# We have hints for 0 sequences and for 0 of the sequences in the input set.
+#
+# ----- prediction on sequence number 1 (length = 10537, name = scaffold_16) -----
+#
+# Predicted genes for sequence number 1 on both strands
+# start gene g1
+scaffold_16	AUGUSTUS	gene	274372	276153	0.09	-	.	g1
+scaffold_16	AUGUSTUS	transcript	274372	276153	0.09	-	.	g1.t1
+scaffold_16	AUGUSTUS	stop_codon	274372	274374	.	-	0	transcript_id "g1.t1"; gene_id "g1";
+scaffold_16	AUGUSTUS	CDS	274372	276153	0.09	-	0	transcript_id "g1.t1"; gene_id "g1";
+scaffold_16	AUGUSTUS	start_codon	276151	276153	.	-	0	transcript_id "g1.t1"; gene_id "g1";
+# coding sequence = [atgtcagaactctttggagtattgaaatctaatgctggcagaattattttgaaggacccctccgccacttctaaagatg
+# ttaaagcatatatagattcagttatcaatacctgtaagaatgggagtattacaaagaaagcagaactggacgaaatcactgttgatggtttagacgcc
+# aatcaagtttggtggcaggtcaaactagttcttgatagtattgatggtgatctaattcaaggaattcaagaactcaaagatgttgtcacgccttctca
+# caatctctctgatggtagcaccctgaactcatcatccggggaagaaagtgaactagaggaggcagaaagtgtttttaaagaaaagcagatgctctctg
+# ctgatgtttctgagattgaggagcagagtaatgatagtctttccgagaacgatgaagaacctagtatggatgacgaaaaaaccagtgcagaggcagct
+# agagaagaatttgcggaggaaaaaagaatttcttctgggcaagatgaaaggcattcttcacccgatccttatggtatcaatgataagtttttcgatct
+# cgaaaagttcaatagggatactttagctgcagaagattctaacgaagcttctgaggggagtgaggatgaagatatagattattttcaagatatgcctt
+# cagatgacgaggaggaggaggctatttattatgaagacttttttgacaaacccacaaaagaacctgtgaagaagcactctgacgtaaaagatccaaaa
+# gaagatgaagaattggatgaaaaagagcatgattctgccatggataaagtgaaattagacttatttgcggatgaggaagatgaaccgaatgctgaggg
+# agtgggagaagccagtgacaagaacttatctagtttcgaaaagcaacaaatagagattagaaaacagatagaacaattggaaaacgaagcggttgccg
+# agaagaaatggtctttgaagggtgaagtaaaggcaaaggatcgtcccgaagatgcattgctcactgaggaacttgaattcgacagaactgcaaagcct
+# gttcctgttataacaagtgaggtcacagaatcattagaagatatgattagacgaaggatacaggacagtaactttgacgaccttcaaagaagaaccct
+# gttagacatcacacgtaagtctcaacggcctcaatttgaattgagtgatgttaaatcctcgaagtcgttagcagaaatatatgaggatgactacacac
+# gcgctgaagatgaatctgcattaagtgaagagcttcaaaaggcacattccgaaatatcagaactttatgctaacttggtatataaattggatgtgctt
+# tcatcagtgcacttcgttcctaagccagcaagtacttctttggaaattagagttgaaacacccactatatcgatggaggatgctcaacctctctatat
+# gtcgaatgcctcttctttggctcctcaagagatatacaatgtcggtaaagcagaaaaggacggagaaattcgcttgaagaatggtgttgcaatgtcta
+# aggaagaattaaccagagaagataaaaacagattgcgcagggctttgaaaagaaaaagatcgaaagctaatttgccaaatgtaaacaaaagatctaaa
+# aggaatgatgttgttgacactttgtcaaaagccaagaatattactgttatcaatcaaaagggtgaaaagaaagatgtttccggtaaaacgaagaagag
+# cagatcagggccagatagcacaaatataaaactttga]
+# protein sequence = [MSELFGVLKSNAGRIILKDPSATSKDVKAYIDSVINTCKNGSITKKAELDEITVDGLDANQVWWQVKLVLDSIDGDLI
+# QGIQELKDVVTPSHNLSDGSTLNSSSGEESELEEAESVFKEKQMLSADVSEIEEQSNDSLSENDEEPSMDDEKTSAEAAREEFAEEKRISSGQDERHS
+# SPDPYGINDKFFDLEKFNRDTLAAEDSNEASEGSEDEDIDYFQDMPSDDEEEEAIYYEDFFDKPTKEPVKKHSDVKDPKEDEELDEKEHDSAMDKVKL
+# DLFADEEDEPNAEGVGEASDKNLSSFEKQQIEIRKQIEQLENEAVAEKKWSLKGEVKAKDRPEDALLTEELEFDRTAKPVPVITSEVTESLEDMIRRR
+# IQDSNFDDLQRRTLLDITRKSQRPQFELSDVKSSKSLAEIYEDDYTRAEDESALSEELQKAHSEISELYANLVYKLDVLSSVHFVPKPASTSLEIRVE
+# TPTISMEDAQPLYMSNASSLAPQEIYNVGKAEKDGEIRLKNGVAMSKEELTREDKNRLRRALKRKRSKANLPNVNKRSKRNDVVDTLSKAKNITVINQ
+# KGEKKDVSGKTKKSRSGPDSTNIKL]
+# end gene g1
+###
+# command line:
+# augustus --stopCodonExcludedFromCDS=False --codingseq=1 --proteinprofile=/space21/PGE/rangeles/bin/funannotate_db/dikarya/prfl/EOG092641M3.prfl --predictionStart=274102 --predictionEnd=284638 --species=anidulans ./tmp/scaffold_16s.cerevisiae_m3707_xxx_2158574492_.temp

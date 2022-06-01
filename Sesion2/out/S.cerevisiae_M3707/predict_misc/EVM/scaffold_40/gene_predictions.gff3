@@ -1,0 +1,12 @@
+scaffold_40	Augustus	gene	1	1239	.	+	.	ID=gene.g5089.t1;Name=Augustus%20prediction
+scaffold_40	Augustus	mRNA	1	1239	.	+	.	ID=model.g5089.t1;Parent=gene.g5089.t1;Name=Augustus%20prediction
+scaffold_40	Augustus	exon	1	1239	.	+	.	ID=model.g5089.t1.exon1;Parent=model.g5089.t1
+scaffold_40	Augustus	CDS	1	1239	.	+	.	ID=cds.model.g5089.t1;Parent=model.g5089.t1
+scaffold_40	GlimmerHMM	gene	1	1239	.	+	.	ID=glimmerG_5496;Alias=scaffold_40.path1.gene1;
+scaffold_40	GlimmerHMM	mRNA	1	1239	.	+	.	ID=glimmerT_5496-T1;Parent=glimmerG_5496;Alias=scaffold_40.path1.gene1;
+scaffold_40	GlimmerHMM	exon	1	1239	.	+	.	ID=glimmerT_5496-T1.exon1;Parent=glimmerT_5496-T1;
+scaffold_40	GlimmerHMM	CDS	1	1239	.	+	0	ID=glimmerT_5496-T1.cds;Parent=glimmerT_5496-T1;
+scaffold_40	snap	gene	32	1239	.	+	.	ID=scaffold_40-snap.1;
+scaffold_40	snap	mRNA	32	1239	.	+	.	ID=scaffold_40-snap.1-T1;Parent=scaffold_40-snap.1;product=[];
+scaffold_40	snap	exon	32	1239	.	+	.	ID=scaffold_40-snap.1-T1.exon1;Parent=scaffold_40-snap.1-T1;
+scaffold_40	snap	CDS	32	1239	.	+	2	ID=scaffold_40-snap.1-T1.cds;Parent=scaffold_40-snap.1-T1;

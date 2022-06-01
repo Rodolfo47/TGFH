@@ -1,0 +1,54 @@
+# Please cite: Mario Stanke, Mark Diekhans, Robert Baertsch, David Haussler (2008),
+# Using native and syntenically mapped cDNA alignments to improve de novo gene finding
+# Bioinformatics 24: 637-644, doi 10.1093/bioinformatics/btn013
+# No extrinsic information on sequences given.
+# Initializing the parameters using config directory /home/rangeles/.conda/envs/funannotate/config/ ...
+# Using protein profile unknown
+# --[31..187]--> unknown_D (14) <--[11..30]--> unknown_E (66) <--[3..70]--> unknown_F (17) <--[0..1]--> unknown_G (29) <--[0..1]--> unknown_H (16) <--[0..4]--> unknown_I (12) <--[1..3]--> unknown_J (8) <--[0..0]--
+# anidulans version. Using default transition matrix.
+# Looks like ./tmp/scaffold_8s.arboricola_h6_xxx_916416112_.temp is in fasta format.
+# We have hints for 0 sequences and for 0 of the sequences in the input set.
+#
+# ----- prediction on sequence number 1 (length = 10558, name = scaffold_8) -----
+#
+# Predicted genes for sequence number 1 on both strands
+# start gene g1
+scaffold_8	AUGUSTUS	gene	291513	292235	0.79	+	.	g1
+scaffold_8	AUGUSTUS	transcript	291513	292235	0.79	+	.	g1.t1
+scaffold_8	AUGUSTUS	start_codon	291513	291515	.	+	0	transcript_id "g1.t1"; gene_id "g1";
+scaffold_8	AUGUSTUS	CDS	291513	292235	0.79	+	0	transcript_id "g1.t1"; gene_id "g1";
+scaffold_8	AUGUSTUS	stop_codon	292233	292235	.	+	0	transcript_id "g1.t1"; gene_id "g1";
+# coding sequence = [atggtcgctttaatctccaagaaaagaaagctagtcgctgacggtgtcttctacgccgaattgaacgaatttttcacca
+# gagaattggctgaagaaggttactccggtgttgaggtccgtgttaccccaaccaagactgaagtcatcatcagagctaccagaactcaagatgttcta
+# ggtgaaaacggtagaagaatcaacgaattgactttgttagttcaaaagagattcaagtacgctccaggtactattgtcttatacgccgaaagagttca
+# agaccgtggtttgtccgctgttgctcaagctgaatccatgaaattcaaattgttgaatggtttggctatcagaagagccgcttacggtgttgtcagat
+# acgtcatggaatccggtgctaagggttgtgaagtcgttgtttctggtaagttaagagctgccagagctaaggctatgaagttcgctgacggtttcttg
+# atccactccggtcaaccagtcaacgacttcattgacactgctactagacatgtcttgatgagacaaggtgttttgggtatcaaggtcaagattatgag
+# agacccagctaagagcagaactggtccaaaggctttgccagatgctgtcaccattgttgaaccaaaggaagaagaaccaattcttgccccatctgtca
+# aggactacagaccagctgaagaaactgaagctcaagctgaaccagttgaagcttaa]
+# protein sequence = [MVALISKKRKLVADGVFYAELNEFFTRELAEEGYSGVEVRVTPTKTEVIIRATRTQDVLGENGRRINELTLLVQKRFK
+# YAPGTIVLYAERVQDRGLSAVAQAESMKFKLLNGLAIRRAAYGVVRYVMESGAKGCEVVVSGKLRAARAKAMKFADGFLIHSGQPVNDFIDTATRHVL
+# MRQGVLGIKVKIMRDPAKSRTGPKALPDAVTIVEPKEEEPILAPSVKDYRPAEETEAQAEPVEA]
+# end gene g1
+###
+# start gene g2
+scaffold_8	AUGUSTUS	gene	294453	295637	0.17	+	.	g2
+scaffold_8	AUGUSTUS	transcript	294453	295637	0.17	+	.	g2.t1
+scaffold_8	AUGUSTUS	start_codon	294453	294455	.	+	0	transcript_id "g2.t1"; gene_id "g2";
+scaffold_8	AUGUSTUS	CDS	294453	294476	0.82	+	0	transcript_id "g2.t1"; gene_id "g2";
+scaffold_8	AUGUSTUS	CDS	294805	294823	0.45	+	0	transcript_id "g2.t1"; gene_id "g2";
+scaffold_8	AUGUSTUS	CDS	294928	295055	0.38	+	2	transcript_id "g2.t1"; gene_id "g2";
+scaffold_8	AUGUSTUS	CDS	295299	295637	0.94	+	0	transcript_id "g2.t1"; gene_id "g2";
+scaffold_8	AUGUSTUS	stop_codon	295635	295637	.	+	0	transcript_id "g2.t1"; gene_id "g2";
+# coding sequence = [atggtgccagtatttgacctcgatctggcgttgtctgagaagatagagagcaactttgacatagagatagtactttcag
+# aagtactcaaaattgttgcgggcgaatctggtgaatttaacctggaagatttacttgtggtggaagaatcggctgcagatgaagacgaggaggccgaa
+# gagagtgatgctagcgatgatgacgatgatgtcagcgttatcgttgataacgttgttggcgacgatgttgatgtcgataatggcagtgatattgatga
+# tgatattgataatattgatgatgttgatgatattgatgatattgatgatattgatgaaagaatcgataaggatggggttatgatagaatatgaagtag
+# tacttgaatcatattgcgagctctccgtatattgtgagctcgatggactgttaatggaagacgatactaacgtggatgttgaagatatggaggaagtt
+# gaatacgcattttcttcggaagtcgaacttgaaaagtga]
+# protein sequence = [MVPVFDLDLALSEKIESNFDIEIVLSEVLKIVAGESGEFNLEDLLVVEESAADEDEEAEESDASDDDDDVSVIVDNVV
+# GDDVDVDNGSDIDDDIDNIDDVDDIDDIDDIDERIDKDGVMIEYEVVLESYCELSVYCELDGLLMEDDTNVDVEDMEEVEYAFSSEVELEK]
+# end gene g2
+###
+# command line:
+# augustus --stopCodonExcludedFromCDS=False --codingseq=1 --proteinprofile=/space21/PGE/rangeles/bin/funannotate_db/dikarya/prfl/EOG09264LC7.prfl --predictionStart=287553 --predictionEnd=298110 --species=anidulans ./tmp/scaffold_8s.arboricola_h6_xxx_916416112_.temp

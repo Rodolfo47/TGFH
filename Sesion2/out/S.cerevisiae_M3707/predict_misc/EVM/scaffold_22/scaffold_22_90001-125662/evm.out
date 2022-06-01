@@ -1,0 +1,55 @@
+!! Predictions spanning range 1016 - 35551 [R1]
+# EVM prediction: Mode:STANDARD S-ratio: 133.47 1016-2387 orient(+) score(5339.00) noncoding_equivalent(40.00) raw_noncoding(40.00) offset(0.00) 
+1016	2387	terminal+	3	3	{snap_scaffold_22-snap.33-T1;snap}
+
+# EVM prediction: Mode:STANDARD S-ratio: 6.70 2728-3824 orient(+) score(3739.00) noncoding_equivalent(558.17) raw_noncoding(741.00) offset(182.83) 
+2728	2859	initial+	1	3	{Augustus_model.g4866.t1;Augustus}
+2860	2951	INTRON			{Augustus_model.g4866.t1;Augustus},{ev_type:exonerate/ID=match.160399.577/Target=YER179W;exonerate}
+2952	3824	terminal+	1	3	{Augustus_model.g4866.t1;Augustus},{snap_scaffold_22-snap.34-T1;snap}
+
+# EVM prediction: Mode:STANDARD S-ratio: 4.62 4031-4834 orient(-) score(3966.00) noncoding_equivalent(858.00) raw_noncoding(858.00) offset(0.00) 
+4834	4031	single-	4	6	{HiQ_model.g4867.t1;HiQ},{GlimmerHMM_glimmerT_5264-T1;GlimmerHMM}
+
+# EVM prediction: Mode:STANDARD S-ratio: 5.00 5171-5428 orient(-) score(1290.00) noncoding_equivalent(258.00) raw_noncoding(258.00) offset(0.00) 
+5428	5171	single-	4	6	{GlimmerHMM_glimmerT_5265-T1;GlimmerHMM},{HiQ_model.g4868.t1;HiQ}
+
+# EVM prediction: Mode:STANDARD S-ratio: 12.42 6831-7565 orient(+) score(2721.00) noncoding_equivalent(219.00) raw_noncoding(219.00) offset(0.00) 
+6831	7565	single+	1	3	{GlimmerHMM_glimmerT_5266-T1;GlimmerHMM}
+
+# EVM prediction: Mode:STANDARD S-ratio: 5.00 7636-8271 orient(-) score(3180.00) noncoding_equivalent(636.00) raw_noncoding(636.00) offset(0.00) 
+8271	7636	single-	4	6	{GlimmerHMM_glimmerT_5267-T1;GlimmerHMM},{HiQ_model.g4870.t1;HiQ}
+
+# EVM prediction: Mode:STANDARD S-ratio: 5.00 10599-12983 orient(-) score(11925.00) noncoding_equivalent(2385.00) raw_noncoding(2385.00) offset(0.00) 
+12983	10599	single-	4	6	{HiQ_model.g4871.t1;HiQ},{GlimmerHMM_glimmerT_5268-T1;GlimmerHMM}
+
+# EVM prediction: Mode:STANDARD S-ratio: 3.07 13758-14669 orient(+) score(2607.00) noncoding_equivalent(847.95) raw_noncoding(847.95) offset(0.00) 
+13758	14669	single+	1	3	{GlimmerHMM_glimmerT_5269-T1;GlimmerHMM}
+
+# EVM prediction: Mode:STANDARD S-ratio: 2.00 16009-16929 orient(-) score(3684.00) noncoding_equivalent(1842.00) raw_noncoding(1842.00) offset(0.00) 
+16929	16009	single-	4	6	{GlimmerHMM_glimmerT_5270-T1;GlimmerHMM},{HiQ_model.g4873.t1;HiQ}
+
+# EVM prediction: Mode:STANDARD S-ratio: 3.93 19875-20960 orient(+) score(2619.00) noncoding_equivalent(666.02) raw_noncoding(1307.74) offset(641.72) 
+19875	19880	initial+	1	3	{snap_scaffold_22-snap.41-T1;snap}
+19881	20279	INTRON			{snap_scaffold_22-snap.41-T1;snap}
+20280	20960	terminal+	1	3	{snap_scaffold_22-snap.41-T1;snap}
+
+# EVM prediction: Mode:STANDARD S-ratio: 959.00 22345-23064 orient(+) score(2877.00) noncoding_equivalent(3.00) raw_noncoding(3.00) offset(0.00) 
+22345	23064	single+	1	3	{Augustus_model.g4875.t1;Augustus}
+
+# EVM prediction: Mode:STANDARD S-ratio: 2.69 23913-24418 orient(-) score(2334.00) noncoding_equivalent(868.00) raw_noncoding(1158.00) offset(290.00) 
+24253	23913	terminal-	5	6	{Augustus_model.g4876.t1;Augustus}
+24399	24254	INTRON			{Augustus_model.g4876.t1;Augustus}
+24418	24400	initial-	4	4	{Augustus_model.g4876.t1;Augustus}
+
+# EVM prediction: Mode:STANDARD S-ratio: 5.61 24837-25574 orient(+) score(4143.00) noncoding_equivalent(738.00) raw_noncoding(738.00) offset(0.00) 
+24837	25574	single+	1	3	{HiQ_model.g4877.t1;HiQ},{GlimmerHMM_glimmerT_5273-T1;GlimmerHMM}
+
+# EVM prediction: Mode:STANDARD S-ratio: 5.00 25707-26177 orient(-) score(2355.00) noncoding_equivalent(471.00) raw_noncoding(471.00) offset(0.00) 
+26177	25707	single-	4	6	{GlimmerHMM_glimmerT_5274-T1;GlimmerHMM},{HiQ_model.g4878.t1;HiQ}
+
+# EVM prediction: Mode:STANDARD S-ratio: 5.00 27102-29735 orient(-) score(13161.00) noncoding_equivalent(2634.00) raw_noncoding(2634.00) offset(0.00) 
+29735	27102	single-	4	6	{GlimmerHMM_glimmerT_5275-T1;GlimmerHMM},{HiQ_model.g4879.t1;HiQ}
+
+# EVM prediction: Mode:STANDARD S-ratio: 3.87 34343-35551 orient(+) score(3843.00) noncoding_equivalent(993.00) raw_noncoding(993.00) offset(0.00) 
+34343	35551	single+	1	3	{GlimmerHMM_glimmerT_5276-T1;GlimmerHMM}
+

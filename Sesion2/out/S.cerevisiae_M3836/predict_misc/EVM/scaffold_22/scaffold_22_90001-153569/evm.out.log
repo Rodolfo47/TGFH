@@ -1,0 +1,76 @@
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+-successfully changed directories to /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.cerevisiae_M3836/predict_misc/EVM/scaffold_22/scaffold_22_90001-153569
+
+-reading genomic sequence.
+
+** Processing features (+)
+
+-finding all potential splice sites, looking for GT/GC donors and AG acceptors.
+-finding all potential starts and stops. (strand: +)
+-loading gene prediction evidence. (strand: +)Valid prediction for snap_scaffold_22-snap.36-T1
+Valid prediction for snap_scaffold_22-snap.49-T1
+Valid prediction for snap_scaffold_22-snap.56-T1
+Sorry, intron length (8) is less than minimum required (10)
+Valid prediction for Augustus_model.g4587.t1
+Valid prediction for snap_scaffold_22-snap.47-T1
+Valid prediction for snap_scaffold_22-snap.54-T1
+Valid prediction for snap_scaffold_22-snap.43-T1
+Valid prediction for snap_scaffold_22-snap.37-T1
+Valid prediction for snap_scaffold_22-snap.45-T1
+Valid prediction for GlimmerHMM_glimmerT_4961-T1
+Valid prediction for snap_scaffold_22-snap.41-T1
+Sorry, intron length (8) is less than minimum required (10)
+Valid prediction for snap_scaffold_22-snap.58-T1
+Valid prediction for snap_scaffold_22-snap.52-T1
+
+-loading the search evidence (protein and EST search results, strand: +)
+-scoring exons (strand: +)
+
+** Processing features (-)
+
+-finding all potential splice sites, looking for GT/GC donors and AG acceptors.
+-finding all potential starts and stops. (strand: -)
+-loading gene prediction evidence. (strand: -)Valid prediction for snap_scaffold_22-snap.55-T1
+Valid prediction for snap_scaffold_22-snap.46-T1
+Valid prediction for HiQ_model.g4579.t1
+Valid prediction for snap_scaffold_22-snap.34-T1
+Valid prediction for snap_scaffold_22-snap.53-T1
+Valid prediction for snap_scaffold_22-snap.44-T1
+Valid prediction for snap_scaffold_22-snap.35-T1
+Valid prediction for snap_scaffold_22-snap.33-T1
+Valid prediction for snap_scaffold_22-snap.40-T1
+Valid prediction for snap_scaffold_22-snap.60-T1
+add_exon() Sorry, snap_scaffold_22-snap.60-T1 164-1910-terminal-1 is invalid.
+Valid prediction for snap_scaffold_22-snap.38-T1
+Valid prediction for snap_scaffold_22-snap.51-T1
+Valid prediction for Augustus_model.g4585.t1
+Valid prediction for snap_scaffold_22-snap.50-T1
+Valid prediction for GlimmerHMM_glimmerT_4953-T1
+Valid prediction for snap_scaffold_22-snap.57-T1
+Valid prediction for snap_scaffold_22-snap.42-T1
+Valid prediction for snap_scaffold_22-snap.59-T1
+Valid prediction for snap_scaffold_22-snap.39-T1
+Valid prediction for HiQ_model.g4594.t1
+Valid prediction for snap_scaffold_22-snap.48-T1
+
+-loading the search evidence (protein and EST search results, strand: -)
+-scoring exons (strand: -)
+-building DP trellis
+
+-building trellis in range 1 - 63569
+-exon list size: 85
+
+
+building trellis
+1.1    2.3    3.4    4.6    5.7    6.9    8.0    9.2    10.3    11.5    12.6    13.8    14.9    16.1    17.2    18.4    19.5    20.7    21.8    23.0    24.1    25.3    26.4    27.6    28.7    29.9    31.0    32.2    33.3    34.5    35.6    36.8    37.9    39.1    40.2    41.4    42.5    43.7    44.8    46.0    47.1    48.3    49.4    50.6    51.7    52.9    54.0    55.2    56.3    57.5    58.6    59.8    60.9    62.1    63.2    64.4    65.5    66.7    67.8    69.0    70.1    71.3    72.4    73.6    74.7    75.9    77.0    78.2    79.3    80.5    81.6    82.8    83.9    85.1    86.2    87.4    88.5    89.7    90.8    92.0    93.1    94.3    95.4    96.6    97.7    98.9    
+-found 30 predictions from path traversal
+
+-reporting highest scoring path thru the trellis.
+-found 30 predictions persist after filtering for low support

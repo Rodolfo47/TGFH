@@ -1,0 +1,84 @@
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+-successfully changed directories to /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/C.albicans_SC5314/predict_misc/EVM/scaffold_7/scaffold_7_810001-910000
+
+-reading genomic sequence.
+
+** Processing features (+)
+
+-finding all potential splice sites, looking for GT/GC donors and AG acceptors.
+-finding all potential starts and stops. (strand: +)
+-loading gene prediction evidence. (strand: +)Valid prediction for snap_scaffold_7-snap.321-T1
+Valid prediction for snap_scaffold_7-snap.301-T1
+Valid prediction for GlimmerHMM_glimmerT_5472-T1
+Valid prediction for snap_scaffold_7-snap.319-T1
+Valid prediction for snap_scaffold_7-snap.307-T1
+Valid prediction for Augustus_model.g4835.t1
+Valid prediction for snap_scaffold_7-snap.325-T1
+Valid prediction for snap_scaffold_7-snap.309-T1
+Valid prediction for snap_scaffold_7-snap.315-T1
+Valid prediction for snap_scaffold_7-snap.318-T1
+Valid prediction for Augustus_model.g4832.t1
+Valid prediction for snap_scaffold_7-snap.312-T1
+Valid prediction for snap_scaffold_7-snap.311-T1
+Valid prediction for snap_scaffold_7-snap.323-T1
+Valid prediction for GlimmerHMM_glimmerT_5469-T1
+Valid prediction for snap_scaffold_7-snap.324-T1
+Valid prediction for GlimmerHMM_glimmerT_5475-T1
+Valid prediction for snap_scaffold_7-snap.303-T1
+
+-loading the search evidence (protein and EST search results, strand: +)
+-scoring exons (strand: +)
+
+** Processing features (-)
+
+-finding all potential splice sites, looking for GT/GC donors and AG acceptors.
+-finding all potential starts and stops. (strand: -)
+-loading gene prediction evidence. (strand: -)Valid prediction for snap_scaffold_7-snap.317-T1
+Valid prediction for snap_scaffold_7-snap.296-T1
+Valid prediction for Augustus_model.g4837.t1
+Valid prediction for snap_scaffold_7-snap.300-T1
+Valid prediction for snap_scaffold_7-snap.314-T1
+Valid prediction for GlimmerHMM_glimmerT_5477-T1
+Valid prediction for snap_scaffold_7-snap.308-T1
+Valid prediction for snap_scaffold_7-snap.298-T1
+Sorry, intron length (6) is less than minimum required (10)
+Valid prediction for snap_scaffold_7-snap.302-T1
+Valid prediction for snap_scaffold_7-snap.313-T1
+Valid prediction for snap_scaffold_7-snap.326-T1
+Valid prediction for snap_scaffold_7-snap.320-T1
+Valid prediction for snap_scaffold_7-snap.297-T1
+Valid prediction for snap_scaffold_7-snap.304-T1
+Valid prediction for snap_scaffold_7-snap.299-T1
+Valid prediction for snap_scaffold_7-snap.316-T1
+Valid prediction for snap_scaffold_7-snap.305-T1
+Valid prediction for snap_scaffold_7-snap.327-T1
+Valid prediction for Augustus_model.g4818.t1
+Valid prediction for snap_scaffold_7-snap.306-T1
+Valid prediction for snap_scaffold_7-snap.322-T1
+Valid prediction for GlimmerHMM_glimmerT_5468-T1
+Valid prediction for snap_scaffold_7-snap.310-T1
+Valid prediction for GlimmerHMM_glimmerT_5456-T1
+
+-loading the search evidence (protein and EST search results, strand: -)
+-scoring exons (strand: -)Error with prediction: snap lend_intergenic: 77356, rend_intergenic: 76488  at /home/rangeles/.conda/envs/funannotate/opt/evidencemodeler-1.1.1/EvmUtils/.././evidence_modeler.pl line 3218.
+
+-building DP trellis
+
+-building trellis in range 1 - 100000
+-exon list size: 115
+
+
+building trellis
+0.9    1.7    2.6    3.4    4.3    5.1    6.0    6.8    7.7    8.5    9.4    10.3    11.1    12.0    12.8    13.7    14.5    15.4    16.2    17.1    17.9    18.8    19.7    20.5    21.4    22.2    23.1    23.9    24.8    25.6    26.5    27.4    28.2    29.1    29.9    30.8    31.6    32.5    33.3    34.2    35.0    35.9    36.8    37.6    38.5    39.3    40.2    41.0    41.9    42.7    43.6    44.4    45.3    46.2    47.0    47.9    48.7    49.6    50.4    51.3    52.1    53.0    53.8    54.7    55.6    56.4    57.3    58.1    59.0    59.8    60.7    61.5    62.4    63.2    64.1    65.0    65.8    66.7    67.5    68.4    69.2    70.1    70.9    71.8    72.6    73.5    74.4    75.2    76.1    76.9    77.8    78.6    79.5    80.3    81.2    82.1    82.9    83.8    84.6    85.5    86.3    87.2    88.0    88.9    89.7    90.6    91.5    92.3    93.2    94.0    94.9    95.7    96.6    97.4    98.3    99.1    
+-found 31 predictions from path traversal
+Error with prediction: snap lend_intergenic: 77356, rend_intergenic: 76488  at /home/rangeles/.conda/envs/funannotate/opt/evidencemodeler-1.1.1/EvmUtils/.././evidence_modeler.pl line 3218.
+
+-reporting highest scoring path thru the trellis.
+-found 31 predictions persist after filtering for low support

@@ -1,0 +1,12 @@
+scaffold_44	HiQ	gene	678	2227	.	-	.	ID=gene.g5095.t1;Name=Augustus%20prediction
+scaffold_44	HiQ	mRNA	678	2227	.	-	.	ID=model.g5095.t1;Parent=gene.g5095.t1;Name=Augustus%20prediction
+scaffold_44	HiQ	exon	678	2227	.	-	.	ID=model.g5095.t1.exon1;Parent=model.g5095.t1
+scaffold_44	HiQ	CDS	678	2227	.	-	.	ID=cds.model.g5095.t1;Parent=model.g5095.t1
+scaffold_44	GlimmerHMM	gene	678	2132	.	-	.	ID=glimmerG_5509;Alias=scaffold_44.path1.gene1;
+scaffold_44	GlimmerHMM	mRNA	678	2132	.	-	.	ID=glimmerT_5509-T1;Parent=glimmerG_5509;Alias=scaffold_44.path1.gene1;
+scaffold_44	GlimmerHMM	exon	678	2132	.	-	.	ID=glimmerT_5509-T1.exon1;Parent=glimmerT_5509-T1;
+scaffold_44	GlimmerHMM	CDS	678	2132	.	-	0	ID=glimmerT_5509-T1.cds;Parent=glimmerT_5509-T1;
+scaffold_44	snap	gene	678	2195	.	-	.	ID=scaffold_44-snap.1;
+scaffold_44	snap	mRNA	678	2195	.	-	.	ID=scaffold_44-snap.1-T1;Parent=scaffold_44-snap.1;product=[];
+scaffold_44	snap	exon	678	2195	.	-	.	ID=scaffold_44-snap.1-T1.exon1;Parent=scaffold_44-snap.1-T1;
+scaffold_44	snap	CDS	678	2195	.	-	0	ID=scaffold_44-snap.1-T1.cds;Parent=scaffold_44-snap.1-T1;

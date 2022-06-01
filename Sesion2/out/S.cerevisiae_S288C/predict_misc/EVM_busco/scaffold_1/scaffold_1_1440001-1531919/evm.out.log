@@ -1,0 +1,131 @@
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+-successfully changed directories to /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.cerevisiae_S288C/predict_misc/EVM_busco/scaffold_1/scaffold_1_1440001-1531919
+
+-reading genomic sequence.
+
+** Processing features (+)
+
+-finding all potential splice sites, looking for GT/GC donors and AG acceptors.
+-finding all potential starts and stops. (strand: +)
+-loading gene prediction evidence. (strand: +)
+-loading the search evidence (protein and EST search results, strand: +)alignment gap has misordered coords: 30412 - 30393
+$VAR1 = [
+          [
+            30010,
+            30411
+          ],
+          [
+            30394,
+            30411
+          ]
+        ];
+ERROR adding intron for ev_type:exonerate/ID=match.133146.6142/Target=YDR511W: next end5 30394 < this end3 30411  mode +
+alignment gap has misordered coords: 30412 - 30393
+$VAR1 = [
+          [
+            30010,
+            30411
+          ],
+          [
+            30394,
+            30411
+          ]
+        ];
+alignment gap has misordered coords: 30512 - 30492
+$VAR1 = [
+          [
+            30511,
+            30493
+          ],
+          [
+            31033,
+            30493
+          ]
+        ];
+alignment gap has misordered coords: 30412 - 30393
+$VAR1 = [
+          [
+            30010,
+            30411
+          ],
+          [
+            30394,
+            30411
+          ]
+        ];
+
+-scoring exons (strand: +)
+
+** Processing features (-)
+
+-finding all potential splice sites, looking for GT/GC donors and AG acceptors.
+-finding all potential starts and stops. (strand: -)
+-loading gene prediction evidence. (strand: -)
+-loading the search evidence (protein and EST search results, strand: -)alignment gap has misordered coords: 61428 - 61408
+$VAR1 = [
+          [
+            60887,
+            61427
+          ],
+          [
+            61409,
+            61427
+          ]
+        ];
+ERROR adding intron for ev_type:exonerate/ID=match.133146.11/Target=YDR512C: next end5 61409 < this end3 61427  mode -
+alignment gap has misordered coords: 30412 - 30393
+$VAR1 = [
+          [
+            30010,
+            30411
+          ],
+          [
+            30394,
+            30411
+          ]
+        ];
+alignment gap has misordered coords: 30512 - 30492
+$VAR1 = [
+          [
+            30511,
+            30493
+          ],
+          [
+            31033,
+            30493
+          ]
+        ];
+alignment gap has misordered coords: 61428 - 61408
+$VAR1 = [
+          [
+            60887,
+            61427
+          ],
+          [
+            61409,
+            61427
+          ]
+        ];
+
+-scoring exons (strand: -)
+-building DP trellis
+
+-building trellis in range 1 - 91919
+-exon list size: 6
+
+
+building trellis
+12.5    25.0    37.5    50.0    62.5    75.0    87.5    
+-found 6 predictions from path traversal
+
+-reporting highest scoring path thru the trellis.
+-found 6 predictions persist after filtering for low support
+	-no exons in range 1 - 30009
+	-no exons in range 59329 - 91919

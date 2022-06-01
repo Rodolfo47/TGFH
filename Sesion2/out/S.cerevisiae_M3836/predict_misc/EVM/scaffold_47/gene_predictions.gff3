@@ -1,0 +1,12 @@
+scaffold_47	Augustus	gene	123	503	.	-	.	ID=gene.g5100.t1;Name=Augustus%20prediction
+scaffold_47	Augustus	mRNA	123	503	.	-	.	ID=model.g5100.t1;Parent=gene.g5100.t1;Name=Augustus%20prediction
+scaffold_47	Augustus	exon	123	503	.	-	.	ID=model.g5100.t1.exon1;Parent=model.g5100.t1
+scaffold_47	Augustus	CDS	123	503	.	-	.	ID=cds.model.g5100.t1;Parent=model.g5100.t1
+scaffold_47	GlimmerHMM	gene	185	503	.	-	.	ID=glimmerG_5513;Alias=scaffold_47.path1.gene1;
+scaffold_47	GlimmerHMM	mRNA	185	503	.	-	.	ID=glimmerT_5513-T1;Parent=glimmerG_5513;Alias=scaffold_47.path1.gene1;
+scaffold_47	GlimmerHMM	exon	185	503	.	-	.	ID=glimmerT_5513-T1.exon1;Parent=glimmerT_5513-T1;
+scaffold_47	GlimmerHMM	CDS	185	503	.	-	0	ID=glimmerT_5513-T1.cds;Parent=glimmerT_5513-T1;
+scaffold_47	snap	gene	46	503	.	-	.	ID=scaffold_47-snap.1;
+scaffold_47	snap	mRNA	46	503	.	-	.	ID=scaffold_47-snap.1-T1;Parent=scaffold_47-snap.1;product=[];
+scaffold_47	snap	exon	46	503	.	-	.	ID=scaffold_47-snap.1-T1.exon1;Parent=scaffold_47-snap.1-T1;
+scaffold_47	snap	CDS	46	503	.	-	0	ID=scaffold_47-snap.1-T1.cds;Parent=scaffold_47-snap.1-T1;

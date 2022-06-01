@@ -1,0 +1,53 @@
+# Please cite: Mario Stanke, Mark Diekhans, Robert Baertsch, David Haussler (2008),
+# Using native and syntenically mapped cDNA alignments to improve de novo gene finding
+# Bioinformatics 24: 637-644, doi 10.1093/bioinformatics/btn013
+# No extrinsic information on sequences given.
+# Initializing the parameters using config directory /home/rangeles/.conda/envs/funannotate/config/ ...
+# Using protein profile unknown
+# --[0..25]--> unknown_A (118) <--[0..2]--> unknown_B (47) <--[0..6]--
+# anidulans version. Using default transition matrix.
+# Looks like ./tmp/scaffold_29s.cerevisiae_m3836_xxx_4012073205_.temp is in fasta format.
+# We have hints for 0 sequences and for 0 of the sequences in the input set.
+#
+# ----- prediction on sequence number 1 (length = 10489, name = scaffold_29) -----
+#
+# Predicted genes for sequence number 1 on both strands
+# start gene g1
+scaffold_29	AUGUSTUS	gene	43674	44376	0.11	-	.	g1
+scaffold_29	AUGUSTUS	transcript	43674	44376	0.11	-	.	g1.t1
+scaffold_29	AUGUSTUS	stop_codon	43674	43676	.	-	0	transcript_id "g1.t1"; gene_id "g1";
+scaffold_29	AUGUSTUS	CDS	43674	43693	0.14	-	2	transcript_id "g1.t1"; gene_id "g1";
+scaffold_29	AUGUSTUS	CDS	43848	44292	0.15	-	0	transcript_id "g1.t1"; gene_id "g1";
+scaffold_29	AUGUSTUS	CDS	44374	44376	0.74	-	0	transcript_id "g1.t1"; gene_id "g1";
+scaffold_29	AUGUSTUS	start_codon	44374	44376	.	-	0	transcript_id "g1.t1"; gene_id "g1";
+# coding sequence = [atgcagtttattgaagaagttggtttggaagaattgcaaattttattagatattttaaaagcgagagaaaacaagcaag
+# gttttgcccagctattcgaaggagaagaagaatttgaagaaattaaggaagaagatgatgccagtgaagacgaatcgaaaactggtagtgaaagtgaa
+# agtgaaagtgagagtgatagcgatgatgctgatgaaaaagatgaagaagacgaggcaaatgaagatattttgaatattgataaagaggccactagcgc
+# cttagtgaaggcgttaaatttacccgataacatagttaatgataaaggggaagttgacttagaccaactcgaagggctttctgacgacggtggagacg
+# atgaagatgaggagtctatggatgatgaaaaaatgatggaattagatgatcagttatccgaaattttcaaacgtctgaacattccaacaatttag]
+# protein sequence = [MQFIEEVGLEELQILLDILKARENKQGFAQLFEGEEEFEEIKEEDDASEDESKTGSESESESESDSDDADEKDEEDEA
+# NEDILNIDKEATSALVKALNLPDNIVNDKGEVDLDQLEGLSDDGGDDEDEESMDDEKMMELDDQLSEIFKRLNIPTI]
+# end gene g1
+###
+# start gene g2
+scaffold_29	AUGUSTUS	gene	47486	47983	0.82	-	.	g2
+scaffold_29	AUGUSTUS	transcript	47486	47983	0.82	-	.	g2.t1
+scaffold_29	AUGUSTUS	stop_codon	47486	47488	.	-	0	transcript_id "g2.t1"; gene_id "g2";
+scaffold_29	AUGUSTUS	CDS	47486	47983	0.82	-	0	transcript_id "g2.t1"; gene_id "g2";
+scaffold_29	AUGUSTUS	start_codon	47981	47983	.	-	0	transcript_id "g2.t1"; gene_id "g2";
+scaffold_29	AUGUSTUS	protein_match	47489	47629	8.19	-	0	target "unknown_B[1..47]"; target_start 118; transcript_id "g2.t1"; gene_id "g2";
+scaffold_29	AUGUSTUS	protein_match	47630	47983	10.8	-	0	target "unknown_A[1..118]"; target_start 0; transcript_id "g2.t1"; gene_id "g2";
+# coding sequence = [atgcctccaaagtttgatcctaatgaagttaaatacttgtacctaagagccgttggtggtgaagtcggtgcctccgctg
+# ctttggctccaaagattggtcctttaggtctatcgccaaagaaggttggtgaagatattgctaaggccaccaaagaattcaagggtatcaaggttacc
+# gtccaattaaagatccaaaacagacaagctgctgcctctgttgtcccatctgcttcctctttggtcattactgctttgaaggaaccaccaagagacag
+# aaagaaggacaaaaacgtcaagcacagtggtaacattcaattggatgaaattattgaaattgccagacaaatgagagacaaatccttcggtagaactt
+# tggcttccgttactaaggaaatcttaggtactgctcaatctgtcggctgtcgtgttgacttcaagaatccccatgatatcattgaaggcattaatgct
+# ggtgaaatcgaaatcccagaaaattag]
+# protein sequence = [MPPKFDPNEVKYLYLRAVGGEVGASAALAPKIGPLGLSPKKVGEDIAKATKEFKGIKVTVQLKIQNRQAAASVVPSAS
+# SLVITALKEPPRDRKKDKNVKHSGNIQLDEIIEIARQMRDKSFGRTLASVTKEILGTAQSVGCRVDFKNPHDIIEGINAGEIEIPEN]
+# sequence of block unknown_B   118 [KSFGRTLASVTKEILGTAQSVGCRVDFKNPHDIIEGINAGEIEIPEN] 165
+# sequence of block unknown_A     0 [MPPKFDPNEVKYLYLRAVGGEVGASAALAPKIGPLGLSPKKVGEDIAKATKEFKGIKVTVQLKIQNRQAAASVVPSASSLVITALKEPPRDRKKDKNVKHSGNIQLDEIIEIARQMRD] 118
+# end gene g2
+###
+# command line:
+# augustus --stopCodonExcludedFromCDS=False --codingseq=1 --proteinprofile=/space21/PGE/rangeles/bin/funannotate_db/dikarya/prfl/EOG092651LN.prfl --predictionStart=42495 --predictionEnd=52983 --species=anidulans ./tmp/scaffold_29s.cerevisiae_m3836_xxx_4012073205_.temp

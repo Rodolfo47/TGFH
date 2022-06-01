@@ -1,0 +1,11 @@
+scaffold_1	AUGUSTUS	gene	1819544	1819924	0.01	+	.	g2
+scaffold_1	AUGUSTUS	transcript	1819544	1819924	0.01	+	.	g2.t1
+scaffold_1	AUGUSTUS	start_codon	1819544	1819546	.	+	0	transcript_id "g2.t1"; gene_id "g2";
+scaffold_1	AUGUSTUS	CDS	1819544	1819548	0.11	+	0	transcript_id "g2.t1"; gene_id "g2";
+scaffold_1	AUGUSTUS	CDS	1819603	1819924	0.01	+	1	transcript_id "g2.t1"; gene_id "g2";
+scaffold_1	AUGUSTUS	stop_codon	1819922	1819924	.	+	0	transcript_id "g2.t1"; gene_id "g2";
+scaffold_1	AUGUSTUS	protein_match	1819544	1819548	9.78	+	0	target "unknown_A[1..2]"; target_start 0; transcript_id "g2.t1"; gene_id "g2";
+scaffold_1	AUGUSTUS	protein_match	1819603	1819633	4.59	+	1	target "unknown_A[2..12]"; target_start 0; transcript_id "g2.t1"; gene_id "g2";
+scaffold_1	AUGUSTUS	protein_match	1819634	1819810	6.63	+	0	target "unknown_B[1..59]"; target_start 12; transcript_id "g2.t1"; gene_id "g2";
+scaffold_1	AUGUSTUS	protein_match	1819814	1819837	5.9	+	0	target "unknown_C[1..8]"; target_start 72; transcript_id "g2.t1"; gene_id "g2";
+scaffold_1	AUGUSTUS	protein_match	1819838	1819906	6.13	+	0	target "unknown_D[1..23]"; target_start 80; transcript_id "g2.t1"; gene_id "g2";

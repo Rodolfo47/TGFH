@@ -1,0 +1,8 @@
+scaffold_8	AUGUSTUS	gene	202217	203082	0.01	+	.	g1
+scaffold_8	AUGUSTUS	transcript	202217	203082	0.01	+	.	g1.t1
+scaffold_8	AUGUSTUS	start_codon	202217	202219	.	+	0	transcript_id "g1.t1"; gene_id "g1";
+scaffold_8	AUGUSTUS	CDS	202217	202263	0.01	+	0	transcript_id "g1.t1"; gene_id "g1";
+scaffold_8	AUGUSTUS	CDS	202692	203082	0.01	+	1	transcript_id "g1.t1"; gene_id "g1";
+scaffold_8	AUGUSTUS	stop_codon	203080	203082	.	+	0	transcript_id "g1.t1"; gene_id "g1";
+scaffold_8	AUGUSTUS	protein_match	202256	202263	11.1	+	0	target "unknown_A[1..3]"; target_start 13; transcript_id "g1.t1"; gene_id "g1";
+scaffold_8	AUGUSTUS	protein_match	202692	203076	11.1	+	1	target "unknown_A[3..131]"; target_start 13; transcript_id "g1.t1"; gene_id "g1";

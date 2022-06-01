@@ -1,0 +1,12 @@
+scaffold_38	Augustus	gene	267	1631	.	+	.	ID=gene.g5088.t1;Name=Augustus%20prediction
+scaffold_38	Augustus	mRNA	267	1631	.	+	.	ID=model.g5088.t1;Parent=gene.g5088.t1;Name=Augustus%20prediction
+scaffold_38	Augustus	exon	267	1631	.	+	.	ID=model.g5088.t1.exon1;Parent=model.g5088.t1
+scaffold_38	Augustus	CDS	267	1631	.	+	.	ID=cds.model.g5088.t1;Parent=model.g5088.t1
+scaffold_38	GlimmerHMM	gene	436	626	.	-	.	ID=glimmerG_5495;Alias=scaffold_38.path1.gene1;
+scaffold_38	GlimmerHMM	mRNA	436	626	.	-	.	ID=glimmerT_5495-T1;Parent=glimmerG_5495;Alias=scaffold_38.path1.gene1;
+scaffold_38	GlimmerHMM	exon	436	626	.	-	.	ID=glimmerT_5495-T1.exon1;Parent=glimmerT_5495-T1;
+scaffold_38	GlimmerHMM	CDS	436	626	.	-	2	ID=glimmerT_5495-T1.cds;Parent=glimmerT_5495-T1;
+scaffold_38	snap	gene	1188	1369	.	-	.	ID=scaffold_38-snap.1;
+scaffold_38	snap	mRNA	1188	1369	.	-	.	ID=scaffold_38-snap.1-T1;Parent=scaffold_38-snap.1;product=[];
+scaffold_38	snap	exon	1188	1369	.	-	.	ID=scaffold_38-snap.1-T1.exon1;Parent=scaffold_38-snap.1-T1;
+scaffold_38	snap	CDS	1188	1369	.	-	2	ID=scaffold_38-snap.1-T1.cds;Parent=scaffold_38-snap.1-T1;

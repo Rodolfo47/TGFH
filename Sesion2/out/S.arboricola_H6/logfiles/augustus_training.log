@@ -1,0 +1,67 @@
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Will create parameters for a EUKARYOTIC species!
+creating directory /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.arboricola_H6/predict_misc/ab_initio_parameters/augustus/species/s.arboricola_h6_xxx/ ...
+creating /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.arboricola_H6/predict_misc/ab_initio_parameters/augustus/species/s.arboricola_h6_xxx/s.arboricola_h6_xxx_parameters.cfg ...
+creating /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.arboricola_H6/predict_misc/ab_initio_parameters/augustus/species/s.arboricola_h6_xxx/s.arboricola_h6_xxx_weightmatrix.txt ...
+creating /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.arboricola_H6/predict_misc/ab_initio_parameters/augustus/species/s.arboricola_h6_xxx/s.arboricola_h6_xxx_metapars.cfg ...
+The necessary files for training s.arboricola_h6_xxx have been created.
+Now, either run etraining or optimize_parameters.pl with --species=s.arboricola_h6_xxx.
+etraining quickly estimates the parameters from a file with training genes.
+optimize_augustus.pl alternates running etraining and augustus to find optimal metaparameters.
+
+# Read in 1160 genbank sequences.
+Quantiles of the GC contents in the training set:
+0%	0.323
+5%	0.348	10%	0.355
+15%	0.359	20%	0.363
+25%	0.366	30%	0.368
+35%	0.371	40%	0.374
+45%	0.377	50%	0.381
+55%	0.385	60%	0.389
+65%	0.393	70%	0.397
+75%	0.402	80%	0.408
+85%	0.419	90%	0.432
+95%	0.457	100%	0.538
+HMM-training the parameters...
+i= 0 bc= (0.237, 0.263, 0.263, 0.237)
+ ** building model for exons *EXON*
+gene evm.model.scaffold_2.5 transcr. 1 in sequence scaffold_2_97402-99556: coding length not a multiple of 3. Skipping...
+gene evm.model.scaffold_5.39 transcr. 1 in sequence scaffold_5_413243-417795: coding length not a multiple of 3. Skipping...
+gene evm.model.scaffold_5.40 transcr. 1 in sequence scaffold_5_417796-422214: coding length not a multiple of 3. Skipping...
+gene evm.model.scaffold_8.80 transcr. 1 in sequence scaffold_8_631810-633498: coding length not a multiple of 3. Skipping...
+start codon frequencies: ATG(1156)
+# admissible start codons and their probabilities: ATG(1), CTG(0), TTG(0)
+ number of bases in the reading frames: 609384 610532 610535
+--- frame = 0 ---    minPatSum = 233
+--- frame = 1 ---    minPatSum = 233
+--- frame = 2 ---    minPatSum = 233
+--- initial frame = 0 ---    minPatSum = 233
+--- initial frame = 1 ---    minPatSum = 233
+--- initial frame = 2 ---    minPatSum = 233
+--- internal exon terminal frame = 0 ---    minPatSum = 233
+--- internal exon terminal frame = 1 ---    minPatSum = 233
+--- internal exon terminal frame = 2 ---    minPatSum = 233
+single, initial, internal, terminal mean exon lengths :
+1093	377	108	595
+single exon : 1003
+initial exon 0 : 51
+initial exon 1 : 60
+initial exon 2 : 42
+internal exon 0 : 77
+internal exon 1 : 106
+internal exon 2 : 76
+terminal exon : 153
+Frequency of stop codons:
+tag:  299 (0.259)
+taa:  518 (0.448)
+tga:  339 (0.293)
+end *EXON*
+Storing parameters to file...
+Writing exon model parameters [1] to file /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.arboricola_H6/predict_misc/ab_initio_parameters/augustus/species/s.arboricola_h6_xxx/s.arboricola_h6_xxx_exon_probs.pbl.

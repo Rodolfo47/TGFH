@@ -1,0 +1,53 @@
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+-successfully changed directories to /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/C.albicans_SC5314/predict_misc/EVM/scaffold_6/scaffold_6_1170001-1190845
+
+-reading genomic sequence.
+
+** Processing features (+)
+
+-finding all potential splice sites, looking for GT/GC donors and AG acceptors.
+-finding all potential starts and stops. (strand: +)
+-loading gene prediction evidence. (strand: +)Valid prediction for Augustus_model.g4503.t1
+Valid prediction for snap_scaffold_6-snap.405-T1
+Valid prediction for snap_scaffold_6-snap.408-T1
+
+-loading the search evidence (protein and EST search results, strand: +)
+-scoring exons (strand: +)
+
+** Processing features (-)
+
+-finding all potential splice sites, looking for GT/GC donors and AG acceptors.
+-finding all potential starts and stops. (strand: -)
+-loading gene prediction evidence. (strand: -)Valid prediction for snap_scaffold_6-snap.407-T1
+Valid prediction for snap_scaffold_6-snap.410-T1
+Valid prediction for snap_scaffold_6-snap.409-T1
+Valid prediction for GlimmerHMM_glimmerT_5110-T1
+Valid prediction for Augustus_model.g4502.t1
+Valid prediction for snap_scaffold_6-snap.406-T1
+Valid prediction for Augustus_model.g4504.t1
+Valid prediction for Augustus_model.g4505.t1
+
+-loading the search evidence (protein and EST search results, strand: -)
+-scoring exons (strand: -)Error with prediction: GlimmerHMM lend_intergenic: 9400, rend_intergenic: 9397  at /home/rangeles/.conda/envs/funannotate/opt/evidencemodeler-1.1.1/EvmUtils/.././evidence_modeler.pl line 3218.
+
+-building DP trellis
+
+-building trellis in range 1 - 20845
+-exon list size: 39
+
+
+building trellis
+2.4    4.9    7.3    9.8    12.2    14.6    17.1    19.5    22.0    24.4    26.8    29.3    31.7    34.1    36.6    39.0    41.5    43.9    46.3    48.8    51.2    53.7    56.1    58.5    61.0    63.4    65.9    68.3    70.7    73.2    75.6    78.0    80.5    82.9    85.4    87.8    90.2    92.7    95.1    97.6    
+-found 7 predictions from path traversal
+Error with prediction: GlimmerHMM lend_intergenic: 9400, rend_intergenic: 9397  at /home/rangeles/.conda/envs/funannotate/opt/evidencemodeler-1.1.1/EvmUtils/.././evidence_modeler.pl line 3218.
+GOT 5prime partial gene.
+
+-reporting highest scoring path thru the trellis.
+-found 7 predictions persist after filtering for low support

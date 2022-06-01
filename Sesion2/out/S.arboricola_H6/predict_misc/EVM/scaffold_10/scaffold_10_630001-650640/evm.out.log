@@ -1,0 +1,48 @@
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+-successfully changed directories to /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.arboricola_H6/predict_misc/EVM/scaffold_10/scaffold_10_630001-650640
+
+-reading genomic sequence.
+
+** Processing features (+)
+
+-finding all potential splice sites, looking for GT/GC donors and AG acceptors.
+-finding all potential starts and stops. (strand: +)
+-loading gene prediction evidence. (strand: +)Valid prediction for GlimmerHMM_glimmerT_4409-T1
+Valid prediction for snap_scaffold_10-snap.259-T1
+Valid prediction for snap_scaffold_10-snap.263-T1
+Valid prediction for Augustus_model.g3889.t1
+Valid prediction for snap_scaffold_10-snap.260-T1
+Valid prediction for Augustus_model.g3894.t1
+
+-loading the search evidence (protein and EST search results, strand: +)
+-scoring exons (strand: +)
+
+** Processing features (-)
+
+-finding all potential splice sites, looking for GT/GC donors and AG acceptors.
+-finding all potential starts and stops. (strand: -)
+-loading gene prediction evidence. (strand: -)Valid prediction for snap_scaffold_10-snap.262-T1
+Valid prediction for snap_scaffold_10-snap.261-T1
+Valid prediction for GlimmerHMM_glimmerT_4411-T1
+
+-loading the search evidence (protein and EST search results, strand: -)
+-scoring exons (strand: -)
+-building DP trellis
+
+-building trellis in range 1 - 20640
+-exon list size: 24
+
+
+building trellis
+3.8    7.7    11.5    15.4    19.2    23.1    26.9    30.8    34.6    38.5    42.3    46.2    50.0    53.8    57.7    61.5    65.4    69.2    73.1    76.9    80.8    84.6    88.5    92.3    96.2    
+-found 6 predictions from path traversal
+
+-reporting highest scoring path thru the trellis.
+-found 6 predictions persist after filtering for low support

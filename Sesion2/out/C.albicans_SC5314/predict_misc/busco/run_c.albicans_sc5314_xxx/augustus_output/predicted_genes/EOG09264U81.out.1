@@ -1,0 +1,48 @@
+# Please cite: Mario Stanke, Mark Diekhans, Robert Baertsch, David Haussler (2008),
+# Using native and syntenically mapped cDNA alignments to improve de novo gene finding
+# Bioinformatics 24: 637-644, doi 10.1093/bioinformatics/btn013
+# No extrinsic information on sequences given.
+# Initializing the parameters using config directory /home/rangeles/.conda/envs/funannotate/config/ ...
+# Using protein profile unknown
+# --[0..36]--> unknown_A (10) <--[0..2]--> unknown_B (11) <--[1..4]--> unknown_C (15) <--[1..3]--> unknown_D (14) <--[0..9]--> unknown_E (15) <--[3..13]--> unknown_F (24) <--[0..42]--> unknown_G (16) <--[0..1]--> unknown_H (48) <--[0..16]--
+# anidulans version. Using default transition matrix.
+# Looks like ./tmp/scaffold_2c.albicans_sc5314_xxx_722612634_.temp is in fasta format.
+# We have hints for 0 sequences and for 0 of the sequences in the input set.
+#
+# ----- prediction on sequence number 1 (length = 10501, name = scaffold_2) -----
+#
+# Predicted genes for sequence number 1 on both strands
+# start gene g1
+scaffold_2	AUGUSTUS	gene	197957	198460	0.98	-	.	g1
+scaffold_2	AUGUSTUS	transcript	197957	198460	0.98	-	.	g1.t1
+scaffold_2	AUGUSTUS	stop_codon	197957	197959	.	-	0	transcript_id "g1.t1"; gene_id "g1";
+scaffold_2	AUGUSTUS	CDS	197957	198460	0.98	-	0	transcript_id "g1.t1"; gene_id "g1";
+scaffold_2	AUGUSTUS	start_codon	198458	198460	.	-	0	transcript_id "g1.t1"; gene_id "g1";
+scaffold_2	AUGUSTUS	protein_match	197960	198103	9.54	-	0	target "unknown_H[1..48]"; target_start 119; transcript_id "g1.t1"; gene_id "g1";
+scaffold_2	AUGUSTUS	protein_match	198104	198151	4.99	-	0	target "unknown_G[1..16]"; target_start 103; transcript_id "g1.t1"; gene_id "g1";
+scaffold_2	AUGUSTUS	protein_match	198161	198232	6.34	-	0	target "unknown_F[1..24]"; target_start 76; transcript_id "g1.t1"; gene_id "g1";
+scaffold_2	AUGUSTUS	protein_match	198242	198286	7.41	-	0	target "unknown_E[1..15]"; target_start 58; transcript_id "g1.t1"; gene_id "g1";
+scaffold_2	AUGUSTUS	protein_match	198302	198343	5.74	-	0	target "unknown_D[1..14]"; target_start 39; transcript_id "g1.t1"; gene_id "g1";
+scaffold_2	AUGUSTUS	protein_match	198347	198391	7.57	-	0	target "unknown_C[1..15]"; target_start 23; transcript_id "g1.t1"; gene_id "g1";
+scaffold_2	AUGUSTUS	protein_match	198398	198430	7.99	-	0	target "unknown_B[1..11]"; target_start 10; transcript_id "g1.t1"; gene_id "g1";
+scaffold_2	AUGUSTUS	protein_match	198431	198460	6.16	-	0	target "unknown_A[1..10]"; target_start 0; transcript_id "g1.t1"; gene_id "g1";
+# coding sequence = [atgcttatctttgaagacgttatttccggtgatgaattattatctgacgcttacgacgtcaaattagttgacggtgccg
+# tctacgaagccgactgtgctatggtcactgttggtaacggtgacattgatattggtgccaatccatctgctgaagacggtgaagaagctttggaagat
+# ggtgctgaaactgttaacaatgttgtctattctttcagattgcaaccaactatgtttgacaaaaaatcatttaccacctacatcaaaggttacatgaa
+# gagaattaaggcttacttggctgaaaacgacccagattccgttgaagcttttgaaaaaggtgctaccgcttacgttaagaaggttttgggttctttca
+# aagattgggaattctacactggtgaatcaatggacccagatgctatggttgtcttgttgaactacagagaagatggtactactccttacgtcgccatc
+# tggaaacatggtgtcaaagaaaacaaaatctaa]
+# protein sequence = [MLIFEDVISGDELLSDAYDVKLVDGAVYEADCAMVTVGNGDIDIGANPSAEDGEEALEDGAETVNNVVYSFRLQPTMF
+# DKKSFTTYIKGYMKRIKAYLAENDPDSVEAFEKGATAYVKKVLGSFKDWEFYTGESMDPDAMVVLLNYREDGTTPYVAIWKHGVKENKI]
+# sequence of block unknown_H   119 [VLGSFKDWEFYTGESMDPDAMVVLLNYREDGTTPYVAIWKHGVKENKI] 167
+# sequence of block unknown_G   103 [DSVEAFEKGATAYVKK] 119
+# sequence of block unknown_F    76 [MFDKKSFTTYIKGYMKRIKAYLAE] 100
+# sequence of block unknown_E    58 [DGAETVNNVVYSFRL] 73
+# sequence of block unknown_D    39 [GDIDIGANPSAEDG] 53
+# sequence of block unknown_C    23 [DGAVYEADCAMVTVG] 38
+# sequence of block unknown_B    10 [DELLSDAYDVK] 21
+# sequence of block unknown_A     0 [MLIFEDVISG] 10
+# end gene g1
+###
+# command line:
+# augustus --stopCodonExcludedFromCDS=False --codingseq=1 --proteinprofile=/space21/PGE/rangeles/bin/funannotate_db/dikarya/prfl/EOG09264U81.prfl --predictionStart=192960 --predictionEnd=203460 --species=anidulans ./tmp/scaffold_2c.albicans_sc5314_xxx_722612634_.temp

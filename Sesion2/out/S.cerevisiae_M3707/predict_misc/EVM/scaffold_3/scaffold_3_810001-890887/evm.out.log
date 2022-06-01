@@ -1,0 +1,74 @@
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+-successfully changed directories to /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.cerevisiae_M3707/predict_misc/EVM/scaffold_3/scaffold_3_810001-890887
+
+-reading genomic sequence.
+
+** Processing features (+)
+
+-finding all potential splice sites, looking for GT/GC donors and AG acceptors.
+-finding all potential starts and stops. (strand: +)
+-loading gene prediction evidence. (strand: +)Valid prediction for snap_scaffold_3-snap.376-T1
+Valid prediction for snap_scaffold_3-snap.371-T1
+Valid prediction for snap_scaffold_3-snap.359-T1
+Valid prediction for snap_scaffold_3-snap.373-T1
+Valid prediction for snap_scaffold_3-snap.355-T1
+Valid prediction for snap_scaffold_3-snap.375-T1
+Valid prediction for Augustus_model.g1339.t1
+Valid prediction for snap_scaffold_3-snap.354-T1
+Valid prediction for snap_scaffold_3-snap.369-T1
+Valid prediction for snap_scaffold_3-snap.353-T1
+Valid prediction for snap_scaffold_3-snap.351-T1
+Valid prediction for snap_scaffold_3-snap.372-T1
+Valid prediction for GlimmerHMM_glimmerT_1419-T1
+Valid prediction for snap_scaffold_3-snap.364-T1
+Valid prediction for snap_scaffold_3-snap.363-T1
+Valid prediction for snap_scaffold_3-snap.374-T1
+Valid prediction for snap_scaffold_3-snap.347-T1
+Valid prediction for snap_scaffold_3-snap.350-T1
+
+-loading the search evidence (protein and EST search results, strand: +)
+-scoring exons (strand: +)
+
+** Processing features (-)
+
+-finding all potential splice sites, looking for GT/GC donors and AG acceptors.
+-finding all potential starts and stops. (strand: -)
+-loading gene prediction evidence. (strand: -)Valid prediction for snap_scaffold_3-snap.357-T1
+Valid prediction for snap_scaffold_3-snap.361-T1
+Valid prediction for snap_scaffold_3-snap.368-T1
+Valid prediction for snap_scaffold_3-snap.362-T1
+Valid prediction for Augustus_model.g1313.t1
+Valid prediction for snap_scaffold_3-snap.360-T1
+Valid prediction for snap_scaffold_3-snap.358-T1
+Valid prediction for snap_scaffold_3-snap.370-T1
+Valid prediction for snap_scaffold_3-snap.366-T1
+Valid prediction for snap_scaffold_3-snap.349-T1
+Valid prediction for snap_scaffold_3-snap.352-T1
+Valid prediction for snap_scaffold_3-snap.365-T1
+Valid prediction for snap_scaffold_3-snap.367-T1
+Valid prediction for snap_scaffold_3-snap.377-T1
+Valid prediction for snap_scaffold_3-snap.356-T1
+Valid prediction for snap_scaffold_3-snap.348-T1
+Valid prediction for snap_scaffold_3-snap.378-T1
+
+-loading the search evidence (protein and EST search results, strand: -)
+-scoring exons (strand: -)
+-building DP trellis
+
+-building trellis in range 1 - 80887
+-exon list size: 114
+
+
+building trellis
+0.9    1.7    2.6    3.4    4.3    5.2    6.0    6.9    7.8    8.6    9.5    10.3    11.2    12.1    12.9    13.8    14.7    15.5    16.4    17.2    18.1    19.0    19.8    20.7    21.6    22.4    23.3    24.1    25.0    25.9    26.7    27.6    28.4    29.3    30.2    31.0    31.9    32.8    33.6    34.5    35.3    36.2    37.1    37.9    38.8    39.7    40.5    41.4    42.2    43.1    44.0    44.8    45.7    46.6    47.4    48.3    49.1    50.0    50.9    51.7    52.6    53.4    54.3    55.2    56.0    56.9    57.8    58.6    59.5    60.3    61.2    62.1    62.9    63.8    64.7    65.5    66.4    67.2    68.1    69.0    69.8    70.7    71.6    72.4    73.3    74.1    75.0    75.9    76.7    77.6    78.4    79.3    80.2    81.0    81.9    82.8    83.6    84.5    85.3    86.2    87.1    87.9    88.8    89.7    90.5    91.4    92.2    93.1    94.0    94.8    95.7    96.6    97.4    98.3    99.1    
+-found 39 predictions from path traversal
+
+-reporting highest scoring path thru the trellis.
+-found 39 predictions persist after filtering for low support

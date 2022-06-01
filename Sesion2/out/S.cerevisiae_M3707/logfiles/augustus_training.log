@@ -1,0 +1,67 @@
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Will create parameters for a EUKARYOTIC species!
+creating directory /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.cerevisiae_M3707/predict_misc/ab_initio_parameters/augustus/species/s.cerevisiae_m3707_xxx/ ...
+creating /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.cerevisiae_M3707/predict_misc/ab_initio_parameters/augustus/species/s.cerevisiae_m3707_xxx/s.cerevisiae_m3707_xxx_parameters.cfg ...
+creating /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.cerevisiae_M3707/predict_misc/ab_initio_parameters/augustus/species/s.cerevisiae_m3707_xxx/s.cerevisiae_m3707_xxx_weightmatrix.txt ...
+creating /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.cerevisiae_M3707/predict_misc/ab_initio_parameters/augustus/species/s.cerevisiae_m3707_xxx/s.cerevisiae_m3707_xxx_metapars.cfg ...
+The necessary files for training s.cerevisiae_m3707_xxx have been created.
+Now, either run etraining or optimize_parameters.pl with --species=s.cerevisiae_m3707_xxx.
+etraining quickly estimates the parameters from a file with training genes.
+optimize_augustus.pl alternates running etraining and augustus to find optimal metaparameters.
+
+# Read in 1208 genbank sequences.
+Quantiles of the GC contents in the training set:
+0%	0.318
+5%	0.346	10%	0.353
+15%	0.358	20%	0.361
+25%	0.364	30%	0.367
+35%	0.369	40%	0.372
+45%	0.374	50%	0.377
+55%	0.38	60%	0.382
+65%	0.385	70%	0.389
+75%	0.393	80%	0.398
+85%	0.403	90%	0.415
+95%	0.432	100%	0.491
+HMM-training the parameters...
+i= 0 bc= (0.237, 0.263, 0.263, 0.237)
+ ** building model for exons *EXON*
+gene evm.model.scaffold_6.29 transcr. 1 in sequence scaffold_6_285858-287367: coding length not a multiple of 3. Skipping...
+gene evm.model.scaffold_13.25 transcr. 1 in sequence scaffold_13_254995-256888: coding length not a multiple of 3. Skipping...
+gene evm.model.scaffold_13.26 transcr. 1 in sequence scaffold_13_256889-260653: coding length not a multiple of 3. Skipping...
+gene evm.model.scaffold_21.1 transcr. 1 in sequence scaffold_21_4178-11175: coding length not a multiple of 3. Skipping...
+start codon frequencies: ATG(1204)
+# admissible start codons and their probabilities: ATG(1), CTG(0), TTG(0)
+ number of bases in the reading frames: 643878 645073 645078
+--- frame = 0 ---    minPatSum = 233
+--- frame = 1 ---    minPatSum = 233
+--- frame = 2 ---    minPatSum = 233
+--- initial frame = 0 ---    minPatSum = 233
+--- initial frame = 1 ---    minPatSum = 233
+--- initial frame = 2 ---    minPatSum = 233
+--- internal exon terminal frame = 0 ---    minPatSum = 233
+--- internal exon terminal frame = 1 ---    minPatSum = 233
+--- internal exon terminal frame = 2 ---    minPatSum = 233
+single, initial, internal, terminal mean exon lengths :
+1088	369	313	659
+single exon : 1085
+initial exon 0 : 37
+initial exon 1 : 45
+initial exon 2 : 37
+internal exon 0 : 17
+internal exon 1 : 32
+internal exon 2 : 14
+terminal exon : 119
+Frequency of stop codons:
+tag:  277 (0.23)
+taa:  579 (0.481)
+tga:  348 (0.289)
+end *EXON*
+Storing parameters to file...
+Writing exon model parameters [1] to file /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.cerevisiae_M3707/predict_misc/ab_initio_parameters/augustus/species/s.cerevisiae_m3707_xxx/s.cerevisiae_m3707_xxx_exon_probs.pbl.

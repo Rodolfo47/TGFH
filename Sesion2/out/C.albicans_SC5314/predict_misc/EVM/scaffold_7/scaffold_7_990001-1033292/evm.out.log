@@ -1,0 +1,61 @@
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+-successfully changed directories to /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/C.albicans_SC5314/predict_misc/EVM/scaffold_7/scaffold_7_990001-1033292
+
+-reading genomic sequence.
+
+** Processing features (+)
+
+-finding all potential splice sites, looking for GT/GC donors and AG acceptors.
+-finding all potential starts and stops. (strand: +)
+-loading gene prediction evidence. (strand: +)Valid prediction for snap_scaffold_7-snap.354-T1
+Valid prediction for snap_scaffold_7-snap.368-T1
+Sorry, intron length (7) is less than minimum required (10)
+Valid prediction for snap_scaffold_7-snap.367-T1
+Valid prediction for GlimmerHMM_glimmerT_5525-T1
+Valid prediction for snap_scaffold_7-snap.362-T1
+Valid prediction for snap_scaffold_7-snap.364-T1
+Sorry, intron length (7) is less than minimum required (10)
+Valid prediction for snap_scaffold_7-snap.363-T1
+Valid prediction for Augustus_model.g4861.t1
+Valid prediction for snap_scaffold_7-snap.359-T1
+Valid prediction for snap_scaffold_7-snap.357-T1
+Valid prediction for Augustus_model.g4878.t1
+
+-loading the search evidence (protein and EST search results, strand: +)
+-scoring exons (strand: +)
+
+** Processing features (-)
+
+-finding all potential splice sites, looking for GT/GC donors and AG acceptors.
+-finding all potential starts and stops. (strand: -)
+-loading gene prediction evidence. (strand: -)Valid prediction for snap_scaffold_7-snap.358-T1
+Valid prediction for snap_scaffold_7-snap.360-T1
+Valid prediction for snap_scaffold_7-snap.366-T1
+Valid prediction for snap_scaffold_7-snap.356-T1
+Valid prediction for Augustus_model.g4866.t1
+Valid prediction for snap_scaffold_7-snap.365-T1
+Valid prediction for snap_scaffold_7-snap.355-T1
+Sorry, intron length (4) is less than minimum required (10)
+Valid prediction for snap_scaffold_7-snap.361-T1
+
+-loading the search evidence (protein and EST search results, strand: -)
+-scoring exons (strand: -)
+-building DP trellis
+
+-building trellis in range 1 - 43292
+-exon list size: 58
+
+
+building trellis
+1.7    3.3    5.0    6.7    8.3    10.0    11.7    13.3    15.0    16.7    18.3    20.0    21.7    23.3    25.0    26.7    28.3    30.0    31.7    33.3    35.0    36.7    38.3    40.0    41.7    43.3    45.0    46.7    48.3    50.0    51.7    53.3    55.0    56.7    58.3    60.0    61.7    63.3    65.0    66.7    68.3    70.0    71.7    73.3    75.0    76.7    78.3    80.0    81.7    83.3    85.0    86.7    88.3    90.0    91.7    93.3    95.0    96.7    98.3    
+-found 18 predictions from path traversal
+
+-reporting highest scoring path thru the trellis.
+-found 18 predictions persist after filtering for low support

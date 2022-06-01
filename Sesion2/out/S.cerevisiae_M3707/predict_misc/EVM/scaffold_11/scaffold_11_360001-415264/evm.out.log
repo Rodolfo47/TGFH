@@ -1,0 +1,66 @@
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+-successfully changed directories to /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.cerevisiae_M3707/predict_misc/EVM/scaffold_11/scaffold_11_360001-415264
+
+-reading genomic sequence.
+
+** Processing features (+)
+
+-finding all potential splice sites, looking for GT/GC donors and AG acceptors.
+-finding all potential starts and stops. (strand: +)
+-loading gene prediction evidence. (strand: +)Valid prediction for Augustus_model.g3608.t1
+Valid prediction for snap_scaffold_11-snap.152-T1
+Valid prediction for snap_scaffold_11-snap.164-T1
+Valid prediction for snap_scaffold_11-snap.156-T1
+Valid prediction for Augustus_model.g3611.t1
+Valid prediction for snap_scaffold_11-snap.157-T1
+Valid prediction for snap_scaffold_11-snap.163-T1
+Valid prediction for snap_scaffold_11-snap.165-T1
+Valid prediction for snap_scaffold_11-snap.151-T1
+Valid prediction for snap_scaffold_11-snap.149-T1
+Valid prediction for snap_scaffold_11-snap.148-T1
+Valid prediction for snap_scaffold_11-snap.153-T1
+
+-loading the search evidence (protein and EST search results, strand: +)
+-scoring exons (strand: +)
+
+** Processing features (-)
+
+-finding all potential splice sites, looking for GT/GC donors and AG acceptors.
+-finding all potential starts and stops. (strand: -)
+-loading gene prediction evidence. (strand: -)Valid prediction for Augustus_model.g3592.t1
+Valid prediction for snap_scaffold_11-snap.159-T1
+Valid prediction for Augustus_model.g3601.t1
+Valid prediction for GlimmerHMM_glimmerT_3875-T1
+Valid prediction for snap_scaffold_11-snap.154-T1
+Valid prediction for snap_scaffold_11-snap.158-T1
+Valid prediction for snap_scaffold_11-snap.160-T1
+Valid prediction for snap_scaffold_11-snap.166-T1
+Valid prediction for snap_scaffold_11-snap.161-T1
+Valid prediction for snap_scaffold_11-snap.150-T1
+Valid prediction for snap_scaffold_11-snap.155-T1
+Valid prediction for snap_scaffold_11-snap.162-T1
+Valid prediction for GlimmerHMM_glimmerT_3896-T1
+add_exon() Sorry, GlimmerHMM_glimmerT_3896-T1 3577-3758-terminal-1 is invalid.
+
+-loading the search evidence (protein and EST search results, strand: -)
+-scoring exons (strand: -)
+-building DP trellis
+
+-building trellis in range 1 - 55264
+-exon list size: 75
+
+
+building trellis
+1.3    2.6    3.9    5.2    6.5    7.8    9.1    10.4    11.7    13.0    14.3    15.6    16.9    18.2    19.5    20.8    22.1    23.4    24.7    26.0    27.3    28.6    29.9    31.2    32.5    33.8    35.1    36.4    37.7    39.0    40.3    41.6    42.9    44.2    45.5    46.8    48.1    49.4    50.6    51.9    53.2    54.5    55.8    57.1    58.4    59.7    61.0    62.3    63.6    64.9    66.2    67.5    68.8    70.1    71.4    72.7    74.0    75.3    76.6    77.9    79.2    80.5    81.8    83.1    84.4    85.7    87.0    88.3    89.6    90.9    92.2    93.5    94.8    96.1    97.4    98.7    
+-found 24 predictions from path traversal
+GOT 5prime partial gene.
+
+-reporting highest scoring path thru the trellis.
+-found 24 predictions persist after filtering for low support

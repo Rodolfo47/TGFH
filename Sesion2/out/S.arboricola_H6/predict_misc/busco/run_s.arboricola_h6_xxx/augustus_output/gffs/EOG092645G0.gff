@@ -1,0 +1,20 @@
+scaffold_1	AUGUSTUS	gene	77225	81058	0.01	-	.	g1
+scaffold_1	AUGUSTUS	transcript	77225	81058	0.01	-	.	g1.t1
+scaffold_1	AUGUSTUS	stop_codon	77225	77227	.	-	0	transcript_id "g1.t1"; gene_id "g1";
+scaffold_1	AUGUSTUS	CDS	77225	77232	0.01	-	2	transcript_id "g1.t1"; gene_id "g1";
+scaffold_1	AUGUSTUS	CDS	78243	78260	0.01	-	2	transcript_id "g1.t1"; gene_id "g1";
+scaffold_1	AUGUSTUS	CDS	78497	78512	0.01	-	0	transcript_id "g1.t1"; gene_id "g1";
+scaffold_1	AUGUSTUS	CDS	79149	79163	0.01	-	0	transcript_id "g1.t1"; gene_id "g1";
+scaffold_1	AUGUSTUS	CDS	79762	79799	0.01	-	2	transcript_id "g1.t1"; gene_id "g1";
+scaffold_1	AUGUSTUS	CDS	80383	81058	0.01	-	0	transcript_id "g1.t1"; gene_id "g1";
+scaffold_1	AUGUSTUS	start_codon	81056	81058	.	-	0	transcript_id "g1.t1"; gene_id "g1";
+scaffold_1	AUGUSTUS	protein_match	77228	77232	0.212	-	2	target "unknown_F[19..20]"; target_start 236; transcript_id "g1.t1"; gene_id "g1";
+scaffold_1	AUGUSTUS	protein_match	78243	78260	2.07	-	2	target "unknown_F[13..19]"; target_start 236; transcript_id "g1.t1"; gene_id "g1";
+scaffold_1	AUGUSTUS	protein_match	78497	78512	1.45	-	0	target "unknown_F[8..13]"; target_start 236; transcript_id "g1.t1"; gene_id "g1";
+scaffold_1	AUGUSTUS	protein_match	79149	79163	4.22	-	0	target "unknown_F[3..7]"; target_start 236; transcript_id "g1.t1"; gene_id "g1";
+scaffold_1	AUGUSTUS	protein_match	79762	79767	1.93	-	0	target "unknown_F[1..2]"; target_start 236; transcript_id "g1.t1"; gene_id "g1";
+scaffold_1	AUGUSTUS	protein_match	80399	80632	9.2	-	0	target "unknown_E[1..78]"; target_start 142; transcript_id "g1.t1"; gene_id "g1";
+scaffold_1	AUGUSTUS	protein_match	80636	80770	10.6	-	0	target "unknown_D[1..45]"; target_start 96; transcript_id "g1.t1"; gene_id "g1";
+scaffold_1	AUGUSTUS	protein_match	80774	80944	8.62	-	0	target "unknown_C[1..57]"; target_start 38; transcript_id "g1.t1"; gene_id "g1";
+scaffold_1	AUGUSTUS	protein_match	80957	81013	5.19	-	0	target "unknown_B[1..19]"; target_start 15; transcript_id "g1.t1"; gene_id "g1";
+scaffold_1	AUGUSTUS	protein_match	81026	81058	6.82	-	0	target "unknown_A[1..11]"; target_start 0; transcript_id "g1.t1"; gene_id "g1";

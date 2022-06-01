@@ -1,0 +1,48 @@
+# Please cite: Mario Stanke, Mark Diekhans, Robert Baertsch, David Haussler (2008),
+# Using native and syntenically mapped cDNA alignments to improve de novo gene finding
+# Bioinformatics 24: 637-644, doi 10.1093/bioinformatics/btn013
+# No extrinsic information on sequences given.
+# Initializing the parameters using config directory /home/rangeles/.conda/envs/funannotate/config/ ...
+# Using protein profile unknown
+# --[18..210]--> unknown_B (10) <--[14..90]--> unknown_D (17) <--[11..96]--> unknown_E (44) <--[0..50]--> unknown_F (25) <--[0..6]--> unknown_G (28) <--[0..2]--> unknown_H (24) <--[0..79]--
+# anidulans version. Using default transition matrix.
+# Looks like ./tmp/scaffold_1s.cerevisiae_s288c_xxx_2361545640_.temp is in fasta format.
+# We have hints for 0 sequences and for 0 of the sequences in the input set.
+#
+# ----- prediction on sequence number 1 (length = 10303, name = scaffold_1) -----
+#
+# Predicted genes for sequence number 1 on both strands
+# start gene g1
+scaffold_1	AUGUSTUS	gene	1146374	1147174	0.01	+	.	g1
+scaffold_1	AUGUSTUS	transcript	1146374	1147174	0.01	+	.	g1.t1
+scaffold_1	AUGUSTUS	start_codon	1146374	1146376	.	+	0	transcript_id "g1.t1"; gene_id "g1";
+scaffold_1	AUGUSTUS	CDS	1146374	1147174	0.01	+	0	transcript_id "g1.t1"; gene_id "g1";
+scaffold_1	AUGUSTUS	stop_codon	1147172	1147174	.	+	0	transcript_id "g1.t1"; gene_id "g1";
+scaffold_1	AUGUSTUS	protein_match	1146494	1146523	4.05	+	0	target "unknown_B[1..10]"; target_start 40; transcript_id "g1.t1"; gene_id "g1";
+scaffold_1	AUGUSTUS	protein_match	1146572	1146622	2.58	+	0	target "unknown_D[1..17]"; target_start 66; transcript_id "g1.t1"; gene_id "g1";
+scaffold_1	AUGUSTUS	protein_match	1146683	1146814	3.02	+	0	target "unknown_E[1..44]"; target_start 103; transcript_id "g1.t1"; gene_id "g1";
+scaffold_1	AUGUSTUS	protein_match	1146818	1146892	7.24	+	0	target "unknown_F[1..25]"; target_start 148; transcript_id "g1.t1"; gene_id "g1";
+scaffold_1	AUGUSTUS	protein_match	1146899	1146982	6.54	+	0	target "unknown_G[1..28]"; target_start 175; transcript_id "g1.t1"; gene_id "g1";
+scaffold_1	AUGUSTUS	protein_match	1146983	1147054	4.93	+	0	target "unknown_H[1..24]"; target_start 203; transcript_id "g1.t1"; gene_id "g1";
+# coding sequence = [atgggcaaaagatcgtttgtatcctctccggttagcaatagtgcaaaagctgtgaaattcttaaaggctcaaagacgaa
+# aacagaaaaatgaagccaaacaagccactttgaaagcgtcaaccgataaggttgatccagttctgggccgggcggacactccctttataacacgtatt
+# atggcagagttaaaagagcctttagttctatcgaaaggttataatattgaagaggtagacaagttccttgcagccattgagtctgctaagcgtgaaag
+# agctgagttgtcaggtttaaatacagaagttgtgggtattgaagacatagaaaaactggaagacagacgtgaagccatcttgagaatattgagcatga
+# ggaactccgagaataaaaatgccattaaaatggctgtagaactcgcacgtaaggaatttgagaggttcccaggcgatactggctccagtgaagtccaa
+# gcagcttgcatgactgttcgtatccagaatatggcaaaccatattaaagagcatcgtaaggattttgctaacaccagaaatttgaggatattagtcca
+# gcaaaggcaggcaatattaagatatttgaaaagagataatcctgaaaaatactactggactattcaaaaactaggattgaatgatgcggccataacgg
+# atgaattcaatatggacaggcgttacatgcaagattatgaattttttggtgataaaatattgataagagattctaagaaagtggcaaatcaaaagcgt
+# aaggagataagaaaacaaaaaagggctacattttag]
+# protein sequence = [MGKRSFVSSPVSNSAKAVKFLKAQRRKQKNEAKQATLKASTDKVDPVLGRADTPFITRIMAELKEPLVLSKGYNIEEV
+# DKFLAAIESAKRERAELSGLNTEVVGIEDIEKLEDRREAILRILSMRNSENKNAIKMAVELARKEFERFPGDTGSSEVQAACMTVRIQNMANHIKEHR
+# KDFANTRNLRILVQQRQAILRYLKRDNPEKYYWTIQKLGLNDAAITDEFNMDRRYMQDYEFFGDKILIRDSKKVANQKRKEIRKQKRATF]
+# sequence of block unknown_B    40 [TDKVDPVLGR] 50
+# sequence of block unknown_D    66 [LVLSKGYNIEEVDKFLA] 83
+# sequence of block unknown_E   103 [GIEDIEKLEDRREAILRILSMRNSENKNAIKMAVELARKEFERF] 147
+# sequence of block unknown_F   148 [GDTGSSEVQAACMTVRIQNMANHIK] 173
+# sequence of block unknown_G   175 [RKDFANTRNLRILVQQRQAILRYLKRDN] 203
+# sequence of block unknown_H   203 [PEKYYWTIQKLGLNDAAITDEFNM] 227
+# end gene g1
+###
+# command line:
+# augustus --stopCodonExcludedFromCDS=False --codingseq=1 --proteinprofile=/space21/PGE/rangeles/bin/funannotate_db/dikarya/prfl/EOG092643JW.prfl --predictionStart=1141731 --predictionEnd=1152033 --species=anidulans ./tmp/scaffold_1s.cerevisiae_s288c_xxx_2361545640_.temp

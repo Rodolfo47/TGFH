@@ -1,0 +1,63 @@
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+-successfully changed directories to /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.cerevisiae_M3707/predict_misc/EVM/scaffold_21/scaffold_21_90001-132425
+
+-reading genomic sequence.
+
+** Processing features (+)
+
+-finding all potential splice sites, looking for GT/GC donors and AG acceptors.
+-finding all potential starts and stops. (strand: +)
+-loading gene prediction evidence. (strand: +)Valid prediction for snap_scaffold_21-snap.61-T1
+Valid prediction for Augustus_model.g4817.t1
+Valid prediction for snap_scaffold_21-snap.53-T1
+Valid prediction for snap_scaffold_21-snap.51-T1
+Valid prediction for snap_scaffold_21-snap.46-T1
+Valid prediction for snap_scaffold_21-snap.60-T1
+Valid prediction for snap_scaffold_21-snap.57-T1
+Valid prediction for snap_scaffold_21-snap.56-T1
+Valid prediction for snap_scaffold_21-snap.48-T1
+Valid prediction for snap_scaffold_21-snap.59-T1
+Valid prediction for snap_scaffold_21-snap.50-T1
+
+-loading the search evidence (protein and EST search results, strand: +)
+-scoring exons (strand: +)
+
+** Processing features (-)
+
+-finding all potential splice sites, looking for GT/GC donors and AG acceptors.
+-finding all potential starts and stops. (strand: -)
+-loading gene prediction evidence. (strand: -)Valid prediction for snap_scaffold_21-snap.45-T1
+Valid prediction for snap_scaffold_21-snap.49-T1
+Valid prediction for snap_scaffold_21-snap.58-T1
+Valid prediction for snap_scaffold_21-snap.55-T1
+Valid prediction for snap_scaffold_21-snap.43-T1
+Sorry, intron length (4) is less than minimum required (10)
+Valid prediction for snap_scaffold_21-snap.52-T1
+Valid prediction for Augustus_model.g4809.t1
+Valid prediction for snap_scaffold_21-snap.47-T1
+Valid prediction for snap_scaffold_21-snap.54-T1
+Valid prediction for snap_scaffold_21-snap.44-T1
+Sorry, intron length (5) is less than minimum required (10)
+Valid prediction for snap_scaffold_21-snap.42-T1
+
+-loading the search evidence (protein and EST search results, strand: -)
+-scoring exons (strand: -)
+-building DP trellis
+
+-building trellis in range 1 - 42425
+-exon list size: 67
+
+
+building trellis
+1.4    2.9    4.3    5.8    7.2    8.7    10.1    11.6    13.0    14.5    15.9    17.4    18.8    20.3    21.7    23.2    24.6    26.1    27.5    29.0    30.4    31.9    33.3    34.8    36.2    37.7    39.1    40.6    42.0    43.5    44.9    46.4    47.8    49.3    50.7    52.2    53.6    55.1    56.5    58.0    59.4    60.9    62.3    63.8    65.2    66.7    68.1    69.6    71.0    72.5    73.9    75.4    76.8    78.3    79.7    81.2    82.6    84.1    85.5    87.0    88.4    89.9    91.3    92.8    94.2    95.7    97.1    98.6    
+-found 23 predictions from path traversal
+
+-reporting highest scoring path thru the trellis.
+-found 23 predictions persist after filtering for low support

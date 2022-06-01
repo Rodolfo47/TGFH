@@ -1,0 +1,109 @@
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+-successfully changed directories to /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/C.albicans_SC5314/predict_misc/EVM/scaffold_4/scaffold_4_1350001-1450000
+
+-reading genomic sequence.
+
+** Processing features (+)
+
+-finding all potential splice sites, looking for GT/GC donors and AG acceptors.
+-finding all potential starts and stops. (strand: +)
+-loading gene prediction evidence. (strand: +)Valid prediction for Augustus_model.g3351.t1
+Valid prediction for snap_scaffold_4-snap.481-T1
+Valid prediction for snap_scaffold_4-snap.495-T1
+Valid prediction for snap_scaffold_4-snap.486-T1
+Valid prediction for snap_scaffold_4-snap.476-T1
+Valid prediction for snap_scaffold_4-snap.493-T1
+Valid prediction for snap_scaffold_4-snap.497-T1
+Valid prediction for snap_scaffold_4-snap.496-T1
+Couldn't classify 98496, 99951
+Sorry, prediction Augustus_model.g3377.t1 fails validation.
+(ATG)	 CT	96503-98330	GT	AAG
+(AGT)	 AG	98496-99951	GT	CAG
+-recovered Augustus_model.g3377.t1, initial, 96503, 98330
+-recovered Augustus_model.g3377.t1, internal, 98496, 99951
+Valid prediction for Augustus_model.g3356.t1
+Couldn't classify 93900, 93945
+Sorry, prediction GlimmerHMM_glimmerT_3810-T1 fails validation.
+(ATG)	 AG	92819-92855	GT	TGG
+(TGG)	 AG	93900-93945	GT	ATG
+-recovered GlimmerHMM_glimmerT_3810-T1, initial, 92819, 92855
+-recovered GlimmerHMM_glimmerT_3810-T1, internal, 92819, 92855
+-recovered GlimmerHMM_glimmerT_3810-T1, internal, 93900, 93945
+Valid prediction for GlimmerHMM_glimmerT_3792-T1
+Valid prediction for snap_scaffold_4-snap.473-T1
+Valid prediction for snap_scaffold_4-snap.479-T1
+Sorry, intron length (8) is less than minimum required (10)
+Valid prediction for GlimmerHMM_glimmerT_3777-T1
+Valid prediction for snap_scaffold_4-snap.477-T1
+Valid prediction for snap_scaffold_4-snap.474-T1
+Valid prediction for GlimmerHMM_glimmerT_3778-T1
+Valid prediction for snap_scaffold_4-snap.475-T1
+Valid prediction for snap_scaffold_4-snap.499-T1
+Valid prediction for snap_scaffold_4-snap.494-T1
+
+-loading the search evidence (protein and EST search results, strand: +)
+-scoring exons (strand: +)
+
+** Processing features (-)
+
+-finding all potential splice sites, looking for GT/GC donors and AG acceptors.
+-finding all potential starts and stops. (strand: -)
+-loading gene prediction evidence. (strand: -)Valid prediction for snap_scaffold_4-snap.483-T1
+Valid prediction for snap_scaffold_4-snap.488-T1
+Valid prediction for snap_scaffold_4-snap.478-T1
+Valid prediction for Augustus_model.g3376.t1
+Valid prediction for snap_scaffold_4-snap.490-T1
+Couldn't classify 41195, 41766
+Sorry, prediction GlimmerHMM_glimmerT_3797-T1 fails validation.
+(ATG)	 CA	38185-41062	GT	TAG
+(ATA)	 AG	41195-41766	GC	ANG
+-recovered GlimmerHMM_glimmerT_3797-T1, initial, 38185, 41062
+-recovered GlimmerHMM_glimmerT_3797-T1, internal, 41195, 41766
+Valid prediction for GlimmerHMM_glimmerT_3786-T1
+Valid prediction for snap_scaffold_4-snap.491-T1
+Couldn't classify 41794, 42237
+Sorry, prediction GlimmerHMM_glimmerT_3796-T1 fails validation.
+(ATN)	 TC	41794-42237	TC	GAT
+Valid prediction for snap_scaffold_4-snap.498-T1
+Valid prediction for snap_scaffold_4-snap.487-T1
+Valid prediction for Augustus_model.g3358.t1
+Valid prediction for snap_scaffold_4-snap.480-T1
+Couldn't classify 97428, 97433
+Sorry, prediction snap_scaffold_4-snap.472-T1 fails validation.
+(ATG)	 TA	96227-96230	GT	GGG
+(TTC)	 AG	96760-96767	GT	TTG
+(GAG)	 AG	97428-97433	GT	ACG
+-recovered snap_scaffold_4-snap.472-T1, initial, 96227, 96230
+-recovered snap_scaffold_4-snap.472-T1, internal, 96760, 96767
+-recovered snap_scaffold_4-snap.472-T1, internal, 97428, 97433
+Valid prediction for Augustus_model.g3369.t1
+Valid prediction for snap_scaffold_4-snap.482-T1
+Valid prediction for snap_scaffold_4-snap.485-T1
+Valid prediction for Augustus_model.g3372.t1
+Valid prediction for snap_scaffold_4-snap.484-T1
+Valid prediction for snap_scaffold_4-snap.489-T1
+Valid prediction for snap_scaffold_4-snap.492-T1
+
+-loading the search evidence (protein and EST search results, strand: -)
+-scoring exons (strand: -)Error with prediction: GlimmerHMM lend_intergenic: 75864, rend_intergenic: 75861  at /home/rangeles/.conda/envs/funannotate/opt/evidencemodeler-1.1.1/EvmUtils/.././evidence_modeler.pl line 3218.
+
+-building DP trellis
+
+-building trellis in range 1 - 100000
+-exon list size: 132
+
+
+building trellis
+0.7    1.5    2.2    3.0    3.7    4.5    5.2    6.0    6.7    7.5    8.2    9.0    9.7    10.4    11.2    11.9    12.7    13.4    14.2    14.9    15.7    16.4    17.2    17.9    18.7    19.4    20.1    20.9    21.6    22.4    23.1    23.9    24.6    25.4    26.1    26.9    27.6    28.4    29.1    29.9    30.6    31.3    32.1    32.8    33.6    34.3    35.1    35.8    36.6    37.3    38.1    38.8    39.6    40.3    41.0    41.8    42.5    43.3    44.0    44.8    45.5    46.3    47.0    47.8    48.5    49.3    50.0    50.7    51.5    52.2    53.0    53.7    54.5    55.2    56.0    56.7    57.5    58.2    59.0    59.7    60.4    61.2    61.9    62.7    63.4    64.2    64.9    65.7    66.4    67.2    67.9    68.7    69.4    70.1    70.9    71.6    72.4    73.1    73.9    74.6    75.4    76.1    76.9    77.6    78.4    79.1    79.9    80.6    81.3    82.1    82.8    83.6    84.3    85.1    85.8    86.6    87.3    88.1    88.8    89.6    90.3    91.0    91.8    92.5    93.3    94.0    94.8    95.5    96.3    97.0    97.8    98.5    99.3    
+-found 33 predictions from path traversal
+Error with prediction: GlimmerHMM lend_intergenic: 75864, rend_intergenic: 75861  at /home/rangeles/.conda/envs/funannotate/opt/evidencemodeler-1.1.1/EvmUtils/.././evidence_modeler.pl line 3218.
+
+-reporting highest scoring path thru the trellis.
+-found 31 predictions persist after filtering for low support

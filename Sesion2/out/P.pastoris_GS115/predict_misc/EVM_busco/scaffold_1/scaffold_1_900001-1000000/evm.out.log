@@ -1,0 +1,133 @@
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+-successfully changed directories to /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/P.pastoris_GS115/predict_misc/EVM_busco/scaffold_1/scaffold_1_900001-1000000
+
+-reading genomic sequence.
+
+** Processing features (+)
+
+-finding all potential splice sites, looking for GT/GC donors and AG acceptors.
+-finding all potential starts and stops. (strand: +)
+-loading gene prediction evidence. (strand: +)Valid prediction for Augustus_gene489.t1
+
+-loading the search evidence (protein and EST search results, strand: +)alignment gap has misordered coords: 24006 - 23507
+$VAR1 = [
+          [
+            24005,
+            23508
+          ],
+          [
+            24005,
+            23508
+          ]
+        ];
+alignment gap has misordered coords: 24006 - 23507
+$VAR1 = [
+          [
+            24005,
+            23508
+          ],
+          [
+            24005,
+            23508
+          ]
+        ];
+
+-scoring exons (strand: +)
+
+** Processing features (-)
+
+-finding all potential splice sites, looking for GT/GC donors and AG acceptors.
+-finding all potential starts and stops. (strand: -)
+-loading gene prediction evidence. (strand: -)Valid prediction for Augustus_gene610.t1
+Valid prediction for Augustus_gene43.t1
+
+-loading the search evidence (protein and EST search results, strand: -)alignment gap has misordered coords: 76494 - 75995
+$VAR1 = [
+          [
+            75996,
+            76493
+          ],
+          [
+            75996,
+            76493
+          ]
+        ];
+alignment gap has misordered coords: 76494 - 75995
+$VAR1 = [
+          [
+            75996,
+            76493
+          ],
+          [
+            75996,
+            76493
+          ]
+        ];
+ERROR adding intron for ev_type:exonerate/ID=match.8382.111/Target=YEL054C: next end5 75996 < this end3 76493  mode -
+ERROR adding intron for ev_type:exonerate/ID=match.8382.44/Target=YDR418W: next end5 75996 < this end3 76493  mode -
+alignment gap has misordered coords: 24006 - 23507
+$VAR1 = [
+          [
+            24005,
+            23508
+          ],
+          [
+            24005,
+            23508
+          ]
+        ];
+alignment gap has misordered coords: 24006 - 23507
+$VAR1 = [
+          [
+            24005,
+            23508
+          ],
+          [
+            24005,
+            23508
+          ]
+        ];
+alignment gap has misordered coords: 76494 - 75995
+$VAR1 = [
+          [
+            75996,
+            76493
+          ],
+          [
+            75996,
+            76493
+          ]
+        ];
+alignment gap has misordered coords: 76494 - 75995
+$VAR1 = [
+          [
+            75996,
+            76493
+          ],
+          [
+            75996,
+            76493
+          ]
+        ];
+
+-scoring exons (strand: -)
+-building DP trellis
+
+-building trellis in range 1 - 100000
+-exon list size: 25
+
+
+building trellis
+3.7    7.4    11.1    14.8    18.5    22.2    25.9    29.6    33.3    37.0    40.7    44.4    48.1    51.9    55.6    59.3    63.0    66.7    70.4    74.1    77.8    81.5    85.2    88.9    92.6    96.3    
+-found 15 predictions from path traversal
+
+-reporting highest scoring path thru the trellis.
+-found 15 predictions persist after filtering for low support
+	-no exons in range 75582 - 100000

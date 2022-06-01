@@ -1,0 +1,119 @@
+[06/01/22 01:32:07]: /home/rangeles/.conda/envs/funannotate/bin/funannotate predict -i ../out/S.cerevisiae_M3836.clean.sort.mask.fna -o ../out/S.cerevisiae_M3836 -s S.cerevisiae_M3836 --isolate XXX --name S.cerevisiae_M3836 --ploidy 1 --protein_evidence ../data/Protein_models.faa --cpus 28
+
+[06/01/22 01:32:07]: OS: linux2, 32 cores, ~ 264 GB RAM. Python: 2.7.15
+[06/01/22 01:32:07]: Running funannotate v1.7.4
+[06/01/22 01:32:07]: GeneMark not found and $GENEMARK_PATH environmental variable missing. Will skip GeneMark ab-initio prediction.
+[06/01/22 01:32:07]: {'genemark': 1, 'hiq': 2, 'glimmerhmm': 1, 'pasa': 6, 'snap': 1, 'transcripts': 1, 'proteins': 1, 'codingquarry': 2, 'augustus': 1}
+[06/01/22 01:32:07]: {'snap': 'busco', 'glimmerhmm': 'busco', 'augustus': 'busco'}
+[06/01/22 01:32:07]: Parsed training data, run ab-initio gene predictors as follows:
+[06/01/22 01:32:07]: CodingQuarry will be skipped --> --rna_bam required for training
+[06/01/22 01:32:09]: {'genemark': 1, 'hiq': 2, 'glimmerhmm': 1, 'pasa': 6, 'snap': 1, 'transcripts': 1, 'proteins': 1, 'codingquarry': 0, 'augustus': 1}
+[06/01/22 01:32:09]: Loading genome assembly and parsing soft-masked repetitive sequences
+[06/01/22 01:32:09]: Genome loaded: 49 scaffolds; 11,523,071 bp; 3.97% repeats masked
+[06/01/22 01:33:08]: join_mult_hints.pl
+[06/01/22 01:33:08]: Running BUSCO to find conserved gene models for training ab-initio predictors
+[06/01/22 01:33:08]: /home/rangeles/.conda/envs/funannotate/bin/python /home/rangeles/.conda/envs/funannotate/lib/python2.7/site-packages/funannotate/aux_scripts/funannotate-BUSCO2.py -i /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.cerevisiae_M3836/predict_misc/genome.softmasked.fa -m genome --lineage /space21/PGE/rangeles/bin/funannotate_db/dikarya -o s.cerevisiae_m3836_xxx -c 28 --species anidulans -f --local_augustus /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.cerevisiae_M3836/predict_misc/ab_initio_parameters/augustus
+[06/01/22 01:39:51]: 1,214 valid BUSCO predictions found, now formatting for EVM
+[06/01/22 01:40:29]: bedtools intersect -a /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.cerevisiae_M3836/predict_misc/protein_alignments.gff3 -b ../out/S.cerevisiae_M3836/predict_misc/buscos.bed
+[06/01/22 01:40:43]: 1,201 total gene models from EVM, now validating with BUSCO HMM search
+[06/01/22 01:40:43]: /home/rangeles/.conda/envs/funannotate/opt/evidencemodeler-1.1.1/EvmUtils/gff3_file_to_proteins.pl /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.cerevisiae_M3836/predict_misc/busco.evm.gff3 /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.cerevisiae_M3836/predict_misc/genome.softmasked.fa
+[06/01/22 01:40:58]: 1,201 BUSCO predictions validated
+[06/01/22 01:40:58]: Training Augustus using BUSCO gene models
+[06/01/22 01:40:58]: gff2gbSmallDNA.pl ../out/S.cerevisiae_M3836/predict_misc/busco.final.gff3 /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.cerevisiae_M3836/predict_misc/genome.softmasked.fa 600 ../out/S.cerevisiae_M3836/predict_misc/augustus.training.busco.gb
+[06/01/22 01:40:58]: perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+
+[06/01/22 01:41:10]: Augustus initial training results:
+[06/01/22 01:41:10]: Running Augustus gene prediction using s.cerevisiae_m3836_xxx parameters
+[06/01/22 01:41:52]: perl /home/rangeles/.conda/envs/funannotate/opt/evidencemodeler-1.1.1/EvmUtils/misc/augustus_GFF3_to_EVM_GFF3.pl ../out/S.cerevisiae_M3836/predict_misc/augustus.gff3
+[06/01/22 01:41:53]: Pulling out high quality Augustus predictions
+[06/01/22 01:41:53]: Found 2,394 high quality predictions from Augustus (>90% exon evidence)
+[06/01/22 01:41:53]: Running SNAP gene prediction, using training data: ../out/S.cerevisiae_M3836/predict_misc/busco.final.gff3
+[06/01/22 01:41:54]: 1201 gene models to train snap on 34 scaffolds
+[06/01/22 01:41:54]: fathom /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.cerevisiae_M3836/predict_misc/snap.training.zff /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.cerevisiae_M3836/predict_misc/snap-training.scaffolds.fasta -categorize 1000 -min-intron 10 -max-intron 3000
+[06/01/22 01:41:55]: fathom uni.ann uni.dna -export 1000 -plus
+[06/01/22 01:41:55]: forge export.ann export.dna
+[06/01/22 01:41:56]: perl /home/rangeles/.conda/envs/funannotate/bin/hmm-assembler.pl snap-trained ../out/S.cerevisiae_M3836/predict_misc/snaptrain
+[06/01/22 01:41:56]: snap ../out/S.cerevisiae_M3836/predict_misc/snap-trained.hmm /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.cerevisiae_M3836/predict_misc/genome.softmasked.fa
+[06/01/22 01:43:00]: 4,427 predictions from SNAP
+[06/01/22 01:43:00]: Running GlimmerHMM gene prediction, using training data: ../out/S.cerevisiae_M3836/predict_misc/busco.final.gff3
+[06/01/22 01:43:01]: trainGlimmerHMM /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.cerevisiae_M3836/predict_misc/genome.softmasked.fa /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.cerevisiae_M3836/predict_misc/glimmer.exons -d ../out/S.cerevisiae_M3836/predict_misc/glimmerhmm
+[06/01/22 01:44:03]: perl /home/rangeles/.conda/envs/funannotate/bin/glimmhmm.pl /home/rangeles/.conda/envs/funannotate/bin/glimmerhmm /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.cerevisiae_M3836/predict_misc/genome.softmasked.fa /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.cerevisiae_M3836/predict_misc/glimmerhmm -g
+[06/01/22 01:44:45]: 5,515 predictions from GlimmerHMM
+[06/01/22 01:44:46]: Prediction sources: ['HiQ', 'Augustus', 'GlimmerHMM', 'snap']
+[06/01/22 01:44:46]: Summary of gene models: {u'snap': 4427, u'HiQ': 2394, u'total': 15044, u'GlimmerHMM': 5515, u'Augustus': 2708}
+[06/01/22 01:44:46]: EVM Weights: {'snap': 1, 'HiQ': 2, 'GlimmerHMM': 1, 'proteins': 1, 'Augustus': 1}
+[06/01/22 01:44:46]: Summary of gene models passed to EVM (weights):
+[06/01/22 01:44:46]: Launching EVM via funannotate-runEVM.py
+[06/01/22 01:44:46]: /home/rangeles/.conda/envs/funannotate/bin/python /home/rangeles/.conda/envs/funannotate/lib/python2.7/site-packages/funannotate/aux_scripts/funannotate-runEVM.py ../out/S.cerevisiae_M3836/logfiles/funannotate-EVM.log 28 /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.cerevisiae_M3836/predict_misc/EVM --genome /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.cerevisiae_M3836/predict_misc/genome.softmasked.fa --gene_predictions /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.cerevisiae_M3836/predict_misc/gene_predictions.gff3 --weights /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.cerevisiae_M3836/predict_misc/weights.evm.txt --protein_alignments /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.cerevisiae_M3836/predict_misc/protein_alignments.gff3 --min_intron_length 10 /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.cerevisiae_M3836/predict_misc/evm.round1.gff3
+[06/01/22 01:47:20]: 5,433 total gene models from EVM
+[06/01/22 01:47:20]: Generating protein fasta files from 5,433 EVM models
+[06/01/22 01:47:24]: now filtering out bad gene models (< 50 aa in length, transposable elements, etc).
+[06/01/22 01:47:24]: diamond blastp --sensitive --query ../out/S.cerevisiae_M3836/predict_misc/evm.round1.proteins.fa --threads 28 --out ../out/S.cerevisiae_M3836/predict_misc/repeats.xml --db /space21/PGE/rangeles/bin/funannotate_db/repeats.dmnd --evalue 1e-10 --max-target-seqs 1 --outfmt 5
+[06/01/22 01:47:28]: bedtools intersect -f 0.9 -a /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.cerevisiae_M3836/predict_misc/evm.round1.gff3 -b /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.cerevisiae_M3836/predict_misc/repeatmasker.bed
+[06/01/22 01:47:28]: Found 39 gene models to remove: 0 too short; 5 span gaps; 34 transposable elements
+[06/01/22 01:47:28]: 5,394 gene models remaining
+[06/01/22 01:47:28]: Predicting tRNAs
+[06/01/22 01:47:28]: tRNAscan-SE -o ../out/S.cerevisiae_M3836/predict_misc/tRNAscan.out /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.cerevisiae_M3836/predict_misc/genome.softmasked.fa
+[06/01/22 01:48:41]: Status: Phase I: Searching for tRNAs with HMM-enabled Infernal
+Status: Phase II: Infernal verification of candidate tRNAs detected with first-pass scan
+
+[06/01/22 01:48:41]: perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+
+tRNAscan-SE v.2.0.5 (October 2019) - scan sequences for transfer RNAs
+Copyright (C) 2019 Patricia Chan and Todd Lowe
+                   University of California Santa Cruz
+Freely distributed under the GNU General Public License (GPLv3)
+
+------------------------------------------------------------
+Sequence file(s) to search:        /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.cerevisiae_M3836/predict_misc/genome.softmasked.fa
+Search Mode:                       Eukaryotic
+Results written to:                ../out/S.cerevisiae_M3836/predict_misc/tRNAscan.out
+Output format:                     Tabular
+Searching with:                    Infernal First Pass->Infernal
+Isotype-specific model scan:       Yes
+Covariance model:                  /home/rangeles/.conda/envs/funannotate/lib/tRNAscan-SE/models/TRNAinf-euk.cm
+                                   /home/rangeles/.conda/envs/funannotate/lib/tRNAscan-SE/models/TRNAinf-euk-SeC.cm
+Infernal first pass cutoff score:  10
+
+Temporary directory:               /tmp
+------------------------------------------------------------
+
+
+[06/01/22 01:48:41]: bedtools intersect -v -a ../out/S.cerevisiae_M3836/predict_misc/trnascan.gff3 -b ../out/S.cerevisiae_M3836/predict_misc/evm.cleaned.gff3 ../out/S.cerevisiae_M3836/predict_misc/assembly-gaps.bed
+[06/01/22 01:48:42]: 273 tRNAscan models are valid (non-overlapping)
+[06/01/22 01:48:42]: Generating GenBank tbl annotation file
+[06/01/22 01:48:49]: Converting to final Genbank format
+[06/01/22 01:48:49]: /home/rangeles/.conda/envs/funannotate/bin/python /home/rangeles/.conda/envs/funannotate/lib/python2.7/site-packages/funannotate/aux_scripts/tbl2asn_parallel.py -i ../out/S.cerevisiae_M3836/predict_misc/tbl2asn/genome.tbl -f /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.cerevisiae_M3836/predict_misc/genome.softmasked.fa -o ../out/S.cerevisiae_M3836/predict_misc/tbl2asn --sbt /home/rangeles/.conda/envs/funannotate/lib/python2.7/site-packages/funannotate/config/test.sbt -d ../out/S.cerevisiae_M3836/predict_results/S.cerevisiae_M3836_XXX.discrepency.report.txt -s S.cerevisiae_M3836 -t -l paired-ends -v 1 -c 28 --isolate XXX
+[06/01/22 01:49:13]: Collecting final annotation files for 5,667 total gene models
+[06/01/22 01:49:13]: Funannotate predict is finished, output files are in the ../out/S.cerevisiae_M3836/predict_results folder
+[06/01/22 01:49:13]: Your next step might be functional annotation, suggested commands:
+-------------------------------------------------------
+Run InterProScan (Docker required): 
+funannotate iprscan -i ../out/S.cerevisiae_M3836 -m docker -c 28
+
+Run antiSMASH: 
+funannotate remote -i ../out/S.cerevisiae_M3836 -m antismash -e youremail@server.edu
+
+Annotate Genome: 
+funannotate annotate -i ../out/S.cerevisiae_M3836 --cpus 28 --sbt yourSBTfile.txt
+-------------------------------------------------------
+                
+[06/01/22 01:49:13]: Training parameters file saved: ../out/S.cerevisiae_M3836/predict_results/s.cerevisiae_m3836_xxx.parameters.json
+[06/01/22 01:49:13]: Add species parameters to database:
+
+  funannotate species -s s.cerevisiae_m3836_xxx -a ../out/S.cerevisiae_M3836/predict_results/s.cerevisiae_m3836_xxx.parameters.json
+

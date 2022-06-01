@@ -1,0 +1,55 @@
+# Please cite: Mario Stanke, Mark Diekhans, Robert Baertsch, David Haussler (2008),
+# Using native and syntenically mapped cDNA alignments to improve de novo gene finding
+# Bioinformatics 24: 637-644, doi 10.1093/bioinformatics/btn013
+# No extrinsic information on sequences given.
+# Initializing the parameters using config directory /home/rangeles/.conda/envs/funannotate/config/ ...
+# Using protein profile unknown
+# --[0..15]--> unknown_A (66) <--[0..3]--
+# anidulans version. Using default transition matrix.
+# Looks like ./tmp/scaffold_1s.eubayanus_fm1318_xxx_200919163_.temp is in fasta format.
+# We have hints for 0 sequences and for 0 of the sequences in the input set.
+#
+# ----- prediction on sequence number 1 (length = 10189, name = scaffold_1) -----
+#
+# Predicted genes for sequence number 1 on both strands
+# start gene g1
+scaffold_1	AUGUSTUS	gene	422673	422915	0.09	-	.	g1
+scaffold_1	AUGUSTUS	transcript	422673	422915	0.09	-	.	g1.t1
+scaffold_1	AUGUSTUS	stop_codon	422673	422675	.	-	0	transcript_id "g1.t1"; gene_id "g1";
+scaffold_1	AUGUSTUS	CDS	422673	422915	0.09	-	0	transcript_id "g1.t1"; gene_id "g1";
+scaffold_1	AUGUSTUS	start_codon	422913	422915	.	-	0	transcript_id "g1.t1"; gene_id "g1";
+scaffold_1	AUGUSTUS	protein_match	422676	422873	6.35	-	0	target "unknown_A[1..66]"; target_start 14; transcript_id "g1.t1"; gene_id "g1";
+# coding sequence = [atggctagagtcagcgaaaagggtgaagaaaagaaatcaagcaacaaccaagttgaaaaattggtcgaggcaccagtgg
+# agtttgtcagagaaggaactcaattcctagctaagtgtaagaagcctgatttgagggaatactccaagatcgtcaaagccgtcggtatcggttttgtt
+# gccgtcggtatcattggctatgctatcaagttgattcatattcctattagatacgttattgtttaa]
+# protein sequence = [MARVSEKGEEKKSSNNQVEKLVEAPVEFVREGTQFLAKCKKPDLREYSKIVKAVGIGFVAVGIIGYAIKLIHIPIRYV
+# IV]
+# sequence of block unknown_A    14 [NNQVEKLVEAPVEFVREGTQFLAKCKKPDLREYSKIVKAVGIGFVAVGIIGYAIKLIHIPIRYVIV] 80
+# end gene g1
+###
+# start gene g2
+scaffold_1	AUGUSTUS	gene	423207	424981	0.08	-	.	g2
+scaffold_1	AUGUSTUS	transcript	423207	424981	0.08	-	.	g2.t1
+scaffold_1	AUGUSTUS	stop_codon	423207	423209	.	-	0	transcript_id "g2.t1"; gene_id "g2";
+scaffold_1	AUGUSTUS	CDS	423207	423638	0.63	-	0	transcript_id "g2.t1"; gene_id "g2";
+scaffold_1	AUGUSTUS	CDS	424328	424570	0.16	-	0	transcript_id "g2.t1"; gene_id "g2";
+scaffold_1	AUGUSTUS	CDS	424712	424981	0.4	-	0	transcript_id "g2.t1"; gene_id "g2";
+scaffold_1	AUGUSTUS	start_codon	424979	424981	.	-	0	transcript_id "g2.t1"; gene_id "g2";
+# coding sequence = [atggaaaagcccagaaaggcgcagaagacaactccagattctcgttcaaacattagcaaggatactgttctaatacgag
+# gcaccaatgatgactgggactccaggaaggataggtggtacggttactcaggtaaagaatacaatgagctgatccgtaagtgggagcaagacaaacgt
+# aataaggataagggccaatctcaagctgatgatgcactttgggatacagacgaagagatagaacttataaagttagagctttacaaggacgctagtga
+# gacactgggatccgttgacgaaaaatcgaagatgttccgcaggcatttgacaggtgagggtttgaaattgagcgaattgaaccaatttgccagatccc
+# atgctaaggagatgggcgtacgtgacgaagttgaggataaagaaaaaatacagcatgtattagtggccaatcctacaaaatacgaatatttgatgaaa
+# aagcaagagcaagaagacgccaatgagcccaaaacagtcagttcgagaaactgggatgaaaaactagttgatgaatacattgccaaggtactaaaagg
+# gttgcctttaagcgggagcttaaaggtttacacagggatcccaatccatatcgttgatattctattggacgaatgggagagattactcaaggacgaag
+# aagaagacgacgaggatgaagatgatgaaaagaaggaagaacaactgcgcaaactggctgaaagcgcaaaagaaacaccattgatcaaggtcatcggg
+# atattccaagaccttgttgctgattacaacaccagcaaagtcttgagagaaaagatcaaagaagacctattcagcgacgccagacttactgcctgggg
+# cgttctccatgaggaagtggccggggaagacgctgacagcgaatctgaagaggaggaagctgaagaatgggaggggttttag]
+# protein sequence = [MEKPRKAQKTTPDSRSNISKDTVLIRGTNDDWDSRKDRWYGYSGKEYNELIRKWEQDKRNKDKGQSQADDALWDTDEE
+# IELIKLELYKDASETLGSVDEKSKMFRRHLTGEGLKLSELNQFARSHAKEMGVRDEVEDKEKIQHVLVANPTKYEYLMKKQEQEDANEPKTVSSRNWD
+# EKLVDEYIAKVLKGLPLSGSLKVYTGIPIHIVDILLDEWERLLKDEEEDDEDEDDEKKEEQLRKLAESAKETPLIKVIGIFQDLVADYNTSKVLREKI
+# KEDLFSDARLTAWGVLHEEVAGEDADSESEEEEAEEWEGF]
+# end gene g2
+###
+# command line:
+# augustus --stopCodonExcludedFromCDS=False --codingseq=1 --proteinprofile=/space21/PGE/rangeles/bin/funannotate_db/dikarya/prfl/EOG09265PUI.prfl --predictionStart=417676 --predictionEnd=427864 --species=anidulans ./tmp/scaffold_1s.eubayanus_fm1318_xxx_200919163_.temp

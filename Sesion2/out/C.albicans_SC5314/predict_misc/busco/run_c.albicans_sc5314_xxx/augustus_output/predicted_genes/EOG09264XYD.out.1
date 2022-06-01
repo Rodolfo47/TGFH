@@ -1,0 +1,49 @@
+# Please cite: Mario Stanke, Mark Diekhans, Robert Baertsch, David Haussler (2008),
+# Using native and syntenically mapped cDNA alignments to improve de novo gene finding
+# Bioinformatics 24: 637-644, doi 10.1093/bioinformatics/btn013
+# No extrinsic information on sequences given.
+# Initializing the parameters using config directory /home/rangeles/.conda/envs/funannotate/config/ ...
+# Using protein profile unknown
+# --[0..36]--> unknown_A (9) <--[1..26]--> unknown_B (15) <--[2..26]--> unknown_C (12) <--[0..17]--> unknown_D (24) <--[0..27]--> unknown_E (34) <--[0..17]--> unknown_F (21) <--[17..43]--> unknown_I (21) <--[5..82]--
+# anidulans version. Using default transition matrix.
+# Looks like ./tmp/scaffold_7c.albicans_sc5314_xxx_722612634_.temp is in fasta format.
+# We have hints for 0 sequences and for 0 of the sequences in the input set.
+#
+# ----- prediction on sequence number 1 (length = 10471, name = scaffold_7) -----
+#
+# Predicted genes for sequence number 1 on both strands
+# start gene g1
+scaffold_7	AUGUSTUS	gene	937516	938199	0.03	-	.	g1
+scaffold_7	AUGUSTUS	transcript	937516	938199	0.03	-	.	g1.t1
+scaffold_7	AUGUSTUS	stop_codon	937516	937518	.	-	0	transcript_id "g1.t1"; gene_id "g1";
+scaffold_7	AUGUSTUS	CDS	937516	938199	0.03	-	0	transcript_id "g1.t1"; gene_id "g1";
+scaffold_7	AUGUSTUS	start_codon	938197	938199	.	-	0	transcript_id "g1.t1"; gene_id "g1";
+scaffold_7	AUGUSTUS	protein_match	937585	937647	3.4	-	0	target "unknown_I[1..21]"; target_start 184; transcript_id "g1.t1"; gene_id "g1";
+scaffold_7	AUGUSTUS	protein_match	937717	937779	4.29	-	0	target "unknown_F[1..21]"; target_start 140; transcript_id "g1.t1"; gene_id "g1";
+scaffold_7	AUGUSTUS	protein_match	937792	937893	6.67	-	0	target "unknown_E[1..34]"; target_start 102; transcript_id "g1.t1"; gene_id "g1";
+scaffold_7	AUGUSTUS	protein_match	937894	937965	4.39	-	0	target "unknown_D[1..24]"; target_start 78; transcript_id "g1.t1"; gene_id "g1";
+scaffold_7	AUGUSTUS	protein_match	937987	938022	6.23	-	0	target "unknown_C[1..12]"; target_start 59; transcript_id "g1.t1"; gene_id "g1";
+scaffold_7	AUGUSTUS	protein_match	938080	938124	5.64	-	0	target "unknown_B[1..15]"; target_start 25; transcript_id "g1.t1"; gene_id "g1";
+scaffold_7	AUGUSTUS	protein_match	938173	938199	8.79	-	0	target "unknown_A[1..9]"; target_start 0; transcript_id "g1.t1"; gene_id "g1";
+# coding sequence = [atggtgtactactttacggcgaaagtaacctctaaagacgatgaattagctgattttgctattgatgattcccaagcgg
+# acgaagctaccatatatatgggaagagataaagtagagaatgacccattaattaaacattctcatcccaaaaatatttggtttcatgttgacaagctt
+# tcgtcagcacatatctatttgcaattgaccaaagatcaaattaaaaatttcaaatcttttgagagtttccaaatagacgaagagttgctaaatcaatt
+# aggacagttgactaaagctaattcaattaagggtaataaactaaataatgtgtctatcatatatactccggttgagaatttgcatacagatgggtcaa
+# tggatataggtacagtcactttcaagaacaataagcttgtgaaacggtttaatgttgtgaaaaaagagaatgctatcatcaataagttaaataagaca
+# aagaaggaaatacctactgatgagtttattgtcaaacaggatgagttgatcaaagaaattgctaatgagaggaaacaagaagaaagagaggccaagga
+# gttaagtaaacaatacgaatatcagaagaaacaaaatgctgacccgtatgctgatttgtttgctagtgaatcaactagcaagcctaccaattggtccg
+# aagatagtttctggtga]
+# protein sequence = [MVYYFTAKVTSKDDELADFAIDDSQADEATIYMGRDKVENDPLIKHSHPKNIWFHVDKLSSAHIYLQLTKDQIKNFKS
+# FESFQIDEELLNQLGQLTKANSIKGNKLNNVSIIYTPVENLHTDGSMDIGTVTFKNNKLVKRFNVVKKENAIINKLNKTKKEIPTDEFIVKQDELIKE
+# IANERKQEEREAKELSKQYEYQKKQNADPYADLFASESTSKPTNWSEDSFW]
+# sequence of block unknown_I   184 [EREAKELSKQYEYQKKQNADP] 205
+# sequence of block unknown_F   140 [FNVVKKENAIINKLNKTKKEI] 161
+# sequence of block unknown_E   102 [GNKLNNVSIIYTPVENLHTDGSMDIGTVTFKNNK] 136
+# sequence of block unknown_D    78 [FESFQIDEELLNQLGQLTKANSIK] 102
+# sequence of block unknown_C    59 [SSAHIYLQLTKD] 71
+# sequence of block unknown_B    25 [ADEATIYMGRDKVEN] 40
+# sequence of block unknown_A     0 [MVYYFTAKV] 9
+# end gene g1
+###
+# command line:
+# augustus --stopCodonExcludedFromCDS=False --codingseq=1 --proteinprofile=/space21/PGE/rangeles/bin/funannotate_db/dikarya/prfl/EOG09264XYD.prfl --predictionStart=932729 --predictionEnd=943199 --species=anidulans ./tmp/scaffold_7c.albicans_sc5314_xxx_722612634_.temp

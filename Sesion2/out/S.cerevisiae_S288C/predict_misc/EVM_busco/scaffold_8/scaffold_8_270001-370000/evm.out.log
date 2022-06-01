@@ -1,0 +1,55 @@
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+-successfully changed directories to /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.cerevisiae_S288C/predict_misc/EVM_busco/scaffold_8/scaffold_8_270001-370000
+
+-reading genomic sequence.
+
+** Processing features (+)
+
+-finding all potential splice sites, looking for GT/GC donors and AG acceptors.
+-finding all potential starts and stops. (strand: +)
+-loading gene prediction evidence. (strand: +)Valid prediction for Augustus_gene586.t1
+Valid prediction for Augustus_gene568.t1
+
+-loading the search evidence (protein and EST search results, strand: +)
+-scoring exons (strand: +)
+
+** Processing features (-)
+
+-finding all potential splice sites, looking for GT/GC donors and AG acceptors.
+-finding all potential starts and stops. (strand: -)
+-loading gene prediction evidence. (strand: -)Couldn't classify 37, 709
+Sorry, prediction Augustus_gene1136.t1 fails validation.
+(GGT)	 AG	37-709	GT	AGG
+(ATC)	 AG	1190-1396	GT	TGG
+(CCT)	 AG	1446-1471	TT	AAT
+add_exon() Sorry, Augustus_gene1136.t1 37-709-terminal-3 is invalid.
+-recovered Augustus_gene1136.t1, terminal, 37, 709
+-recovered Augustus_gene1136.t1, terminal, 1446, 1471
+-recovered Augustus_gene1136.t1, internal, 37, 709
+-recovered Augustus_gene1136.t1, internal, 1190, 1396
+Valid prediction for Augustus_gene430.t1
+Valid prediction for Augustus_gene442.t1
+
+-loading the search evidence (protein and EST search results, strand: -)
+-scoring exons (strand: -)
+-building DP trellis
+
+-building trellis in range 1 - 100000
+-exon list size: 19
+
+
+building trellis
+4.8    9.5    14.3    19.0    23.8    28.6    33.3    38.1    42.9    47.6    52.4    57.1    61.9    66.7    71.4    76.2    81.0    85.7    90.5    95.2    
+-found 11 predictions from path traversal
+GOT 5prime partial gene.
+
+-reporting highest scoring path thru the trellis.
+-found 11 predictions persist after filtering for low support
+	-no exons in range 1 - 14260

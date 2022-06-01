@@ -1,0 +1,66 @@
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+-successfully changed directories to /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.cerevisiae_S288C/predict_misc/EVM/scaffold_8/scaffold_8_720001-784334
+
+-reading genomic sequence.
+
+** Processing features (+)
+
+-finding all potential splice sites, looking for GT/GC donors and AG acceptors.
+-finding all potential starts and stops. (strand: +)
+-loading gene prediction evidence. (strand: +)Valid prediction for snap_scaffold_8-snap.316-T1
+Valid prediction for snap_scaffold_8-snap.331-T1
+Valid prediction for snap_scaffold_8-snap.317-T1
+Valid prediction for snap_scaffold_8-snap.319-T1
+Valid prediction for snap_scaffold_8-snap.327-T1
+Valid prediction for snap_scaffold_8-snap.325-T1
+Valid prediction for snap_scaffold_8-snap.330-T1
+
+-loading the search evidence (protein and EST search results, strand: +)
+-scoring exons (strand: +)
+
+** Processing features (-)
+
+-finding all potential splice sites, looking for GT/GC donors and AG acceptors.
+-finding all potential starts and stops. (strand: -)
+-loading gene prediction evidence. (strand: -)Valid prediction for snap_scaffold_8-snap.320-T1
+Valid prediction for snap_scaffold_8-snap.321-T1
+Valid prediction for snap_scaffold_8-snap.328-T1
+Valid prediction for snap_scaffold_8-snap.315-T1
+Valid prediction for snap_scaffold_8-snap.314-T1
+Valid prediction for snap_scaffold_8-snap.318-T1
+Valid prediction for HiQ_model.g3575.t1
+Valid prediction for snap_scaffold_8-snap.312-T1
+Valid prediction for snap_scaffold_8-snap.324-T1
+Valid prediction for snap_scaffold_8-snap.323-T1
+Valid prediction for GlimmerHMM_glimmerT_3890-T1
+Valid prediction for snap_scaffold_8-snap.313-T1
+Valid prediction for snap_scaffold_8-snap.326-T1
+Valid prediction for snap_scaffold_8-snap.311-T1
+Valid prediction for snap_scaffold_8-snap.309-T1
+Valid prediction for Augustus_model.g3590.t1
+Valid prediction for snap_scaffold_8-snap.322-T1
+Valid prediction for snap_scaffold_8-snap.310-T1
+Valid prediction for Augustus_model.g3578.t1
+Valid prediction for snap_scaffold_8-snap.329-T1
+
+-loading the search evidence (protein and EST search results, strand: -)
+-scoring exons (strand: -)
+-building DP trellis
+
+-building trellis in range 1 - 64334
+-exon list size: 77
+
+
+building trellis
+1.3    2.5    3.8    5.1    6.3    7.6    8.9    10.1    11.4    12.7    13.9    15.2    16.5    17.7    19.0    20.3    21.5    22.8    24.1    25.3    26.6    27.8    29.1    30.4    31.6    32.9    34.2    35.4    36.7    38.0    39.2    40.5    41.8    43.0    44.3    45.6    46.8    48.1    49.4    50.6    51.9    53.2    54.4    55.7    57.0    58.2    59.5    60.8    62.0    63.3    64.6    65.8    67.1    68.4    69.6    70.9    72.2    73.4    74.7    75.9    77.2    78.5    79.7    81.0    82.3    83.5    84.8    86.1    87.3    88.6    89.9    91.1    92.4    93.7    94.9    96.2    97.5    98.7    
+-found 24 predictions from path traversal
+
+-reporting highest scoring path thru the trellis.
+-found 24 predictions persist after filtering for low support

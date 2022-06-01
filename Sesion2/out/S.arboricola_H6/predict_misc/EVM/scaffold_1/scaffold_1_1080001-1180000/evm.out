@@ -1,0 +1,158 @@
+!! Predictions spanning range 2719 - 99674 [R1]
+# EVM prediction: Mode:STANDARD S-ratio: 6.15 2719-3632 orient(+) score(2142.00) noncoding_equivalent(348.44) raw_noncoding(633.59) offset(285.15) 
+2719	2724	initial+	1	3	{snap_scaffold_1-snap.432-T1;snap}
+2725	2975	INTRON			{snap_scaffold_1-snap.432-T1;snap}
+2976	3632	terminal+	1	3	{snap_scaffold_1-snap.432-T1;snap}
+
+# EVM prediction: Mode:STANDARD S-ratio: 2.98 3827-4545 orient(-) score(1842.00) noncoding_equivalent(619.05) raw_noncoding(927.00) offset(307.95) 
+4234	3827	terminal-	4	6	{GlimmerHMM_glimmerT_524-T1;GlimmerHMM},{Augustus_model.g470.t1;Augustus}
+4542	4235	INTRON			{GlimmerHMM_glimmerT_524-T1;GlimmerHMM},{Augustus_model.g470.t1;Augustus}
+4545	4543	initial-	4	6	{GlimmerHMM_glimmerT_524-T1;GlimmerHMM},{Augustus_model.g470.t1;Augustus}
+
+# EVM prediction: Mode:STANDARD S-ratio: 16.41 5062-6366 orient(+) score(4919.00) noncoding_equivalent(299.82) raw_noncoding(299.82) offset(0.00) 
+5062	6366	single+	1	3	{GlimmerHMM_glimmerT_525-T1;GlimmerHMM}
+
+# EVM prediction: Mode:STANDARD S-ratio: 4.50 6531-7853 orient(-) score(6495.00) noncoding_equivalent(1443.00) raw_noncoding(1443.00) offset(0.00) 
+7853	6531	single-	4	6	{HiQ_model.g472.t1;HiQ},{GlimmerHMM_glimmerT_526-T1;GlimmerHMM}
+
+# EVM prediction: Mode:STANDARD S-ratio: 4.41 8888-9736 orient(+) score(3790.00) noncoding_equivalent(859.15) raw_noncoding(1270.46) offset(411.31) 
+8888	8934	initial+	1	2	{GlimmerHMM_glimmerT_527-T1;GlimmerHMM},{Augustus_model.g473.t1;Augustus}
+8935	9342	INTRON			{GlimmerHMM_glimmerT_527-T1;GlimmerHMM},{Augustus_model.g473.t1;Augustus},{ev_type:exonerate/ID=match.177006.128/Target=YML026C;exonerate},{ev_type:exonerate/ID=match.177006.229/Target=YDR450W;exonerate}
+9343	9736	terminal+	3	3	{snap_scaffold_1-snap.436-T1;snap},{GlimmerHMM_glimmerT_527-T1;GlimmerHMM},{Augustus_model.g473.t1;Augustus}
+
+# EVM prediction: Mode:STANDARD S-ratio: 628.18 10066-11133 orient(-) score(3197.00) noncoding_equivalent(5.09) raw_noncoding(5.09) offset(0.00) 
+11133	10066	single-	4	6	{GlimmerHMM_glimmerT_528-T1;GlimmerHMM},{Augustus_model.g474.t1;Augustus}
+
+# EVM prediction: Mode:STANDARD S-ratio: 10000.00 11871-13877 orient(+) score(8028.00) noncoding_equivalent(0.80) raw_noncoding(0.00) offset(0.00) 
+11871	13877	single+	1	3	{Augustus_model.g475.t1;Augustus},{GlimmerHMM_glimmerT_529-T1;GlimmerHMM}
+
+# EVM prediction: Mode:STANDARD S-ratio: 4.95 14065-14655 orient(-) score(2948.00) noncoding_equivalent(596.02) raw_noncoding(596.02) offset(0.00) 
+14655	14065	single-	4	6	{GlimmerHMM_glimmerT_530-T1;GlimmerHMM},{HiQ_model.g476.t1;HiQ}
+
+# EVM prediction: Mode:STANDARD S-ratio: 5.00 15271-15834 orient(-) score(2820.00) noncoding_equivalent(564.00) raw_noncoding(564.00) offset(0.00) 
+15834	15271	single-	4	6	{HiQ_model.g477.t1;HiQ},{GlimmerHMM_glimmerT_531-T1;GlimmerHMM}
+
+# EVM prediction: Mode:STANDARD S-ratio: 3.00 16482-18383 orient(+) score(5706.00) noncoding_equivalent(1902.00) raw_noncoding(1902.00) offset(0.00) 
+16482	18383	single+	1	3	{GlimmerHMM_glimmerT_532-T1;GlimmerHMM},{Augustus_model.g478.t1;Augustus}
+
+# EVM prediction: Mode:STANDARD S-ratio: 1546.52 18808-28611 orient(+) score(39189.00) noncoding_equivalent(25.34) raw_noncoding(25.34) offset(0.00) 
+18808	28611	single+	1	3	{GlimmerHMM_glimmerT_533-T1;GlimmerHMM},{Augustus_model.g479.t1;Augustus}
+
+# EVM prediction: Mode:STANDARD S-ratio: 656.67 29050-31047 orient(-) score(5983.00) noncoding_equivalent(9.11) raw_noncoding(9.11) offset(0.00) 
+31047	29050	single-	4	6	{GlimmerHMM_glimmerT_534-T1;GlimmerHMM},{Augustus_model.g480.t1;Augustus}
+
+# EVM prediction: Mode:STANDARD S-ratio: 3.89 31297-32244 orient(-) score(2262.00) noncoding_equivalent(582.00) raw_noncoding(582.00) offset(0.00) 
+32244	31297	single-	4	6	{Augustus_model.g481.t1;Augustus}
+
+# EVM prediction: Mode:STANDARD S-ratio: 10000.00 32832-33797 orient(+) score(3864.00) noncoding_equivalent(0.39) raw_noncoding(0.00) offset(0.00) 
+32832	33797	single+	1	3	{Augustus_model.g482.t1;Augustus},{GlimmerHMM_glimmerT_536-T1;GlimmerHMM}
+
+# EVM prediction: Mode:STANDARD S-ratio: 2.96 35066-35509 orient(+) score(1328.00) noncoding_equivalent(448.02) raw_noncoding(448.02) offset(0.00) 
+35066	35509	single+	1	3	{GlimmerHMM_glimmerT_537-T1;GlimmerHMM}
+
+# EVM prediction: Mode:STANDARD S-ratio: 27.71 35835-37391 orient(+) score(4506.00) noncoding_equivalent(162.64) raw_noncoding(162.64) offset(0.00) 
+35835	37391	single+	1	3	{GlimmerHMM_glimmerT_538-T1;GlimmerHMM}
+
+# EVM prediction: Mode:STANDARD S-ratio: 10000.00 37879-42231 orient(+) score(13059.00) noncoding_equivalent(1.31) raw_noncoding(0.00) offset(0.00) 
+37879	42231	single+	1	3	{Augustus_model.g484.t1;Augustus},{GlimmerHMM_glimmerT_539-T1;GlimmerHMM}
+
+# EVM prediction: Mode:STANDARD S-ratio: 5.00 42406-43665 orient(-) score(6300.00) noncoding_equivalent(1260.00) raw_noncoding(1260.00) offset(0.00) 
+43665	42406	single-	4	6	{GlimmerHMM_glimmerT_540-T1;GlimmerHMM},{HiQ_model.g485.t1;HiQ}
+
+# EVM prediction: Mode:STANDARD S-ratio: 683.75 44204-46942 orient(+) score(8205.00) noncoding_equivalent(12.00) raw_noncoding(12.00) offset(0.00) 
+44204	46942	single+	1	3	{Augustus_model.g486.t1;Augustus},{GlimmerHMM_glimmerT_541-T1;GlimmerHMM}
+
+# EVM prediction: Mode:STANDARD S-ratio: 4.87 47148-47822 orient(-) score(3359.00) noncoding_equivalent(689.08) raw_noncoding(689.08) offset(0.00) 
+47822	47148	single-	4	6	{GlimmerHMM_glimmerT_542-T1;GlimmerHMM},{HiQ_model.g487.t1;HiQ}
+
+# EVM prediction: Mode:STANDARD S-ratio: 2.03 48134-48670 orient(+) score(1074.00) noncoding_equivalent(530.13) raw_noncoding(530.13) offset(0.00) 
+48134	48670	single+	1	3	{GlimmerHMM_glimmerT_543-T1;GlimmerHMM},{Augustus_model.g488.t1;Augustus}
+
+# EVM prediction: Mode:STANDARD S-ratio: 4.95 48827-50335 orient(-) score(7531.00) noncoding_equivalent(1521.11) raw_noncoding(1521.11) offset(0.00) 
+50335	48827	single-	4	6	{HiQ_model.g489.t1;HiQ},{GlimmerHMM_glimmerT_544-T1;GlimmerHMM}
+
+# EVM prediction: Mode:STANDARD S-ratio: 4.47 50898-51694 orient(+) score(3568.00) noncoding_equivalent(799.09) raw_noncoding(1188.20) offset(389.11) 
+50898	50928	initial+	1	1	{GlimmerHMM_glimmerT_545-T1;GlimmerHMM},{Augustus_model.g490.t1;Augustus}
+50929	51314	INTRON			{GlimmerHMM_glimmerT_545-T1;GlimmerHMM},{Augustus_model.g490.t1;Augustus},{ev_type:exonerate/ID=match.177006.2823/Target=YDR471W;exonerate},{ev_type:exonerate/ID=match.177006.1014/Target=YHR010W;exonerate}
+51315	51694	terminal+	2	3	{GlimmerHMM_glimmerT_545-T1;GlimmerHMM},{snap_scaffold_1-snap.451-T1;snap},{Augustus_model.g490.t1;Augustus}
+
+# EVM prediction: Mode:STANDARD S-ratio: 332.27 52460-53302 orient(+) score(3360.00) noncoding_equivalent(10.11) raw_noncoding(10.11) offset(0.00) 
+52460	53302	single+	1	3	{GlimmerHMM_glimmerT_546-T1;GlimmerHMM},{Augustus_model.g491.t1;Augustus}
+
+# EVM prediction: Mode:STANDARD S-ratio: 41.45 53588-54988 orient(-) score(4104.00) noncoding_equivalent(99.00) raw_noncoding(99.00) offset(0.00) 
+54988	53588	single-	4	6	{GlimmerHMM_glimmerT_547-T1;GlimmerHMM},{Augustus_model.g492.t1;Augustus}
+
+# EVM prediction: Mode:STANDARD S-ratio: 10000.00 55748-58396 orient(-) score(7947.00) noncoding_equivalent(0.79) raw_noncoding(0.00) offset(0.00) 
+58396	55748	single-	4	6	{Augustus_model.g493.t1;Augustus},{GlimmerHMM_glimmerT_548-T1;GlimmerHMM}
+
+# EVM prediction: Mode:STANDARD S-ratio: 1.99 58743-59417 orient(-) score(2691.00) noncoding_equivalent(1350.00) raw_noncoding(1350.00) offset(0.00) 
+59417	58743	single-	4	6	{HiQ_model.g494.t1;HiQ},{GlimmerHMM_glimmerT_549-T1;GlimmerHMM}
+
+# EVM prediction: Mode:STANDARD S-ratio: 37.95 60995-62890 orient(+) score(5542.00) noncoding_equivalent(146.05) raw_noncoding(146.05) offset(0.00) 
+60995	62890	single+	1	3	{GlimmerHMM_glimmerT_550-T1;GlimmerHMM}
+
+# EVM prediction: Mode:STANDARD S-ratio: 9.20 63201-63779 orient(+) score(1565.00) noncoding_equivalent(170.10) raw_noncoding(170.10) offset(0.00) 
+63201	63779	single+	1	3	{GlimmerHMM_glimmerT_551-T1;GlimmerHMM}
+
+# EVM prediction: Mode:STANDARD S-ratio: 4.69 63823-65484 orient(-) score(8220.00) noncoding_equivalent(1752.00) raw_noncoding(1752.00) offset(0.00) 
+65484	63823	single-	4	6	{GlimmerHMM_glimmerT_552-T1;GlimmerHMM},{HiQ_model.g496.t1;HiQ}
+
+# EVM prediction: Mode:STANDARD S-ratio: 59.75 66023-66994 orient(+) score(2868.00) noncoding_equivalent(48.00) raw_noncoding(48.00) offset(0.00) 
+66023	66994	single+	1	3	{Augustus_model.g497.t1;Augustus}
+
+# EVM prediction: Mode:STANDARD S-ratio: 4.90 67118-68818 orient(-) score(8475.00) noncoding_equivalent(1729.44) raw_noncoding(1729.44) offset(0.00) 
+68818	67118	single-	4	6	{GlimmerHMM_glimmerT_554-T1;GlimmerHMM},{HiQ_model.g498.t1;HiQ}
+
+# EVM prediction: Mode:STANDARD S-ratio: 69.42 69727-71064 orient(+) score(3957.00) noncoding_equivalent(57.00) raw_noncoding(57.00) offset(0.00) 
+69727	71064	single+	1	3	{GlimmerHMM_glimmerT_556-T1;GlimmerHMM}
+
+# EVM prediction: Mode:STANDARD S-ratio: 169.67 71314-73233 orient(+) score(7635.00) noncoding_equivalent(45.00) raw_noncoding(45.00) offset(0.00) 
+71314	73233	single+	1	3	{Augustus_model.g500.t1;Augustus},{GlimmerHMM_glimmerT_557-T1;GlimmerHMM}
+
+# EVM prediction: Mode:STANDARD S-ratio: 265.67 73373-75772 orient(-) score(7173.00) noncoding_equivalent(27.00) raw_noncoding(27.00) offset(0.00) 
+75772	73373	single-	4	6	{GlimmerHMM_glimmerT_558-T1;GlimmerHMM},{Augustus_model.g501.t1;Augustus}
+
+# EVM prediction: Mode:STANDARD S-ratio: 5.00 75996-76685 orient(-) score(3450.00) noncoding_equivalent(690.00) raw_noncoding(690.00) offset(0.00) 
+76685	75996	single-	4	6	{HiQ_model.g502.t1;HiQ},{GlimmerHMM_glimmerT_559-T1;GlimmerHMM}
+
+# EVM prediction: Mode:STANDARD S-ratio: 4.76 76956-77582 orient(-) score(3107.00) noncoding_equivalent(653.24) raw_noncoding(653.24) offset(0.00) 
+77582	76956	single-	4	6	{GlimmerHMM_glimmerT_560-T1;GlimmerHMM},{HiQ_model.g503.t1;HiQ}
+
+# EVM prediction: Mode:STANDARD S-ratio: 37.22 77805-79451 orient(-) score(4810.00) noncoding_equivalent(129.22) raw_noncoding(129.22) offset(0.00) 
+79451	77805	single-	4	6	{GlimmerHMM_glimmerT_561-T1;GlimmerHMM}
+
+# EVM prediction: Mode:STANDARD S-ratio: 9.71 79707-80594 orient(+) score(3216.00) noncoding_equivalent(331.12) raw_noncoding(331.12) offset(0.00) 
+79707	80594	single+	1	3	{GlimmerHMM_glimmerT_562-T1;GlimmerHMM},{Augustus_model.g505.t1;Augustus}
+
+# EVM prediction: Mode:STANDARD S-ratio: 458.00 80700-82994 orient(-) score(6870.00) noncoding_equivalent(15.00) raw_noncoding(15.00) offset(0.00) 
+82994	80700	single-	4	6	{Augustus_model.g506.t1;Augustus},{GlimmerHMM_glimmerT_563-T1;GlimmerHMM}
+
+# EVM prediction: Mode:STANDARD S-ratio: 2.88 83642-84589 orient(+) score(2814.00) noncoding_equivalent(978.00) raw_noncoding(978.00) offset(0.00) 
+83642	84589	single+	1	3	{GlimmerHMM_glimmerT_564-T1;GlimmerHMM}
+
+# EVM prediction: Mode:STANDARD S-ratio: 3.05 84918-85289 orient(+) score(1121.00) noncoding_equivalent(367.79) raw_noncoding(367.79) offset(0.00) 
+84918	85289	single+	1	3	{GlimmerHMM_glimmerT_565-T1;GlimmerHMM},{Augustus_model.g507.t1;Augustus}
+
+# EVM prediction: Mode:STANDARD S-ratio: 44.96 85622-86728 orient(+) score(3247.00) noncoding_equivalent(72.22) raw_noncoding(72.22) offset(0.00) 
+85622	86728	single+	1	3	{Augustus_model.g508.t1;Augustus},{GlimmerHMM_glimmerT_566-T1;GlimmerHMM}
+
+# EVM prediction: Mode:STANDARD S-ratio: 60.96 86831-89866 orient(-) score(8961.00) noncoding_equivalent(147.00) raw_noncoding(147.00) offset(0.00) 
+89866	86831	single-	4	6	{GlimmerHMM_glimmerT_567-T1;GlimmerHMM},{Augustus_model.g509.t1;Augustus}
+
+# EVM prediction: Mode:STANDARD S-ratio: 5.00 90159-92147 orient(-) score(9945.00) noncoding_equivalent(1989.00) raw_noncoding(1989.00) offset(0.00) 
+92147	90159	single-	4	6	{HiQ_model.g510.t1;HiQ},{GlimmerHMM_glimmerT_568-T1;GlimmerHMM}
+
+# EVM prediction: Mode:STANDARD S-ratio: 10000.00 92462-94201 orient(-) score(5220.00) noncoding_equivalent(0.52) raw_noncoding(0.00) offset(0.00) 
+94201	92462	single-	4	6	{Augustus_model.g511.t1;Augustus},{GlimmerHMM_glimmerT_569-T1;GlimmerHMM}
+
+# EVM prediction: Mode:STANDARD S-ratio: 10000.00 94577-95743 orient(-) score(3501.00) noncoding_equivalent(0.35) raw_noncoding(0.00) offset(0.00) 
+95743	94577	single-	4	6	{Augustus_model.g512.t1;Augustus},{GlimmerHMM_glimmerT_570-T1;GlimmerHMM}
+
+# EVM prediction: Mode:STANDARD S-ratio: 10000.00 96577-98820 orient(+) score(8973.00) noncoding_equivalent(0.90) raw_noncoding(0.00) offset(0.00) 
+96577	98820	single+	1	3	{GlimmerHMM_glimmerT_571-T1;GlimmerHMM},{Augustus_model.g513.t1;Augustus}
+
+# EVM prediction: Mode:STANDARD S-ratio: 1.96 98954-99674 orient(-) score(2671.00) noncoding_equivalent(1365.00) raw_noncoding(1371.00) offset(6.00) 
+99210	98954	terminal-	5	6	{GlimmerHMM_glimmerT_572-T1;GlimmerHMM},{Augustus_model.g514.t1;Augustus},{snap_scaffold_1-snap.475-T1;snap}
+99667	99211	INTRON			{GlimmerHMM_glimmerT_572-T1;GlimmerHMM},{Augustus_model.g514.t1;Augustus},{snap_scaffold_1-snap.475-T1;snap}
+99674	99668	initial-	4	4	{GlimmerHMM_glimmerT_572-T1;GlimmerHMM},{Augustus_model.g514.t1;Augustus},{snap_scaffold_1-snap.475-T1;snap}
+

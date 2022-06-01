@@ -1,0 +1,125 @@
+
+INFO	****************** Start a BUSCO 2.0 analysis, current time: 06/01/2022 00:57:36 ******************
+INFO	The lineage dataset is: dikarya_odb9 (eukaryota)
+INFO	Mode is: genome
+INFO	Maximum number of regions limited to: 3
+INFO	To reproduce this run: python /home/rangeles/.conda/envs/funannotate/lib/python2.7/site-packages/funannotate/aux_scripts/funannotate-BUSCO2.py -i /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.arboricola_H6/predict_misc/genome.softmasked.fa -o s.arboricola_h6_xxx -l /space21/PGE/rangeles/bin/funannotate_db/dikarya/ -m genome -c 28 -sp anidulans
+INFO	Check dependencies...
+INFO	Check input file...
+INFO	Temp directory is ./tmp/
+
+INFO	****** Phase 1 of 2, initial predictions ******
+INFO	****** Step 1/3, current time: 06/01/2022 00:57:36 ******
+INFO	Create blast database...
+INFO	[makeblastdb]	Building a new DB, current time: 06/01/2022 00:57:36
+INFO	[makeblastdb]	New DB name:   /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.arboricola_H6/predict_misc/busco/tmp/s.arboricola_h6_xxx_916416112
+INFO	[makeblastdb]	New DB title:  /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.arboricola_H6/predict_misc/genome.softmasked.fa
+INFO	[makeblastdb]	Sequence type: Nucleotide
+INFO	[makeblastdb]	Keep Linkouts: T
+INFO	[makeblastdb]	Keep MBits: T
+INFO	[makeblastdb]	Maximum file size: 1000000000B
+INFO	[makeblastdb]	Adding sequences from FASTA; added 16 sequences in 0.125845 seconds.
+INFO	Running tblastn, writing output to /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.arboricola_H6/predict_misc/busco/run_s.arboricola_h6_xxx/blast_output/tblastn_s.arboricola_h6_xxx.tsv...
+INFO	****** Step 2/3, current time: 06/01/2022 00:57:50 ******
+INFO	Getting coordinates for candidate regions...
+INFO	Pre-Augustus scaffold extraction...
+INFO	Running Augustus prediction using anidulans as species:
+INFO	[augustus] Please find all logs related to Augustus here: /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.arboricola_H6/predict_misc/busco/run_s.arboricola_h6_xxx/augustus_output/augustus.log
+INFO	06/01/2022 00:57:50 =>	0% of predictions performed (1614 to be done)
+INFO	06/01/2022 00:58:27 =>	10% of predictions performed (178/1614 candidate regions)
+INFO	06/01/2022 00:59:04 =>	20% of predictions performed (339/1614 candidate regions)
+INFO	06/01/2022 00:59:43 =>	30% of predictions performed (501/1614 candidate regions)
+INFO	06/01/2022 01:00:21 =>	40% of predictions performed (662/1614 candidate regions)
+INFO	06/01/2022 01:00:59 =>	50% of predictions performed (824/1614 candidate regions)
+INFO	06/01/2022 01:01:34 =>	60% of predictions performed (985/1614 candidate regions)
+INFO	06/01/2022 01:02:11 =>	70% of predictions performed (1146/1614 candidate regions)
+INFO	06/01/2022 01:02:48 =>	80% of predictions performed (1310/1614 candidate regions)
+INFO	06/01/2022 01:03:21 =>	90% of predictions performed (1469/1614 candidate regions)
+INFO	06/01/2022 01:04:17 =>	100% of predictions performed
+INFO	Extracting predicted proteins...
+INFO	****** Step 3/3, current time: 06/01/2022 01:04:26 ******
+INFO	Running HMMER to confirm orthology of predicted proteins:
+INFO	06/01/2022 01:04:26 =>	0% of predictions performed (1574 to be done)
+INFO	06/01/2022 01:04:27 =>	10% of predictions performed (176/1574 candidate proteins)
+INFO	06/01/2022 01:04:27 =>	20% of predictions performed (331/1574 candidate proteins)
+INFO	06/01/2022 01:04:29 =>	30% of predictions performed (491/1574 candidate proteins)
+INFO	06/01/2022 01:04:30 =>	40% of predictions performed (646/1574 candidate proteins)
+INFO	06/01/2022 01:04:31 =>	50% of predictions performed (803/1574 candidate proteins)
+INFO	06/01/2022 01:04:33 =>	60% of predictions performed (963/1574 candidate proteins)
+INFO	06/01/2022 01:04:35 =>	70% of predictions performed (1118/1574 candidate proteins)
+INFO	06/01/2022 01:04:38 =>	80% of predictions performed (1275/1574 candidate proteins)
+INFO	06/01/2022 01:04:40 =>	90% of predictions performed (1434/1574 candidate proteins)
+INFO	06/01/2022 01:04:42 =>	100% of predictions performed
+INFO	Results:
+INFO	C:93.7%[S:90.3%,D:3.4%],F:1.3%,M:5.0%,n:1312
+INFO	1230 Complete BUSCOs (C)
+INFO	1185 Complete and single-copy BUSCOs (S)
+INFO	45 Complete and duplicated BUSCOs (D)
+INFO	17 Fragmented BUSCOs (F)
+INFO	65 Missing BUSCOs (M)
+INFO	1312 Total BUSCO groups searched
+
+INFO	****** Phase 2 of 2, predictions using species specific training ******
+INFO	****** Step 1/3, current time: 06/01/2022 01:04:43 ******
+INFO	Extracting missing and fragmented buscos from the ancestral_variants file...
+WARNING	The busco id(s) ['EOG09260M44', 'EOG09264LBC', 'EOG09260DFH', 'EOG092606WZ', 'EOG09260APA', 'EOG092658NW', 'EOG09263690', 'EOG09263WB5', 'EOG09261ICI', 'EOG092600NM', 'EOG09262O0R', 'EOG09263DQH', 'EOG09260BSW', 'EOG09263EQZ', 'EOG09261IEV', 'EOG09261G1Y', 'EOG09264RBX', 'EOG09260W9L', 'EOG092614DJ', 'EOG09260UJK', 'EOG0926354S', 'EOG09260IU8', 'EOG092600S9', 'EOG092605T6', 'EOG09263Y3L', 'EOG092603SM', 'EOG092645QN', 'EOG092606CY', 'EOG09260075', 'EOG092655SO', 'EOG092646C6', 'EOG09261QYO', 'EOG092653VU', 'EOG09260A6Q', 'EOG09262E7W', 'EOG09263RVR', 'EOG09264LC7', 'EOG092610TN', 'EOG09265RGI', 'EOG092617RN', 'EOG09265K60', 'EOG09262NNS', 'EOG092644DY', 'EOG0926009O', 'EOG092642I5', 'EOG0926049A', 'EOG09264XUV', 'EOG09265PQX', 'EOG09265K4K', 'EOG092635SS', 'EOG09263S1E', 'EOG092649VG', 'EOG09265BG5', 'EOG0926004Z', 'EOG09264RIE', 'EOG09261V2P', 'EOG092645L9', 'EOG092651K1', 'EOG09264VRO', 'EOG092604MJ', 'EOG09260QVP', 'EOG092651OF', 'EOG09263QPR', 'EOG09264V51', 'EOG09265JA7', 'EOG09264JK1', 'EOG092609O9', 'EOG09263WM5', 'EOG09262LYR', 'EOG09261KRX', 'EOG092630MJ', 'EOG09264G4X', 'EOG09262DPL', 'EOG092640BS', 'EOG09264SQJ', 'EOG092624RX', 'EOG09265PWR', 'EOG09264NDD', 'EOG09263MR4', 'EOG092617RY', 'EOG09262KN8', 'EOG09265QTV'] were not found in the ancestral_variants file
+INFO	Running tblastn, writing output to /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.arboricola_H6/predict_misc/busco/run_s.arboricola_h6_xxx/blast_output/tblastn_s.arboricola_h6_xxx_missing_and_frag_rerun.tsv...
+INFO	[tblastn]	Warning: [tblastn] Query is Empty!
+INFO	Getting coordinates for candidate regions...
+INFO	****** Step 2/3, current time: 06/01/2022 01:04:43 ******
+INFO	Training Augustus using Single-Copy Complete BUSCOs:
+INFO	06/01/2022 01:04:43 =>	Converting predicted genes to short genbank files...
+INFO	06/01/2022 01:04:47 =>	All files converted to short genbank files, now running the training scripts...
+INFO	Pre-Augustus scaffold extraction...
+INFO	Re-running Augustus with the new metaparameters, number of target BUSCOs: 82
+INFO	06/01/2022 01:04:49 =>	0% of predictions performed (0 to be done)
+INFO	06/01/2022 01:04:49 =>	100% of predictions performed
+INFO	Extracting predicted proteins...
+INFO	****** Step 3/3, current time: 06/01/2022 01:04:49 ******
+INFO	Running HMMER to confirm orthology of predicted proteins:
+INFO	06/01/2022 01:04:49 =>	0% of predictions performed (0 to be done)
+INFO	06/01/2022 01:04:49 =>	100% of predictions performed
+INFO	Results:
+INFO	C:93.7%[S:90.3%,D:3.4%],F:1.3%,M:5.0%,n:1312
+INFO	1230 Complete BUSCOs (C)
+INFO	1185 Complete and single-copy BUSCOs (S)
+INFO	45 Complete and duplicated BUSCOs (D)
+INFO	17 Fragmented BUSCOs (F)
+INFO	65 Missing BUSCOs (M)
+INFO	1312 Total BUSCO groups searched
+
+INFO	BUSCO analysis done with WARNING(s). Total running time: 433.423358917 seconds
+INFO	Results written in /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.arboricola_H6/predict_misc/busco/run_s.arboricola_h6_xxx/
+
+
+INFO	****************** Start a BUSCO 2.0 analysis, current time: 06/01/2022 01:05:40 ******************
+INFO	The lineage dataset is: dikarya_odb9 (eukaryota)
+INFO	Mode is: proteins
+INFO	To reproduce this run: python /home/rangeles/.conda/envs/funannotate/lib/python2.7/site-packages/funannotate/aux_scripts/funannotate-BUSCO2.py -i /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.arboricola_H6/predict_misc/busco.evm.proteins.fa -o s.arboricola_h6_xxx -l /space21/PGE/rangeles/bin/funannotate_db/dikarya/ -m proteins -c 28 -sp anidulans
+INFO	Check dependencies...
+INFO	Check input file...
+INFO	Temp directory is ./tmp/
+INFO	Running HMMER on the proteins:
+INFO	06/01/2022 01:05:40 =>	0% of predictions performed (1312 to be done)
+INFO	06/01/2022 01:05:41 =>	10% of predictions performed (146/1312 candidate proteins)
+INFO	06/01/2022 01:05:42 =>	20% of predictions performed (276/1312 candidate proteins)
+INFO	06/01/2022 01:05:43 =>	30% of predictions performed (407/1312 candidate proteins)
+INFO	06/01/2022 01:05:44 =>	40% of predictions performed (539/1312 candidate proteins)
+INFO	06/01/2022 01:05:45 =>	50% of predictions performed (670/1312 candidate proteins)
+INFO	06/01/2022 01:05:47 =>	60% of predictions performed (802/1312 candidate proteins)
+INFO	06/01/2022 01:05:48 =>	70% of predictions performed (932/1312 candidate proteins)
+INFO	06/01/2022 01:05:50 =>	80% of predictions performed (1066/1312 candidate proteins)
+INFO	06/01/2022 01:05:52 =>	90% of predictions performed (1196/1312 candidate proteins)
+INFO	06/01/2022 01:05:53 =>	100% of predictions performed
+INFO	Results:
+INFO	C:88.3%[S:88.3%,D:0.0%],F:0.2%,M:11.5%,n:1312
+INFO	1158 Complete BUSCOs (C)
+INFO	1158 Complete and single-copy BUSCOs (S)
+INFO	0 Complete and duplicated BUSCOs (D)
+INFO	3 Fragmented BUSCOs (F)
+INFO	151 Missing BUSCOs (M)
+INFO	1312 Total BUSCO groups searched
+
+INFO	BUSCO analysis done. Total running time: 13.2445318699 seconds
+INFO	Results written in /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.arboricola_H6/predict_misc/busco_proteins/run_s.arboricola_h6_xxx/
+

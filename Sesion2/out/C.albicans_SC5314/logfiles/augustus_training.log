@@ -1,0 +1,74 @@
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+Will create parameters for a EUKARYOTIC species!
+creating directory /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/C.albicans_SC5314/predict_misc/ab_initio_parameters/augustus/species/c.albicans_sc5314_xxx/ ...
+creating /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/C.albicans_SC5314/predict_misc/ab_initio_parameters/augustus/species/c.albicans_sc5314_xxx/c.albicans_sc5314_xxx_parameters.cfg ...
+creating /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/C.albicans_SC5314/predict_misc/ab_initio_parameters/augustus/species/c.albicans_sc5314_xxx/c.albicans_sc5314_xxx_weightmatrix.txt ...
+creating /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/C.albicans_SC5314/predict_misc/ab_initio_parameters/augustus/species/c.albicans_sc5314_xxx/c.albicans_sc5314_xxx_metapars.cfg ...
+The necessary files for training c.albicans_sc5314_xxx have been created.
+Now, either run etraining or optimize_parameters.pl with --species=c.albicans_sc5314_xxx.
+etraining quickly estimates the parameters from a file with training genes.
+optimize_augustus.pl alternates running etraining and augustus to find optimal metaparameters.
+
+# Read in 1144 genbank sequences.
+Quantiles of the GC contents in the training set:
+0%	0.241
+5%	0.284	10%	0.293
+15%	0.302	20%	0.309
+25%	0.314	30%	0.319
+35%	0.324	40%	0.329
+45%	0.334	50%	0.337
+55%	0.34	60%	0.344
+65%	0.349	70%	0.352
+75%	0.356	80%	0.36
+85%	0.365	90%	0.373
+95%	0.39	100%	0.476
+HMM-training the parameters...
+i= 0 bc= (0.237, 0.263, 0.263, 0.237)
+ ** building model for exons *EXON*
+gene evm.model.scaffold_1.179 transcr. 1 in sequence scaffold_1_1925655-1929110: coding length not a multiple of 3. Skipping...
+gene evm.model.scaffold_1.234 transcr. 1 in sequence scaffold_1_2724783-2729714: coding length not a multiple of 3. Skipping...
+gene evm.model.scaffold_1.235 transcr. 1 in sequence scaffold_1_2729715-2734126: coding length not a multiple of 3. Skipping...
+gene evm.model.scaffold_4.1 transcr. 1 in sequence scaffold_4_15807-17125: coding length not a multiple of 3. Skipping...
+gene evm.model.scaffold_4.79 transcr. 1 in sequence scaffold_4_1182549-1186387: coding length not a multiple of 3. Skipping...
+gene evm.model.scaffold_4.115 transcr. 1 in sequence scaffold_4_1708697-1713319: coding length not a multiple of 3. Skipping...
+gene evm.model.scaffold_4.116 transcr. 1 in sequence scaffold_4_1713320-1715296: coding length not a multiple of 3. Skipping...
+gene evm.model.scaffold_5.62 transcr. 1 in sequence scaffold_5_797157-801191: coding length not a multiple of 3. Skipping...
+gene evm.model.scaffold_5.63 transcr. 1 in sequence scaffold_5_801896-804234: coding length not a multiple of 3. Skipping...
+gene evm.model.scaffold_5.114 transcr. 1 in sequence scaffold_5_1529618-1531066: coding length not a multiple of 3. Skipping...
+gene evm.model.scaffold_5.115 transcr. 1 in sequence scaffold_5_1531067-1533057: coding length not a multiple of 3. Skipping...
+start codon frequencies: ATG(1133)
+# admissible start codons and their probabilities: ATG(1), CTG(0), TTG(0)
+ number of bases in the reading frames: 593802 594908 594911
+--- frame = 0 ---    minPatSum = 233
+--- frame = 1 ---    minPatSum = 233
+--- frame = 2 ---    minPatSum = 233
+--- initial frame = 0 ---    minPatSum = 233
+--- initial frame = 1 ---    minPatSum = 233
+--- initial frame = 2 ---    minPatSum = 233
+--- internal exon terminal frame = 0 ---    minPatSum = 233
+--- internal exon terminal frame = 1 ---    minPatSum = 233
+--- internal exon terminal frame = 2 ---    minPatSum = 233
+single, initial, internal, terminal mean exon lengths :
+1073	393	192	549
+single exon : 890
+initial exon 0 : 59
+initial exon 1 : 118
+initial exon 2 : 66
+internal exon 0 : 64
+internal exon 1 : 104
+internal exon 2 : 64
+terminal exon : 243
+Frequency of stop codons:
+tag:  357 (0.315)
+taa:  626 (0.553)
+tga:  150 (0.132)
+end *EXON*
+Storing parameters to file...
+Writing exon model parameters [1] to file /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/C.albicans_SC5314/predict_misc/ab_initio_parameters/augustus/species/c.albicans_sc5314_xxx/c.albicans_sc5314_xxx_exon_probs.pbl.

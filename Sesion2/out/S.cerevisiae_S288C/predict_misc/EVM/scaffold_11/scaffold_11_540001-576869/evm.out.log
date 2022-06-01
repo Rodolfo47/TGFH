@@ -1,0 +1,59 @@
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+-successfully changed directories to /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.cerevisiae_S288C/predict_misc/EVM/scaffold_11/scaffold_11_540001-576869
+
+-reading genomic sequence.
+
+** Processing features (+)
+
+-finding all potential splice sites, looking for GT/GC donors and AG acceptors.
+-finding all potential starts and stops. (strand: +)
+-loading gene prediction evidence. (strand: +)Valid prediction for snap_scaffold_11-snap.217-T1
+Valid prediction for Augustus_model.g4456.t1
+Valid prediction for Augustus_model.g4459.t1
+Valid prediction for snap_scaffold_11-snap.229-T1
+Valid prediction for snap_scaffold_11-snap.219-T1
+Valid prediction for snap_scaffold_11-snap.230-T1
+Valid prediction for snap_scaffold_11-snap.228-T1
+Valid prediction for snap_scaffold_11-snap.220-T1
+Valid prediction for snap_scaffold_11-snap.223-T1
+Valid prediction for Augustus_model.g4448.t1
+Valid prediction for snap_scaffold_11-snap.218-T1
+Valid prediction for snap_scaffold_11-snap.226-T1
+
+-loading the search evidence (protein and EST search results, strand: +)
+-scoring exons (strand: +)
+
+** Processing features (-)
+
+-finding all potential splice sites, looking for GT/GC donors and AG acceptors.
+-finding all potential starts and stops. (strand: -)
+-loading gene prediction evidence. (strand: -)Valid prediction for snap_scaffold_11-snap.225-T1
+Valid prediction for snap_scaffold_11-snap.221-T1
+Valid prediction for Augustus_model.g4458.t1
+Valid prediction for snap_scaffold_11-snap.227-T1
+Valid prediction for snap_scaffold_11-snap.231-T1
+Valid prediction for GlimmerHMM_glimmerT_4828-T1
+Valid prediction for snap_scaffold_11-snap.222-T1
+Valid prediction for snap_scaffold_11-snap.224-T1
+
+-loading the search evidence (protein and EST search results, strand: -)
+-scoring exons (strand: -)
+-building DP trellis
+
+-building trellis in range 1 - 36869
+-exon list size: 59
+
+
+building trellis
+1.6    3.3    4.9    6.6    8.2    9.8    11.5    13.1    14.8    16.4    18.0    19.7    21.3    23.0    24.6    26.2    27.9    29.5    31.1    32.8    34.4    36.1    37.7    39.3    41.0    42.6    44.3    45.9    47.5    49.2    50.8    52.5    54.1    55.7    57.4    59.0    60.7    62.3    63.9    65.6    67.2    68.9    70.5    72.1    73.8    75.4    77.0    78.7    80.3    82.0    83.6    85.2    86.9    88.5    90.2    91.8    93.4    95.1    96.7    98.4    
+-found 15 predictions from path traversal
+
+-reporting highest scoring path thru the trellis.
+-found 15 predictions persist after filtering for low support

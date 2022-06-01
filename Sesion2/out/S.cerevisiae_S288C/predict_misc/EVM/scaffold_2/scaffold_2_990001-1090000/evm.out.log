@@ -1,0 +1,86 @@
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+-successfully changed directories to /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.cerevisiae_S288C/predict_misc/EVM/scaffold_2/scaffold_2_990001-1090000
+
+-reading genomic sequence.
+
+** Processing features (+)
+
+-finding all potential splice sites, looking for GT/GC donors and AG acceptors.
+-finding all potential starts and stops. (strand: +)
+-loading gene prediction evidence. (strand: +)Valid prediction for Augustus_model.g1137.t1
+Valid prediction for snap_scaffold_2-snap.420-T1
+Valid prediction for snap_scaffold_2-snap.397-T1
+Valid prediction for Augustus_model.g1151.t1
+Valid prediction for snap_scaffold_2-snap.421-T1
+Valid prediction for snap_scaffold_2-snap.417-T1
+Valid prediction for snap_scaffold_2-snap.401-T1
+Valid prediction for snap_scaffold_2-snap.428-T1
+Valid prediction for snap_scaffold_2-snap.429-T1
+Valid prediction for snap_scaffold_2-snap.431-T1
+Valid prediction for snap_scaffold_2-snap.432-T1
+Valid prediction for snap_scaffold_2-snap.409-T1
+Valid prediction for snap_scaffold_2-snap.418-T1
+Valid prediction for snap_scaffold_2-snap.403-T1
+Valid prediction for snap_scaffold_2-snap.419-T1
+Valid prediction for snap_scaffold_2-snap.424-T1
+Valid prediction for snap_scaffold_2-snap.425-T1
+Valid prediction for Augustus_model.g1143.t1
+Valid prediction for snap_scaffold_2-snap.400-T1
+Valid prediction for snap_scaffold_2-snap.410-T1
+Valid prediction for Augustus_model.g1129.t1
+Valid prediction for snap_scaffold_2-snap.423-T1
+Valid prediction for snap_scaffold_2-snap.415-T1
+
+-loading the search evidence (protein and EST search results, strand: +)
+-scoring exons (strand: +)
+
+** Processing features (-)
+
+-finding all potential splice sites, looking for GT/GC donors and AG acceptors.
+-finding all potential starts and stops. (strand: -)
+-loading gene prediction evidence. (strand: -)Valid prediction for snap_scaffold_2-snap.396-T1
+Valid prediction for snap_scaffold_2-snap.408-T1
+Valid prediction for snap_scaffold_2-snap.405-T1
+Valid prediction for snap_scaffold_2-snap.411-T1
+Valid prediction for snap_scaffold_2-snap.413-T1
+Valid prediction for snap_scaffold_2-snap.399-T1
+Valid prediction for snap_scaffold_2-snap.407-T1
+Valid prediction for snap_scaffold_2-snap.412-T1
+Valid prediction for snap_scaffold_2-snap.430-T1
+Valid prediction for snap_scaffold_2-snap.422-T1
+Valid prediction for Augustus_model.g1115.t1
+Valid prediction for snap_scaffold_2-snap.433-T1
+add_exon() Sorry, snap_scaffold_2-snap.433-T1 546-864-terminal-1 is invalid.
+Valid prediction for snap_scaffold_2-snap.416-T1
+Valid prediction for snap_scaffold_2-snap.402-T1
+Valid prediction for snap_scaffold_2-snap.404-T1
+Valid prediction for snap_scaffold_2-snap.398-T1
+Valid prediction for snap_scaffold_2-snap.426-T1
+Valid prediction for snap_scaffold_2-snap.427-T1
+Valid prediction for snap_scaffold_2-snap.395-T1
+Valid prediction for snap_scaffold_2-snap.414-T1
+Valid prediction for snap_scaffold_2-snap.406-T1
+
+-loading the search evidence (protein and EST search results, strand: -)
+-scoring exons (strand: -)Error with prediction: snap lend_intergenic: 14483, rend_intergenic: 14241  at /home/rangeles/.conda/envs/funannotate/opt/evidencemodeler-1.1.1/EvmUtils/.././evidence_modeler.pl line 3218.
+
+-building DP trellis
+
+-building trellis in range 1 - 100000
+-exon list size: 133
+
+
+building trellis
+0.7    1.5    2.2    3.0    3.7    4.4    5.2    5.9    6.7    7.4    8.1    8.9    9.6    10.4    11.1    11.9    12.6    13.3    14.1    14.8    15.6    16.3    17.0    17.8    18.5    19.3    20.0    20.7    21.5    22.2    23.0    23.7    24.4    25.2    25.9    26.7    27.4    28.1    28.9    29.6    30.4    31.1    31.9    32.6    33.3    34.1    34.8    35.6    36.3    37.0    37.8    38.5    39.3    40.0    40.7    41.5    42.2    43.0    43.7    44.4    45.2    45.9    46.7    47.4    48.1    48.9    49.6    50.4    51.1    51.9    52.6    53.3    54.1    54.8    55.6    56.3    57.0    57.8    58.5    59.3    60.0    60.7    61.5    62.2    63.0    63.7    64.4    65.2    65.9    66.7    67.4    68.1    68.9    69.6    70.4    71.1    71.9    72.6    73.3    74.1    74.8    75.6    76.3    77.0    77.8    78.5    79.3    80.0    80.7    81.5    82.2    83.0    83.7    84.4    85.2    85.9    86.7    87.4    88.1    88.9    89.6    90.4    91.1    91.9    92.6    93.3    94.1    94.8    95.6    96.3    97.0    97.8    98.5    99.3    
+-found 40 predictions from path traversal
+Error with prediction: snap lend_intergenic: 14483, rend_intergenic: 14241  at /home/rangeles/.conda/envs/funannotate/opt/evidencemodeler-1.1.1/EvmUtils/.././evidence_modeler.pl line 3218.
+
+-reporting highest scoring path thru the trellis.
+-found 40 predictions persist after filtering for low support

@@ -1,0 +1,52 @@
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+-successfully changed directories to /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.cerevisiae_M3836/predict_misc/EVM/scaffold_35
+
+-reading genomic sequence.
+
+** Processing features (+)
+
+-finding all potential splice sites, looking for GT/GC donors and AG acceptors.
+-finding all potential starts and stops. (strand: +)
+-loading gene prediction evidence. (strand: +)Valid prediction for snap_scaffold_35-snap.5-T1
+Valid prediction for Augustus_model.g5071.t1
+Valid prediction for snap_scaffold_35-snap.2-T1
+Valid prediction for snap_scaffold_35-snap.3-T1
+Valid prediction for Augustus_model.g5072.t1
+Valid prediction for snap_scaffold_35-snap.4-T1
+Valid prediction for snap_scaffold_35-snap.6-T1
+Valid prediction for snap_scaffold_35-snap.7-T1
+Sorry, intron length (7) is less than minimum required (10)
+
+-loading the search evidence (protein and EST search results, strand: +)
+-scoring exons (strand: +)
+
+** Processing features (-)
+
+-finding all potential splice sites, looking for GT/GC donors and AG acceptors.
+-finding all potential starts and stops. (strand: -)
+-loading gene prediction evidence. (strand: -)Valid prediction for snap_scaffold_35-snap.1-T1
+Couldn't classify 16103, 16362
+Sorry, prediction Augustus_model.g5069.t1 fails validation.
+(ATG)	 CT	16103-16362		AT
+
+-loading the search evidence (protein and EST search results, strand: -)
+-scoring exons (strand: -)
+-building DP trellis
+
+-building trellis in range 1 - 16362
+-exon list size: 22
+
+
+building trellis
+4.2    8.3    12.5    16.7    20.8    25.0    29.2    33.3    37.5    41.7    45.8    50.0    54.2    58.3    62.5    66.7    70.8    75.0    79.2    83.3    87.5    91.7    95.8    
+-found 7 predictions from path traversal
+
+-reporting highest scoring path thru the trellis.
+-found 7 predictions persist after filtering for low support

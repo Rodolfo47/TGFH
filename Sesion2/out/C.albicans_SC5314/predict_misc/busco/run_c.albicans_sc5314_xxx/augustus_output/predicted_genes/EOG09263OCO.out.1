@@ -1,0 +1,73 @@
+# Please cite: Mario Stanke, Mark Diekhans, Robert Baertsch, David Haussler (2008),
+# Using native and syntenically mapped cDNA alignments to improve de novo gene finding
+# Bioinformatics 24: 637-644, doi 10.1093/bioinformatics/btn013
+# No extrinsic information on sequences given.
+# Initializing the parameters using config directory /home/rangeles/.conda/envs/funannotate/config/ ...
+# Using protein profile unknown
+# --[0..50]--> unknown_A (40) <--[0..24]--> unknown_B (60) <--[2..13]--> unknown_C (39) <--[4..13]--> unknown_D (17) <--[0..1]--> unknown_E (41) <--[2..17]--> unknown_F (32) <--[0..15]--> unknown_G (57) <--[0..471]--
+# anidulans version. Using default transition matrix.
+# Looks like ./tmp/scaffold_4c.albicans_sc5314_xxx_722612634_.temp is in fasta format.
+# We have hints for 0 sequences and for 0 of the sequences in the input set.
+#
+# ----- prediction on sequence number 1 (length = 10906, name = scaffold_4) -----
+#
+# Predicted genes for sequence number 1 on both strands
+# start gene g1
+scaffold_4	AUGUSTUS	gene	1417176	1417947	0.07	-	.	g1
+scaffold_4	AUGUSTUS	transcript	1417176	1417947	0.07	-	.	g1.t1
+scaffold_4	AUGUSTUS	stop_codon	1417176	1417178	.	-	0	transcript_id "g1.t1"; gene_id "g1";
+scaffold_4	AUGUSTUS	CDS	1417176	1417319	0.27	-	0	transcript_id "g1.t1"; gene_id "g1";
+scaffold_4	AUGUSTUS	CDS	1417423	1417947	0.26	-	0	transcript_id "g1.t1"; gene_id "g1";
+scaffold_4	AUGUSTUS	start_codon	1417945	1417947	.	-	0	transcript_id "g1.t1"; gene_id "g1";
+# coding sequence = [atggtcagtgatttaaatgatgatacgtttatcatggggaatgacaaatttggattgtgccagactaacgacttgactg
+# aaactgcagagctgggtgaagaagatgacgaggaagaagtagcagaaaaagggaaaaatggagaagaagttgaatacgacgatgattacgacgacgat
+# gaggaaccagaggcatgcgatgatgatagtgaagattcaatctctctgaaggatttgcttgatatactgatagatcagtttgagtatttaccaaagtt
+# atatgaaagcatggttgagtgtgagtctattctggatgacagtgaacgtgaagttgcactatttcaaatctacaataaaatgaacaaatgcatagaag
+# ttgaaagtcgaaagttaaaggataccattattggtgcacgattgaagactaagcgataccttgagaaaaaatggaattatgaagaatataaatatttt
+# gatattgatgagcataatgaggataaggatgattctttaactgaatataaaaaacaggacttcgacaatgtggtaattgtcacaaatgggaagatttt
+# ccaagacaatttgcaaaatgcaaactttgtaagcgagcaaagtattgttcgaaaaagtgtcaaatggaaagctggaagagtcatcgtaactggtgctt
+# ag]
+# protein sequence = [MVSDLNDDTFIMGNDKFGLCQTNDLTETAELGEEDDEEEVAEKGKNGEEVEYDDDYDDDEEPEACDDDSEDSISLKDL
+# LDILIDQFEYLPKLYESMVECESILDDSEREVALFQIYNKMNKCIEVESRKLKDTIIGARLKTKRYLEKKWNYEEYKYFDIDEHNEDKDDSLTEYKKQ
+# DFDNVVIVTNGKIFQDNLQNANFVSEQSIVRKSVKWKAGRVIVTGA]
+# end gene g1
+###
+# start gene g2
+scaffold_4	AUGUSTUS	gene	1419828	1420823	0.01	-	.	g2
+scaffold_4	AUGUSTUS	transcript	1419828	1420823	0.01	-	.	g2.t1
+scaffold_4	AUGUSTUS	stop_codon	1419828	1419830	.	-	0	transcript_id "g2.t1"; gene_id "g2";
+scaffold_4	AUGUSTUS	CDS	1419828	1420823	0.01	-	0	transcript_id "g2.t1"; gene_id "g2";
+scaffold_4	AUGUSTUS	start_codon	1420821	1420823	.	-	0	transcript_id "g2.t1"; gene_id "g2";
+scaffold_4	AUGUSTUS	protein_match	1419852	1420022	6.37	-	0	target "unknown_G[1..57]"; target_start 267; transcript_id "g2.t1"; gene_id "g2";
+scaffold_4	AUGUSTUS	protein_match	1420023	1420118	6.48	-	0	target "unknown_F[1..32]"; target_start 235; transcript_id "g2.t1"; gene_id "g2";
+scaffold_4	AUGUSTUS	protein_match	1420131	1420253	6.49	-	0	target "unknown_E[1..41]"; target_start 190; transcript_id "g2.t1"; gene_id "g2";
+scaffold_4	AUGUSTUS	protein_match	1420254	1420304	5.85	-	0	target "unknown_D[1..17]"; target_start 173; transcript_id "g2.t1"; gene_id "g2";
+scaffold_4	AUGUSTUS	protein_match	1420329	1420445	5.28	-	0	target "unknown_C[1..39]"; target_start 126; transcript_id "g2.t1"; gene_id "g2";
+scaffold_4	AUGUSTUS	protein_match	1420470	1420649	5.83	-	0	target "unknown_B[1..60]"; target_start 58; transcript_id "g2.t1"; gene_id "g2";
+scaffold_4	AUGUSTUS	protein_match	1420662	1420781	7.4	-	0	target "unknown_A[1..40]"; target_start 14; transcript_id "g2.t1"; gene_id "g2";
+# coding sequence = [atgaaacaaaaggaaatcccttctacaaagaatgatgctcaaaaagtgtccactttgggtgggtttttggcaggtggag
+# ttgcagcgtgcatggcagtcacgttcacaaaccccattgaattgatcaagacgagaatgcagttacagggtgaactagtcaaaaaatccaaagatgca
+# gttgtgttgtataagaatccgttacaagcttttgcggtgatctatagaaatgaaggtataagagggttgcagcaaggtttggcatgtggttactatta
+# ccagttggcattaaacggatgtagaattggattctatgagccaagtagattttatttgagtaaagcatttgctccttcacacattatgccagatggtc
+# aagtcaagcaaagtttgtctattaatgttctagctggttttgtgagtggtgcttctggtgctgttttggcttccccgatgtttttgataaaaacgaga
+# atgcaatctttcagcgcatccaatactggtggagcagctgtgggtcaacagactttttataagaatacctgggatgggttttcccagatttaccacag
+# tgagggtattaaagggttgtatagaggtgttgatgctgcgattttaagaactggtgctggttcagctgctcaattgccaacttattatttgaccaaat
+# ccttcttgttgaaacatggtttagctaaagagaattcattcagtttgaattttatttcctccataatggcaggattgggtgttgccattgtgatgaac
+# ccctgggatgttgtgttgacgagaatgtacaatcaaaagggtaatttatatagtggcccaattgattgtttcaagaaaactatagcagccgaaggtgc
+# aatggcattatataaaggattctgggctcaattatttagaattggtcctcatacaattttaaccttattatttatggaacagtgtatgaaaggaatgg
+# tcctgattgaaaagaaattgagatctttcaactga]
+# protein sequence = [MKQKEIPSTKNDAQKVSTLGGFLAGGVAACMAVTFTNPIELIKTRMQLQGELVKKSKDAVVLYKNPLQAFAVIYRNEG
+# IRGLQQGLACGYYYQLALNGCRIGFYEPSRFYLSKAFAPSHIMPDGQVKQSLSINVLAGFVSGASGAVLASPMFLIKTRMQSFSASNTGGAAVGQQTF
+# YKNTWDGFSQIYHSEGIKGLYRGVDAAILRTGAGSAAQLPTYYLTKSFLLKHGLAKENSFSLNFISSIMAGLGVAIVMNPWDVVLTRMYNQKGNLYSG
+# PIDCFKKTIAAEGAMALYKGFWAQLFRIGPHTILTLLFMEQCMKGMVLIEKKLRSFN]
+# sequence of block unknown_G   267 [KGNLYSGPIDCFKKTIAAEGAMALYKGFWAQLFRIGPHTILTLLFMEQCMKGMVLIE] 324
+# sequence of block unknown_F   235 [FSLNFISSIMAGLGVAIVMNPWDVVLTRMYNQ] 267
+# sequence of block unknown_E   190 [EGIKGLYRGVDAAILRTGAGSAAQLPTYYLTKSFLLKHGLA] 231
+# sequence of block unknown_D   173 [QTFYKNTWDGFSQIYHS] 190
+# sequence of block unknown_C   126 [KQSLSINVLAGFVSGASGAVLASPMFLIKTRMQSFSASN] 165
+# sequence of block unknown_B    58 [AVVLYKNPLQAFAVIYRNEGIRGLQQGLACGYYYQLALNGCRIGFYEPSRFYLSKAFAPS] 118
+# sequence of block unknown_A    14 [KVSTLGGFLAGGVAACMAVTFTNPIELIKTRMQLQGELVK] 54
+# end gene g2
+###
+# command line:
+# augustus --stopCodonExcludedFromCDS=False --codingseq=1 --proteinprofile=/space21/PGE/rangeles/bin/funannotate_db/dikarya/prfl/EOG09263OCO.prfl --predictionStart=1414870 --predictionEnd=1425775 --species=anidulans ./tmp/scaffold_4c.albicans_sc5314_xxx_722612634_.temp

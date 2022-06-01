@@ -1,0 +1,57 @@
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
+-successfully changed directories to /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.cerevisiae_M3836/predict_misc/EVM/scaffold_4/scaffold_4_810001-852288
+
+-reading genomic sequence.
+
+** Processing features (+)
+
+-finding all potential splice sites, looking for GT/GC donors and AG acceptors.
+-finding all potential starts and stops. (strand: +)
+-loading gene prediction evidence. (strand: +)Valid prediction for snap_scaffold_4-snap.328-T1
+Valid prediction for Augustus_model.g1615.t1
+Valid prediction for snap_scaffold_4-snap.327-T1
+Valid prediction for Augustus_model.g1621.t1
+Valid prediction for snap_scaffold_4-snap.336-T1
+Valid prediction for snap_scaffold_4-snap.337-T1
+Valid prediction for snap_scaffold_4-snap.331-T1
+Valid prediction for snap_scaffold_4-snap.325-T1
+Valid prediction for snap_scaffold_4-snap.332-T1
+
+-loading the search evidence (protein and EST search results, strand: +)
+-scoring exons (strand: +)
+
+** Processing features (-)
+
+-finding all potential splice sites, looking for GT/GC donors and AG acceptors.
+-finding all potential starts and stops. (strand: -)
+-loading gene prediction evidence. (strand: -)Valid prediction for GlimmerHMM_glimmerT_1757-T1
+Valid prediction for snap_scaffold_4-snap.326-T1
+Valid prediction for snap_scaffold_4-snap.339-T1
+Valid prediction for snap_scaffold_4-snap.334-T1
+Valid prediction for snap_scaffold_4-snap.330-T1
+Valid prediction for snap_scaffold_4-snap.338-T1
+Valid prediction for snap_scaffold_4-snap.329-T1
+Valid prediction for snap_scaffold_4-snap.333-T1
+Valid prediction for snap_scaffold_4-snap.335-T1
+
+-loading the search evidence (protein and EST search results, strand: -)
+-scoring exons (strand: -)
+-building DP trellis
+
+-building trellis in range 1 - 42288
+-exon list size: 53
+
+
+building trellis
+1.8    3.6    5.5    7.3    9.1    10.9    12.7    14.5    16.4    18.2    20.0    21.8    23.6    25.5    27.3    29.1    30.9    32.7    34.5    36.4    38.2    40.0    41.8    43.6    45.5    47.3    49.1    50.9    52.7    54.5    56.4    58.2    60.0    61.8    63.6    65.5    67.3    69.1    70.9    72.7    74.5    76.4    78.2    80.0    81.8    83.6    85.5    87.3    89.1    90.9    92.7    94.5    96.4    98.2    
+-found 15 predictions from path traversal
+
+-reporting highest scoring path thru the trellis.
+-found 15 predictions persist after filtering for low support
