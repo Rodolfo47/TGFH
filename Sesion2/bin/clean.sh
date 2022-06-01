@@ -2,7 +2,7 @@
 #Cleaning and formating yeast genomes to funannotate
 #Rodolfo Angeles, May/2022
 
-#print ending date and time
+#print starting date and time
 date
 #make `list2fun.txt` with prefix
 ls ../data/*.fna | sed -e "s/..\/data\///g" | sed -e "s/.fna//g" > list2fun.txt
