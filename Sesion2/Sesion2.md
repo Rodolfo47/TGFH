@@ -81,7 +81,6 @@ Quast
 
 push -u origin master desde chichen
 
-[token](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)
 
 ```
 ln -s Sacch/Canalb1_AssemblyScaffolds.fasta C.albicans_SC5314.fna
