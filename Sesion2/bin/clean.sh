@@ -14,7 +14,7 @@ for smpl in $(cat list2fun.txt); do
     # 1.2 sort and relabel headers
     funannotate sort -i ../out/$smpl.clean.fna -o ../out/$smpl.clean.sort.fna
     # 1.3 softmasking with tantan
-    funannotate mask --cpus 20 -i ../out/$smpl.clean.sort.fna -o ../out/$smpl.clean.sort.mask.fna
+    funannotate mask --cpus 60 -i ../out/$smpl.clean.sort.fna -o ../out/$smpl.clean.sort.mask.fna
 
     #delete tmp files
     rm ../out/$smpl.clean.fna ../out/$smpl.clean.sort.fna

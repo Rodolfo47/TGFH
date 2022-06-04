@@ -1,11 +1,5 @@
-[05/31/22 23:52:20]: /home/rangeles/.conda/envs/funannotate/bin/funannotate mask --cpus 20 -i ../out/S.eubayanus_FM1318.clean.sort.fna -o ../out/S.eubayanus_FM1318.clean.sort.mask.fna
+[06/04/22 15:23:08]: /mnt/anaconda3/bin/funannotate mask --cpus 60 -i ../out/S.eubayanus_FM1318.clean.sort.fna -o ../out/S.eubayanus_FM1318.clean.sort.mask.fna
 
-[05/31/22 23:52:20]: OS: linux2, 32 cores, ~ 264 GB RAM. Python: 2.7.15
-[05/31/22 23:52:20]: Running funanotate v1.7.4
-[05/31/22 23:52:20]: Soft-masking simple repeats with tantan
-[05/31/22 23:52:20]: tantan -c ../out/S.eubayanus_FM1318.clean.sort.fna
-[05/31/22 23:52:28]: Repeat soft-masking finished: 
-Masked genome: /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.eubayanus_FM1318.clean.sort.mask.fna
-num scaffolds: 23
-assembly size: 11,670,174 bp
-masked repeats: 481,174 bp (4.12%)
+[06/04/22 15:23:08]: OS: Ubuntu 20.04, 64 cores, ~ 264 GB RAM. Python: 3.9.12
+[06/04/22 15:23:08]: Running funanotate v1.8.5
+[06/04/22 15:23:08]: Missing Dependencies: tantan.  Please install missing dependencies and re-run script
