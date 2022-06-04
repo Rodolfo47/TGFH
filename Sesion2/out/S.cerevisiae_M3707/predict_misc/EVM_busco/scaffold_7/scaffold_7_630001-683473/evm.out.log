@@ -1,40 +1,0 @@
-perl: warning: Setting locale failed.
-perl: warning: Please check that your locale settings:
-	LANGUAGE = (unset),
-	LC_ALL = (unset),
-	LC_CTYPE = "UTF-8",
-	LANG = "en_US.UTF-8"
-    are supported and installed on your system.
-perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
--successfully changed directories to /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.cerevisiae_M3707/predict_misc/EVM_busco/scaffold_7/scaffold_7_630001-683473
-
--reading genomic sequence.
-
-** Processing features (+)
-
--finding all potential splice sites, looking for GT/GC donors and AG acceptors.
--finding all potential starts and stops. (strand: +)
--loading gene prediction evidence. (strand: +)Valid prediction for Augustus_gene533.t1
-
--loading the search evidence (protein and EST search results, strand: +)
--scoring exons (strand: +)
-
-** Processing features (-)
-
--finding all potential splice sites, looking for GT/GC donors and AG acceptors.
--finding all potential starts and stops. (strand: -)
--loading gene prediction evidence. (strand: -)
--loading the search evidence (protein and EST search results, strand: -)
--scoring exons (strand: -)
--building DP trellis
-
--building trellis in range 1 - 53473
--exon list size: 7
-
-
-building trellis
-11.1    22.2    33.3    44.4    55.6    66.7    77.8    88.9    
--found 6 predictions from path traversal
-
--reporting highest scoring path thru the trellis.
--found 6 predictions persist after filtering for low support

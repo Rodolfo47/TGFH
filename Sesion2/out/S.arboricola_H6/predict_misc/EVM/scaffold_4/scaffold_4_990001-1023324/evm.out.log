@@ -1,59 +1,0 @@
-perl: warning: Setting locale failed.
-perl: warning: Please check that your locale settings:
-	LANGUAGE = (unset),
-	LC_ALL = (unset),
-	LC_CTYPE = "UTF-8",
-	LANG = "en_US.UTF-8"
-    are supported and installed on your system.
-perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
--successfully changed directories to /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.arboricola_H6/predict_misc/EVM/scaffold_4/scaffold_4_990001-1023324
-
--reading genomic sequence.
-
-** Processing features (+)
-
--finding all potential splice sites, looking for GT/GC donors and AG acceptors.
--finding all potential starts and stops. (strand: +)
--loading gene prediction evidence. (strand: +)Valid prediction for snap_scaffold_4-snap.399-T1
-Valid prediction for GlimmerHMM_glimmerT_2153-T1
-Valid prediction for Augustus_model.g1883.t1
-Valid prediction for snap_scaffold_4-snap.398-T1
-Valid prediction for snap_scaffold_4-snap.395-T1
-Valid prediction for snap_scaffold_4-snap.405-T1
-Valid prediction for Augustus_model.g1888.t1
-Valid prediction for GlimmerHMM_glimmerT_2155-T1
-Valid prediction for snap_scaffold_4-snap.396-T1
-Valid prediction for GlimmerHMM_glimmerT_2149-T1
-Couldn't classify 32998, 33324
-Sorry, prediction Augustus_model.g1890.t1 fails validation.
-(ATG)	 CA	32998-33324		CC
-Valid prediction for snap_scaffold_4-snap.400-T1
-Valid prediction for snap_scaffold_4-snap.401-T1
-Valid prediction for snap_scaffold_4-snap.403-T1
-Valid prediction for snap_scaffold_4-snap.404-T1
-
--loading the search evidence (protein and EST search results, strand: +)
--scoring exons (strand: +)
-
-** Processing features (-)
-
--finding all potential splice sites, looking for GT/GC donors and AG acceptors.
--finding all potential starts and stops. (strand: -)
--loading gene prediction evidence. (strand: -)Valid prediction for snap_scaffold_4-snap.397-T1
-Valid prediction for snap_scaffold_4-snap.402-T1
-Valid prediction for GlimmerHMM_glimmerT_2151-T1
-
--loading the search evidence (protein and EST search results, strand: -)
--scoring exons (strand: -)
--building DP trellis
-
--building trellis in range 1 - 33324
--exon list size: 49
-
-
-building trellis
-2.0    3.9    5.9    7.8    9.8    11.8    13.7    15.7    17.6    19.6    21.6    23.5    25.5    27.5    29.4    31.4    33.3    35.3    37.3    39.2    41.2    43.1    45.1    47.1    49.0    51.0    52.9    54.9    56.9    58.8    60.8    62.7    64.7    66.7    68.6    70.6    72.5    74.5    76.5    78.4    80.4    82.4    84.3    86.3    88.2    90.2    92.2    94.1    96.1    98.0    
--found 12 predictions from path traversal
-
--reporting highest scoring path thru the trellis.
--found 12 predictions persist after filtering for low support

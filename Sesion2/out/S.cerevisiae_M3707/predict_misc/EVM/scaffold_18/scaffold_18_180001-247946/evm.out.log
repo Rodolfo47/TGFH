@@ -1,72 +1,0 @@
-perl: warning: Setting locale failed.
-perl: warning: Please check that your locale settings:
-	LANGUAGE = (unset),
-	LC_ALL = (unset),
-	LC_CTYPE = "UTF-8",
-	LANG = "en_US.UTF-8"
-    are supported and installed on your system.
-perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
--successfully changed directories to /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.cerevisiae_M3707/predict_misc/EVM/scaffold_18/scaffold_18_180001-247946
-
--reading genomic sequence.
-
-** Processing features (+)
-
--finding all potential splice sites, looking for GT/GC donors and AG acceptors.
--finding all potential starts and stops. (strand: +)
--loading gene prediction evidence. (strand: +)Valid prediction for snap_scaffold_18-snap.92-T1
-Valid prediction for snap_scaffold_18-snap.75-T1
-Valid prediction for snap_scaffold_18-snap.82-T1
-Valid prediction for Augustus_model.g4588.t1
-Valid prediction for snap_scaffold_18-snap.98-T1
-Valid prediction for snap_scaffold_18-snap.86-T1
-Valid prediction for snap_scaffold_18-snap.90-T1
-Valid prediction for snap_scaffold_18-snap.78-T1
-Valid prediction for snap_scaffold_18-snap.79-T1
-Valid prediction for snap_scaffold_18-snap.85-T1
-Valid prediction for snap_scaffold_18-snap.81-T1
-Valid prediction for snap_scaffold_18-snap.96-T1
-Valid prediction for snap_scaffold_18-snap.89-T1
-Valid prediction for snap_scaffold_18-snap.88-T1
-Valid prediction for snap_scaffold_18-snap.99-T1
-Valid prediction for Augustus_model.g4572.t1
-Valid prediction for snap_scaffold_18-snap.91-T1
-Valid prediction for snap_scaffold_18-snap.77-T1
-Valid prediction for snap_scaffold_18-snap.83-T1
-Valid prediction for snap_scaffold_18-snap.95-T1
-Valid prediction for snap_scaffold_18-snap.93-T1
-Valid prediction for Augustus_model.g4581.t1
-Valid prediction for snap_scaffold_18-snap.74-T1
-
--loading the search evidence (protein and EST search results, strand: +)
--scoring exons (strand: +)
-
-** Processing features (-)
-
--finding all potential splice sites, looking for GT/GC donors and AG acceptors.
--finding all potential starts and stops. (strand: -)
--loading gene prediction evidence. (strand: -)Valid prediction for snap_scaffold_18-snap.101-T1
-Valid prediction for snap_scaffold_18-snap.80-T1
-Valid prediction for snap_scaffold_18-snap.84-T1
-Valid prediction for snap_scaffold_18-snap.102-T1
-add_exon() Sorry, snap_scaffold_18-snap.102-T1 410-1442-terminal-1 is invalid.
-Valid prediction for snap_scaffold_18-snap.100-T1
-Valid prediction for snap_scaffold_18-snap.97-T1
-Valid prediction for snap_scaffold_18-snap.76-T1
-Valid prediction for snap_scaffold_18-snap.94-T1
-Valid prediction for snap_scaffold_18-snap.87-T1
-
--loading the search evidence (protein and EST search results, strand: -)
--scoring exons (strand: -)
--building DP trellis
-
--building trellis in range 1 - 67946
--exon list size: 95
-
-
-building trellis
-1.0    2.1    3.1    4.1    5.2    6.2    7.2    8.2    9.3    10.3    11.3    12.4    13.4    14.4    15.5    16.5    17.5    18.6    19.6    20.6    21.6    22.7    23.7    24.7    25.8    26.8    27.8    28.9    29.9    30.9    32.0    33.0    34.0    35.1    36.1    37.1    38.1    39.2    40.2    41.2    42.3    43.3    44.3    45.4    46.4    47.4    48.5    49.5    50.5    51.5    52.6    53.6    54.6    55.7    56.7    57.7    58.8    59.8    60.8    61.9    62.9    63.9    64.9    66.0    67.0    68.0    69.1    70.1    71.1    72.2    73.2    74.2    75.3    76.3    77.3    78.4    79.4    80.4    81.4    82.5    83.5    84.5    85.6    86.6    87.6    88.7    89.7    90.7    91.8    92.8    93.8    94.8    95.9    96.9    97.9    99.0    
--found 30 predictions from path traversal
-
--reporting highest scoring path thru the trellis.
--found 30 predictions persist after filtering for low support

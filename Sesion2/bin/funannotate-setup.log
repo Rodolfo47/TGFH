@@ -1,0 +1,150 @@
+[06/01/22 20:42:34]: /home/rangeles/.conda/envs/funannotate/bin/funannotate setup -i all --update --force
+
+[06/01/22 20:42:34]: OS: linux2, 32 cores, ~ 264 GB RAM. Python: 2.7.15
+[06/01/22 20:42:34]: Running 1.7.4
+[06/01/22 20:42:34]: Database location: /space21/PGE/rangeles/bin/funannotate_db
+[06/01/22 20:42:34]: Parsing Augustus pre-trained species and porting to funannotate
+[06/01/22 20:42:37]: Downloading Merops database
+[06/01/22 20:42:39]: Downloading: ftp://ftp.ebi.ac.uk/pub/databases/merops/current_release/merops_scan.lib Bytes: 1957603
+[06/01/22 20:42:41]: Building diamond database
+[06/01/22 20:42:41]: diamond makedb --in merops.formatted.fa --db merops
+[06/01/22 20:42:41]: diamond v0.9.21.122 | by Benjamin Buchfink <buchfink@gmail.com>
+Licensed under the GNU AGPL <https://www.gnu.org/licenses/agpl.txt>
+Check http://github.com/bbuchfink/diamond for updates.
+
+#CPU threads: 32
+Scoring parameters: (Matrix=BLOSUM62 Lambda=0.267 K=0.041 Penalties=11/1)
+Database file: merops.formatted.fa
+Opening the database file...  [0.000161s]
+Loading sequences...  [0.006265s]
+Masking sequences...  [0.021043s]
+Writing sequences...  [0.001444s]
+Hashing sequences...  [0.000556s]
+Loading sequences...  [7e-06s]
+Writing trailer...  [5.7e-05s]
+Closing the input file...  [1.1e-05s]
+Closing the database file...  [1.9e-05s]
+Database hash = e7a2318a9ab88cc368d23c4381d542af
+Processed 5009 sequences, 1276807 letters.
+Total time = 0.029645s
+
+[06/01/22 20:42:41]: MEROPS Database: version=12.0 date=2017-10-04 records=5,009
+[06/01/22 20:42:41]: Downloading UniProtKB/SwissProt database
+[06/01/22 20:42:42]: Downloading: ftp://ftp.ebi.ac.uk/pub/databases/uniprot/current_release/knowledgebase/complete/uniprot_sprot.fasta.gz Bytes: 91059014
+[06/01/22 20:43:15]: Downloading: ftp://ftp.ebi.ac.uk/pub/databases/uniprot/current_release/knowledgebase/complete/reldate.txt Bytes: 151
+[06/01/22 20:43:15]: Building diamond database
+[06/01/22 20:43:15]: diamond makedb --in uniprot_sprot.fasta --db uniprot
+[06/01/22 20:43:19]: diamond v0.9.21.122 | by Benjamin Buchfink <buchfink@gmail.com>
+Licensed under the GNU AGPL <https://www.gnu.org/licenses/agpl.txt>
+Check http://github.com/bbuchfink/diamond for updates.
+
+#CPU threads: 32
+Scoring parameters: (Matrix=BLOSUM62 Lambda=0.267 K=0.041 Penalties=11/1)
+Database file: uniprot_sprot.fasta
+Opening the database file...  [0.000145s]
+Loading sequences...  [1.14697s]
+Masking sequences...  [3.07961s]
+Writing sequences...  [0.254034s]
+Hashing sequences...  [0.064613s]
+Loading sequences...  [2.9e-05s]
+Writing trailer...  [0.006059s]
+Closing the input file...  [2.1e-05s]
+Closing the database file...  [4.1e-05s]
+Database hash = b2266fdc8a06de6f8a2c665f7114c680
+Processed 567483 sequences, 204940973 letters.
+Total time = 4.55169s
+
+[06/01/22 20:43:21]: UniProtKB Database: version=2022_02 date=2022-04-27 records=567,483
+[06/01/22 20:43:21]: Downloading dbCAN database
+[06/01/22 20:43:22]: Downloading: http://bcb.unl.edu/dbCAN2/download/Databases/dbCAN-HMMdb-V7.txt Bytes: 87673048
+[06/01/22 20:44:02]: Downloading: http://bcb.unl.edu/dbCAN2/download/Databases/CAZyDB.07312018.fam-activities.txt Bytes: 59480
+[06/01/22 20:44:02]: Downloading: http://bcb.unl.edu/dbCAN2/download/Databases/dbCAN-old@UGA/readme.txt Bytes: 8098
+[06/01/22 20:44:03]: Creating dbCAN HMM database
+[06/01/22 20:44:03]: hmmpress -f dbCAN.hmm
+[06/01/22 20:44:05]: Working...    done.
+Pressed and indexed 607 HMMs (607 names and 9 accessions).
+Models pressed into binary file:   dbCAN.hmm.h3m
+SSI index for binary model file:   dbCAN.hmm.h3i
+Profiles (MSV part) pressed into:  dbCAN.hmm.h3f
+Profiles (remainder) pressed into: dbCAN.hmm.h3p
+
+[06/01/22 20:44:05]: dbCAN Database: version=10.0 date=2021-10-03 records=607
+[06/01/22 20:44:05]: Downloading Pfam database
+[06/01/22 20:44:06]: Downloading: ftp://ftp.ebi.ac.uk/pub/databases/Pfam//current_release/Pfam-A.hmm.gz Bytes: 293000230
+[06/01/22 20:45:58]: Downloading: ftp://ftp.ebi.ac.uk/pub/databases/Pfam//current_release/Pfam-A.clans.tsv.gz Bytes: 358156
+[06/01/22 20:46:00]: Downloading: ftp://ftp.ebi.ac.uk/pub/databases/Pfam//current_release/Pfam.version.gz Bytes: 114
+[06/01/22 20:46:09]: Creating Pfam HMM database
+[06/01/22 20:46:09]: hmmpress -f Pfam-A.hmm
+[06/01/22 20:46:44]: Working...    done.
+Pressed and indexed 19632 HMMs (19632 names and 19632 accessions).
+Models pressed into binary file:   Pfam-A.hmm.h3m
+SSI index for binary model file:   Pfam-A.hmm.h3i
+Profiles (MSV part) pressed into:  Pfam-A.hmm.h3f
+Profiles (remainder) pressed into: Pfam-A.hmm.h3p
+
+[06/01/22 20:46:44]: Pfam Database: version=35.0 date=2021-11 records=19,632
+[06/01/22 20:46:44]: Downloading Repeat database
+[06/01/22 20:46:46]: Downloading: https://osf.io/vp87c/download?version=1 Bytes: 6325661
+[06/01/22 20:46:47]: Building diamond database
+[06/01/22 20:46:47]: diamond makedb --in funannotate.repeats.reformat.fa --db repeats -parse_seqids
+[06/01/22 20:46:47]: diamond v0.9.21.122 | by Benjamin Buchfink <buchfink@gmail.com>
+Licensed under the GNU AGPL <https://www.gnu.org/licenses/agpl.txt>
+Check http://github.com/bbuchfink/diamond for updates.
+
+#CPU threads: 32
+Scoring parameters: (Matrix=BLOSUM62 Lambda=0.267 K=0.041 Penalties=11/1)
+Database file: funannotate.repeats.reformat.fa
+Opening the database file...  [0.000208s]
+Loading sequences...  [0.041753s]
+Masking sequences...  [0.151407s]
+Writing sequences...  [0.008596s]
+Hashing sequences...  [0.002465s]
+Loading sequences...  [2.3e-05s]
+Writing trailer...  [0.000121s]
+Closing the input file...  [1.9e-05s]
+Closing the database file...  [2.3e-05s]
+Database hash = c4e376eb6431fe979f1f145dbb7eadfd
+Processed 11950 sequences, 9920808 letters.
+Total time = 0.204699s
+
+[06/01/22 20:46:47]: Repeat Database: version=1.0 date=2022-06-01 records=11,950
+[06/01/22 20:46:47]: Downloading GO Ontology database
+[06/01/22 20:46:49]: Downloading: http://purl.obolibrary.org/obo/go.obo Bytes: 33911393
+[06/01/22 20:46:52]: GO ontology version=2022-05-16 date=2022-05-16 records=47,305
+[06/01/22 20:46:52]: Downloading MiBIG Secondary Metabolism database
+[06/01/22 20:46:53]: Downloading: https://dl.secondarymetabolites.org/mibig/mibig_prot_seqs_1.4.fasta Bytes: 21244378
+[06/01/22 20:47:15]: Building diamond database
+[06/01/22 20:47:15]: diamond makedb --in mibig.fa --db mibig
+[06/01/22 20:47:15]: diamond v0.9.21.122 | by Benjamin Buchfink <buchfink@gmail.com>
+Licensed under the GNU AGPL <https://www.gnu.org/licenses/agpl.txt>
+Check http://github.com/bbuchfink/diamond for updates.
+
+#CPU threads: 32
+Scoring parameters: (Matrix=BLOSUM62 Lambda=0.267 K=0.041 Penalties=11/1)
+Database file: mibig.fa
+Opening the database file...  [0.000175s]
+Loading sequences...  [0.071805s]
+Masking sequences...  [0.285378s]
+Writing sequences...  [0.016349s]
+Hashing sequences...  [0.004839s]
+Loading sequences...  [2.8e-05s]
+Writing trailer...  [0.000327s]
+Closing the input file...  [4.6e-05s]
+Closing the database file...  [3.4e-05s]
+Database hash = f846b0c1253a009c6b2f0fd81008cd56
+Processed 31023 sequences, 18898150 letters.
+Total time = 0.379091s
+
+[06/01/22 20:47:15]: MiBIG Database: version=1.4 date=2022-06-01 records=31,023
+[06/01/22 20:47:15]: Downloading InterProScan Mapping file
+[06/01/22 20:47:17]: Downloading: ftp://ftp.ebi.ac.uk/pub/databases/interpro/interpro.xml.gz Bytes: 32189643
+[06/01/22 20:47:43]: InterProScan XML: version=89.0 date=2022-05-26 records=40,124
+[06/01/22 20:47:43]: Downloading pre-computed BUSCO outgroups
+[06/01/22 20:47:45]: Downloading: https://osf.io/r9sne/download?version=1 Bytes: 2374032
+[06/01/22 20:47:45]: BUSCO outgroups: version=1.0 date=2022-06-01 records=8
+[06/01/22 20:47:45]: Downloaded curated gene names and product descriptions
+[06/01/22 20:47:46]: Downloading: https://raw.githubusercontent.com/nextgenusfs/gene2product/master/ncbi_cleaned_gene_products.txt Bytes: 1365316
+[06/01/22 20:47:46]: Gene2Product: version=1.78 date=2022-05-27 records=34,160
+[06/01/22 20:47:46]: Downloading busco models: dikarya
+[06/01/22 20:47:47]: Downloading: https://osf.io/av6f8/download?version=1 Bytes: 66199252
+[06/01/22 20:47:53]: tar -zxf dikarya.tar.gz

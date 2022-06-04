@@ -1,81 +1,0 @@
-perl: warning: Setting locale failed.
-perl: warning: Please check that your locale settings:
-	LANGUAGE = (unset),
-	LC_ALL = (unset),
-	LC_CTYPE = "UTF-8",
-	LANG = "en_US.UTF-8"
-    are supported and installed on your system.
-perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
--successfully changed directories to /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/C.albicans_SC5314/predict_misc/EVM/scaffold_3/scaffold_3_360001-460000
-
--reading genomic sequence.
-
-** Processing features (+)
-
--finding all potential splice sites, looking for GT/GC donors and AG acceptors.
--finding all potential starts and stops. (strand: +)
--loading gene prediction evidence. (strand: +)Valid prediction for snap_scaffold_3-snap.167-T1
-Valid prediction for Augustus_model.g2209.t1
-Valid prediction for snap_scaffold_3-snap.157-T1
-Valid prediction for GlimmerHMM_glimmerT_2445-T1
-Valid prediction for snap_scaffold_3-snap.152-T1
-Valid prediction for snap_scaffold_3-snap.154-T1
-Valid prediction for snap_scaffold_3-snap.163-T1
-Valid prediction for snap_scaffold_3-snap.153-T1
-Valid prediction for snap_scaffold_3-snap.159-T1
-Valid prediction for snap_scaffold_3-snap.151-T1
-Valid prediction for snap_scaffold_3-snap.164-T1
-Valid prediction for snap_scaffold_3-snap.173-T1
-Valid prediction for snap_scaffold_3-snap.158-T1
-Valid prediction for snap_scaffold_3-snap.165-T1
-Valid prediction for Augustus_model.g2186.t1
-Valid prediction for snap_scaffold_3-snap.176-T1
-Valid prediction for snap_scaffold_3-snap.160-T1
-Valid prediction for snap_scaffold_3-snap.175-T1
-Valid prediction for snap_scaffold_3-snap.177-T1
-
--loading the search evidence (protein and EST search results, strand: +)
--scoring exons (strand: +)
-
-** Processing features (-)
-
--finding all potential splice sites, looking for GT/GC donors and AG acceptors.
--finding all potential starts and stops. (strand: -)
--loading gene prediction evidence. (strand: -)Valid prediction for snap_scaffold_3-snap.155-T1
-Valid prediction for snap_scaffold_3-snap.169-T1
-Valid prediction for snap_scaffold_3-snap.148-T1
-Sorry, intron length (9) is less than minimum required (10)
-Valid prediction for snap_scaffold_3-snap.156-T1
-Valid prediction for snap_scaffold_3-snap.166-T1
-Valid prediction for snap_scaffold_3-snap.174-T1
-Valid prediction for snap_scaffold_3-snap.161-T1
-Valid prediction for snap_scaffold_3-snap.146-T1
-Valid prediction for Augustus_model.g2201.t1
-Valid prediction for GlimmerHMM_glimmerT_2465-T1
-Valid prediction for Augustus_model.g2195.t1
-Valid prediction for snap_scaffold_3-snap.162-T1
-Valid prediction for snap_scaffold_3-snap.170-T1
-Sorry, intron length (7) is less than minimum required (10)
-Valid prediction for snap_scaffold_3-snap.172-T1
-Valid prediction for snap_scaffold_3-snap.150-T1
-Valid prediction for snap_scaffold_3-snap.168-T1
-Valid prediction for snap_scaffold_3-snap.149-T1
-Valid prediction for snap_scaffold_3-snap.171-T1
-Valid prediction for Augustus_model.g2181.t1
-Valid prediction for snap_scaffold_3-snap.147-T1
-Valid prediction for snap_scaffold_3-snap.145-T1
-
--loading the search evidence (protein and EST search results, strand: -)
--scoring exons (strand: -)
--building DP trellis
-
--building trellis in range 1 - 100000
--exon list size: 116
-
-
-building trellis
-0.8    1.7    2.5    3.4    4.2    5.1    5.9    6.8    7.6    8.5    9.3    10.2    11.0    11.9    12.7    13.6    14.4    15.3    16.1    16.9    17.8    18.6    19.5    20.3    21.2    22.0    22.9    23.7    24.6    25.4    26.3    27.1    28.0    28.8    29.7    30.5    31.4    32.2    33.1    33.9    34.7    35.6    36.4    37.3    38.1    39.0    39.8    40.7    41.5    42.4    43.2    44.1    44.9    45.8    46.6    47.5    48.3    49.2    50.0    50.8    51.7    52.5    53.4    54.2    55.1    55.9    56.8    57.6    58.5    59.3    60.2    61.0    61.9    62.7    63.6    64.4    65.3    66.1    66.9    67.8    68.6    69.5    70.3    71.2    72.0    72.9    73.7    74.6    75.4    76.3    77.1    78.0    78.8    79.7    80.5    81.4    82.2    83.1    83.9    84.7    85.6    86.4    87.3    88.1    89.0    89.8    90.7    91.5    92.4    93.2    94.1    94.9    95.8    96.6    97.5    98.3    99.2    
--found 34 predictions from path traversal
-
--reporting highest scoring path thru the trellis.
--found 34 predictions persist after filtering for low support

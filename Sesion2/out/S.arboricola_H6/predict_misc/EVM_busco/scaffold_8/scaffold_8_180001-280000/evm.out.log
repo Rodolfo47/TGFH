@@ -1,48 +1,0 @@
-perl: warning: Setting locale failed.
-perl: warning: Please check that your locale settings:
-	LANGUAGE = (unset),
-	LC_ALL = (unset),
-	LC_CTYPE = "UTF-8",
-	LANG = "en_US.UTF-8"
-    are supported and installed on your system.
-perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
--successfully changed directories to /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.arboricola_H6/predict_misc/EVM_busco/scaffold_8/scaffold_8_180001-280000
-
--reading genomic sequence.
-
-** Processing features (+)
-
--finding all potential splice sites, looking for GT/GC donors and AG acceptors.
--finding all potential starts and stops. (strand: +)
--loading gene prediction evidence. (strand: +)Valid prediction for Augustus_gene752.t1
-Couldn't classify 520, 535
-Sorry, prediction Augustus_gene609.t1 fails validation.
-(AAC)	 AG	520-535	GT	ATG
-(GAA)	 AG	587-3182	TT	GAT
--recovered Augustus_gene609.t1, terminal, 587, 3182
--recovered Augustus_gene609.t1, internal, 520, 535
-
--loading the search evidence (protein and EST search results, strand: +)
--scoring exons (strand: +)
-
-** Processing features (-)
-
--finding all potential splice sites, looking for GT/GC donors and AG acceptors.
--finding all potential starts and stops. (strand: -)
--loading gene prediction evidence. (strand: -)Valid prediction for Augustus_gene647.t1
-
--loading the search evidence (protein and EST search results, strand: -)
--scoring exons (strand: -)
--building DP trellis
-
--building trellis in range 1 - 100000
--exon list size: 23
-
-
-building trellis
-4.0    8.0    12.0    16.0    20.0    24.0    28.0    32.0    36.0    40.0    44.0    48.0    52.0    56.0    60.0    64.0    68.0    72.0    76.0    80.0    84.0    88.0    92.0    96.0    
--found 14 predictions from path traversal
-GOT 5prime partial gene.
-
--reporting highest scoring path thru the trellis.
--found 14 predictions persist after filtering for low support

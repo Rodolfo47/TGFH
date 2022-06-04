@@ -1,75 +1,0 @@
-perl: warning: Setting locale failed.
-perl: warning: Please check that your locale settings:
-	LANGUAGE = (unset),
-	LC_ALL = (unset),
-	LC_CTYPE = "UTF-8",
-	LANG = "en_US.UTF-8"
-    are supported and installed on your system.
-perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
--successfully changed directories to /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/P.pastoris_GS115/predict_misc/EVM_busco/scaffold_4/scaffold_4_1350001-1450000
-
--reading genomic sequence.
-
-** Processing features (+)
-
--finding all potential splice sites, looking for GT/GC donors and AG acceptors.
--finding all potential starts and stops. (strand: +)
--loading gene prediction evidence. (strand: +)
--loading the search evidence (protein and EST search results, strand: +)
--scoring exons (strand: +)
-
-** Processing features (-)
-
--finding all potential splice sites, looking for GT/GC donors and AG acceptors.
--finding all potential starts and stops. (strand: -)
--loading gene prediction evidence. (strand: -)Couldn't classify 99919, 99937
-Sorry, prediction Augustus_gene784.t1 fails validation.
-(ATG)	 TC	92796-92812	GT	GTG
-(AGA)	 AG	92878-92905	GT	TAG
-(CAT)	 AG	93125-93137	GT	GGG
-(ACT)	 AG	93856-93866	GT	ATG
-(AAG)	 AG	94789-94800	GT	CAG
-(TTA)	 AG	95678-96487	GT	TTG
-(GAA)	 AG	97889-97905	GT	GAG
-(TGA)	 AG	98214-98295	GT	GCG
-(ACA)	 AG	98345-98365	GT	TGG
-(TCC)	 AG	98437-98578	GT	TAG
-(AAT)	 AG	98673-98691	GT	ATG
-(CGG)	 AG	98766-98776	GT	TCG
-(GCG)	 AG	98825-98944	GT	CGG
-(TCG)	 AG	99002-99059	GT	GTG
-(GTC)	 AG	99268-99280	GT	AGG
-(GGA)	 AG	99676-99820	GT	TGG
-(AGA)	 AG	99919-99937	GT	CAG
--recovered Augustus_gene784.t1, initial, 92796, 92812
--recovered Augustus_gene784.t1, internal, 92878, 92905
--recovered Augustus_gene784.t1, internal, 93125, 93137
--recovered Augustus_gene784.t1, internal, 93856, 93866
--recovered Augustus_gene784.t1, internal, 94789, 94800
--recovered Augustus_gene784.t1, internal, 95678, 96487
--recovered Augustus_gene784.t1, internal, 97889, 97905
--recovered Augustus_gene784.t1, internal, 98214, 98295
--recovered Augustus_gene784.t1, internal, 98345, 98365
--recovered Augustus_gene784.t1, internal, 98437, 98578
--recovered Augustus_gene784.t1, internal, 98673, 98691
--recovered Augustus_gene784.t1, internal, 98766, 98776
--recovered Augustus_gene784.t1, internal, 98825, 98944
--recovered Augustus_gene784.t1, internal, 99002, 99059
--recovered Augustus_gene784.t1, internal, 99268, 99280
--recovered Augustus_gene784.t1, internal, 99676, 99820
--recovered Augustus_gene784.t1, internal, 99919, 99937
-
--loading the search evidence (protein and EST search results, strand: -)
--scoring exons (strand: -)
--building DP trellis
-
--building trellis in range 1 - 100000
--exon list size: 52
-
-
-building trellis
-1.9    3.7    5.6    7.4    9.3    11.1    13.0    14.8    16.7    18.5    20.4    22.2    24.1    25.9    27.8    29.6    31.5    33.3    35.2    37.0    38.9    40.7    42.6    44.4    46.3    48.1    50.0    51.9    53.7    55.6    57.4    59.3    61.1    63.0    64.8    66.7    68.5    70.4    72.2    74.1    75.9    77.8    79.6    81.5    83.3    85.2    87.0    88.9    90.7    92.6    94.4    96.3    98.1    
--found 16 predictions from path traversal
-
--reporting highest scoring path thru the trellis.
--found 16 predictions persist after filtering for low support

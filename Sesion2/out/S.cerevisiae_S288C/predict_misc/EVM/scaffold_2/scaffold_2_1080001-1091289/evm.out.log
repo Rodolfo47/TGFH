@@ -1,43 +1,0 @@
-perl: warning: Setting locale failed.
-perl: warning: Please check that your locale settings:
-	LANGUAGE = (unset),
-	LC_ALL = (unset),
-	LC_CTYPE = "UTF-8",
-	LANG = "en_US.UTF-8"
-    are supported and installed on your system.
-perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
--successfully changed directories to /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.cerevisiae_S288C/predict_misc/EVM/scaffold_2/scaffold_2_1080001-1091289
-
--reading genomic sequence.
-
-** Processing features (+)
-
--finding all potential splice sites, looking for GT/GC donors and AG acceptors.
--finding all potential starts and stops. (strand: +)
--loading gene prediction evidence. (strand: +)Valid prediction for snap_scaffold_2-snap.432-T1
-Valid prediction for Augustus_model.g1151.t1
-Valid prediction for snap_scaffold_2-snap.431-T1
-
--loading the search evidence (protein and EST search results, strand: +)
--scoring exons (strand: +)
-
-** Processing features (-)
-
--finding all potential splice sites, looking for GT/GC donors and AG acceptors.
--finding all potential starts and stops. (strand: -)
--loading gene prediction evidence. (strand: -)Valid prediction for snap_scaffold_2-snap.433-T1
-
--loading the search evidence (protein and EST search results, strand: -)
--scoring exons (strand: -)
--building DP trellis
-
--building trellis in range 1 - 11289
--exon list size: 13
-
-
-building trellis
-6.7    13.3    20.0    26.7    33.3    40.0    46.7    53.3    60.0    66.7    73.3    80.0    86.7    93.3    
--found 3 predictions from path traversal
-
--reporting highest scoring path thru the trellis.
--found 3 predictions persist after filtering for low support

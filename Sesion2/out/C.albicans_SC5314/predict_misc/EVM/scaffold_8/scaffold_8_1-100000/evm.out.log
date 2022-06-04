@@ -1,106 +1,0 @@
-perl: warning: Setting locale failed.
-perl: warning: Please check that your locale settings:
-	LANGUAGE = (unset),
-	LC_ALL = (unset),
-	LC_CTYPE = "UTF-8",
-	LANG = "en_US.UTF-8"
-    are supported and installed on your system.
-perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
--successfully changed directories to /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/C.albicans_SC5314/predict_misc/EVM/scaffold_8/scaffold_8_1-100000
-
--reading genomic sequence.
-
-** Processing features (+)
-
--finding all potential splice sites, looking for GT/GC donors and AG acceptors.
--finding all potential starts and stops. (strand: +)
--loading gene prediction evidence. (strand: +)Valid prediction for snap_scaffold_8-snap.12-T1
-Valid prediction for snap_scaffold_8-snap.36-T1
-Valid prediction for GlimmerHMM_glimmerT_5534-T1
-Valid prediction for snap_scaffold_8-snap.30-T1
-Valid prediction for snap_scaffold_8-snap.11-T1
-Valid prediction for Augustus_model.g4893.t1
-Valid prediction for snap_scaffold_8-snap.32-T1
-Valid prediction for GlimmerHMM_glimmerT_5533-T1
-Valid prediction for snap_scaffold_8-snap.13-T1
-Valid prediction for snap_scaffold_8-snap.7-T1
-Valid prediction for snap_scaffold_8-snap.38-T1
-Valid prediction for snap_scaffold_8-snap.28-T1
-Valid prediction for snap_scaffold_8-snap.16-T1
-Valid prediction for snap_scaffold_8-snap.9-T1
-Valid prediction for snap_scaffold_8-snap.15-T1
-Valid prediction for snap_scaffold_8-snap.19-T1
-Valid prediction for snap_scaffold_8-snap.10-T1
-Valid prediction for GlimmerHMM_glimmerT_5550-T1
-Valid prediction for snap_scaffold_8-snap.27-T1
-Valid prediction for snap_scaffold_8-snap.21-T1
-Valid prediction for snap_scaffold_8-snap.43-T1
-Valid prediction for Augustus_model.g4898.t1
-Valid prediction for snap_scaffold_8-snap.29-T1
-Valid prediction for Augustus_model.g4886.t1
-Valid prediction for snap_scaffold_8-snap.42-T1
-Valid prediction for snap_scaffold_8-snap.8-T1
-Valid prediction for GlimmerHMM_glimmerT_5572-T1
-Valid prediction for Augustus_model.g4909.t1
-
--loading the search evidence (protein and EST search results, strand: +)
--scoring exons (strand: +)
-
-** Processing features (-)
-
--finding all potential splice sites, looking for GT/GC donors and AG acceptors.
--finding all potential starts and stops. (strand: -)
--loading gene prediction evidence. (strand: -)Valid prediction for snap_scaffold_8-snap.23-T1
-Couldn't classify 556, 574
-Sorry, prediction Augustus_model.g4929.t1 fails validation.
-(GGG)	 AG	556-574	GT	ATG
-(GTA)	 AG	720-2058	TA	AGT
--recovered Augustus_model.g4929.t1, terminal, 720, 2058
--recovered Augustus_model.g4929.t1, internal, 556, 574
-Valid prediction for snap_scaffold_8-snap.25-T1
-Valid prediction for GlimmerHMM_glimmerT_5552-T1
-Valid prediction for snap_scaffold_8-snap.24-T1
-Valid prediction for snap_scaffold_8-snap.22-T1
-Valid prediction for snap_scaffold_8-snap.37-T1
-Valid prediction for snap_scaffold_8-snap.44-T1
-Valid prediction for GlimmerHMM_glimmerT_5567-T1
-Valid prediction for snap_scaffold_8-snap.18-T1
-Valid prediction for snap_scaffold_8-snap.2-T1
-Valid prediction for Augustus_model.g4917.t1
-Valid prediction for snap_scaffold_8-snap.17-T1
-Valid prediction for snap_scaffold_8-snap.33-T1
-Valid prediction for snap_scaffold_8-snap.3-T1
-Valid prediction for GlimmerHMM_glimmerT_5544-T1
-Valid prediction for snap_scaffold_8-snap.31-T1
-Valid prediction for snap_scaffold_8-snap.26-T1
-Valid prediction for snap_scaffold_8-snap.1-T1
-Valid prediction for snap_scaffold_8-snap.5-T1
-Valid prediction for snap_scaffold_8-snap.20-T1
-Valid prediction for snap_scaffold_8-snap.6-T1
-Valid prediction for snap_scaffold_8-snap.35-T1
-Valid prediction for snap_scaffold_8-snap.40-T1
-Valid prediction for snap_scaffold_8-snap.4-T1
-Valid prediction for snap_scaffold_8-snap.34-T1
-Valid prediction for Augustus_model.g4896.t1
-Valid prediction for Augustus_model.g4902.t1
-Valid prediction for Augustus_model.g4899.t1
-Valid prediction for Augustus_model.g4915.t1
-Valid prediction for snap_scaffold_8-snap.14-T1
-Valid prediction for GlimmerHMM_glimmerT_5526-T1
-Valid prediction for snap_scaffold_8-snap.39-T1
-Valid prediction for snap_scaffold_8-snap.41-T1
-
--loading the search evidence (protein and EST search results, strand: -)
--scoring exons (strand: -)
--building DP trellis
-
--building trellis in range 1 - 100000
--exon list size: 185
-
-
-building trellis
-0.5    1.1    1.6    2.1    2.7    3.2    3.7    4.3    4.8    5.3    5.9    6.4    7.0    7.5    8.0    8.6    9.1    9.6    10.2    10.7    11.2    11.8    12.3    12.8    13.4    13.9    14.4    15.0    15.5    16.0    16.6    17.1    17.6    18.2    18.7    19.3    19.8    20.3    20.9    21.4    21.9    22.5    23.0    23.5    24.1    24.6    25.1    25.7    26.2    26.7    27.3    27.8    28.3    28.9    29.4    29.9    30.5    31.0    31.6    32.1    32.6    33.2    33.7    34.2    34.8    35.3    35.8    36.4    36.9    37.4    38.0    38.5    39.0    39.6    40.1    40.6    41.2    41.7    42.2    42.8    43.3    43.9    44.4    44.9    45.5    46.0    46.5    47.1    47.6    48.1    48.7    49.2    49.7    50.3    50.8    51.3    51.9    52.4    52.9    53.5    54.0    54.5    55.1    55.6    56.1    56.7    57.2    57.8    58.3    58.8    59.4    59.9    60.4    61.0    61.5    62.0    62.6    63.1    63.6    64.2    64.7    65.2    65.8    66.3    66.8    67.4    67.9    68.4    69.0    69.5    70.1    70.6    71.1    71.7    72.2    72.7    73.3    73.8    74.3    74.9    75.4    75.9    76.5    77.0    77.5    78.1    78.6    79.1    79.7    80.2    80.7    81.3    81.8    82.4    82.9    83.4    84.0    84.5    85.0    85.6    86.1    86.6    87.2    87.7    88.2    88.8    89.3    89.8    90.4    90.9    91.4    92.0    92.5    93.0    93.6    94.1    94.7    95.2    95.7    96.3    96.8    97.3    97.9    98.4    98.9    99.5    
--found 54 predictions from path traversal
-
--reporting highest scoring path thru the trellis.
--found 54 predictions persist after filtering for low support

@@ -1,72 +1,0 @@
-perl: warning: Setting locale failed.
-perl: warning: Please check that your locale settings:
-	LANGUAGE = (unset),
-	LC_ALL = (unset),
-	LC_CTYPE = "UTF-8",
-	LANG = "en_US.UTF-8"
-    are supported and installed on your system.
-perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
--successfully changed directories to /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/C.albicans_SC5314/predict_misc/EVM/scaffold_1/scaffold_1_3150001-3188341
-
--reading genomic sequence.
-
-** Processing features (+)
-
--finding all potential splice sites, looking for GT/GC donors and AG acceptors.
--finding all potential starts and stops. (strand: +)
--loading gene prediction evidence. (strand: +)Valid prediction for snap_scaffold_1-snap.1121-T1
-Valid prediction for snap_scaffold_1-snap.1128-T1
-Valid prediction for snap_scaffold_1-snap.1124-T1
-Valid prediction for Augustus_model.g1172.t1
-Valid prediction for snap_scaffold_1-snap.1118-T1
-Valid prediction for snap_scaffold_1-snap.1126-T1
-
--loading the search evidence (protein and EST search results, strand: +)
--scoring exons (strand: +)
-
-** Processing features (-)
-
--finding all potential splice sites, looking for GT/GC donors and AG acceptors.
--finding all potential starts and stops. (strand: -)
--loading gene prediction evidence. (strand: -)Valid prediction for snap_scaffold_1-snap.1117-T1
-Valid prediction for snap_scaffold_1-snap.1122-T1
-Valid prediction for snap_scaffold_1-snap.1131-T1
-Valid prediction for Augustus_model.g1171.t1
-Valid prediction for snap_scaffold_1-snap.1123-T1
-Valid prediction for snap_scaffold_1-snap.1130-T1
-Valid prediction for snap_scaffold_1-snap.1120-T1
-Valid prediction for Augustus_model.g1164.t1
-Valid prediction for Augustus_model.g1173.t1
-Couldn't classify 1, 682
-Sorry, prediction Augustus_model.g1174.t1 fails validation.
-(TGT)	 AT	1-682	TG	GAT
-Valid prediction for snap_scaffold_1-snap.1127-T1
-Valid prediction for snap_scaffold_1-snap.1129-T1
-Valid prediction for Augustus_model.g1157.t1
-Couldn't classify 96, 670
-Sorry, prediction GlimmerHMM_glimmerT_1308-T1 fails validation.
-(ATA)	 AG	96-670	GT	CAG
-(AAN)	 AG	1580-1839	GT	GAG
-(GGA)	 AG	2885-3167	AA	GAA
--recovered GlimmerHMM_glimmerT_1308-T1, terminal, 2885, 3167
--recovered GlimmerHMM_glimmerT_1308-T1, internal, 96, 670
--recovered GlimmerHMM_glimmerT_1308-T1, internal, 1580, 1839
-Valid prediction for snap_scaffold_1-snap.1119-T1
-Valid prediction for GlimmerHMM_glimmerT_1288-T1
-Valid prediction for snap_scaffold_1-snap.1125-T1
-Valid prediction for GlimmerHMM_glimmerT_1307-T1
-
--loading the search evidence (protein and EST search results, strand: -)
--scoring exons (strand: -)
--building DP trellis
-
--building trellis in range 1 - 38341
--exon list size: 71
-
-
-building trellis
-1.4    2.7    4.1    5.5    6.8    8.2    9.6    11.0    12.3    13.7    15.1    16.4    17.8    19.2    20.5    21.9    23.3    24.7    26.0    27.4    28.8    30.1    31.5    32.9    34.2    35.6    37.0    38.4    39.7    41.1    42.5    43.8    45.2    46.6    47.9    49.3    50.7    52.1    53.4    54.8    56.2    57.5    58.9    60.3    61.6    63.0    64.4    65.8    67.1    68.5    69.9    71.2    72.6    74.0    75.3    76.7    78.1    79.5    80.8    82.2    83.6    84.9    86.3    87.7    89.0    90.4    91.8    93.2    94.5    95.9    97.3    98.6    
--found 21 predictions from path traversal
-
--reporting highest scoring path thru the trellis.
--found 19 predictions persist after filtering for low support

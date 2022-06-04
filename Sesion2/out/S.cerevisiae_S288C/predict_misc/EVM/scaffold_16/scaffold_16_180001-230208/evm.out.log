@@ -1,55 +1,0 @@
-perl: warning: Setting locale failed.
-perl: warning: Please check that your locale settings:
-	LANGUAGE = (unset),
-	LC_ALL = (unset),
-	LC_CTYPE = "UTF-8",
-	LANG = "en_US.UTF-8"
-    are supported and installed on your system.
-perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
--successfully changed directories to /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.cerevisiae_S288C/predict_misc/EVM/scaffold_16/scaffold_16_180001-230208
-
--reading genomic sequence.
-
-** Processing features (+)
-
--finding all potential splice sites, looking for GT/GC donors and AG acceptors.
--finding all potential starts and stops. (strand: +)
--loading gene prediction evidence. (strand: +)Valid prediction for Augustus_model.g5221.t1
-Valid prediction for snap_scaffold_16-snap.73-T1
-Valid prediction for snap_scaffold_16-snap.66-T1
-Valid prediction for Augustus_model.g5223.t1
-Valid prediction for GlimmerHMM_glimmerT_5666-T1
-Valid prediction for snap_scaffold_16-snap.67-T1
-Valid prediction for Augustus_model.g5219.t1
-Valid prediction for snap_scaffold_16-snap.65-T1
-Valid prediction for snap_scaffold_16-snap.70-T1
-Valid prediction for Augustus_model.g5216.t1
-Valid prediction for snap_scaffold_16-snap.71-T1
-Valid prediction for snap_scaffold_16-snap.72-T1
-Valid prediction for snap_scaffold_16-snap.68-T1
-Valid prediction for snap_scaffold_16-snap.74-T1
-Valid prediction for snap_scaffold_16-snap.69-T1
-
--loading the search evidence (protein and EST search results, strand: +)
--scoring exons (strand: +)
-
-** Processing features (-)
-
--finding all potential splice sites, looking for GT/GC donors and AG acceptors.
--finding all potential starts and stops. (strand: -)
--loading gene prediction evidence. (strand: -)Valid prediction for snap_scaffold_16-snap.64-T1
-
--loading the search evidence (protein and EST search results, strand: -)
--scoring exons (strand: -)
--building DP trellis
-
--building trellis in range 1 - 50208
--exon list size: 48
-
-
-building trellis
-2.0    4.0    6.0    8.0    10.0    12.0    14.0    16.0    18.0    20.0    22.0    24.0    26.0    28.0    30.0    32.0    34.0    36.0    38.0    40.0    42.0    44.0    46.0    48.0    50.0    52.0    54.0    56.0    58.0    60.0    62.0    64.0    66.0    68.0    70.0    72.0    74.0    76.0    78.0    80.0    82.0    84.0    86.0    88.0    90.0    92.0    94.0    96.0    98.0    
--found 12 predictions from path traversal
-
--reporting highest scoring path thru the trellis.
--found 12 predictions persist after filtering for low support

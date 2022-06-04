@@ -1,75 +1,0 @@
-perl: warning: Setting locale failed.
-perl: warning: Please check that your locale settings:
-	LANGUAGE = (unset),
-	LC_ALL = (unset),
-	LC_CTYPE = "UTF-8",
-	LANG = "en_US.UTF-8"
-    are supported and installed on your system.
-perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
--successfully changed directories to /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/C.albicans_SC5314/predict_misc/EVM/scaffold_1/scaffold_1_2160001-2260000
-
--reading genomic sequence.
-
-** Processing features (+)
-
--finding all potential splice sites, looking for GT/GC donors and AG acceptors.
--finding all potential starts and stops. (strand: +)
--loading gene prediction evidence. (strand: +)Valid prediction for snap_scaffold_1-snap.794-T1
-Valid prediction for snap_scaffold_1-snap.793-T1
-Valid prediction for snap_scaffold_1-snap.797-T1
-Valid prediction for snap_scaffold_1-snap.773-T1
-Valid prediction for snap_scaffold_1-snap.776-T1
-Valid prediction for Augustus_model.g800.t1
-Valid prediction for snap_scaffold_1-snap.788-T1
-Valid prediction for snap_scaffold_1-snap.784-T1
-Valid prediction for snap_scaffold_1-snap.775-T1
-Valid prediction for Augustus_model.g802.t1
-Valid prediction for snap_scaffold_1-snap.795-T1
-Valid prediction for snap_scaffold_1-snap.782-T1
-Valid prediction for snap_scaffold_1-snap.785-T1
-Valid prediction for snap_scaffold_1-snap.783-T1
-Sorry, intron length (5) is less than minimum required (10)
-Valid prediction for snap_scaffold_1-snap.779-T1
-Valid prediction for snap_scaffold_1-snap.790-T1
-
--loading the search evidence (protein and EST search results, strand: +)
--scoring exons (strand: +)
-
-** Processing features (-)
-
--finding all potential splice sites, looking for GT/GC donors and AG acceptors.
--finding all potential starts and stops. (strand: -)
--loading gene prediction evidence. (strand: -)Valid prediction for snap_scaffold_1-snap.787-T1
-Valid prediction for snap_scaffold_1-snap.774-T1
-Valid prediction for snap_scaffold_1-snap.786-T1
-Valid prediction for snap_scaffold_1-snap.778-T1
-Valid prediction for snap_scaffold_1-snap.780-T1
-Valid prediction for snap_scaffold_1-snap.798-T1
-Valid prediction for GlimmerHMM_glimmerT_907-T1
-Valid prediction for snap_scaffold_1-snap.800-T1
-Valid prediction for snap_scaffold_1-snap.772-T1
-Valid prediction for snap_scaffold_1-snap.781-T1
-Valid prediction for Augustus_model.g823.t1
-Valid prediction for snap_scaffold_1-snap.792-T1
-Valid prediction for snap_scaffold_1-snap.789-T1
-Valid prediction for snap_scaffold_1-snap.771-T1
-Valid prediction for snap_scaffold_1-snap.796-T1
-Valid prediction for Augustus_model.g816.t1
-Valid prediction for snap_scaffold_1-snap.791-T1
-Valid prediction for snap_scaffold_1-snap.777-T1
-Valid prediction for snap_scaffold_1-snap.799-T1
-
--loading the search evidence (protein and EST search results, strand: -)
--scoring exons (strand: -)
--building DP trellis
-
--building trellis in range 1 - 100000
--exon list size: 113
-
-
-building trellis
-0.9    1.7    2.6    3.5    4.3    5.2    6.1    7.0    7.8    8.7    9.6    10.4    11.3    12.2    13.0    13.9    14.8    15.7    16.5    17.4    18.3    19.1    20.0    20.9    21.7    22.6    23.5    24.3    25.2    26.1    27.0    27.8    28.7    29.6    30.4    31.3    32.2    33.0    33.9    34.8    35.7    36.5    37.4    38.3    39.1    40.0    40.9    41.7    42.6    43.5    44.3    45.2    46.1    47.0    47.8    48.7    49.6    50.4    51.3    52.2    53.0    53.9    54.8    55.7    56.5    57.4    58.3    59.1    60.0    60.9    61.7    62.6    63.5    64.3    65.2    66.1    67.0    67.8    68.7    69.6    70.4    71.3    72.2    73.0    73.9    74.8    75.7    76.5    77.4    78.3    79.1    80.0    80.9    81.7    82.6    83.5    84.3    85.2    86.1    87.0    87.8    88.7    89.6    90.4    91.3    92.2    93.0    93.9    94.8    95.7    96.5    97.4    98.3    99.1    
--found 33 predictions from path traversal
-
--reporting highest scoring path thru the trellis.
--found 33 predictions persist after filtering for low support

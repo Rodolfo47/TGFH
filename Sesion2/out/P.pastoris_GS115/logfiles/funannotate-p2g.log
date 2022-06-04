@@ -1,8 +1,0 @@
-[06/01/22 00:40:43]: /home/rangeles/.conda/envs/funannotate/lib/python2.7/site-packages/funannotate/aux_scripts/funannotate-p2g.py -p ../out/P.pastoris_GS115/predict_misc/proteins.combined.fa -g /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/P.pastoris_GS115/predict_misc/genome.softmasked.fa -o ../out/P.pastoris_GS115/predict_misc/protein_alignments.gff3 --maxintron 3000 --cpus 28 --ploidy 1 -f diamond --tblastn_out ../out/P.pastoris_GS115/predict_misc/p2g.diamond.out --logfile ../out/P.pastoris_GS115/logfiles/funannotate-p2g.log
-
-[06/01/22 00:40:43]: Mapping 6,458 proteins to genome using diamond and exonerate
-[06/01/22 00:40:43]: Diamond v0.9.21; Exonerate v2.4.0
-[06/01/22 00:40:43]: diamond makedb --threads 28 --in /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/P.pastoris_GS115/predict_misc/proteins.combined.fa --db diamond
-[06/01/22 00:40:44]: diamond blastx --threads 28 -q /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/P.pastoris_GS115/predict_misc/genome.softmasked.fa --db diamond -o diamond.matches.tab -e 1e-10 -k 0 --more-sensitive -f 6 sseqid slen sstart send qseqid qlen qstart qend pident length evalue score qcovhsp qframe
-[06/01/22 00:40:51]: Found 6,423 preliminary alignments --> aligning with exonerate
-[06/01/22 00:41:20]: Exonerate finished: found 125 alignments

@@ -1,72 +1,0 @@
-perl: warning: Setting locale failed.
-perl: warning: Please check that your locale settings:
-	LANGUAGE = (unset),
-	LC_ALL = (unset),
-	LC_CTYPE = "UTF-8",
-	LANG = "en_US.UTF-8"
-    are supported and installed on your system.
-perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
--successfully changed directories to /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.cerevisiae_M3836/predict_misc/EVM/scaffold_9/scaffold_9_450001-521062
-
--reading genomic sequence.
-
-** Processing features (+)
-
--finding all potential splice sites, looking for GT/GC donors and AG acceptors.
--finding all potential starts and stops. (strand: +)
--loading gene prediction evidence. (strand: +)Valid prediction for snap_scaffold_9-snap.206-T1
-Valid prediction for snap_scaffold_9-snap.192-T1
-Valid prediction for snap_scaffold_9-snap.204-T1
-Valid prediction for snap_scaffold_9-snap.201-T1
-Valid prediction for snap_scaffold_9-snap.203-T1
-Valid prediction for Augustus_model.g3016.t1
-Valid prediction for snap_scaffold_9-snap.185-T1
-Sorry, intron length (5) is less than minimum required (10)
-Valid prediction for GlimmerHMM_glimmerT_3275-T1
-Valid prediction for snap_scaffold_9-snap.182-T1
-Valid prediction for Augustus_model.g3030.t1
-Valid prediction for snap_scaffold_9-snap.186-T1
-Valid prediction for snap_scaffold_9-snap.193-T1
-Valid prediction for Augustus_model.g3031.t1
-Valid prediction for snap_scaffold_9-snap.207-T1
-Valid prediction for snap_scaffold_9-snap.187-T1
-Valid prediction for snap_scaffold_9-snap.191-T1
-Valid prediction for snap_scaffold_9-snap.196-T1
-
--loading the search evidence (protein and EST search results, strand: +)
--scoring exons (strand: +)
-
-** Processing features (-)
-
--finding all potential splice sites, looking for GT/GC donors and AG acceptors.
--finding all potential starts and stops. (strand: -)
--loading gene prediction evidence. (strand: -)Valid prediction for snap_scaffold_9-snap.195-T1
-Valid prediction for snap_scaffold_9-snap.202-T1
-Valid prediction for snap_scaffold_9-snap.189-T1
-Valid prediction for snap_scaffold_9-snap.198-T1
-Valid prediction for snap_scaffold_9-snap.188-T1
-Valid prediction for Augustus_model.g3021.t1
-Valid prediction for snap_scaffold_9-snap.184-T1
-Valid prediction for snap_scaffold_9-snap.197-T1
-Valid prediction for snap_scaffold_9-snap.199-T1
-Valid prediction for snap_scaffold_9-snap.190-T1
-Valid prediction for snap_scaffold_9-snap.200-T1
-Valid prediction for snap_scaffold_9-snap.194-T1
-Valid prediction for snap_scaffold_9-snap.205-T1
-Valid prediction for snap_scaffold_9-snap.183-T1
-Valid prediction for snap_scaffold_9-snap.181-T1
-
--loading the search evidence (protein and EST search results, strand: -)
--scoring exons (strand: -)
--building DP trellis
-
--building trellis in range 1 - 71062
--exon list size: 93
-
-
-building trellis
-1.1    2.1    3.2    4.2    5.3    6.3    7.4    8.4    9.5    10.5    11.6    12.6    13.7    14.7    15.8    16.8    17.9    18.9    20.0    21.1    22.1    23.2    24.2    25.3    26.3    27.4    28.4    29.5    30.5    31.6    32.6    33.7    34.7    35.8    36.8    37.9    38.9    40.0    41.1    42.1    43.2    44.2    45.3    46.3    47.4    48.4    49.5    50.5    51.6    52.6    53.7    54.7    55.8    56.8    57.9    58.9    60.0    61.1    62.1    63.2    64.2    65.3    66.3    67.4    68.4    69.5    70.5    71.6    72.6    73.7    74.7    75.8    76.8    77.9    78.9    80.0    81.1    82.1    83.2    84.2    85.3    86.3    87.4    88.4    89.5    90.5    91.6    92.6    93.7    94.7    95.8    96.8    97.9    98.9    
--found 33 predictions from path traversal
-
--reporting highest scoring path thru the trellis.
--found 33 predictions persist after filtering for low support

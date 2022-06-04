@@ -1,74 +1,0 @@
-perl: warning: Setting locale failed.
-perl: warning: Please check that your locale settings:
-	LANGUAGE = (unset),
-	LC_ALL = (unset),
-	LC_CTYPE = "UTF-8",
-	LANG = "en_US.UTF-8"
-    are supported and installed on your system.
-perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
--successfully changed directories to /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/P.pastoris_GS115/predict_misc/EVM_busco/scaffold_1/scaffold_1_2520001-2620000
-
--reading genomic sequence.
-
-** Processing features (+)
-
--finding all potential splice sites, looking for GT/GC donors and AG acceptors.
--finding all potential starts and stops. (strand: +)
--loading gene prediction evidence. (strand: +)Valid prediction for Augustus_gene26.t1
-Valid prediction for Augustus_gene275.t1
-
--loading the search evidence (protein and EST search results, strand: +)
--scoring exons (strand: +)
-
-** Processing features (-)
-
--finding all potential splice sites, looking for GT/GC donors and AG acceptors.
--finding all potential starts and stops. (strand: -)
--loading gene prediction evidence. (strand: -)Couldn't classify 99794, 99841
-Sorry, prediction Augustus_gene1062.t1 fails validation.
-(ATG)	 TA	95378-96112	GT	TTG
-(GCT)	 AG	96462-96543	GT	AAG
-(ATT)	 AG	96629-96656	GT	CTG
-(CCA)	 AG	96802-96832	GT	AAG
-(ATG)	 AG	96924-96934	GT	CTG
-(CAC)	 AG	97039-97062	GT	CAG
-(TCA)	 AG	97113-97147	GT	ATG
-(ATA)	 AG	97494-97517	GT	TAG
-(TTT)	 AG	97645-97668	GT	CAG
-(TCA)	 AG	97882-97920	GT	CTG
-(GGA)	 AG	98022-98087	GT	TGG
-(CTA)	 AG	98233-98263	GT	TGG
-(AAA)	 AG	98720-98744	GT	GAG
-(TAT)	 AG	99589-99613	GT	ATG
-(TGA)	 AG	99794-99841	GT	GCG
--recovered Augustus_gene1062.t1, initial, 95378, 96112
--recovered Augustus_gene1062.t1, initial, 96924, 96934
--recovered Augustus_gene1062.t1, internal, 96462, 96543
--recovered Augustus_gene1062.t1, internal, 96629, 96656
--recovered Augustus_gene1062.t1, internal, 96802, 96832
--recovered Augustus_gene1062.t1, internal, 96924, 96934
--recovered Augustus_gene1062.t1, internal, 97039, 97062
--recovered Augustus_gene1062.t1, internal, 97113, 97147
--recovered Augustus_gene1062.t1, internal, 97494, 97517
--recovered Augustus_gene1062.t1, internal, 97645, 97668
--recovered Augustus_gene1062.t1, internal, 97882, 97920
--recovered Augustus_gene1062.t1, internal, 98022, 98087
--recovered Augustus_gene1062.t1, internal, 98233, 98263
--recovered Augustus_gene1062.t1, internal, 98720, 98744
--recovered Augustus_gene1062.t1, internal, 99589, 99613
--recovered Augustus_gene1062.t1, internal, 99794, 99841
-
--loading the search evidence (protein and EST search results, strand: -)
--scoring exons (strand: -)
--building DP trellis
-
--building trellis in range 1 - 100000
--exon list size: 56
-
-
-building trellis
-1.7    3.4    5.2    6.9    8.6    10.3    12.1    13.8    15.5    17.2    19.0    20.7    22.4    24.1    25.9    27.6    29.3    31.0    32.8    34.5    36.2    37.9    39.7    41.4    43.1    44.8    46.6    48.3    50.0    51.7    53.4    55.2    56.9    58.6    60.3    62.1    63.8    65.5    67.2    69.0    70.7    72.4    74.1    75.9    77.6    79.3    81.0    82.8    84.5    86.2    87.9    89.7    91.4    93.1    94.8    96.6    98.3    
--found 13 predictions from path traversal
-
--reporting highest scoring path thru the trellis.
--found 13 predictions persist after filtering for low support

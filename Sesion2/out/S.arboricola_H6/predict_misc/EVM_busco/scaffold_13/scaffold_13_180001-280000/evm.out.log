@@ -1,91 +1,0 @@
-perl: warning: Setting locale failed.
-perl: warning: Please check that your locale settings:
-	LANGUAGE = (unset),
-	LC_ALL = (unset),
-	LC_CTYPE = "UTF-8",
-	LANG = "en_US.UTF-8"
-    are supported and installed on your system.
-perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
--successfully changed directories to /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.arboricola_H6/predict_misc/EVM_busco/scaffold_13/scaffold_13_180001-280000
-
--reading genomic sequence.
-
-** Processing features (+)
-
--finding all potential splice sites, looking for GT/GC donors and AG acceptors.
--finding all potential starts and stops. (strand: +)
--loading gene prediction evidence. (strand: +)
--loading the search evidence (protein and EST search results, strand: +)
--scoring exons (strand: +)
-
-** Processing features (-)
-
--finding all potential splice sites, looking for GT/GC donors and AG acceptors.
--finding all potential starts and stops. (strand: -)
--loading gene prediction evidence. (strand: -)Valid prediction for Augustus_gene60.t1
-Couldn't classify 1573, 1608
-Sorry, prediction Augustus_gene607.t1 fails validation.
-(ACT)	 AG	1573-1608	GT	AGG
-(GAA)	 AG	1705-1735	GT	AAG
-(AAT)	 AG	1868-1881	GT	AGG
-(AGT)	 AG	1948-1960	GT	CAG
-(CTG)	 AG	2102-2238	GT	AAG
-(CTT)	 AG	2380-2608	GT	AAG
-(CAG)	 AG	3097-3142	GT	TCG
-(TCT)	 AG	3219-3254	GT	AAG
-(TGC)	 AG	3307-3393	GT	TCG
-(TTA)	 AG	3686-3727	GT	ACG
-(AGT)	 AG	3766-3867	GT	TAG
-(CAT)	 AG	3941-3958	GT	GAG
-(GCG)	 AG	4182-4214	GT	TGG
-(CAC)	 AG	4259-4280	GT	CTG
-(ACC)	 AG	4429-4439	GT	TGG
-(CGC)	 AG	4546-4668	GT	TCG
-(AAT)	 AG	4735-4745	GT	TTG
-(GGA)	 AG	4834-4861	GT	GTG
-(AAG)	 AG	5094-5133	GT	TAG
-(AGA)	 AG	5268-5287	GT	AAG
-(ATT)	 AG	5344-5373	GT	TCG
-(AAG)	 AG	5435-5565	GT	TCG
-(GGG)	 AG	5624-5661	AA	AGA
-add_exon() Sorry, Augustus_gene607.t1 1705-1735-terminal-3 is invalid.
--recovered Augustus_gene607.t1, terminal, 1705, 1735
--recovered Augustus_gene607.t1, terminal, 5624, 5661
--recovered Augustus_gene607.t1, internal, 1573, 1608
--recovered Augustus_gene607.t1, internal, 1705, 1735
--recovered Augustus_gene607.t1, internal, 1868, 1881
--recovered Augustus_gene607.t1, internal, 1948, 1960
--recovered Augustus_gene607.t1, internal, 2102, 2238
--recovered Augustus_gene607.t1, internal, 2380, 2608
--recovered Augustus_gene607.t1, internal, 3097, 3142
--recovered Augustus_gene607.t1, internal, 3219, 3254
--recovered Augustus_gene607.t1, internal, 3307, 3393
--recovered Augustus_gene607.t1, internal, 3686, 3727
--recovered Augustus_gene607.t1, internal, 3766, 3867
--recovered Augustus_gene607.t1, internal, 3941, 3958
--recovered Augustus_gene607.t1, internal, 4182, 4214
--recovered Augustus_gene607.t1, internal, 4259, 4280
--recovered Augustus_gene607.t1, internal, 4429, 4439
--recovered Augustus_gene607.t1, internal, 4546, 4668
--recovered Augustus_gene607.t1, internal, 4735, 4745
--recovered Augustus_gene607.t1, internal, 4834, 4861
--recovered Augustus_gene607.t1, internal, 5094, 5133
--recovered Augustus_gene607.t1, internal, 5268, 5287
--recovered Augustus_gene607.t1, internal, 5344, 5373
--recovered Augustus_gene607.t1, internal, 5435, 5565
-
--loading the search evidence (protein and EST search results, strand: -)
--scoring exons (strand: -)
--building DP trellis
-
--building trellis in range 1 - 100000
--exon list size: 55
-
-
-building trellis
-1.8    3.5    5.3    7.0    8.8    10.5    12.3    14.0    15.8    17.5    19.3    21.1    22.8    24.6    26.3    28.1    29.8    31.6    33.3    35.1    36.8    38.6    40.4    42.1    43.9    45.6    47.4    49.1    50.9    52.6    54.4    56.1    57.9    59.6    61.4    63.2    64.9    66.7    68.4    70.2    71.9    73.7    75.4    77.2    78.9    80.7    82.5    84.2    86.0    87.7    89.5    91.2    93.0    94.7    96.5    98.2    
--found 9 predictions from path traversal
-GOT 5prime partial gene.
-
--reporting highest scoring path thru the trellis.
--found 9 predictions persist after filtering for low support

@@ -1,42 +1,0 @@
-perl: warning: Setting locale failed.
-perl: warning: Please check that your locale settings:
-	LANGUAGE = (unset),
-	LC_ALL = (unset),
-	LC_CTYPE = "UTF-8",
-	LANG = "en_US.UTF-8"
-    are supported and installed on your system.
-perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
--successfully changed directories to /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/S.arboricola_H6/predict_misc/EVM_busco/scaffold_5/scaffold_5_270001-370000
-
--reading genomic sequence.
-
-** Processing features (+)
-
--finding all potential splice sites, looking for GT/GC donors and AG acceptors.
--finding all potential starts and stops. (strand: +)
--loading gene prediction evidence. (strand: +)Valid prediction for Augustus_gene660.t1
-Valid prediction for Augustus_gene733.t1
-
--loading the search evidence (protein and EST search results, strand: +)
--scoring exons (strand: +)
-
-** Processing features (-)
-
--finding all potential splice sites, looking for GT/GC donors and AG acceptors.
--finding all potential starts and stops. (strand: -)
--loading gene prediction evidence. (strand: -)Valid prediction for Augustus_gene860.t1
-
--loading the search evidence (protein and EST search results, strand: -)
--scoring exons (strand: -)
--building DP trellis
-
--building trellis in range 1 - 100000
--exon list size: 30
-
-
-building trellis
-3.1    6.2    9.4    12.5    15.6    18.8    21.9    25.0    28.1    31.2    34.4    37.5    40.6    43.8    46.9    50.0    53.1    56.2    59.4    62.5    65.6    68.8    71.9    75.0    78.1    81.2    84.4    87.5    90.6    93.8    96.9    
--found 10 predictions from path traversal
-
--reporting highest scoring path thru the trellis.
--found 10 predictions persist after filtering for low support

@@ -1,102 +1,0 @@
-perl: warning: Setting locale failed.
-perl: warning: Please check that your locale settings:
-	LANGUAGE = (unset),
-	LC_ALL = (unset),
-	LC_CTYPE = "UTF-8",
-	LANG = "en_US.UTF-8"
-    are supported and installed on your system.
-perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
--successfully changed directories to /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/C.albicans_SC5314/predict_misc/EVM/scaffold_3/scaffold_3_90001-190000
-
--reading genomic sequence.
-
-** Processing features (+)
-
--finding all potential splice sites, looking for GT/GC donors and AG acceptors.
--finding all potential starts and stops. (strand: +)
--loading gene prediction evidence. (strand: +)Valid prediction for snap_scaffold_3-snap.51-T1
-Valid prediction for GlimmerHMM_glimmerT_2334-T1
-Valid prediction for GlimmerHMM_glimmerT_2349-T1
-Valid prediction for snap_scaffold_3-snap.57-T1
-Valid prediction for Augustus_model.g2082.t1
-Valid prediction for snap_scaffold_3-snap.83-T1
-Valid prediction for snap_scaffold_3-snap.66-T1
-Valid prediction for snap_scaffold_3-snap.53-T1
-Sorry, intron length (7) is less than minimum required (10)
-Valid prediction for snap_scaffold_3-snap.74-T1
-Valid prediction for snap_scaffold_3-snap.82-T1
-Valid prediction for snap_scaffold_3-snap.67-T1
-Valid prediction for Augustus_model.g2086.t1
-Valid prediction for snap_scaffold_3-snap.47-T1
-Valid prediction for snap_scaffold_3-snap.84-T1
-Valid prediction for snap_scaffold_3-snap.75-T1
-Valid prediction for snap_scaffold_3-snap.58-T1
-Valid prediction for GlimmerHMM_glimmerT_2355-T1
-Valid prediction for snap_scaffold_3-snap.62-T1
-Valid prediction for GlimmerHMM_glimmerT_2329-T1
-Valid prediction for snap_scaffold_3-snap.48-T1
-Valid prediction for snap_scaffold_3-snap.81-T1
-Valid prediction for Augustus_model.g2072.t1
-Valid prediction for snap_scaffold_3-snap.69-T1
-Valid prediction for snap_scaffold_3-snap.64-T1
-Valid prediction for GlimmerHMM_glimmerT_2366-T1
-Valid prediction for Augustus_model.g2108.t1
-Valid prediction for snap_scaffold_3-snap.68-T1
-Valid prediction for GlimmerHMM_glimmerT_2360-T1
-Valid prediction for Augustus_model.g2114.t1
-Valid prediction for snap_scaffold_3-snap.44-T1
-Valid prediction for snap_scaffold_3-snap.76-T1
-Valid prediction for snap_scaffold_3-snap.59-T1
-Valid prediction for snap_scaffold_3-snap.78-T1
-Valid prediction for snap_scaffold_3-snap.42-T1
-Valid prediction for Augustus_model.g2099.t1
-Valid prediction for snap_scaffold_3-snap.77-T1
-Valid prediction for GlimmerHMM_glimmerT_2318-T1
-Valid prediction for snap_scaffold_3-snap.52-T1
-
--loading the search evidence (protein and EST search results, strand: +)
--scoring exons (strand: +)
-
-** Processing features (-)
-
--finding all potential splice sites, looking for GT/GC donors and AG acceptors.
--finding all potential starts and stops. (strand: -)
--loading gene prediction evidence. (strand: -)Valid prediction for Augustus_model.g2076.t1
-Valid prediction for snap_scaffold_3-snap.72-T1
-Valid prediction for snap_scaffold_3-snap.45-T1
-Valid prediction for GlimmerHMM_glimmerT_2322-T1
-Valid prediction for snap_scaffold_3-snap.54-T1
-Valid prediction for snap_scaffold_3-snap.71-T1
-Valid prediction for snap_scaffold_3-snap.65-T1
-Valid prediction for snap_scaffold_3-snap.49-T1
-Valid prediction for snap_scaffold_3-snap.79-T1
-Valid prediction for Augustus_model.g2103.t1
-Valid prediction for snap_scaffold_3-snap.56-T1
-Valid prediction for snap_scaffold_3-snap.60-T1
-Valid prediction for snap_scaffold_3-snap.63-T1
-Valid prediction for snap_scaffold_3-snap.50-T1
-Valid prediction for snap_scaffold_3-snap.73-T1
-Valid prediction for snap_scaffold_3-snap.80-T1
-Valid prediction for snap_scaffold_3-snap.55-T1
-Valid prediction for Augustus_model.g2100.t1
-Valid prediction for snap_scaffold_3-snap.70-T1
-Valid prediction for snap_scaffold_3-snap.61-T1
-Valid prediction for snap_scaffold_3-snap.43-T1
-Sorry, intron length (7) is less than minimum required (10)
-Valid prediction for Augustus_model.g2084.t1
-Valid prediction for snap_scaffold_3-snap.46-T1
-
--loading the search evidence (protein and EST search results, strand: -)
--scoring exons (strand: -)
--building DP trellis
-
--building trellis in range 1 - 100000
--exon list size: 178
-
-
-building trellis
-0.6    1.1    1.7    2.2    2.8    3.3    3.9    4.4    5.0    5.6    6.1    6.7    7.2    7.8    8.3    8.9    9.4    10.0    10.6    11.1    11.7    12.2    12.8    13.3    13.9    14.4    15.0    15.6    16.1    16.7    17.2    17.8    18.3    18.9    19.4    20.0    20.6    21.1    21.7    22.2    22.8    23.3    23.9    24.4    25.0    25.6    26.1    26.7    27.2    27.8    28.3    28.9    29.4    30.0    30.6    31.1    31.7    32.2    32.8    33.3    33.9    34.4    35.0    35.6    36.1    36.7    37.2    37.8    38.3    38.9    39.4    40.0    40.6    41.1    41.7    42.2    42.8    43.3    43.9    44.4    45.0    45.6    46.1    46.7    47.2    47.8    48.3    48.9    49.4    50.0    50.6    51.1    51.7    52.2    52.8    53.3    53.9    54.4    55.0    55.6    56.1    56.7    57.2    57.8    58.3    58.9    59.4    60.0    60.6    61.1    61.7    62.2    62.8    63.3    63.9    64.4    65.0    65.6    66.1    66.7    67.2    67.8    68.3    68.9    69.4    70.0    70.6    71.1    71.7    72.2    72.8    73.3    73.9    74.4    75.0    75.6    76.1    76.7    77.2    77.8    78.3    78.9    79.4    80.0    80.6    81.1    81.7    82.2    82.8    83.3    83.9    84.4    85.0    85.6    86.1    86.7    87.2    87.8    88.3    88.9    89.4    90.0    90.6    91.1    91.7    92.2    92.8    93.3    93.9    94.4    95.0    95.6    96.1    96.7    97.2    97.8    98.3    98.9    99.4    
--found 50 predictions from path traversal
-
--reporting highest scoring path thru the trellis.
--found 49 predictions persist after filtering for low support

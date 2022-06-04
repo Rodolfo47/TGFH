@@ -1,138 +1,0 @@
-perl: warning: Setting locale failed.
-perl: warning: Please check that your locale settings:
-	LANGUAGE = (unset),
-	LC_ALL = (unset),
-	LC_CTYPE = "UTF-8",
-	LANG = "en_US.UTF-8"
-    are supported and installed on your system.
-perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
--successfully changed directories to /space21/PGE/rangeles/TGFH/TGFH/Sesion2/out/C.albicans_SC5314/predict_misc/EVM/scaffold_5/scaffold_5_180001-280000
-
--reading genomic sequence.
-
-** Processing features (+)
-
--finding all potential splice sites, looking for GT/GC donors and AG acceptors.
--finding all potential starts and stops. (strand: +)
--loading gene prediction evidence. (strand: +)Valid prediction for snap_scaffold_5-snap.94-T1
-Valid prediction for snap_scaffold_5-snap.76-T1
-Valid prediction for snap_scaffold_5-snap.93-T1
-Valid prediction for snap_scaffold_5-snap.81-T1
-Valid prediction for Augustus_model.g3601.t1
-Valid prediction for snap_scaffold_5-snap.101-T1
-Valid prediction for Augustus_model.g3608.t1
-Valid prediction for snap_scaffold_5-snap.104-T1
-Valid prediction for snap_scaffold_5-snap.82-T1
-Valid prediction for snap_scaffold_5-snap.99-T1
-Valid prediction for Augustus_model.g3595.t1
-Valid prediction for snap_scaffold_5-snap.95-T1
-Valid prediction for snap_scaffold_5-snap.97-T1
-Valid prediction for snap_scaffold_5-snap.89-T1
-Valid prediction for snap_scaffold_5-snap.80-T1
-Valid prediction for snap_scaffold_5-snap.102-T1
-Valid prediction for snap_scaffold_5-snap.87-T1
-Valid prediction for snap_scaffold_5-snap.98-T1
-Valid prediction for GlimmerHMM_glimmerT_4075-T1
-
--loading the search evidence (protein and EST search results, strand: +)
--scoring exons (strand: +)
-
-** Processing features (-)
-
--finding all potential splice sites, looking for GT/GC donors and AG acceptors.
--finding all potential starts and stops. (strand: -)
--loading gene prediction evidence. (strand: -)Valid prediction for snap_scaffold_5-snap.91-T1
-Valid prediction for snap_scaffold_5-snap.78-T1
-Valid prediction for GlimmerHMM_glimmerT_4084-T1
-Valid prediction for Augustus_model.g3597.t1
-Valid prediction for snap_scaffold_5-snap.103-T1
-Valid prediction for Augustus_model.g3581.t1
-Valid prediction for Augustus_model.g3594.t1
-Valid prediction for snap_scaffold_5-snap.100-T1
-Valid prediction for snap_scaffold_5-snap.86-T1
-Valid prediction for GlimmerHMM_glimmerT_4067-T1
-Valid prediction for Augustus_model.g3590.t1
-Valid prediction for snap_scaffold_5-snap.92-T1
-Valid prediction for snap_scaffold_5-snap.83-T1
-Valid prediction for snap_scaffold_5-snap.85-T1
-Valid prediction for snap_scaffold_5-snap.79-T1
-Valid prediction for snap_scaffold_5-snap.88-T1
-Valid prediction for GlimmerHMM_glimmerT_4056-T1
-Valid prediction for snap_scaffold_5-snap.77-T1
-Couldn't classify 88590, 88595
-Sorry, prediction snap_scaffold_5-snap.75-T1 fails validation.
-(ATG)	 TA	87622-87627	GT	ATG
-(TCT)	 AG	88590-88595	GT	TAG
--recovered snap_scaffold_5-snap.75-T1, initial, 87622, 87627
--recovered snap_scaffold_5-snap.75-T1, internal, 88590, 88595
-Valid prediction for snap_scaffold_5-snap.90-T1
-Valid prediction for snap_scaffold_5-snap.96-T1
-Valid prediction for snap_scaffold_5-snap.84-T1
-
--loading the search evidence (protein and EST search results, strand: -)
--scoring exons (strand: -)
--building DP trellis
-
--building trellis in range 1 - 100000
--exon list size: 122
-
-
-building trellis
-0.8    1.6    2.4    3.2    4.0    4.8    5.6    6.5    7.3    8.1    8.9    9.7    10.5    11.3    12.1    12.9    13.7    14.5    15.3    16.1    16.9    17.7    18.5    19.4    20.2    21.0    21.8    22.6    23.4    24.2    25.0    25.8    26.6    27.4    28.2    29.0    29.8    30.6    31.5    32.3    33.1    33.9    34.7    35.5    36.3    37.1    37.9    38.7    39.5    40.3    41.1    41.9    42.7    43.5    44.4    45.2    46.0    46.8    47.6    48.4    49.2    50.0    50.8    51.6    52.4    53.2    54.0    54.8    55.6    56.5    57.3    58.1    58.9    59.7    60.5    61.3    62.1    62.9    63.7    64.5    65.3    66.1    66.9    67.7    68.5    69.4    70.2    71.0    71.8    72.6    73.4    74.2    75.0    75.8    76.6    77.4    78.2    79.0    79.8    80.6    81.5    82.3    83.1    83.9    84.7    85.5    86.3    87.1    87.9    88.7    89.5    90.3    91.1    91.9    92.7    93.5    94.4    95.2    96.0    96.8    97.6    98.4    99.2    
--found 33 predictions from path traversal
-
--reporting highest scoring path thru the trellis.
--found 33 predictions persist after filtering for low support
-
--building DP trellis
-
--building trellis in range 1 - 15173
--exon list size: 6
-
-
-building trellis
-12.5    25.0    37.5    50.0    62.5    75.0    87.5    
--found 1 predictions from path traversal
-
--reporting highest scoring path thru the trellis.
--found 0 predictions persist after filtering for low support
-
--building DP trellis
-
--building trellis in range 1 - 15065
--exon list size: 5
-
-
-building trellis
-14.3    28.6    42.9    57.1    71.4    85.7    
--found 1 predictions from path traversal
-
--reporting highest scoring path thru the trellis.
--found 0 predictions persist after filtering for low support
-
--building DP trellis
-
--building trellis in range 1 - 12373
--exon list size: 4
-
-
-building trellis
-16.7    33.3    50.0    66.7    83.3    
--found 1 predictions from path traversal
-GOT 5prime partial gene.
-
--reporting highest scoring path thru the trellis.
--found 0 predictions persist after filtering for low support
-
--building DP trellis
-
--building trellis in range 1 - 11405
--exon list size: 1
-
-
-building trellis
-33.3    66.7    
--found 1 predictions from path traversal
-
--reporting highest scoring path thru the trellis.
--found 0 predictions persist after filtering for low support
