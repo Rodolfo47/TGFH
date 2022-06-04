@@ -1,5 +1,5 @@
 # Sesión 2: Práctica de anotación: Funanotate
-*Rodolfo Ángeles, Junio 2022*
+*Elena Flores, Rodolfo Ángeles y Christian Quintero, Junio 2022*
 
 ## Estructura de la sesión
 
@@ -60,6 +60,7 @@ Algunas dependencias no están:
 ```
 #Set some missing dependences
 cpanm Bio::Perl
+#get the academic licence of SignalP v6, and install
 
 ```
 
