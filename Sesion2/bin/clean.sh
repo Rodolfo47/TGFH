@@ -5,7 +5,7 @@
 #print starting date and time
 date
 #make `list2fun.txt` with prefix
-ls ../data/*.fna | sed -e "s/..\/data\///g" | sed -e "s/.fna//g" > list2fun.txt
+#ls ../data/*.fna | sed -e "s/..\/data\///g" | sed -e "s/.fna//g" > list2fun.txt
 
 ## 1 Cleaning assemblies
 for smpl in $(cat list2fun.txt); do
