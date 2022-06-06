@@ -21,6 +21,7 @@ Ver la presentación.
 ## Anotación funcional
 ### Definición
 Con "anotación funcional" nos referimos a un grupo grande y heterogeno de acciones para asignar funciones a los modelos genéticos (y a otras cosas) de un ensamble genómico o transcriptómico.
+
 Usarémos el pipeline [Funannotate](https://funannotate.readthedocs.io/en/latest/index.html).
 
 Funannotate es un *pipeline* de predicción, anotación y comparación de genomas.
@@ -37,25 +38,32 @@ Funannotate tiene muchas (muuuchas) dependencias y, por lo tanto, la instalació
 ```
 #Installing funannotate in biogen server by usin mamba
 
-#instaling mamba
+#installing mamba
 conda install -n base mamba
 #creating env
 mamba create -n funannotate funannotate
 #activating env
 conda activate funannotate
-#sownload and setup DB
+
+#download and setup DB
 funannotate setup -d /home/rangeles/binlike/funannotate_db
+export FUNANNOTATE_DB=/home/rangeles/binlike/funannotate_db
 echo "export FUNANNOTATE_DB=/home/rangeles/binlike/funannotate_db" > /home/rangeles/.conda/envs/funannotate/etc/conda/activate.d/funannotate.sh
 echo "unset FUNANNOTATE_DB" > /home/rangeles/.conda/envs/funannotate/etc/conda/deactivate.d/funannotate.sh
+
+#solving some augustus compilation issue
+conda remove augustus -n funannotate --force
+#next line every time you login
+export AUGUSTUS_CONFIG_PATH="/usr/share/augustus/config"
 
 #checking al phats and dependences
 funannotate check --show-versions
 
 ```
-```
 Algunas dependencias no están:
+
+```
 	ERROR: Bio::Perl not installed, install with cpanm Bio::Perl
-	ERROR: FUNANNOTATE_DB not set. export FUNANNOTATE_DB=/path/to/dir
 	ERROR: GENEMARK_PATH not set. export GENEMARK_PATH=/path/to/dir
 	ERROR: emapper.py not installed
 	ERROR: gmes_petap.pl not installed
@@ -122,8 +130,15 @@ Los predictores de genes *ab initio* son Augustus, snap, glimmerHMM, CodingQuarr
 
 
 ***EJECUCIÓN***
-```
 
+Situarnos en $HOME/Sesion2/bin
+
+```
+cd
+cd TGFH/Sesion2/bin
+```
+Predecir usando videncia de proteinas
+```
 funannotate predict \
     -i ../out/O.polymorpha_NCYC495.clean.sort.mask.fna \
     -o ../out/O.polymorpha_NCYC495 \
@@ -132,9 +147,36 @@ funannotate predict \
     --name O.polymorpha_NCYC495 \
     --ploidy 1 \
     --protein_evidence ../data/Protein_models.faa \
-    --cpus 28
+    --cpus 4
+```
+anotar
+
+```
+/home/rangeles/binlike/my_interproscan/interproscan-5.56-89.0/interproscan.sh
 ```
 
+
+
+```
+#install and test ausgustus
+augustus --species=saccharomyces --progress=true --singlestrand=true --genemodel=complete ../data/O.polymorpha_NCYC495.fna > ../out/augustus/O.polymorpha_NCYC495.fna.gff
+
+#remove the conda installed augustus
+conda remove augustus -n funannotate --force
+
+#de interpro
+
+wget https://ftp.ebi.ac.uk/pub/software/unix/iprscan/5/5.56-89.0/interproscan-5.56-89.0-64-bit.tar.gz --no-check-certificate
+wget https://ftp.ebi.ac.uk/pub/software/unix/iprscan/5/5.56-89.0/interproscan-5.56-89.0-64-bit.tar.gz.md5
+md5sum -c interproscan-5.56-89.0-64-bit.tar.gz.md5
+tar -pxvzf interproscan-5.56-89.0-*-bit.tar.gz
+cd interproscan-5.56-89.0/
+python3 initial_setup.py
+#test iprs
+./interproscan.sh -i test_all_appl.fasta -f tsv -dp
+
+
+```
 
 ## Clusters biosintéticos
 
