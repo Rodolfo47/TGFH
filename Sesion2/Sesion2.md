@@ -1,7 +1,9 @@
-# Sesión 2: Práctica de anotación: Funanotate
+# Sesión 2: Práctica de anotación funcional
 *Elena Flores, Rodolfo Ángeles y Christian Quintero, Junio 2022*
 
-## Estructura de la sesión
+
+
+**Estructura de la sesión**
 
 * Genomica de hongos ftopatógenos (REAA)
 	* descanso
@@ -11,14 +13,19 @@
 * Anotación funcional (REAA)
 * Clusters biosintéticos (CAQC)
 
-## Genomica de hongos ftopatógenos
+## Genómica de hongos fitopatógenos
 Ver la presentación.
 
 ## Ensamble genómico
 
+
+
 ## Predicción de genes
 
+
+
 ## Anotación funcional
+
 ### Definición
 Con "anotación funcional" nos referimos a un grupo grande y heterogeno de acciones para asignar funciones a los modelos genéticos (y a otras cosas) de un ensamble genómico o transcriptómico.
 
@@ -26,16 +33,27 @@ Usarémos el pipeline [Funannotate](https://funannotate.readthedocs.io/en/latest
 
 Funannotate es un *pipeline* de predicción, anotación y comparación de genomas.
 
-Originalmente se escribió para anotar genomas fúngicos (pequeños eucariotas ~30 Mb), pero se puede usar para genomas (euk) más grandes.
+Originalmente se escribió para anotar genomas fúngicos (pequeños eucariotas ~30 Mb), pero se puede usar para otros genomas (euk) más grandes.
 
-Tienen el principal objetivo de anotar con precisión y facilidad para enviar a NCBI GenBank.
+Tienen el principal objetivo de anotar con precisión y facilidad para enviar a NCBI GenBank (`*.gbk`).
 
-Funannotate es también una plataforma ligera de genómica comparativa. Los genomas a los que se les ha agregado una anotación funcional a través del comando `funannotate annotate` se pueden comparar usando `funannotate compare` que genera comparaciones de genoma completo basadas en html. Funannotate hace agrupaciones ortólogas, filogenias de genoma completo, análisis de enriquecimiento de Gene Ontology, y calcula proporciones dN/dS para grupos de ortólogos bajo selección positiva.
+Funannotate es también una plataforma ligera de genómica comparativa. Los genomas a los que se les ha agregado una anotación funcional (con el comando  `funannotate annotate`) se pueden comparar usando `funannotate compare`, que genera un resumen en `*.html`. Funannotate hace agrupaciones ortólogas, filogenias de genoma completo, análisis de enriquecimiento de Gene Ontology, y calcula proporciones dN/dS para grupos de ortólogos bajo selección positiva.
 
-Funannotate tiene muchas (muuuchas) dependencias y, por lo tanto, la instalación es la parte más difícil. Hay varias alternativas, el contenedor de Docker y el ambiente conda traen pre-compiladas las dependencias. Tambien se pueden instalar soo los scripts de funannotate con python pip y luego instalar cada una de las dependencias (pero mejor no).
+Funannotate tiene muchas (muuuchas) dependencias y, por lo tanto, la instalación es la parte más difícil. Hay varias alternativas: el contenedor de [Docker](https://www.docker.com/resources/what-container/) y el ambiente [conda](https://docs.conda.io/projects/conda/en/latest/) traen pre-compiladas las dependencias. Tambien se pueden instalar soo los scripts de funannotate con python pip y luego instalar cada una de las dependencias (pero mejor no).
 
-### Intalación
-```
+### Dependencias
+
+[Funannotate](https://funannotate.readthedocs.io/en/latest/index.html)
+
+[Augustus](https://bioinf.uni-greifswald.de/augustus/)
+
+[InterProScan](https://interproscan-docs.readthedocs.io/en/latest/index.html)
+
+
+
+### Instalación
+
+```sh
 #Installing funannotate in biogen server by usin mamba
 
 #installing mamba
@@ -62,7 +80,7 @@ funannotate check --show-versions
 ```
 Algunas dependencias no están:
 
-```
+```sh
 	ERROR: Bio::Perl not installed, install with cpanm Bio::Perl
 	ERROR: GENEMARK_PATH not set. export GENEMARK_PATH=/path/to/dir
 	ERROR: emapper.py not installed
@@ -70,7 +88,7 @@ Algunas dependencias no están:
 	ERROR: signalp not installed
 ```
 
-```
+```sh
 ##Set some missing dependences
 cpanm Bio::Perl
 #get the academic licence of SignalP v6, and install
@@ -99,17 +117,17 @@ NCBI pide headers de 16 caracteres; Augustus también tiene problemas con header
 
 El predeterminado de `funannotate mask`  es enmascarar con tantan. "Softmasking" es donde las repeticiones se representan con letras minúsculas y todas las regiones no repetitivas son letras mayúsculas.
 
-***EJECUCIÓN***
+<u>***EJECUCIÓN***</u>
 
 Situarnos en $HOME/Sesion2/bin
 
-```
+```sh
 cd
-cd TGFH/Sesion2/bin
+cd TGFH/Sesion2/binsh
 ```
 Limpieza del ensamble con funannotate
 
-```
+```bash
 # 1.1 clear repeated contigs
     funannotate clean -i ../data/O.polymorpha_NCYC495.fna -o ../out/O.polymorpha_NCYC495.clean.fna
 # 1.2 sort and relabel headers
@@ -122,34 +140,110 @@ Limpieza del ensamble con funannotate
 ```
 
 ### Predicción de genes
+
 La predicción de genes en funannotate se debe parametrizar atendiendo a la información con la que se cuenta.
 
 En el núcleo del algoritmo de predicción se encuentra el Evidence Modeler, que toma las predicciones hechas por diferentes programas y genera modelos de genes de consenso.
 
 Los predictores de genes *ab initio* son Augustus, snap, glimmerHMM, CodingQuarry y GeneMark-ES/ET (opcional debido a la licencia). Es importante dar "evidencia" a los predictores.
 
+<u>***EJECUCIÓN***</u>
 
-***EJECUCIÓN***
 
-Situarnos en $HOME/Sesion2/bin
+Situarnos en `/$HOME/$USR/TGFH/Sesion2/bin`
 
-```
+
+```sh
 cd
 cd TGFH/Sesion2/bin
 ```
-Predecir usando videncia de proteinas
-```
+
+Predecir usando de proteinas como evidencia
+
+```sh
 funannotate predict \
-    -i ../out/O.polymorpha_NCYC495.clean.sort.mask.fna \
-    -o ../out/O.polymorpha_NCYC495 \
-    -s O.polymorpha_NCYC495 \
-    --isolate XXX \
-    --name O.polymorpha_NCYC495 \
-    --ploidy 1 \
-    --protein_evidence ../data/Protein_models.faa \
-    --cpus 4
+      -i ../out/O.polymorpha_NCYC495.clean.sort.mask.fna \
+      -o ../out/O.polymorpha_NCYC495 \
+      -s O.polymorpha_NCYC495 \
+      --isolate XXX \
+      --name O.polymorpha_NCYC495 \
+      --ploidy 1 \
+      --protein_evidence ../data/Protein_models.faa \
+      --cpus 4
 ```
-anotar
+
+### Anotación funcional
+
+
+
+<u>***EJECUCIÓN***</u>
+
+Situarnos en `/$HOME/$USR/TGFH/Sesion2/bin`
+
+
+```sh
+cd
+cd TGFH/Sesion2/bin
+```
+
+Solicitar a los servidores remotos de Phobius y AntiSmash sus anotaciones.
+
+```sh
+funannotate remote \
+        -m all \
+        -e rodolfo.angeles.argaiz@gmail.com \
+        -i ../out/O.polymorpha_NCYC495 \
+        --force
+```
+
+Ejecutar InterProScan para obtener IPRs.
+
+```sh
+#set interpro to my $PATH
+export PATH=$PATH:/home/rangeles/binlike/my_interproscan/interproscan-5.56-89.0
+#run interpro
+interproscan.sh \
+        -i ../out/O.polymorpha_NCYC495/predict_results/*.proteins.fa \
+        -f xml -iprlookup -dp \
+        -d ../out/interproscan \
+        -cpu 4
+# Start time: 07/06/2022 00:48:01:280
+# Finish time: 07/06/2022 04:54:40:608
+```
+
+Actualizar la db
+
+```sh
+#check for yeasts busco db
+#update all dbs
+funannotate setup -i all -d $HOME/funannotate_db --force
+### Start time: Jun 07 12:30 PM
+### Finish time: Jun 07 12:33 PM
+##display db
+funannotate database
+##choose suitable db
+funannotate database --show-buscos
+##look in `funannotate_db/ 
+ls ../../../binlike/funannotate_db/
+##get saccharomycetales BUSCOS 
+funannotate setup -b saccharomycetales
+```
+
+Ejecutar funannotate
+
+```sh
+## run funannotate annotation with saccharomycetales buscos
+funannotate annotate \
+	-i \../out/O.polymorpha_NCYC495 \
+  --iprscan ../out/interproscan/O.polymorpha_NCYC495*.xml \
+  --busco_db saccharomycetales \
+  --cpus 4
+  
+## Start time: Jun 07 01:32 PM
+## Finish time: Jun 07 01:42 PM
+```
+
+
 
 ```
 /home/rangeles/binlike/my_interproscan/interproscan-5.56-89.0/interproscan.sh
@@ -179,7 +273,6 @@ python3 initial_setup.py
 ```
 
 ## Clusters biosintéticos
-
 
 
 
