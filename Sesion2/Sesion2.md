@@ -1,5 +1,7 @@
-# Sesión 2: Práctica de anotación funcional
-*Elena Flores, Rodolfo Ángeles y Christian Quintero, Junio 2022*
+# Sesión 2: Ensamble, anotación y homología
+*Elena Flores, Rodolfo Ángeles y Christian Quintero*
+
+Junio 2022
 
 
 
@@ -81,7 +83,8 @@ echo "unset FUNANNOTATE_DB" > /home/rangeles/.conda/envs/funannotate/etc/conda/d
 #solving some augustus compilation issue
 conda remove augustus -n funannotate --force
 #next line every time you login
-export AUGUSTUS_CONFIG_PATH="/usr/share/augustus/config"
+export AUGUSTUS_CONFIG_PATH="Hytf83As
+augustus/config"
 
 #checking all paths and dependences
 funannotate check --show-versions
