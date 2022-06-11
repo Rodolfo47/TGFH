@@ -33,9 +33,15 @@ Ver la presentación.
 ## Anotación funcional
 
 ### Definición
-Con "anotación funcional" nos referimos a un grupo grande y heterogeno de acciones para asignar funciones a los modelos genéticos (y a otras cosas) de un ensamble genómico o transcriptómico.
+Con "anotación funcional" nos referimos a un grupo grande y heterogeno de acciones para asignar funciones a los modelos genéticos (y a otras cosas) de un ensamble genómico o transcriptómico. Por lo general involucra 3 pasos principales ([Grigoriev *et al.* 2006](https://www.sciencedirect.com/science/article/pii/S1874533406800080); [Haas *et al.* 2011](https://www.tandfonline.com/doi/full/10.1080/21501203.2011.606851); [Haridas *et al.* 2018](https://link.springer.com/protocol/10.1007/978-1-4939-7804-5_15)).
 
-Usarémos el pipeline [Funannotate](https://funannotate.readthedocs.io/en/latest/index.html).
+1. Identificar características/regiones no codificantes del genoma.
+2. Identificar genes que codifican proteínas (predicción).
+3. Adjuntar información biológica (anotación), ej: dominios [pfam](https://pfam.xfam.org/) y nombres descriptivos.
+
+Hay varios *pipelines* para la anotación de genomas de hongos ([FunGAP](https://academic.oup.com/bioinformatics/article/33/18/2936/3861332?login=true), [BRAKER1](https://academic.oup.com/bioinformatics/article/32/5/767/1744611?login=true), [CodingQuarry](https://link.springer.com/article/10.1186/s12864-015-1344-4)).
+
+Hoy usaremos [Funannotate](https://funannotate.readthedocs.io/en/latest/index.html).
 
 Funannotate es un *pipeline* de predicción, anotación y comparación de genomas.
 
@@ -43,9 +49,13 @@ Originalmente se escribió para anotar genomas fúngicos (pequeños eucariotas ~
 
 Tienen el principal objetivo de anotar con precisión y facilidad para enviar a NCBI GenBank (`*.gbk`).
 
-Funannotate es también una plataforma ligera de genómica comparativa. Los genomas a los que se les ha agregado una anotación funcional (con el comando  `funannotate annotate`) se pueden comparar usando `funannotate compare`, que genera un resumen en `*.html`. Funannotate hace agrupaciones ortólogas, filogenias de genoma completo, análisis de enriquecimiento de Gene Ontology, y calcula proporciones dN/dS para grupos de ortólogos bajo selección positiva.
+Funannotate es también una plataforma ligera de genómica comparativa. Los genomas a los que se les ha agregado una anotación funcional (con el comando  `funannotate annotate`) se pueden comparar usando `funannotate compare`, que genera un  `*.html` de resumen.
+
+Funannotate hace agrupaciones de ortólogos, filogenias de genoma completo, análisis de enriquecimiento de [GO](http://geneontology.org/), y calcula proporciones dN/dS para grupos de ortólogos bajo selección positiva.
 
 Funannotate tiene muchas (muuuchas) dependencias y, por lo tanto, la instalación es la parte más difícil. Hay varias alternativas: el contenedor de [Docker](https://www.docker.com/resources/what-container/) y el ambiente [conda](https://docs.conda.io/projects/conda/en/latest/) traen pre-compiladas las dependencias. Tambien se pueden instalar soo los scripts de funannotate con python pip y luego instalar cada una de las dependencias (pero mejor no).
+
+
 
 ### Dependencias
 
@@ -57,78 +67,59 @@ Funannotate tiene muchas (muuuchas) dependencias y, por lo tanto, la instalació
 
 
 
-### Instalación
+> ### Instalación
+>
+> Saltamos la instalación
+>
+> ```sh
+> #Installing funannotate in biogen server by usin mamba
+> #activar conda
+> conda init
+> #cerrar y abrir el shell
+> 
+> #installing mamba
+> conda install -n base mamba
+> #creating env
+> mamba create -n funannotate funannotate
+> #activating env
+> conda activate funannotate
+> 
+> #download and setup DB
+> funannotate setup -d /home/rangeles/binlike/funannotate_db
+> export FUNANNOTATE_DB=/home/rangeles/binlike/funannotate_db
+> echo "export FUNANNOTATE_DB=/home/rangeles/binlike/funannotate_db" > /home/rangeles/.conda/envs/funannotate/etc/conda/activate.d/funannotate.sh
+> echo "unset FUNANNOTATE_DB" > /home/rangeles/.conda/envs/funannotate/etc/conda/deactivate.d/funannotate.sh
+> 
+> #solving some augustus compilation issue
+> conda remove augustus -n funannotate --force
+> #next line every time you login
+> export AUGUSTUS_CONFIG_PATH="/usr/share/augustus/config"
+> augustus/config"
+> 
+> #checking all paths and dependences
+> funannotate check --show-versions
+> 
+> ##Set some missing dependences
+> cpanm Bio::Perl
+> #get the academic licence of SignalP v6, and install
+> #download, decompres and:
+> #create pithon env
+> python3 -m venv signalp-6-package/
+> #install signalp in the env
+> sudo pip3 install signalp-6-package/
+> #set bd paths
+> SIGNALP_DIR=$(python3 -c "import signalp; import os; print(os.path.dirname(signalp.__file__))" )
+> ```
 
-Saltamos la instalación
 
-```sh
-#Installing funannotate in biogen server by usin mamba
-#activar conda
-conda init
-#cerrar y abrir el shell
 
-#installing mamba
-conda install -n base mamba
-#creating env
-mamba create -n funannotate funannotate
-#activating env
-conda activate funannotate
-
-#download and setup DB
-funannotate setup -d /home/rangeles/binlike/funannotate_db
-export FUNANNOTATE_DB=/home/rangeles/binlike/funannotate_db
-echo "export FUNANNOTATE_DB=/home/rangeles/binlike/funannotate_db" > /home/rangeles/.conda/envs/funannotate/etc/conda/activate.d/funannotate.sh
-echo "unset FUNANNOTATE_DB" > /home/rangeles/.conda/envs/funannotate/etc/conda/deactivate.d/funannotate.sh
-
-#solving some augustus compilation issue
-conda remove augustus -n funannotate --force
-#next line every time you login
-export AUGUSTUS_CONFIG_PATH="Hytf83As
-augustus/config"
-
-#checking all paths and dependences
-funannotate check --show-versions
-
-```
-Algunas dependencias no están:
-
-```sh
-	ERROR: Bio::Perl not installed, install with cpanm Bio::Perl
-	ERROR: GENEMARK_PATH not set. export GENEMARK_PATH=/path/to/dir
-	ERROR: emapper.py not installed
-	ERROR: gmes_petap.pl not installed
-	ERROR: signalp not installed
-	#go forward
-```
-
-```sh
-##Set some missing dependences
-cpanm Bio::Perl
-#get the academic licence of SignalP v6, and install
-#download, decompres and:
-#create pithon env
-python3 -m venv signalp-6-package/
-#install signalp in the env
-sudo pip3 install signalp-6-package/
-#set bd paths
-SIGNALP_DIR=$(python3 -c "import signalp; import os; print(os.path.dirname(signalp.__file__))" )
-
-```
 ### Limpieza del ensamble
-
-> Si no has activado el ambiente funannotate:
->
-> ```
-> conda activate /home/rangeles/.conda/envs/funannotate
-> ```
->
->  
 
 Antes de anotar un ensamble hay que limpiarlo un poco.
 
 * Eliminar pequeños contigs repetitivos
 
-`funannotate clean` usa minimap2 para alinear contigs/scaffolds cortos contra el resto del ensamble, para así determinar si es repetitivo. El script recorre los contigs comenzando con el más corto y avanza hasta el N50.
+`funannotate clean` usa [minimap2](https://academic.oup.com/bioinformatics/article/34/18/3094/4994778) para alinear contigs/scaffolds cortos contra el resto del ensamble, para así determinar si es repetitivo. El script recorre los contigs comenzando con el más corto y avanza hasta el [N50](https://es.wikipedia.org/wiki/Estad%C3%ADstico_N50).
 
 * Clasificar y cambiar los headers
 
@@ -140,96 +131,176 @@ El predeterminado de `funannotate mask`  es enmascarar con tantan. "Softmasking"
 
 <u>***EJECUCIÓN***</u>
 
-Situarnos en $HOME/Sesion2/bin
+> Situarnos en $HOME/TGFH/Sesion2/bin
+>
+> ```sh
+> cd
+> cd TGFH/Sesion2/bin
+> ```
+> > Si no has activado el ambiente funannotate:
+> >
+> > ```sh
+> > conda activate /home/rangeles/.conda/envs/funannotate
+> > export FUNANNOTATE_DB=/home/rangeles/binlike/funannotate_db
+> > export AUGUSTUS_CONFIG_PATH="/usr/share/augustus/config"
+> > ```
 
-```sh
-cd
-cd TGFH/Sesion2/binsh
-```
 Limpieza del ensamble con funannotate
 
 ```bash
 # 1.1 clear repeated contigs
-    funannotate clean -i ../data/O.polymorpha_NCYC495.fna -o ../out/O.polymorpha_NCYC495.clean.fna
+funannotate clean \
+	-i ../data/O.polymorpha_NCYC495.fna \
+	-o ../out/O.polymorpha_NCYC495.clean.fna
 # 1.2 sort and relabel headers
-    funannotate sort -i ../out/O.polymorpha_NCYC495.clean.fna -o ../out/O.polymorpha_NCYC495.clean.sort.fna
+funannotate sort \
+	-i ../out/O.polymorpha_NCYC495.clean.fna \
+	-o ../out/O.polymorpha_NCYC495.clean.sort.fna
 # 1.3 softmasking with tantan
-    funannotate mask --cpus 20 -i ../out/O.polymorpha_NCYC495.clean.sort.fna -o ../out/O.polymorpha_NCYC495.clean.sort.mask.fna
+funannotate mask \
+	-i ../out/O.polymorpha_NCYC495.clean.sort.fna \
+	-o ../out/O.polymorpha_NCYC495.clean.sort.mask.fna \
+	--cpus 20 
 
 #delete tmp files
-    rm ../out/O.polymorpha_NCYC495.clean.fna ../out/O.polymorpha_NCYC495.clean.sort.fna
+rm ../out/O.polymorpha_NCYC495.clean.fna ../out/O.polymorpha_NCYC495.clean.sort.fna
 ```
+
+El tiempo de ejecución de este paso es dependiente de la calidad del ensamble. Cada contig adicional multiplica el numero de mapeos por el N50. Por lo que es recomendable quitar de nuestro ensamble toda la padecería <500.
+
+
 
 ### Predicción de genes
 
+> Si no corriste los pasos de predicción, puedes traer los resultados con estas líneas
+
 La predicción de genes en funannotate se debe parametrizar atendiendo a la información con la que se cuenta.
 
-En el núcleo del algoritmo de predicción se encuentra el Evidence Modeler, que toma las predicciones hechas por diferentes programas y genera modelos de genes de consenso.
+En el núcleo del algoritmo de predicción es [Evidence Modeler](https://evidencemodeler.github.io/), que toma las predicciones *ab initio* hechas por diferentes programas para combinarlas con la evidencia que se le da y genera modelos de genes consenso.
 
-Los predictores de genes *ab initio* son Augustus, snap, glimmerHMM, CodingQuarry y GeneMark-ES/ET (opcional debido a la licencia). Es importante dar "evidencia" a los predictores.
+Los predictores de genes *ab initio* son [Augustus](https://bioinf.uni-greifswald.de/augustus/), [snap](https://github.com/KorfLab/SNAP), [glimmerHMM](https://ccb.jhu.edu/software/glimmerhmm/man.shtml), [CodingQuarry](https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-015-1344-4) y [GeneMark-ES/ET](http://exon.gatech.edu/GeneMark/) (opcional debido a la licencia). Es importante dar "evidencia" a los predictores.
 
 <u>***EJECUCIÓN***</u>
 
+> Situarnos en `/$HOME/$USR/TGFH/Sesion2/bin`
+>
+>
+> ```sh
+> cd
+> cd TGFH/Sesion2/bin
+> ```
+>
 
-Situarnos en `/$HOME/$USR/TGFH/Sesion2/bin`
-
+Predecir usando de proteínas como evidencia.
 
 ```sh
-cd
-cd TGFH/Sesion2/bin
-```
-
-Predecir usando de proteinas como evidencia
-
-```sh
+#prediction step
 funannotate predict \
-      -i ../out/O.polymorpha_NCYC495.clean.sort.mask.fna \
-      -o ../out/O.polymorpha_NCYC495 \
-      -s O.polymorpha_NCYC495 \
-      --isolate XXX \
-      --name O.polymorpha_NCYC495 \
-      --ploidy 1 \
-      --protein_evidence ../data/Protein_models.faa \
-      --cpus 4
+	-i ../out/O.polymorpha_NCYC495.clean.sort.mask.fna \
+	-o ../out/O.polymorpha_NCYC495 \
+	-s O.polymorpha_NCYC495 \
+	--isolate XXX \
+	--name O.polymorpha_NCYC495 \
+	--ploidy 1 \
+	--protein_evidence ../data/Protein_models.faa \
+	--cpus 4
+## Jun 11 04:26 PM
+##
+###
+###########################################################
+#borrar esta linea de abajo y poner los tiempos aquí arriba
+nohup funannotate predict -i ../out/O.polymorpha_NCYC495.clean.sort.mask.fna -o ../out/O.polymorpha_NCYC495 -s O.polymorpha_NCYC495 --isolate XXX --name O.polymorpha_NCYC495 --ploidy 1 --protein_evidence ../data/Protein_models.faa --cpus 4 > pred.nh.log &
 ```
+
+Hay muchas maneras de usar el script `funannotate predict`. En el ejemplo usamos como evidencia un `.faa` pero se le puede dar transcritos, tablas de anotación, genes, etc...
+
+Las salidas las guarda en el directorio `[...]/predict_results/`, son varios archivos:
+
+| **File Name**                   | **Description**                              |
+| ------------------------------- | -------------------------------------------- |
+| Basename.gbk                    | Annotated Genome in GenBank Flat File format |
+| Basename.tbl                    | NCBI tbl annotation file                     |
+| Basename.gff3                   | Genome annotation in GFF3 format             |
+| Basename.scaffolds.fa           | Multi-fasta file of scaffolds                |
+| Basename.proteins.fa            | Multi-fasta file of protein coding genes     |
+| Basename.transcripts.fa         | Multi-fasta file of transcripts (mRNA)       |
+| Basename.discrepency.report.txt | tbl2asn summary report of annotated genome   |
+| Basename.error.summary.txt      | tbl2asn error summary report                 |
+| Basename.validation.txt         | tbl2asn genome validation report             |
+| Basename.parameters.json        | ab-initio training parameters                |
+
+
 
 ### Anotación funcional
 
+En Funannotate la anotación son 3 pasos:
 
+1. Uso de anotadores en linea
+2. Uso de InterProScan
+3. Uso de `funannotate annotate` con muchas bases de datos y anotadores
 
 <u>***EJECUCIÓN***</u>
 
-Situarnos en `/$HOME/$USR/TGFH/Sesion2/bin`
+> Situarnos en `/$HOME/$USR/TGFH/Sesion2/bin`
+>
+>
+> ```sh
+> cd
+> cd TGFH/Sesion2/bin
+> ```
 
-
-```sh
-cd
-cd TGFH/Sesion2/bin
-```
-
-Solicitar a los servidores remotos de Phobius y AntiSmash sus anotaciones.
+Solicitar a los servidores remotos de [Phobius](https://phobius.sbc.su.se/) y [AntiSmash](https://fungismash.secondarymetabolites.org/#!/start) sus anotaciones.
 
 ```sh
 funannotate remote \
-        -m all \
-        -e rodolfo.angeles.argaiz@gmail.com \
-        -i ../out/O.polymorpha_NCYC495 \
-        --force
+	-m all \
+	-e rodolfo.angeles.argaiz@gmail.com \
+	-i ../out/O.polymorpha_NCYC495 \
+	--force
 ```
 
-Ejecutar InterProScan para obtener IPRs.
+El tiempo de ejecución de `funannotate remote`es muy variable pues depende de la carga de los servidores remotos.
+
+
+
+Usar [InterProScan](https://www.ebi.ac.uk/interpro/search/sequence/) para obtener IPRs. Hay un par de opciones:
+
+- Cuando instalamos funannotate con docker se puede usar el comando `funannotate -iprscan`.
+- Como usamos un funannotate instalado con conda (mamba) tenemos que correrlo (e instalarlo) de manera independiente.
+
+> Ya lo tenemos instalado en BioGen, lo instalamos así:
+>
+> ```sh
+> #install and test interpro
+> ##get the tar ball
+> wget https://ftp.ebi.ac.uk/pub/software/unix/iprscan/5/5.56-89.0/interproscan-5.56-89.0-64-bit.tar.gz --no-check-certificate
+> ##get the md5sum to check the correct download
+> wget https://ftp.ebi.ac.uk/pub/software/unix/iprscan/5/5.56-89.0/interproscan-5.56-89.0-64-bit.tar.gz.md5
+> #checking
+> md5sum -c interproscan-5.56-89.0-64-bit.tar.gz.md5
+> ##uncompress
+> tar -pxvzf interproscan-5.56-89.0-*-bit.tar.gz
+> ##install
+> cd interproscan-5.56-89.0/
+> python3 initial_setup.py
+> ##test iprs
+> ./interproscan.sh -i test_all_appl.fasta -f tsv -dp
+> ```
+
+Anotar con InterProScan
 
 ```sh
 #set interpro to my $PATH
 export PATH=$PATH:/home/rangeles/binlike/my_interproscan/interproscan-5.56-89.0
 #run interpro
 interproscan.sh \
-        -i ../out/O.polymorpha_NCYC495/predict_results/*.proteins.fa \
-        -f xml -iprlookup -dp \
-        -d ../out/interproscan \
-        -cpu 4
-# Start time: 07/06/2022 00:48:01:280
-# Finish time: 07/06/2022 04:54:40:608
+	-i ../out/O.polymorpha_NCYC495/predict_results/*.proteins.fa \
+	-f xml -iprlookup -dp \
+	-d ../out/interproscan \
+	-cpu 4
+## Start time: 07/06/2022 00:48:01:280
+## Finish time: 07/06/2022 04:54:40:608
+### Took 4 hours
 ```
 
 Actualizar la db
@@ -238,22 +309,24 @@ Actualizar la db
 #check for yeasts busco db
 #update all dbs
 funannotate setup -i all -d $HOME/funannotate_db --force
-### Start time: Jun 07 12:30 PM
-### Finish time: Jun 07 12:33 PM
-##display db
+## Start time: Jun 07 12:30 PM
+## Finish time: Jun 07 12:33 PM
+### Took 3 minutes
+
+#display db
 funannotate database
-##choose suitable db
+#choose suitable db
 funannotate database --show-buscos
-##look in `funannotate_db/ 
+#look in `funannotate_db/ 
 ls ../../../binlike/funannotate_db/
-##get saccharomycetales BUSCOS 
+#get saccharomycetales BUSCOS 
 funannotate setup -b saccharomycetales
 ```
 
-Ejecutar funannotate
+Ejecutar `funannotate annotate`
 
 ```sh
-## run funannotate annotation with saccharomycetales buscos
+#Run funannotate annotation with saccharomycetales buscos
 funannotate annotate \
 	-i \../out/O.polymorpha_NCYC495 \
   --iprscan ../out/interproscan/O.polymorpha_NCYC495*.xml \
@@ -262,87 +335,104 @@ funannotate annotate \
   
 ## Start time: Jun 07 01:32 PM
 ## Finish time: Jun 07 01:42 PM
-```
-
-Para usar el script de comparación `funannotate compare` se ocupan varios genomas.
-
-Usé los scripts de bin para procesar los genomas de otras7 levaduras.
-
-Pegar lineas de nohup y hablar sobre los tiempos de ejecución.
-
-
-
-
-
-muestra | genoma Mbps | contigs | N50 Mbps
-
-- *Candida albicans* SC5314 |   |   |
-- *Ogataea polymorpha* NCYC 495  |   |   |
-- *Pichia pastoris* GS115 |   |   |
-- *Saccharomyces arboricola* H6 |   |   |
-- *Saccharomyces cerevisiae* M3707 |   |   |
-- *Saccharomyces cerevisiae* M3836 |   |   |
-- *Saccharomyces cerevisiae* S288C |   |   |
-- *Saccharomyces eubayanus* FM1318 |   |   |
-
-
-
-Re predije y anoté esas levaduras con los scripts de `/TGFH/Sesion2/bin`
-
-```
-
-#mar 07 jun 2022 15:04:36 CDT
-#mié 08 jun 2022 02:20:27 CDT
+### Took 10 minutes
 ```
 
 
 
 ### Genómica comparada
 
+Para usar el script de comparación `funannotate compare` se ocupan varios genomas.
 
+> Usé los scripts de `~/TGFH/Sesion2/bin/` para procesar los genomas de otras 7 levaduras.
+>
+> muestra | genoma Mbps | contigs | N50 Mbps
+>
+> - *Candida albicans* SC5314 |   |   |
+> - *Ogataea polymorpha* NCYC 495  |   |   |
+> - *Pichia pastoris* GS115 |   |   |
+> - *Saccharomyces arboricola* H6 |   |   |
+> - *Saccharomyces cerevisiae* M3707 |   |   |
+> - *Saccharomyces cerevisiae* M3836 |   |   |
+> - *Saccharomyces cerevisiae* S288C |   |   |
+> - *Saccharomyces eubayanus* FM1318 |   |   |
+>
+> **Limpieza**
+>
+> ```sh
+> nohup sh 1_clean.sh > 1_clean.nohup.log &
+> #Sat 04 Jun 2022 08:41:20 PM CDT
+> #Sat 04 Jun 2022 08:42:32 PM CDT
+> ## Took <2 mins
+> ```
+>
+> **Predicción**
+>
+> ```sh
+> nohup sh 2_predict.sh > 2_predict.nohup.log &
+> #lun 06 jun 2022 15:29:21 CDT
+> #lun 06 jun 2022 21:20:24 CDT
+> ## Took >6 hours
+> ```
+>
+> **Anotación**
+>
+> ```sh
+> nohup sh 3_annotate.sh > 3_annotate.nohup.log &
+> #mar 07 jun 2022 15:04:36 CDT
+> #mié 08 jun 2022 02:20:27 CDT
+> ## Took >11 hours
+> ```
+>
+> **Comparación**
+>
+> ```sh
+> nohup sh 4_compare.sh > 4_compare.nohup.log &
+> #[Jun 08 02:41 PM]
+> #[Jun 10 04:35 AM]
+> ## >2 days
+> ```
+>
+> Hizo casi todas las comparaciones las hizo en 2 minutos
+>
+> Pero tardó un día en el análisis de enriquecimiento de GOs
+>
+> y un día en la filogenia
+
+
+
+Ejecutar funannotate compare con el script
 
 ```
-funannotate setup -d /home/rangeles/binlike/funannotate_db --force
-#Jun 08 09:52 AM
-#Jun 08 10:13 AM
-export FUNANNOTATE_DB=/home/rangeles/binlike/funannotate_db
-
 nohup sh 4_compare.sh > 4_compare.nohup.log &
-#14:44
-Hizo casi todo en 2 minutos
-pero lleva 4hrs con el GO enrich
 ```
 
+```sh
+#!bin/sh
+#Compare yeasts genomes with funannotate
+#Rodolfo Angeles, june 2022
 
+#add salple prefix in the .gbk
+for smpl in $(cat list2fun.txt); do
+        cd ../out/$smpl/annotate_results
+        sed -i 's/FUN_/$smpl/g' *.gbk
+        cd ../..
+done
+#
+mkdir fun_yeasts.compare ../res/
+#funannotate compare
+#caution!
+#this script will compare all annotate_results
+#placed in the `../out/` dir
+funannotate compare \
+-i ../out/*/annotate_results/*.gbk \
+-o fun_yeasts.compare \
+--run_dnds estimate \
+--cpus 55
 
-------
-
-
-
+mv fun_yeasts.* ../res/
+#END
 ```
-#install and test ausgustus
-augustus --species=saccharomyces --progress=true --singlestrand=true --genemodel=complete ../data/O.polymorpha_NCYC495.fna > ../out/augustus/O.polymorpha_NCYC495.fna.gff
-
-#remove the conda installed augustus
-conda remove augustus -n funannotate --force
-
-#de interpro
-
-wget https://ftp.ebi.ac.uk/pub/software/unix/iprscan/5/5.56-89.0/interproscan-5.56-89.0-64-bit.tar.gz --no-check-certificate
-wget https://ftp.ebi.ac.uk/pub/software/unix/iprscan/5/5.56-89.0/interproscan-5.56-89.0-64-bit.tar.gz.md5
-md5sum -c interproscan-5.56-89.0-64-bit.tar.gz.md5
-tar -pxvzf interproscan-5.56-89.0-*-bit.tar.gz
-cd interproscan-5.56-89.0/
-python3 initial_setup.py
-#test iprs
-./interproscan.sh -i test_all_appl.fasta -f tsv -dp
-
-
-```
-
-
-
-
 
 
 
