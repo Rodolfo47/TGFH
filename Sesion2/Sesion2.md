@@ -24,6 +24,10 @@ Ver la presentación.
 
 
 
+
+
+------
+
 ## Anotación funcional
 
 ### Definición
@@ -53,8 +57,13 @@ Funannotate tiene muchas (muuuchas) dependencias y, por lo tanto, la instalació
 
 ### Instalación
 
+Saltamos la instalación
+
 ```sh
 #Installing funannotate in biogen server by usin mamba
+#activar conda
+conda init
+#cerrar y abrir el shell
 
 #installing mamba
 conda install -n base mamba
@@ -74,7 +83,7 @@ conda remove augustus -n funannotate --force
 #next line every time you login
 export AUGUSTUS_CONFIG_PATH="/usr/share/augustus/config"
 
-#checking al phats and dependences
+#checking all paths and dependences
 funannotate check --show-versions
 
 ```
@@ -86,6 +95,7 @@ Algunas dependencias no están:
 	ERROR: emapper.py not installed
 	ERROR: gmes_petap.pl not installed
 	ERROR: signalp not installed
+	#go forward
 ```
 
 ```sh
@@ -103,11 +113,19 @@ SIGNALP_DIR=$(python3 -c "import signalp; import os; print(os.path.dirname(signa
 ```
 ### Limpieza del ensamble
 
+> Si no has activado el ambiente funannotate:
+>
+> ```
+> conda activate /home/rangeles/.conda/envs/funannotate
+> ```
+>
+>  
+
 Antes de anotar un ensamble hay que limpiarlo un poco.
 
 * Eliminar pequeños contigs repetitivos
 
-`funannotate clean`usa minimap2 para alinear contigs/scaffolds cortos contra el resto del ensamble, para así determinar si es repetitivo. El script recorre los contigs comenzando con el más corto y avanza hasta el N50.
+`funannotate clean` usa minimap2 para alinear contigs/scaffolds cortos contra el resto del ensamble, para así determinar si es repetitivo. El script recorre los contigs comenzando con el más corto y avanza hasta el N50.
 
 * Clasificar y cambiar los headers
 
@@ -243,11 +261,58 @@ funannotate annotate \
 ## Finish time: Jun 07 01:42 PM
 ```
 
+Para usar el script de comparación `funannotate compare` se ocupan varios genomas.
+
+Usé los scripts de bin para procesar los genomas de otras7 levaduras.
+
+Pegar lineas de nohup y hablar sobre los tiempos de ejecución.
+
+
+
+
+
+muestra | genoma Mbps | contigs | N50 Mbps
+
+- *Candida albicans* SC5314 |   |   |
+- *Ogataea polymorpha* NCYC 495  |   |   |
+- *Pichia pastoris* GS115 |   |   |
+- *Saccharomyces arboricola* H6 |   |   |
+- *Saccharomyces cerevisiae* M3707 |   |   |
+- *Saccharomyces cerevisiae* M3836 |   |   |
+- *Saccharomyces cerevisiae* S288C |   |   |
+- *Saccharomyces eubayanus* FM1318 |   |   |
+
+
+
+Re predije y anoté esas levaduras con los scripts de `/TGFH/Sesion2/bin`
+
+```
+
+#mar 07 jun 2022 15:04:36 CDT
+#mié 08 jun 2022 02:20:27 CDT
+```
+
+
+
+### Genómica comparada
+
 
 
 ```
-/home/rangeles/binlike/my_interproscan/interproscan-5.56-89.0/interproscan.sh
+funannotate setup -d /home/rangeles/binlike/funannotate_db --force
+#Jun 08 09:52 AM
+#Jun 08 10:13 AM
+export FUNANNOTATE_DB=/home/rangeles/binlike/funannotate_db
+
+nohup sh 4_compare.sh > 4_compare.nohup.log &
+#14:44
+Hizo casi todo en 2 minutos
+pero lleva 4hrs con el GO enrich
 ```
+
+
+
+------
 
 
 
@@ -271,6 +336,12 @@ python3 initial_setup.py
 
 
 ```
+
+
+
+
+
+
 
 ## Clusters biosintéticos
 
