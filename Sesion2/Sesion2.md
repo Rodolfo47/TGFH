@@ -28,8 +28,6 @@ Ver `~/TGFH/Sesion2/USO_DE_AUGUSTUS.md`
 
 
 
-------
-
 ## Anotación funcional
 
 ### Definición
