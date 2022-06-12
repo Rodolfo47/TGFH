@@ -172,7 +172,12 @@ El tiempo de ejecución de este paso es dependiente de la calidad del ensamble. 
 
 ### Predicción de genes
 
-> Si no corriste los pasos de predicción, puedes traer los resultados con estas líneas
+> Si no corriste los pasos de limpieza, puedes traer los resultados con estas líneas
+>
+> ```
+> cd
+> cp -r ../rangeles/TGFH/Sesion2/old/out/*clean.sort.mask.fna TGFH/Sesion2/out
+> ```
 
 La predicción de genes en funannotate se debe parametrizar atendiendo a la información con la que se cuenta.
 
@@ -205,11 +210,8 @@ funannotate predict \
 	--protein_evidence ../data/Protein_models.faa \
 	--cpus 4
 ## Jun 11 04:26 PM
-##
-###
-###########################################################
-#borrar esta linea de abajo y poner los tiempos aquí arriba
-nohup funannotate predict -i ../out/O.polymorpha_NCYC495.clean.sort.mask.fna -o ../out/O.polymorpha_NCYC495 -s O.polymorpha_NCYC495 --isolate XXX --name O.polymorpha_NCYC495 --ploidy 1 --protein_evidence ../data/Protein_models.faa --cpus 4 > pred.nh.log &
+## Jun 11 07:14 PM
+### Took <3 hours
 ```
 
 Hay muchas maneras de usar el script `funannotate predict`. En el ejemplo usamos como evidencia un `.faa` pero se le puede dar transcritos, tablas de anotación, genes, etc...
@@ -232,6 +234,14 @@ Las salidas las guarda en el directorio `[...]/predict_results/`, son varios arc
 
 
 ### Anotación funcional
+
+> Si no corriste los pasos de predicción, puedes traer los resultados con estas líneas
+>
+> ```
+> cd
+> cp -r ../rangeles/TGFH/Sesion2/old/out/*/predict_*/ TGFH/Sesion2/out
+> TGFH/Sesion2/bin
+> ```
 
 En Funannotate la anotación son 3 pasos:
 
@@ -401,6 +411,16 @@ Para usar el script de comparación `funannotate compare` se ocupan varios genom
 
 
 
+<u>***EJECUCIÓN***</u>
+
+> Si no corriste los pasos de anotación, puedes traer los resultados con estas líneas
+>
+> ```
+> cd
+> cp -r ../rangeles/TGFH/Sesion2/old/out/*/annotate_*/ TGFH/Sesion2/out
+> TGFH/Sesion2/bin
+> ```
+
 Ejecutar funannotate compare con el script
 
 ```
@@ -432,6 +452,36 @@ funannotate compare \
 
 mv fun_yeasts.* ../res/
 #END
+```
+
+Para explorar los resultados de la comparación primero usa estas lineas:
+
+```sh
+#go home
+cd
+#get file from rangeles usr
+cp ../rangeles/TGFH/Sesion2/old/res/fun_yeasts.compare.tar.gz TGFH/Sesion2/res
+#go tu results dir
+cd TGFH/Sesion2/res
+#uncompress
+tar -xvf fun_yeasts.compare.tar.gz
+```
+
+
+
+Desde una terminal local (en tu compu, no en el servidor)
+
+```sh
+#go to your local desktop
+cd
+cd Desktop
+#get compressed files
+scp $USER_NAME@132.248.248.175:/home/$USER_NAME/TGFH/Sesion2/res/fun_yeasts.compare.tar.gz
+#uncompress
+tar -xvf fun_yeasts.compare.tar.gz
+##if last line dont work try uncompressing by clicking
+#ver el .html con un navegador
+firefox fun_yeasts.compare/index.html
 ```
 
 
