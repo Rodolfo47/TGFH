@@ -1,674 +1,0 @@
-Wed Jun  1 00:23:31 CDT 2022
--------------------------------------------------------
-[12:23 AM]: OS: linux2, 32 cores, ~ 264 GB RAM. Python: 2.7.15
-[12:23 AM]: Running funannotate v1.7.4
-[12:23 AM]: GeneMark not found and $GENEMARK_PATH environmental variable missing. Will skip GeneMark ab-initio prediction.
-[12:23 AM]: Parsed training data, run ab-initio gene predictors as follows:
-[12:23 AM]: CodingQuarry will be skipped --> --rna_bam required for training
-[12:23 AM]: Loading genome assembly and parsing soft-masked repetitive sequences
-  [4mProgram      Training-Method[0m
-  augustus     busco          
-  glimmerhmm   busco          
-  snap         busco          
-[12:23 AM]: Genome loaded: 8 scaffolds; 14,282,666 bp; 9.39% repeats masked
-[12:23 AM]: Mapping 6,458 proteins to genome using diamond and exonerate
-[12:23 AM]: Found 7,881 preliminary alignments --> aligning with exonerate
-     Progress: 0.33%      Progress: 3.71%      Progress: 6.88%      Progress: 10.29%      Progress: 13.68%      Progress: 16.94%      Progress: 20.21%      Progress: 23.89%      Progress: 27.24%      Progress: 30.53%      Progress: 33.70%      Progress: 37.04%      Progress: 40.40%      Progress: 43.54%      Progress: 46.71%      Progress: 49.63%      Progress: 52.85%      Progress: 56.19%      Progress: 59.48%      Progress: 62.76%      Progress: 66.12%      Progress: 69.56%      Progress: 72.85%      Progress: 76.17%      Progress: 79.53%      Progress: 82.97%      Progress: 86.16%      Progress: 89.73%      Progress: 93.31%      Progress: 96.56%      Progress: 99.66%      Progress: 99.99%      Progress: 99.99%      Progress: 99.99% [12:24 AM]: Exonerate finished: found 166 alignments
-[12:24 AM]: Running BUSCO to find conserved gene models for training ab-initio predictors
-[12:30 AM]: 1,167 valid BUSCO predictions found, now formatting for EVM
-[12:31 AM]: Running EVM commands with 27 CPUs
-     Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 3.70%      Progress: 81.48% [12:31 AM]: Converting to GFF3 and collecting all EVM results
-[12:31 AM]: 1,146 total gene models from EVM, now validating with BUSCO HMM search
-[12:31 AM]: 1,146 BUSCO predictions validated
-[12:31 AM]: Training Augustus using BUSCO gene models
-perl: warning: Setting locale failed.
-perl: warning: Please check that your locale settings:
-	LANGUAGE = (unset),
-	LC_ALL = (unset),
-	LC_CTYPE = "UTF-8",
-	LANG = "en_US.UTF-8"
-    are supported and installed on your system.
-perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
-[12:31 AM]: Augustus initial training results:
-[12:31 AM]: Running Augustus gene prediction using c.albicans_sc5314_xxx parameters
-     Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 3.03%      Progress: 6.06%      Progress: 6.06%      Progress: 9.09%      Progress: 18.18%      Progress: 21.21%      Progress: 21.21%      Progress: 21.21%      Progress: 27.27%      Progress: 42.42%      Progress: 48.48%      Progress: 63.64%      Progress: 78.79%      Progress: 84.85%      Progress: 84.85%      Progress: 84.85%      Progress: 84.85%      Progress: 84.85%      Progress: 84.85%      Progress: 84.85%      Progress: 84.85%      Progress: 84.85%      Progress: 84.85%      Progress: 84.85%      Progress: 90.91%      Progress: 90.91%      Progress: 93.94%      Progress: 93.94%      Progress: 93.94%      Progress: 93.94%      Progress: 93.94%      Progress: 93.94%      Progress: 96.97% perl: warning: Setting locale failed.
-perl: warning: Please check that your locale settings:
-	LANGUAGE = (unset),
-	LC_ALL = (unset),
-	LC_CTYPE = "UTF-8",
-	LANG = "en_US.UTF-8"
-    are supported and installed on your system.
-perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
-[12:32 AM]: 5,216 predictions from Augustus
-[12:32 AM]: Pulling out high quality Augustus predictions
-[12:32 AM]: Found 40 high quality predictions from Augustus (>90% exon evidence)
-[12:32 AM]: Running SNAP gene prediction, using training data: ../out/C.albicans_SC5314/predict_misc/busco.final.gff3
-[12:34 AM]: 5,057 predictions from SNAP
-[12:34 AM]: Running GlimmerHMM gene prediction, using training data: ../out/C.albicans_SC5314/predict_misc/busco.final.gff3
-[12:36 AM]: 5,923 predictions from GlimmerHMM
-[12:36 AM]: Summary of gene models passed to EVM (weights):
-[12:36 AM]: Running EVM commands with 27 CPUs
-     Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 3.70%      Progress: 3.70%      Progress: 3.70%      Progress: 3.70%      Progress: 3.70%      Progress: 3.70%      Progress: 7.41%      Progress: 7.41%      Progress: 7.41%      Progress: 7.41%      Progress: 7.41%      Progress: 11.11%      Progress: 11.11%      Progress: 11.11%      Progress: 11.11%      Progress: 11.11%      Progress: 11.11%      Progress: 18.52%      Progress: 25.93%      Progress: 25.93%      Progress: 25.93%      Progress: 25.93%      Progress: 29.63%      Progress: 29.63%      Progress: 37.04%      Progress: 40.74%      Progress: 44.44%      Progress: 44.44%      Progress: 44.44%      Progress: 44.44%      Progress: 44.44%      Progress: 51.85%      Progress: 51.85%      Progress: 55.56%      Progress: 55.56%      Progress: 66.67%      Progress: 66.67%      Progress: 70.37%      Progress: 74.07%      Progress: 77.78%      Progress: 77.78%      Progress: 85.19%      Progress: 88.89%      Progress: 92.59%      Progress: 92.59%      Progress: 92.59%      Progress: 92.59%      Progress: 96.30% [12:39 AM]: Converting to GFF3 and collecting all EVM results
-[12:39 AM]: 5,707 total gene models from EVM
-[12:39 AM]: Generating protein fasta files from 5,707 EVM models
-[12:39 AM]: now filtering out bad gene models (< 50 aa in length, transposable elements, etc).
-[12:39 AM]: Found 71 gene models to remove: 0 too short; 29 span gaps; 43 transposable elements
-[12:39 AM]: 5,636 gene models remaining
-[12:39 AM]: Predicting tRNAs
-perl: warning: Setting locale failed.
-perl: warning: Please check that your locale settings:
-	LANGUAGE = (unset),
-	LC_ALL = (unset),
-	LC_CTYPE = "UTF-8",
-	LANG = "en_US.UTF-8"
-    are supported and installed on your system.
-perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
-[12:40 AM]: 121 tRNAscan models are valid (non-overlapping)
-[12:40 AM]: Generating GenBank tbl annotation file
-[12:40 AM]: Converting to final Genbank format
-[12:40 AM]: Collecting final annotation files for 5,757 total gene models
-[12:40 AM]: Funannotate predict is finished, output files are in the ../out/C.albicans_SC5314/predict_results folder
-[12:40 AM]: Your next step might be functional annotation, suggested commands:
--------------------------------------------------------
-Run InterProScan (Docker required): 
-funannotate iprscan -i ../out/C.albicans_SC5314 -m docker -c 28
-
-Run antiSMASH: 
-funannotate remote -i ../out/C.albicans_SC5314 -m antismash -e youremail@server.edu
-
-Annotate Genome: 
-funannotate annotate -i ../out/C.albicans_SC5314 --cpus 28 --sbt yourSBTfile.txt
--------------------------------------------------------
-                
-[12:40 AM]: Training parameters file saved: ../out/C.albicans_SC5314/predict_results/c.albicans_sc5314_xxx.parameters.json
-[12:40 AM]: Add species parameters to database:
-
-  funannotate species -s c.albicans_sc5314_xxx -a ../out/C.albicans_SC5314/predict_results/c.albicans_sc5314_xxx.parameters.json
-
-  [4mFeature       Specificity   Sensitivity[0m
-  nucleotides   99.2%         84.1%      
-  exons         58.0%         47.7%      
-  genes         68.7%         47.0%      
-  [4mSource         Weight   Count[0m
-  Augustus       1        5176 
-  Augustus HiQ   2        40   
-  GlimmerHMM     1        5923 
-  snap           1        5057 
-  Total          -        16196
--------------------------------------------------------
-[12:40 AM]: OS: linux2, 32 cores, ~ 264 GB RAM. Python: 2.7.15
-[12:40 AM]: Running funannotate v1.7.4
-[12:40 AM]: GeneMark not found and $GENEMARK_PATH environmental variable missing. Will skip GeneMark ab-initio prediction.
-[12:40 AM]: Parsed training data, run ab-initio gene predictors as follows:
-[12:40 AM]: CodingQuarry will be skipped --> --rna_bam required for training
-[12:40 AM]: Loading genome assembly and parsing soft-masked repetitive sequences
-  [4mProgram      Training-Method[0m
-  augustus     busco          
-  glimmerhmm   busco          
-  snap         busco          
-[12:40 AM]: Genome loaded: 4 scaffolds; 9,216,378 bp; 2.11% repeats masked
-[12:40 AM]: Mapping 6,458 proteins to genome using diamond and exonerate
-[12:40 AM]: Found 6,423 preliminary alignments --> aligning with exonerate
-     Progress: 0.39%      Progress: 4.39%      Progress: 8.38%      Progress: 12.24%      Progress: 16.18%      Progress: 20.08%      Progress: 24.07%      Progress: 27.88%      Progress: 31.67%      Progress: 35.23%      Progress: 39.31%      Progress: 43.03%      Progress: 46.54%      Progress: 50.21%      Progress: 53.90%      Progress: 58.10%      Progress: 62.04%      Progress: 65.58%      Progress: 69.24%      Progress: 73.17%      Progress: 77.18%      Progress: 81.13%      Progress: 85.18%      Progress: 89.18%      Progress: 93.03%      Progress: 96.50%      Progress: 99.92%      Progress: 99.98% [12:41 AM]: Exonerate finished: found 125 alignments
-[12:41 AM]: Running BUSCO to find conserved gene models for training ab-initio predictors
-[12:47 AM]: 1,164 valid BUSCO predictions found, now formatting for EVM
-[12:48 AM]: Running EVM commands with 27 CPUs
-     Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 17.14%      Progress: 48.57%      Progress: 77.14%      Progress: 91.43% [12:48 AM]: Converting to GFF3 and collecting all EVM results
-[12:48 AM]: 1,122 total gene models from EVM, now validating with BUSCO HMM search
-[12:49 AM]: 1,122 BUSCO predictions validated
-[12:49 AM]: Training Augustus using BUSCO gene models
-perl: warning: Setting locale failed.
-perl: warning: Please check that your locale settings:
-	LANGUAGE = (unset),
-	LC_ALL = (unset),
-	LC_CTYPE = "UTF-8",
-	LANG = "en_US.UTF-8"
-    are supported and installed on your system.
-perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
-[12:49 AM]: Augustus initial training results:
-[12:49 AM]: Running Augustus gene prediction using p.pastoris_gs115_xxx parameters
-     Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 10.00%      Progress: 30.00%      Progress: 45.00%      Progress: 60.00%      Progress: 60.00%      Progress: 60.00%      Progress: 65.00%      Progress: 70.00%      Progress: 80.00%      Progress: 80.00%      Progress: 95.00% perl: warning: Setting locale failed.
-perl: warning: Please check that your locale settings:
-	LANGUAGE = (unset),
-	LC_ALL = (unset),
-	LC_CTYPE = "UTF-8",
-	LANG = "en_US.UTF-8"
-    are supported and installed on your system.
-perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
-[12:49 AM]: 4,380 predictions from Augustus
-[12:49 AM]: Pulling out high quality Augustus predictions
-[12:49 AM]: Found 30 high quality predictions from Augustus (>90% exon evidence)
-[12:49 AM]: Running SNAP gene prediction, using training data: ../out/P.pastoris_GS115/predict_misc/busco.final.gff3
-[12:50 AM]: 3,264 predictions from SNAP
-[12:50 AM]: Running GlimmerHMM gene prediction, using training data: ../out/P.pastoris_GS115/predict_misc/busco.final.gff3
-[12:52 AM]: 5,087 predictions from GlimmerHMM
-[12:52 AM]: Summary of gene models passed to EVM (weights):
-[12:52 AM]: Running EVM commands with 27 CPUs
-     Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 2.86%      Progress: 2.86%      Progress: 2.86%      Progress: 2.86%      Progress: 2.86%      Progress: 2.86%      Progress: 2.86%      Progress: 2.86%      Progress: 2.86%      Progress: 2.86%      Progress: 2.86%      Progress: 2.86%      Progress: 2.86%      Progress: 2.86%      Progress: 2.86%      Progress: 2.86%      Progress: 2.86%      Progress: 2.86%      Progress: 2.86%      Progress: 2.86%      Progress: 2.86%      Progress: 2.86%      Progress: 5.71%      Progress: 8.57%      Progress: 11.43%      Progress: 11.43%      Progress: 11.43%      Progress: 11.43%      Progress: 11.43%      Progress: 11.43%      Progress: 11.43%      Progress: 11.43%      Progress: 11.43%      Progress: 11.43%      Progress: 11.43%      Progress: 14.29%      Progress: 14.29%      Progress: 14.29%      Progress: 14.29%      Progress: 14.29%      Progress: 14.29%      Progress: 17.14%      Progress: 17.14%      Progress: 22.86%      Progress: 22.86%      Progress: 25.71%      Progress: 31.43%      Progress: 34.29%      Progress: 37.14%      Progress: 37.14%      Progress: 37.14%      Progress: 45.71%      Progress: 45.71%      Progress: 45.71%      Progress: 51.43%      Progress: 51.43%      Progress: 51.43%      Progress: 57.14%      Progress: 60.00%      Progress: 65.71%      Progress: 68.57%      Progress: 68.57%      Progress: 68.57%      Progress: 77.14%      Progress: 77.14%      Progress: 80.00%      Progress: 80.00%      Progress: 82.86%      Progress: 82.86%      Progress: 82.86%      Progress: 82.86%      Progress: 82.86%      Progress: 82.86%      Progress: 82.86%      Progress: 82.86%      Progress: 82.86%      Progress: 82.86%      Progress: 82.86%      Progress: 82.86%      Progress: 82.86%      Progress: 85.71%      Progress: 85.71%      Progress: 85.71%      Progress: 85.71%      Progress: 85.71%      Progress: 85.71%      Progress: 85.71%      Progress: 85.71%      Progress: 88.57%      Progress: 88.57%      Progress: 88.57%      Progress: 88.57%      Progress: 88.57%      Progress: 88.57%      Progress: 91.43%      Progress: 91.43%      Progress: 91.43%      Progress: 91.43%      Progress: 91.43%      Progress: 94.29%      Progress: 94.29%      Progress: 94.29%      Progress: 94.29%      Progress: 94.29%      Progress: 94.29%      Progress: 97.14%      Progress: 97.14%      Progress: 97.14%      Progress: 97.14% [12:55 AM]: Converting to GFF3 and collecting all EVM results
-[12:55 AM]: 4,778 total gene models from EVM
-[12:55 AM]: Generating protein fasta files from 4,778 EVM models
-[12:55 AM]: now filtering out bad gene models (< 50 aa in length, transposable elements, etc).
-[12:55 AM]: Found 18 gene models to remove: 0 too short; 5 span gaps; 13 transposable elements
-[12:55 AM]: 4,760 gene models remaining
-[12:55 AM]: Predicting tRNAs
-perl: warning: Setting locale failed.
-perl: warning: Please check that your locale settings:
-	LANGUAGE = (unset),
-	LC_ALL = (unset),
-	LC_CTYPE = "UTF-8",
-	LANG = "en_US.UTF-8"
-    are supported and installed on your system.
-perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
-[12:56 AM]: 117 tRNAscan models are valid (non-overlapping)
-[12:56 AM]: Generating GenBank tbl annotation file
-[12:56 AM]: Converting to final Genbank format
-[12:56 AM]: Collecting final annotation files for 4,877 total gene models
-[12:56 AM]: Funannotate predict is finished, output files are in the ../out/P.pastoris_GS115/predict_results folder
-[12:56 AM]: Your next step might be functional annotation, suggested commands:
--------------------------------------------------------
-Run InterProScan (Docker required): 
-funannotate iprscan -i ../out/P.pastoris_GS115 -m docker -c 28
-
-Run antiSMASH: 
-funannotate remote -i ../out/P.pastoris_GS115 -m antismash -e youremail@server.edu
-
-Annotate Genome: 
-funannotate annotate -i ../out/P.pastoris_GS115 --cpus 28 --sbt yourSBTfile.txt
--------------------------------------------------------
-                
-[12:56 AM]: Training parameters file saved: ../out/P.pastoris_GS115/predict_results/p.pastoris_gs115_xxx.parameters.json
-[12:56 AM]: Add species parameters to database:
-
-  funannotate species -s p.pastoris_gs115_xxx -a ../out/P.pastoris_GS115/predict_results/p.pastoris_gs115_xxx.parameters.json
-
-  [4mFeature       Specificity   Sensitivity[0m
-  nucleotides   99.0%         84.4%      
-  exons         64.7%         49.0%      
-  genes         71.4%         47.1%      
-  [4mSource         Weight   Count[0m
-  Augustus       1        4350 
-  Augustus HiQ   2        30   
-  GlimmerHMM     1        5087 
-  snap           1        3264 
-  Total          -        12731
--------------------------------------------------------
-[12:56 AM]: OS: linux2, 32 cores, ~ 264 GB RAM. Python: 2.7.15
-[12:56 AM]: Running funannotate v1.7.4
-[12:56 AM]: GeneMark not found and $GENEMARK_PATH environmental variable missing. Will skip GeneMark ab-initio prediction.
-[12:56 AM]: Parsed training data, run ab-initio gene predictors as follows:
-[12:56 AM]: CodingQuarry will be skipped --> --rna_bam required for training
-[12:56 AM]: Loading genome assembly and parsing soft-masked repetitive sequences
-  [4mProgram      Training-Method[0m
-  augustus     busco          
-  glimmerhmm   busco          
-  snap         busco          
-[12:56 AM]: Genome loaded: 16 scaffolds; 11,486,716 bp; 5.82% repeats masked
-[12:56 AM]: Mapping 6,458 proteins to genome using diamond and exonerate
-[12:56 AM]: Found 12,477 preliminary alignments --> aligning with exonerate
-     Progress: 0.85%      Progress: 3.31%      Progress: 5.95%      Progress: 8.38%      Progress: 10.72%      Progress: 13.01%      Progress: 15.52%      Progress: 17.87%      Progress: 20.25%      Progress: 22.95%      Progress: 25.37%      Progress: 27.47%      Progress: 29.91%      Progress: 32.09%      Progress: 34.55%      Progress: 37.04%      Progress: 39.38%      Progress: 41.44%      Progress: 43.79%      Progress: 46.17%      Progress: 48.55%      Progress: 50.90%      Progress: 53.03%      Progress: 55.79%      Progress: 58.28%      Progress: 60.51%      Progress: 62.84%      Progress: 65.30%      Progress: 67.60%      Progress: 70.03%      Progress: 72.36%      Progress: 74.85%      Progress: 77.54%      Progress: 80.02%      Progress: 82.51%      Progress: 84.79%      Progress: 86.94%      Progress: 89.05%      Progress: 91.44%      Progress: 93.88%      Progress: 96.09%      Progress: 98.37%      Progress: 99.98% [12:57 AM]: Exonerate finished: found 3,831 alignments
-[12:57 AM]: Running BUSCO to find conserved gene models for training ab-initio predictors
-[01:04 AM]: 1,185 valid BUSCO predictions found, now formatting for EVM
-[01:05 AM]: Running EVM commands with 27 CPUs
-     Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 32.35%      Progress: 79.41%      Progress: 91.18% [01:05 AM]: Converting to GFF3 and collecting all EVM results
-[01:05 AM]: 1,160 total gene models from EVM, now validating with BUSCO HMM search
-[01:05 AM]: 1,160 BUSCO predictions validated
-[01:05 AM]: Training Augustus using BUSCO gene models
-perl: warning: Setting locale failed.
-perl: warning: Please check that your locale settings:
-	LANGUAGE = (unset),
-	LC_ALL = (unset),
-	LC_CTYPE = "UTF-8",
-	LANG = "en_US.UTF-8"
-    are supported and installed on your system.
-perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
-[01:06 AM]: Augustus initial training results:
-[01:06 AM]: Running Augustus gene prediction using s.arboricola_h6_xxx parameters
-     Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 3.12%      Progress: 3.12%      Progress: 6.25%      Progress: 6.25%      Progress: 9.38%      Progress: 12.50%      Progress: 12.50%      Progress: 15.62%      Progress: 18.75%      Progress: 25.00%      Progress: 31.25%      Progress: 31.25%      Progress: 34.38%      Progress: 40.62%      Progress: 46.88%      Progress: 50.00%      Progress: 53.12%      Progress: 56.25%      Progress: 62.50%      Progress: 65.62%      Progress: 71.88%      Progress: 78.12%      Progress: 84.38%      Progress: 84.38%      Progress: 84.38%      Progress: 84.38%      Progress: 87.50%      Progress: 87.50%      Progress: 87.50%      Progress: 87.50%      Progress: 90.62%      Progress: 93.75%      Progress: 93.75%      Progress: 96.88%      Progress: 96.88%      Progress: 96.88%      Progress: 96.88%      Progress: 96.88% perl: warning: Setting locale failed.
-perl: warning: Please check that your locale settings:
-	LANGUAGE = (unset),
-	LC_ALL = (unset),
-	LC_CTYPE = "UTF-8",
-	LANG = "en_US.UTF-8"
-    are supported and installed on your system.
-perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
-[01:07 AM]: 4,817 predictions from Augustus
-[01:07 AM]: Pulling out high quality Augustus predictions
-[01:07 AM]: Found 1,423 high quality predictions from Augustus (>90% exon evidence)
-[01:07 AM]: Running SNAP gene prediction, using training data: ../out/S.arboricola_H6/predict_misc/busco.final.gff3
-[01:08 AM]: 4,543 predictions from SNAP
-[01:08 AM]: Running GlimmerHMM gene prediction, using training data: ../out/S.arboricola_H6/predict_misc/busco.final.gff3
-[01:10 AM]: 5,448 predictions from GlimmerHMM
-[01:10 AM]: Summary of gene models passed to EVM (weights):
-[01:10 AM]: Running EVM commands with 27 CPUs
-     Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 2.94%      Progress: 2.94%      Progress: 2.94%      Progress: 2.94%      Progress: 2.94%      Progress: 5.88%      Progress: 5.88%      Progress: 5.88%      Progress: 5.88%      Progress: 5.88%      Progress: 5.88%      Progress: 5.88%      Progress: 8.82%      Progress: 8.82%      Progress: 8.82%      Progress: 8.82%      Progress: 11.76%      Progress: 11.76%      Progress: 11.76%      Progress: 11.76%      Progress: 14.71%      Progress: 20.59%      Progress: 20.59%      Progress: 23.53%      Progress: 23.53%      Progress: 23.53%      Progress: 29.41%      Progress: 29.41%      Progress: 32.35%      Progress: 35.29%      Progress: 35.29%      Progress: 38.24%      Progress: 38.24%      Progress: 44.12%      Progress: 44.12%      Progress: 47.06%      Progress: 50.00%      Progress: 50.00%      Progress: 52.94%      Progress: 58.82%      Progress: 58.82%      Progress: 58.82%      Progress: 64.71%      Progress: 64.71%      Progress: 70.59%      Progress: 73.53%      Progress: 73.53%      Progress: 73.53%      Progress: 73.53%      Progress: 76.47%      Progress: 76.47%      Progress: 76.47%      Progress: 76.47%      Progress: 79.41%      Progress: 79.41%      Progress: 79.41%      Progress: 79.41%      Progress: 79.41%      Progress: 79.41%      Progress: 85.29%      Progress: 85.29%      Progress: 85.29%      Progress: 85.29%      Progress: 85.29%      Progress: 85.29%      Progress: 85.29%      Progress: 85.29%      Progress: 85.29%      Progress: 85.29%      Progress: 85.29%      Progress: 85.29%      Progress: 85.29%      Progress: 88.24%      Progress: 88.24%      Progress: 88.24%      Progress: 88.24%      Progress: 94.12%      Progress: 94.12%      Progress: 94.12%      Progress: 94.12%      Progress: 94.12%      Progress: 97.06%      Progress: 97.06%      Progress: 97.06%      Progress: 97.06%      Progress: 97.06%      Progress: 97.06%      Progress: 97.06%      Progress: 97.06% [01:13 AM]: Converting to GFF3 and collecting all EVM results
-[01:13 AM]: 5,276 total gene models from EVM
-[01:13 AM]: Generating protein fasta files from 5,276 EVM models
-[01:13 AM]: now filtering out bad gene models (< 50 aa in length, transposable elements, etc).
-[01:13 AM]: Found 18 gene models to remove: 0 too short; 0 span gaps; 18 transposable elements
-[01:13 AM]: 5,258 gene models remaining
-[01:13 AM]: Predicting tRNAs
-perl: warning: Setting locale failed.
-perl: warning: Please check that your locale settings:
-	LANGUAGE = (unset),
-	LC_ALL = (unset),
-	LC_CTYPE = "UTF-8",
-	LANG = "en_US.UTF-8"
-    are supported and installed on your system.
-perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
-[01:14 AM]: 264 tRNAscan models are valid (non-overlapping)
-[01:14 AM]: Generating GenBank tbl annotation file
-[01:14 AM]: Converting to final Genbank format
-[01:14 AM]: Collecting final annotation files for 5,522 total gene models
-[01:14 AM]: Funannotate predict is finished, output files are in the ../out/S.arboricola_H6/predict_results folder
-[01:14 AM]: Your next step might be functional annotation, suggested commands:
--------------------------------------------------------
-Run InterProScan (Docker required): 
-funannotate iprscan -i ../out/S.arboricola_H6 -m docker -c 28
-
-Run antiSMASH: 
-funannotate remote -i ../out/S.arboricola_H6 -m antismash -e youremail@server.edu
-
-Annotate Genome: 
-funannotate annotate -i ../out/S.arboricola_H6 --cpus 28 --sbt yourSBTfile.txt
--------------------------------------------------------
-                
-[01:14 AM]: Training parameters file saved: ../out/S.arboricola_H6/predict_results/s.arboricola_h6_xxx.parameters.json
-[01:14 AM]: Add species parameters to database:
-
-  funannotate species -s s.arboricola_h6_xxx -a ../out/S.arboricola_H6/predict_results/s.arboricola_h6_xxx.parameters.json
-
-  [4mFeature       Specificity   Sensitivity[0m
-  nucleotides   97.5%         86.5%      
-  exons         56.9%         49.5%      
-  genes         71.6%         50.0%      
-  [4mSource         Weight   Count[0m
-  Augustus       1        3394 
-  Augustus HiQ   2        1423 
-  GlimmerHMM     1        5448 
-  snap           1        4543 
-  Total          -        14808
--------------------------------------------------------
-[01:14 AM]: OS: linux2, 32 cores, ~ 264 GB RAM. Python: 2.7.15
-[01:14 AM]: Running funannotate v1.7.4
-[01:14 AM]: GeneMark not found and $GENEMARK_PATH environmental variable missing. Will skip GeneMark ab-initio prediction.
-[01:14 AM]: Parsed training data, run ab-initio gene predictors as follows:
-[01:14 AM]: CodingQuarry will be skipped --> --rna_bam required for training
-[01:14 AM]: Loading genome assembly and parsing soft-masked repetitive sequences
-  [4mProgram      Training-Method[0m
-  augustus     busco          
-  glimmerhmm   busco          
-  snap         busco          
-[01:14 AM]: Genome loaded: 42 scaffolds; 11,509,707 bp; 4.10% repeats masked
-[01:14 AM]: Mapping 6,458 proteins to genome using diamond and exonerate
-[01:15 AM]: Found 14,117 preliminary alignments --> aligning with exonerate
-     Progress: 0.67%      Progress: 2.98%      Progress: 5.33%      Progress: 7.50%      Progress: 9.70%      Progress: 11.94%      Progress: 14.35%      Progress: 16.65%      Progress: 19.02%      Progress: 21.38%      Progress: 23.81%      Progress: 26.00%      Progress: 28.06%      Progress: 30.18%      Progress: 32.28%      Progress: 34.38%      Progress: 36.91%      Progress: 39.05%      Progress: 40.99%      Progress: 43.38%      Progress: 45.49%      Progress: 47.53%      Progress: 49.49%      Progress: 51.34%      Progress: 53.37%      Progress: 55.56%      Progress: 57.85%      Progress: 60.10%      Progress: 62.39%      Progress: 64.65%      Progress: 67.01%      Progress: 69.21%      Progress: 71.52%      Progress: 73.96%      Progress: 76.50%      Progress: 79.03%      Progress: 81.41%      Progress: 83.79%      Progress: 86.01%      Progress: 87.99%      Progress: 90.32%      Progress: 92.65%      Progress: 94.67%      Progress: 96.77%      Progress: 98.87%      Progress: 99.99% [01:15 AM]: Exonerate finished: found 6,352 alignments
-[01:15 AM]: Running BUSCO to find conserved gene models for training ab-initio predictors
-[01:22 AM]: 1,220 valid BUSCO predictions found, now formatting for EVM
-[01:23 AM]: Running EVM commands with 27 CPUs
-     Progress: 0.00%      Progress: 0.00%      Progress: 6.45%      Progress: 12.90%      Progress: 12.90%      Progress: 29.03%      Progress: 64.52%      Progress: 96.77% [01:23 AM]: Converting to GFF3 and collecting all EVM results
-[01:23 AM]: 1,208 total gene models from EVM, now validating with BUSCO HMM search
-[01:23 AM]: 1,208 BUSCO predictions validated
-[01:23 AM]: Training Augustus using BUSCO gene models
-perl: warning: Setting locale failed.
-perl: warning: Please check that your locale settings:
-	LANGUAGE = (unset),
-	LC_ALL = (unset),
-	LC_CTYPE = "UTF-8",
-	LANG = "en_US.UTF-8"
-    are supported and installed on your system.
-perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
-[01:23 AM]: Augustus initial training results:
-[01:23 AM]: Running Augustus gene prediction using s.cerevisiae_m3707_xxx parameters
-     Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 1.89%      Progress: 1.89%      Progress: 3.77%      Progress: 5.66%      Progress: 9.43%      Progress: 9.43%      Progress: 11.32%      Progress: 11.32%      Progress: 15.09%      Progress: 18.87%      Progress: 18.87%      Progress: 22.64%      Progress: 26.42%      Progress: 37.74%      Progress: 60.38%      Progress: 71.70%      Progress: 79.25%      Progress: 88.68%      Progress: 92.45%      Progress: 96.23%      Progress: 96.23%      Progress: 96.23%      Progress: 96.23%      Progress: 98.11%      Progress: 98.11% perl: warning: Setting locale failed.
-perl: warning: Please check that your locale settings:
-	LANGUAGE = (unset),
-	LC_ALL = (unset),
-	LC_CTYPE = "UTF-8",
-	LANG = "en_US.UTF-8"
-    are supported and installed on your system.
-perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
-[01:24 AM]: 5,090 predictions from Augustus
-[01:24 AM]: Pulling out high quality Augustus predictions
-[01:24 AM]: Found 2,332 high quality predictions from Augustus (>90% exon evidence)
-[01:24 AM]: Running SNAP gene prediction, using training data: ../out/S.cerevisiae_M3707/predict_misc/busco.final.gff3
-[01:25 AM]: 4,713 predictions from SNAP
-[01:25 AM]: Running GlimmerHMM gene prediction, using training data: ../out/S.cerevisiae_M3707/predict_misc/busco.final.gff3
-[01:27 AM]: 5,498 predictions from GlimmerHMM
-[01:27 AM]: Summary of gene models passed to EVM (weights):
-[01:27 AM]: Running EVM commands with 27 CPUs
-     Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 3.23%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 16.13%      Progress: 16.13%      Progress: 16.13%      Progress: 16.13%      Progress: 16.13%      Progress: 16.13%      Progress: 16.13%      Progress: 16.13%      Progress: 16.13%      Progress: 16.13%      Progress: 16.13%      Progress: 16.13%      Progress: 16.13%      Progress: 16.13%      Progress: 16.13%      Progress: 16.13%      Progress: 19.35%      Progress: 22.58%      Progress: 22.58%      Progress: 22.58%      Progress: 22.58%      Progress: 22.58%      Progress: 22.58%      Progress: 22.58%      Progress: 22.58%      Progress: 22.58%      Progress: 22.58%      Progress: 22.58%      Progress: 22.58%      Progress: 22.58%      Progress: 22.58%      Progress: 22.58%      Progress: 22.58%      Progress: 25.81%      Progress: 25.81%      Progress: 25.81%      Progress: 32.26%      Progress: 32.26%      Progress: 32.26%      Progress: 32.26%      Progress: 32.26%      Progress: 32.26%      Progress: 38.71%      Progress: 38.71%      Progress: 41.94%      Progress: 41.94%      Progress: 41.94%      Progress: 45.16%      Progress: 45.16%      Progress: 48.39%      Progress: 48.39%      Progress: 48.39%      Progress: 48.39%      Progress: 48.39%      Progress: 48.39%      Progress: 48.39%      Progress: 51.61%      Progress: 51.61%      Progress: 58.06%      Progress: 64.52%      Progress: 67.74%      Progress: 70.97%      Progress: 70.97%      Progress: 70.97%      Progress: 74.19%      Progress: 77.42%      Progress: 77.42%      Progress: 77.42%      Progress: 77.42%      Progress: 80.65%      Progress: 83.87%      Progress: 87.10%      Progress: 90.32%      Progress: 90.32%      Progress: 93.55%      Progress: 93.55%      Progress: 93.55%      Progress: 93.55%      Progress: 96.77%      Progress: 96.77%      Progress: 96.77%      Progress: 96.77% [01:30 AM]: Converting to GFF3 and collecting all EVM results
-[01:30 AM]: 5,466 total gene models from EVM
-[01:30 AM]: Generating protein fasta files from 5,466 EVM models
-[01:30 AM]: now filtering out bad gene models (< 50 aa in length, transposable elements, etc).
-[01:30 AM]: Found 27 gene models to remove: 0 too short; 2 span gaps; 25 transposable elements
-[01:30 AM]: 5,439 gene models remaining
-[01:30 AM]: Predicting tRNAs
-perl: warning: Setting locale failed.
-perl: warning: Please check that your locale settings:
-	LANGUAGE = (unset),
-	LC_ALL = (unset),
-	LC_CTYPE = "UTF-8",
-	LANG = "en_US.UTF-8"
-    are supported and installed on your system.
-perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
-[01:31 AM]: 273 tRNAscan models are valid (non-overlapping)
-[01:31 AM]: Generating GenBank tbl annotation file
-[01:31 AM]: Converting to final Genbank format
-[01:32 AM]: Collecting final annotation files for 5,712 total gene models
-[01:32 AM]: Funannotate predict is finished, output files are in the ../out/S.cerevisiae_M3707/predict_results folder
-[01:32 AM]: Your next step might be functional annotation, suggested commands:
--------------------------------------------------------
-Run InterProScan (Docker required): 
-funannotate iprscan -i ../out/S.cerevisiae_M3707 -m docker -c 28
-
-Run antiSMASH: 
-funannotate remote -i ../out/S.cerevisiae_M3707 -m antismash -e youremail@server.edu
-
-Annotate Genome: 
-funannotate annotate -i ../out/S.cerevisiae_M3707 --cpus 28 --sbt yourSBTfile.txt
--------------------------------------------------------
-                
-[01:32 AM]: Training parameters file saved: ../out/S.cerevisiae_M3707/predict_results/s.cerevisiae_m3707_xxx.parameters.json
-[01:32 AM]: Add species parameters to database:
-
-  funannotate species -s s.cerevisiae_m3707_xxx -a ../out/S.cerevisiae_M3707/predict_results/s.cerevisiae_m3707_xxx.parameters.json
-
-  [4mFeature       Specificity   Sensitivity[0m
-  nucleotides   99.7%         90.7%      
-  exons         74.5%         55.7%      
-  genes         76.9%         55.0%      
-  [4mSource         Weight   Count[0m
-  Augustus       1        2758 
-  Augustus HiQ   2        2332 
-  GlimmerHMM     1        5498 
-  snap           1        4713 
-  Total          -        15301
--------------------------------------------------------
-[01:32 AM]: OS: linux2, 32 cores, ~ 264 GB RAM. Python: 2.7.15
-[01:32 AM]: Running funannotate v1.7.4
-[01:32 AM]: GeneMark not found and $GENEMARK_PATH environmental variable missing. Will skip GeneMark ab-initio prediction.
-[01:32 AM]: Parsed training data, run ab-initio gene predictors as follows:
-[01:32 AM]: CodingQuarry will be skipped --> --rna_bam required for training
-[01:32 AM]: Loading genome assembly and parsing soft-masked repetitive sequences
-  [4mProgram      Training-Method[0m
-  augustus     busco          
-  glimmerhmm   busco          
-  snap         busco          
-[01:32 AM]: Genome loaded: 49 scaffolds; 11,523,071 bp; 3.97% repeats masked
-[01:32 AM]: Mapping 6,458 proteins to genome using diamond and exonerate
-[01:32 AM]: Found 14,677 preliminary alignments --> aligning with exonerate
-     Progress: 0.84%      Progress: 2.98%      Progress: 5.09%      Progress: 7.23%      Progress: 9.71%      Progress: 11.74%      Progress: 13.91%      Progress: 16.20%      Progress: 18.53%      Progress: 20.67%      Progress: 23.21%      Progress: 25.37%      Progress: 27.34%      Progress: 29.49%      Progress: 31.63%      Progress: 33.84%      Progress: 36.08%      Progress: 38.24%      Progress: 40.14%      Progress: 42.14%      Progress: 44.20%      Progress: 46.32%      Progress: 48.21%      Progress: 50.00%      Progress: 52.13%      Progress: 54.17%      Progress: 56.52%      Progress: 58.82%      Progress: 60.93%      Progress: 62.85%      Progress: 64.99%      Progress: 67.25%      Progress: 69.52%      Progress: 71.72%      Progress: 74.12%      Progress: 76.58%      Progress: 78.95%      Progress: 81.20%      Progress: 83.50%      Progress: 85.63%      Progress: 87.70%      Progress: 89.81%      Progress: 92.04%      Progress: 94.16%      Progress: 95.98%      Progress: 98.14%      Progress: 99.97% [01:33 AM]: Exonerate finished: found 6,441 alignments
-[01:33 AM]: Running BUSCO to find conserved gene models for training ab-initio predictors
-[01:39 AM]: 1,214 valid BUSCO predictions found, now formatting for EVM
-[01:40 AM]: Running EVM commands with 27 CPUs
-     Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 9.68%      Progress: 29.03%      Progress: 77.42%      Progress: 96.77% [01:40 AM]: Converting to GFF3 and collecting all EVM results
-[01:40 AM]: 1,201 total gene models from EVM, now validating with BUSCO HMM search
-[01:40 AM]: 1,201 BUSCO predictions validated
-[01:40 AM]: Training Augustus using BUSCO gene models
-perl: warning: Setting locale failed.
-perl: warning: Please check that your locale settings:
-	LANGUAGE = (unset),
-	LC_ALL = (unset),
-	LC_CTYPE = "UTF-8",
-	LANG = "en_US.UTF-8"
-    are supported and installed on your system.
-perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
-[01:41 AM]: Augustus initial training results:
-[01:41 AM]: Running Augustus gene prediction using s.cerevisiae_m3836_xxx parameters
-     Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 3.39%      Progress: 3.39%      Progress: 6.78%      Progress: 6.78%      Progress: 8.47%      Progress: 8.47%      Progress: 8.47%      Progress: 18.64%      Progress: 20.34%      Progress: 22.03%      Progress: 22.03%      Progress: 25.42%      Progress: 28.81%      Progress: 30.51%      Progress: 33.90%      Progress: 47.46%      Progress: 74.58%      Progress: 89.83%      Progress: 93.22%      Progress: 94.92%      Progress: 96.61% perl: warning: Setting locale failed.
-perl: warning: Please check that your locale settings:
-	LANGUAGE = (unset),
-	LC_ALL = (unset),
-	LC_CTYPE = "UTF-8",
-	LANG = "en_US.UTF-8"
-    are supported and installed on your system.
-perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
-[01:41 AM]: 5,102 predictions from Augustus
-[01:41 AM]: Pulling out high quality Augustus predictions
-[01:41 AM]: Found 2,394 high quality predictions from Augustus (>90% exon evidence)
-[01:41 AM]: Running SNAP gene prediction, using training data: ../out/S.cerevisiae_M3836/predict_misc/busco.final.gff3
-[01:43 AM]: 4,427 predictions from SNAP
-[01:43 AM]: Running GlimmerHMM gene prediction, using training data: ../out/S.cerevisiae_M3836/predict_misc/busco.final.gff3
-[01:44 AM]: 5,515 predictions from GlimmerHMM
-[01:44 AM]: Summary of gene models passed to EVM (weights):
-[01:44 AM]: Running EVM commands with 27 CPUs
-     Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 3.23%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 12.90%      Progress: 16.13%      Progress: 16.13%      Progress: 16.13%      Progress: 16.13%      Progress: 16.13%      Progress: 16.13%      Progress: 16.13%      Progress: 16.13%      Progress: 16.13%      Progress: 16.13%      Progress: 16.13%      Progress: 16.13%      Progress: 16.13%      Progress: 16.13%      Progress: 16.13%      Progress: 16.13%      Progress: 16.13%      Progress: 16.13%      Progress: 16.13%      Progress: 19.35%      Progress: 19.35%      Progress: 19.35%      Progress: 19.35%      Progress: 22.58%      Progress: 22.58%      Progress: 22.58%      Progress: 22.58%      Progress: 25.81%      Progress: 25.81%      Progress: 25.81%      Progress: 25.81%      Progress: 25.81%      Progress: 25.81%      Progress: 25.81%      Progress: 25.81%      Progress: 25.81%      Progress: 25.81%      Progress: 32.26%      Progress: 35.48%      Progress: 35.48%      Progress: 35.48%      Progress: 35.48%      Progress: 41.94%      Progress: 48.39%      Progress: 48.39%      Progress: 51.61%      Progress: 54.84%      Progress: 54.84%      Progress: 54.84%      Progress: 54.84%      Progress: 54.84%      Progress: 54.84%      Progress: 58.06%      Progress: 58.06%      Progress: 61.29%      Progress: 67.74%      Progress: 67.74%      Progress: 67.74%      Progress: 70.97%      Progress: 80.65%      Progress: 83.87%      Progress: 83.87%      Progress: 87.10%      Progress: 87.10%      Progress: 87.10%      Progress: 87.10%      Progress: 90.32%      Progress: 90.32%      Progress: 90.32%      Progress: 93.55%      Progress: 93.55%      Progress: 93.55%      Progress: 93.55%      Progress: 93.55%      Progress: 96.77%      Progress: 96.77%      Progress: 96.77% [01:47 AM]: Converting to GFF3 and collecting all EVM results
-[01:47 AM]: 5,433 total gene models from EVM
-[01:47 AM]: Generating protein fasta files from 5,433 EVM models
-[01:47 AM]: now filtering out bad gene models (< 50 aa in length, transposable elements, etc).
-[01:47 AM]: Found 39 gene models to remove: 0 too short; 5 span gaps; 34 transposable elements
-[01:47 AM]: 5,394 gene models remaining
-[01:47 AM]: Predicting tRNAs
-perl: warning: Setting locale failed.
-perl: warning: Please check that your locale settings:
-	LANGUAGE = (unset),
-	LC_ALL = (unset),
-	LC_CTYPE = "UTF-8",
-	LANG = "en_US.UTF-8"
-    are supported and installed on your system.
-perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
-[01:48 AM]: 273 tRNAscan models are valid (non-overlapping)
-[01:48 AM]: Generating GenBank tbl annotation file
-[01:48 AM]: Converting to final Genbank format
-[01:49 AM]: Collecting final annotation files for 5,667 total gene models
-[01:49 AM]: Funannotate predict is finished, output files are in the ../out/S.cerevisiae_M3836/predict_results folder
-[01:49 AM]: Your next step might be functional annotation, suggested commands:
--------------------------------------------------------
-Run InterProScan (Docker required): 
-funannotate iprscan -i ../out/S.cerevisiae_M3836 -m docker -c 28
-
-Run antiSMASH: 
-funannotate remote -i ../out/S.cerevisiae_M3836 -m antismash -e youremail@server.edu
-
-Annotate Genome: 
-funannotate annotate -i ../out/S.cerevisiae_M3836 --cpus 28 --sbt yourSBTfile.txt
--------------------------------------------------------
-                
-[01:49 AM]: Training parameters file saved: ../out/S.cerevisiae_M3836/predict_results/s.cerevisiae_m3836_xxx.parameters.json
-[01:49 AM]: Add species parameters to database:
-
-  funannotate species -s s.cerevisiae_m3836_xxx -a ../out/S.cerevisiae_M3836/predict_results/s.cerevisiae_m3836_xxx.parameters.json
-
-  [4mFeature       Specificity   Sensitivity[0m
-  nucleotides   99.8%         89.1%      
-  exons         82.2%         59.7%      
-  genes         85.8%         59.5%      
-  [4mSource         Weight   Count[0m
-  Augustus       1        2708 
-  Augustus HiQ   2        2394 
-  GlimmerHMM     1        5515 
-  snap           1        4427 
-  Total          -        15044
--------------------------------------------------------
-[01:49 AM]: OS: linux2, 32 cores, ~ 264 GB RAM. Python: 2.7.15
-[01:49 AM]: Running funannotate v1.7.4
-[01:49 AM]: GeneMark not found and $GENEMARK_PATH environmental variable missing. Will skip GeneMark ab-initio prediction.
-[01:49 AM]: Parsed training data, run ab-initio gene predictors as follows:
-[01:49 AM]: CodingQuarry will be skipped --> --rna_bam required for training
-[01:49 AM]: Loading genome assembly and parsing soft-masked repetitive sequences
-  [4mProgram      Training-Method[0m
-  augustus     busco          
-  glimmerhmm   busco          
-  snap         busco          
-[01:49 AM]: Genome loaded: 16 scaffolds; 12,070,898 bp; 3.79% repeats masked
-[01:49 AM]: Mapping 6,458 proteins to genome using diamond and exonerate
-[01:49 AM]: Found 14,543 preliminary alignments --> aligning with exonerate
-     Progress: 0.89%      Progress: 2.89%      Progress: 4.70%      Progress: 6.44%      Progress: 8.59%      Progress: 10.77%      Progress: 12.47%      Progress: 14.41%      Progress: 16.34%      Progress: 18.41%      Progress: 20.08%      Progress: 22.50%      Progress: 24.20%      Progress: 26.27%      Progress: 28.24%      Progress: 30.39%      Progress: 32.50%      Progress: 34.68%      Progress: 36.33%      Progress: 37.93%      Progress: 40.05%      Progress: 41.88%      Progress: 43.89%      Progress: 45.91%      Progress: 47.48%      Progress: 49.12%      Progress: 50.95%      Progress: 52.64%      Progress: 54.45%      Progress: 56.65%      Progress: 58.50%      Progress: 60.63%      Progress: 62.50%      Progress: 64.30%      Progress: 65.67%      Progress: 67.54%      Progress: 69.17%      Progress: 70.73%      Progress: 72.59%      Progress: 74.81%      Progress: 77.02%      Progress: 79.41%      Progress: 81.48%      Progress: 83.74%      Progress: 85.47%      Progress: 87.33%      Progress: 88.80%      Progress: 90.66%      Progress: 92.75%      Progress: 94.71%      Progress: 96.56%      Progress: 98.43%      Progress: 99.97%      Progress: 99.99% [01:50 AM]: Exonerate finished: found 7,144 alignments
-[01:50 AM]: Running BUSCO to find conserved gene models for training ab-initio predictors
-[01:56 AM]: 1,213 valid BUSCO predictions found, now formatting for EVM
-[01:57 AM]: Running EVM commands with 27 CPUs
-     Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 6.90%      Progress: 58.62%      Progress: 96.55% [01:57 AM]: Converting to GFF3 and collecting all EVM results
-[01:57 AM]: 1,199 total gene models from EVM, now validating with BUSCO HMM search
-[01:57 AM]: 1,199 BUSCO predictions validated
-[01:57 AM]: Training Augustus using BUSCO gene models
-perl: warning: Setting locale failed.
-perl: warning: Please check that your locale settings:
-	LANGUAGE = (unset),
-	LC_ALL = (unset),
-	LC_CTYPE = "UTF-8",
-	LANG = "en_US.UTF-8"
-    are supported and installed on your system.
-perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
-[01:58 AM]: Augustus initial training results:
-[01:58 AM]: Running Augustus gene prediction using s.cerevisiae_s288c_xxx parameters
-     Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 3.03%      Progress: 9.09%      Progress: 12.12%      Progress: 12.12%      Progress: 15.15%      Progress: 18.18%      Progress: 18.18%      Progress: 21.21%      Progress: 24.24%      Progress: 27.27%      Progress: 39.39%      Progress: 51.52%      Progress: 66.67%      Progress: 72.73%      Progress: 72.73%      Progress: 78.79%      Progress: 78.79%      Progress: 84.85%      Progress: 87.88%      Progress: 90.91%      Progress: 93.94%      Progress: 93.94%      Progress: 96.97%      Progress: 96.97%      Progress: 96.97%      Progress: 96.97%      Progress: 96.97% perl: warning: Setting locale failed.
-perl: warning: Please check that your locale settings:
-	LANGUAGE = (unset),
-	LC_ALL = (unset),
-	LC_CTYPE = "UTF-8",
-	LANG = "en_US.UTF-8"
-    are supported and installed on your system.
-perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
-[01:59 AM]: 5,223 predictions from Augustus
-[01:59 AM]: Pulling out high quality Augustus predictions
-[01:59 AM]: Found 2,304 high quality predictions from Augustus (>90% exon evidence)
-[01:59 AM]: Running SNAP gene prediction, using training data: ../out/S.cerevisiae_S288C/predict_misc/busco.final.gff3
-[02:00 AM]: 4,802 predictions from SNAP
-[02:00 AM]: Running GlimmerHMM gene prediction, using training data: ../out/S.cerevisiae_S288C/predict_misc/busco.final.gff3
-[02:01 AM]: 5,669 predictions from GlimmerHMM
-[02:01 AM]: Summary of gene models passed to EVM (weights):
-[02:02 AM]: Running EVM commands with 27 CPUs
-     Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 3.45%      Progress: 3.45%      Progress: 6.90%      Progress: 10.34%      Progress: 13.79%      Progress: 13.79%      Progress: 13.79%      Progress: 13.79%      Progress: 13.79%      Progress: 17.24%      Progress: 17.24%      Progress: 20.69%      Progress: 20.69%      Progress: 20.69%      Progress: 24.14%      Progress: 24.14%      Progress: 24.14%      Progress: 24.14%      Progress: 24.14%      Progress: 24.14%      Progress: 24.14%      Progress: 27.59%      Progress: 31.03%      Progress: 37.93%      Progress: 41.38%      Progress: 44.83%      Progress: 44.83%      Progress: 44.83%      Progress: 48.28%      Progress: 51.72%      Progress: 55.17%      Progress: 58.62%      Progress: 58.62%      Progress: 62.07%      Progress: 62.07%      Progress: 62.07%      Progress: 65.52%      Progress: 68.97%      Progress: 75.86%      Progress: 75.86%      Progress: 75.86%      Progress: 75.86%      Progress: 79.31%      Progress: 79.31%      Progress: 79.31%      Progress: 79.31%      Progress: 82.76%      Progress: 89.66%      Progress: 89.66%      Progress: 93.10%      Progress: 93.10%      Progress: 93.10%      Progress: 93.10%      Progress: 96.55%      Progress: 96.55%      Progress: 96.55%      Progress: 96.55% [02:04 AM]: Converting to GFF3 and collecting all EVM results
-[02:04 AM]: 5,626 total gene models from EVM
-[02:04 AM]: Generating protein fasta files from 5,626 EVM models
-[02:04 AM]: now filtering out bad gene models (< 50 aa in length, transposable elements, etc).
-[02:05 AM]: Found 126 gene models to remove: 0 too short; 0 span gaps; 126 transposable elements
-[02:05 AM]: 5,500 gene models remaining
-[02:05 AM]: Predicting tRNAs
-perl: warning: Setting locale failed.
-perl: warning: Please check that your locale settings:
-	LANGUAGE = (unset),
-	LC_ALL = (unset),
-	LC_CTYPE = "UTF-8",
-	LANG = "en_US.UTF-8"
-    are supported and installed on your system.
-perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
-[02:05 AM]: 274 tRNAscan models are valid (non-overlapping)
-[02:05 AM]: Generating GenBank tbl annotation file
-[02:06 AM]: Converting to final Genbank format
-[02:06 AM]: Collecting final annotation files for 5,774 total gene models
-[02:06 AM]: Funannotate predict is finished, output files are in the ../out/S.cerevisiae_S288C/predict_results folder
-[02:06 AM]: Your next step might be functional annotation, suggested commands:
--------------------------------------------------------
-Run InterProScan (Docker required): 
-funannotate iprscan -i ../out/S.cerevisiae_S288C -m docker -c 28
-
-Run antiSMASH: 
-funannotate remote -i ../out/S.cerevisiae_S288C -m antismash -e youremail@server.edu
-
-Annotate Genome: 
-funannotate annotate -i ../out/S.cerevisiae_S288C --cpus 28 --sbt yourSBTfile.txt
--------------------------------------------------------
-                
-[02:06 AM]: Training parameters file saved: ../out/S.cerevisiae_S288C/predict_results/s.cerevisiae_s288c_xxx.parameters.json
-[02:06 AM]: Add species parameters to database:
-
-  funannotate species -s s.cerevisiae_s288c_xxx -a ../out/S.cerevisiae_S288C/predict_results/s.cerevisiae_s288c_xxx.parameters.json
-
-  [4mFeature       Specificity   Sensitivity[0m
-  nucleotides   98.7%         87.5%      
-  exons         75.4%         56.8%      
-  genes         80.8%         59.1%      
-  [4mSource         Weight   Count[0m
-  Augustus       1        2919 
-  Augustus HiQ   2        2304 
-  GlimmerHMM     1        5669 
-  snap           1        4802 
-  Total          -        15694
--------------------------------------------------------
-[02:06 AM]: OS: linux2, 32 cores, ~ 264 GB RAM. Python: 2.7.15
-[02:06 AM]: Running funannotate v1.7.4
-[02:06 AM]: GeneMark not found and $GENEMARK_PATH environmental variable missing. Will skip GeneMark ab-initio prediction.
-[02:06 AM]: Parsed training data, run ab-initio gene predictors as follows:
-[02:06 AM]: CodingQuarry will be skipped --> --rna_bam required for training
-[02:06 AM]: Loading genome assembly and parsing soft-masked repetitive sequences
-  [4mProgram      Training-Method[0m
-  augustus     busco          
-  glimmerhmm   busco          
-  snap         busco          
-[02:06 AM]: Genome loaded: 23 scaffolds; 11,670,174 bp; 5.20% repeats masked
-[02:06 AM]: Mapping 6,458 proteins to genome using diamond and exonerate
-[02:06 AM]: Found 12,540 preliminary alignments --> aligning with exonerate
-     Progress: 0.82%      Progress: 3.35%      Progress: 5.81%      Progress: 8.28%      Progress: 10.69%      Progress: 12.97%      Progress: 15.33%      Progress: 17.63%      Progress: 19.99%      Progress: 22.53%      Progress: 25.14%      Progress: 27.43%      Progress: 29.72%      Progress: 31.89%      Progress: 34.26%      Progress: 36.60%      Progress: 39.04%      Progress: 41.16%      Progress: 43.43%      Progress: 45.57%      Progress: 47.86%      Progress: 50.06%      Progress: 52.34%      Progress: 54.41%      Progress: 56.91%      Progress: 59.43%      Progress: 61.66%      Progress: 63.93%      Progress: 65.89%      Progress: 68.13%      Progress: 70.49%      Progress: 73.00%      Progress: 75.54%      Progress: 78.02%      Progress: 80.48%      Progress: 82.89%      Progress: 85.07%      Progress: 87.03%      Progress: 89.11%      Progress: 91.48%      Progress: 93.83%      Progress: 96.15%      Progress: 98.41%      Progress: 99.99% [02:07 AM]: Exonerate finished: found 3,686 alignments
-[02:07 AM]: Running BUSCO to find conserved gene models for training ab-initio predictors
-[02:14 AM]: 1,195 valid BUSCO predictions found, now formatting for EVM
-[02:14 AM]: Running EVM commands with 27 CPUs
-     Progress: 0.00%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 20.69%      Progress: 55.17%      Progress: 93.10% [02:15 AM]: Converting to GFF3 and collecting all EVM results
-[02:15 AM]: 1,176 total gene models from EVM, now validating with BUSCO HMM search
-[02:15 AM]: 1,176 BUSCO predictions validated
-[02:15 AM]: Training Augustus using BUSCO gene models
-perl: warning: Setting locale failed.
-perl: warning: Please check that your locale settings:
-	LANGUAGE = (unset),
-	LC_ALL = (unset),
-	LC_CTYPE = "UTF-8",
-	LANG = "en_US.UTF-8"
-    are supported and installed on your system.
-perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
-[02:15 AM]: Augustus initial training results:
-[02:15 AM]: Running Augustus gene prediction using s.eubayanus_fm1318_xxx parameters
-     Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 0.00%      Progress: 2.63%      Progress: 2.63%      Progress: 5.26%      Progress: 5.26%      Progress: 5.26%      Progress: 7.89%      Progress: 13.16%      Progress: 28.95%      Progress: 42.11%      Progress: 47.37%      Progress: 52.63%      Progress: 57.89%      Progress: 65.79%      Progress: 73.68%      Progress: 73.68%      Progress: 73.68%      Progress: 73.68%      Progress: 78.95%      Progress: 86.84%      Progress: 86.84%      Progress: 86.84%      Progress: 89.47%      Progress: 94.74%      Progress: 94.74%      Progress: 94.74%      Progress: 97.37%      Progress: 97.37%      Progress: 97.37%      Progress: 97.37%      Progress: 97.37%      Progress: 97.37%      Progress: 97.37% perl: warning: Setting locale failed.
-perl: warning: Please check that your locale settings:
-	LANGUAGE = (unset),
-	LC_ALL = (unset),
-	LC_CTYPE = "UTF-8",
-	LANG = "en_US.UTF-8"
-    are supported and installed on your system.
-perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
-[02:16 AM]: 4,906 predictions from Augustus
-[02:16 AM]: Pulling out high quality Augustus predictions
-[02:16 AM]: Found 1,439 high quality predictions from Augustus (>90% exon evidence)
-[02:16 AM]: Running SNAP gene prediction, using training data: ../out/S.eubayanus_FM1318/predict_misc/busco.final.gff3
-[02:17 AM]: 4,568 predictions from SNAP
-[02:17 AM]: Running GlimmerHMM gene prediction, using training data: ../out/S.eubayanus_FM1318/predict_misc/busco.final.gff3
-[02:19 AM]: 5,486 predictions from GlimmerHMM
-[02:19 AM]: Summary of gene models passed to EVM (weights):
-[02:19 AM]: Running EVM commands with 27 CPUs
-     Progress: 0.00%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 6.90%      Progress: 10.34%      Progress: 10.34%      Progress: 10.34%      Progress: 10.34%      Progress: 10.34%      Progress: 10.34%      Progress: 10.34%      Progress: 10.34%      Progress: 10.34%      Progress: 10.34%      Progress: 10.34%      Progress: 10.34%      Progress: 10.34%      Progress: 10.34%      Progress: 13.79%      Progress: 13.79%      Progress: 13.79%      Progress: 13.79%      Progress: 13.79%      Progress: 13.79%      Progress: 13.79%      Progress: 13.79%      Progress: 17.24%      Progress: 17.24%      Progress: 17.24%      Progress: 17.24%      Progress: 17.24%      Progress: 17.24%      Progress: 17.24%      Progress: 17.24%      Progress: 17.24%      Progress: 17.24%      Progress: 17.24%      Progress: 17.24%      Progress: 20.69%      Progress: 24.14%      Progress: 24.14%      Progress: 27.59%      Progress: 34.48%      Progress: 37.93%      Progress: 41.38%      Progress: 41.38%      Progress: 44.83%      Progress: 51.72%      Progress: 51.72%      Progress: 55.17%      Progress: 58.62%      Progress: 62.07%      Progress: 62.07%      Progress: 62.07%      Progress: 65.52%      Progress: 65.52%      Progress: 65.52%      Progress: 68.97%      Progress: 68.97%      Progress: 75.86%      Progress: 75.86%      Progress: 75.86%      Progress: 79.31%      Progress: 86.21%      Progress: 86.21%      Progress: 93.10%      Progress: 96.55%      Progress: 96.55%      Progress: 96.55%      Progress: 96.55% [02:22 AM]: Converting to GFF3 and collecting all EVM results
-[02:22 AM]: 5,317 total gene models from EVM
-[02:22 AM]: Generating protein fasta files from 5,317 EVM models
-[02:22 AM]: now filtering out bad gene models (< 50 aa in length, transposable elements, etc).
-[02:22 AM]: Found 51 gene models to remove: 0 too short; 30 span gaps; 22 transposable elements
-[02:22 AM]: 5,266 gene models remaining
-[02:22 AM]: Predicting tRNAs
-perl: warning: Setting locale failed.
-perl: warning: Please check that your locale settings:
-	LANGUAGE = (unset),
-	LC_ALL = (unset),
-	LC_CTYPE = "UTF-8",
-	LANG = "en_US.UTF-8"
-    are supported and installed on your system.
-perl: warning: Falling back to a fallback locale ("en_US.UTF-8").
-[02:23 AM]: 275 tRNAscan models are valid (non-overlapping)
-[02:23 AM]: Generating GenBank tbl annotation file
-[02:23 AM]: Converting to final Genbank format
-[02:23 AM]: Collecting final annotation files for 5,541 total gene models
-[02:23 AM]: Funannotate predict is finished, output files are in the ../out/S.eubayanus_FM1318/predict_results folder
-[02:23 AM]: Your next step might be functional annotation, suggested commands:
--------------------------------------------------------
-Run InterProScan (Docker required): 
-funannotate iprscan -i ../out/S.eubayanus_FM1318 -m docker -c 28
-
-Run antiSMASH: 
-funannotate remote -i ../out/S.eubayanus_FM1318 -m antismash -e youremail@server.edu
-
-Annotate Genome: 
-funannotate annotate -i ../out/S.eubayanus_FM1318 --cpus 28 --sbt yourSBTfile.txt
--------------------------------------------------------
-                
-[02:23 AM]: Training parameters file saved: ../out/S.eubayanus_FM1318/predict_results/s.eubayanus_fm1318_xxx.parameters.json
-[02:23 AM]: Add species parameters to database:
-
-  funannotate species -s s.eubayanus_fm1318_xxx -a ../out/S.eubayanus_FM1318/predict_results/s.eubayanus_fm1318_xxx.parameters.json
-
-  [4mFeature       Specificity   Sensitivity[0m
-  nucleotides   99.4%         88.8%      
-  exons         72.1%         53.4%      
-  genes         79.7%         54.7%      
-  [4mSource         Weight   Count[0m
-  Augustus       1        3467 
-  Augustus HiQ   2        1439 
-  GlimmerHMM     1        5486 
-  snap           1        4568 
-  Total          -        14960
-Wed Jun  1 02:23:43 CDT 2022

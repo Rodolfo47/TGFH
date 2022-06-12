@@ -1,0 +1,15 @@
+[06/12/22 15:27:12]: /home/rangeles/.conda/envs/funannotate/bin/funannotate annotate -i ../out/O.polymorpha_NCYC495 --iprscan ../out/interproscan/O.polymorpha_NCYC495_XXX.proteins.fa.xml --busco_db saccharomycetales --cpus 4
+
+[06/12/22 15:27:12]: OS: Ubuntu 20.04, 64 cores, ~ 264 GB RAM. Python: 3.8.12
+[06/12/22 15:27:12]: Running 1.8.9
+[06/12/22 15:27:12]: No NCBI SBT file given, will use default, however if you plan to submit to NCBI, create one and pass it here '--sbt'
+[06/12/22 15:27:12]: Found existing output directory ../out/O.polymorpha_NCYC495. Warning, will re-use any intermediate files found.
+[06/12/22 15:27:12]: Parsing input files
+[06/12/22 15:27:12]: Existing tbl found: ../out/O.polymorpha_NCYC495/predict_results/O.polymorpha_NCYC495_XXX.tbl
+[06/12/22 15:27:14]: TBL file: ../out/O.polymorpha_NCYC495/annotate_misc/genome.tbl
+[06/12/22 15:27:14]: GFF3 file: ../out/O.polymorpha_NCYC495/predict_results/O.polymorpha_NCYC495_XXX.gff3
+[06/12/22 15:27:14]: Proteins file: ../out/O.polymorpha_NCYC495/annotate_misc/genome.proteins.fasta
+[06/12/22 15:27:16]: Adding Functional Annotation to O.polymorpha_NCYC495, NCBI accession: None
+[06/12/22 15:27:16]: Annotation consists of: 4,650 gene models
+[06/12/22 15:27:16]: 4,583 protein records loaded
+[06/12/22 15:27:16]: Running HMMer search of PFAM version 35.0
