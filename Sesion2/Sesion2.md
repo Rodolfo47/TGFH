@@ -24,7 +24,7 @@ Ver la presentación.
 
 ## Predicción de genes
 
-
+Ver `~/TGFH/Sesion2/USO_DE_AUGUSTUS.md`
 
 
 
