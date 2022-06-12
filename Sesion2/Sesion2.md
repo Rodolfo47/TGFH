@@ -26,6 +26,12 @@ Ver la presentación.
 
 Ver `~/TGFH/Sesion2/USO_DE_AUGUSTUS.md`
 
+Después de clonarse el repo usar las lineas de abajo para copiarse los archivos pesados que faltan
+
+```sh
+cd; cp -r ../eflores/TGFH/Sesion2/data/Gene_prediction/L.b_S238N_H82/ TGFH/Sesion2/data/Gene_prediction/.
+```
+
 
 
 ## Anotación funcional
