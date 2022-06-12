@@ -134,8 +134,7 @@ El predeterminado de `funannotate mask`  es enmascarar con tantan. "Softmasking"
 > Situarnos en $HOME/TGFH/Sesion2/bin
 >
 > ```sh
-> cd
-> cd TGFH/Sesion2/bin
+> cd; cd TGFH/Sesion2/bin
 > ```
 > > Si no has activado el ambiente funannotate:
 > >
@@ -148,6 +147,8 @@ El predeterminado de `funannotate mask`  es enmascarar con tantan. "Softmasking"
 Limpieza del ensamble con funannotate
 
 ```bash
+# 0 create output directori to stor my preliminar results
+mkdir ../out
 # 1.1 clear repeated contigs
 funannotate clean \
 	-i ../data/O.polymorpha_NCYC495.fna \
@@ -160,26 +161,25 @@ funannotate sort \
 funannotate mask \
 	-i ../out/O.polymorpha_NCYC495.clean.sort.fna \
 	-o ../out/O.polymorpha_NCYC495.clean.sort.mask.fna \
-	--cpus 20 
+	--cpus 4 
 
 #delete tmp files
 rm ../out/O.polymorpha_NCYC495.clean.fna ../out/O.polymorpha_NCYC495.clean.sort.fna
 ```
 
-El tiempo de ejecución de este paso es dependiente de la calidad del ensamble. Cada contig adicional multiplica el numero de mapeos por el N50. Por lo que es recomendable quitar de nuestro ensamble toda la padecería <500.
+El tiempo de ejecución de este paso es dependiente de la calidad del ensamble. Cada contig adicional multiplica el numero de mapeos por el N50. Por lo que es recomendable quitar de nuestro ensamble toda la padecería (<1000 b).
 
 
 
 ### Predicción de genes
 
-> Si no corriste los pasos de limpieza, puedes traer los resultados con estas líneas
+> Si no corriste los pasos de limpieza, puedes traer los resultados con estas líneas:
 >
-> ```
-> cd
-> cp -r ../rangeles/TGFH/Sesion2/old/out/*clean.sort.mask.fna TGFH/Sesion2/out
+> ```sh
+> cd; cp -r ../rangeles/TGFH/Sesion2/old/out/O.*clean.sort.mask.fna TGFH/Sesion2/out
 > ```
 
-La predicción de genes en funannotate se debe parametrizar atendiendo a la información con la que se cuenta.
+La predicción de genes en Funannotate se debe parametrizar atendiendo a la información con la que se cuenta.
 
 En el núcleo del algoritmo de predicción es [Evidence Modeler](https://evidencemodeler.github.io/), que toma las predicciones *ab initio* hechas por diferentes programas para combinarlas con la evidencia que se le da y genera modelos de genes consenso.
 
@@ -191,10 +191,9 @@ Los predictores de genes *ab initio* son [Augustus](https://bioinf.uni-greifswal
 >
 >
 > ```sh
-> cd
-> cd TGFH/Sesion2/bin
+> cd; cd TGFH/Sesion2/bin
 > ```
->
+> 
 
 Predecir usando de proteínas como evidencia.
 
@@ -231,17 +230,22 @@ Las salidas las guarda en el directorio `[...]/predict_results/`, son varios arc
 | Basename.validation.txt         | tbl2asn genome validation report             |
 | Basename.parameters.json        | ab-initio training parameters                |
 
+> Tardaría mucho: matamos el proceso.
+>
+> Para matar el proceso se hace `ctrl+c`.
+>
+> > Copia los resultados de la predicción con estas líneas:
+> >
+> > ```sh
+> > #create directory for this sample
+> > cd; mkdir TGFH/Sesion2/out/O.polymorpha_NCYC495
+> > #get Ogataea predictions
+> > cp -r ../rangeles/TGFH/Sesion2/old/out/O.polymorpha_NCYC495/predict_* TGFH/Sesion2/out/
+> > ```
+
 
 
 ### Anotación funcional
-
-> Si no corriste los pasos de predicción, puedes traer los resultados con estas líneas
->
-> ```
-> cd
-> cp -r ../rangeles/TGFH/Sesion2/old/out/*/predict_*/ TGFH/Sesion2/out
-> TGFH/Sesion2/bin
-> ```
 
 En Funannotate la anotación son 3 pasos:
 
@@ -255,8 +259,7 @@ En Funannotate la anotación son 3 pasos:
 >
 >
 > ```sh
-> cd
-> cd TGFH/Sesion2/bin
+> cd; cd TGFH/Sesion2/bin
 > ```
 
 Solicitar a los servidores remotos de [Phobius](https://phobius.sbc.su.se/) y [AntiSmash](https://fungismash.secondarymetabolites.org/#!/start) sus anotaciones.
@@ -302,6 +305,7 @@ Anotar con InterProScan
 ```sh
 #set interpro to my $PATH
 export PATH=$PATH:/home/rangeles/binlike/my_interproscan/interproscan-5.56-89.0
+mkdir ../out/interproscan
 #run interpro
 interproscan.sh \
 	-i ../out/O.polymorpha_NCYC495/predict_results/*.proteins.fa \
@@ -313,16 +317,19 @@ interproscan.sh \
 ### Took 4 hours
 ```
 
-Actualizar la db
+> Copiar los resultados de Interpro para Ogataea
+>
+> ```sh
+> #go home
+> cd; cp ../rangeles/TGFH/Sesion2/old/out/interproscan/O.* TGFH/Sesion2/out/interproscan
+> # back to bin
+> cd TGFH/Sesion2/bin
+> ```
+
+Actualizar la db.
 
 ```sh
 #check for yeasts busco db
-#update all dbs
-funannotate setup -i all -d $HOME/funannotate_db --force
-## Start time: Jun 07 12:30 PM
-## Finish time: Jun 07 12:33 PM
-### Took 3 minutes
-
 #display db
 funannotate database
 #choose suitable db
@@ -331,6 +338,12 @@ funannotate database --show-buscos
 ls ../../../binlike/funannotate_db/
 #get saccharomycetales BUSCOS 
 funannotate setup -b saccharomycetales
+
+#update all dbs
+funannotate setup -i all -d $HOME/funannotate_db --force
+## Start time: Jun 12 03:03 PM
+## Finish time: Jun 12 03:21 PM
+### Took 18 minutes
 ```
 
 Ejecutar `funannotate annotate`
@@ -346,6 +359,8 @@ funannotate annotate \
 ## Start time: Jun 07 01:32 PM
 ## Finish time: Jun 07 01:42 PM
 ### Took 10 minutes
+
+#By using 60 cores just took 3 mins
 ```
 
 
@@ -376,6 +391,14 @@ Para usar el script de comparación `funannotate compare` se ocupan varios genom
 > ## Took <2 mins
 > ```
 >
+> ```sh
+> #check out the script
+> cd; cd TGFH/Sesion2/bin/
+> less -S 1_clean.sh
+> #check out the log
+> less -S 1_clean.nohup.log
+> ```
+>
 > **Predicción**
 >
 > ```sh
@@ -383,6 +406,13 @@ Para usar el script de comparación `funannotate compare` se ocupan varios genom
 > #lun 06 jun 2022 15:29:21 CDT
 > #lun 06 jun 2022 21:20:24 CDT
 > ## Took >6 hours
+> ```
+>
+> ```shell
+> #check out the script
+> less -S 2.predict.sh
+> #check out the log
+> less -S 2.predict.nohup.log
 > ```
 >
 > **Anotación**
@@ -394,6 +424,13 @@ Para usar el script de comparación `funannotate compare` se ocupan varios genom
 > ## Took >11 hours
 > ```
 >
+> ```sh
+> #check out the script
+> less -S 3_annotate.sh
+> #check out the log
+> less -S 3_annotate.nohup.log
+> ```
+>
 > **Comparación**
 >
 > ```sh
@@ -401,6 +438,13 @@ Para usar el script de comparación `funannotate compare` se ocupan varios genom
 > #[Jun 08 02:41 PM]
 > #[Jun 10 04:35 AM]
 > ## >2 days
+> ```
+>
+> ```sh
+> #check out the script
+> less -S 4_compare.sh
+> #check out the log
+> less -S 4_compare.nohup.log
 > ```
 >
 > Hizo casi todas las comparaciones las hizo en 2 minutos
@@ -413,18 +457,20 @@ Para usar el script de comparación `funannotate compare` se ocupan varios genom
 
 <u>***EJECUCIÓN***</u>
 
-> Si no corriste los pasos de anotación, puedes traer los resultados con estas líneas
+> Para copiar los resultados de las anotaciones de todas las levaduras copia y pega estas líneas de código:
 >
-> ```
-> cd
-> cp -r ../rangeles/TGFH/Sesion2/old/out/*/annotate_*/ TGFH/Sesion2/out
-> TGFH/Sesion2/bin
+> ```sh
+> cd; cd TGFH/Sesion2/bin
+> cp -r ../../../../rangeles/TGFH/Sesion2/old/out/*.*_* ../out/	
 > ```
 
 Ejecutar funannotate compare con el script
 
-```
-nohup sh 4_compare.sh > 4_compare.nohup.log &
+```sh
+#run 
+nohup sh 4_compare.sh > 4_compare.nohup.new.log &
+# kill the process
+kill $PROCESS_ID_NO.
 ```
 
 ```sh
@@ -434,9 +480,9 @@ nohup sh 4_compare.sh > 4_compare.nohup.log &
 
 #add salple prefix in the .gbk
 for smpl in $(cat list2fun.txt); do
-        cd ../out/$smpl/annotate_results
-        sed -i 's/FUN_/$smpl/g' *.gbk
-        cd ../..
+	cd ../out/$smpl/annotate_results
+	sed -i 's/FUN_/$smpl/g' *.gbk
+	cd ../..
 done
 #
 mkdir fun_yeasts.compare ../res/
