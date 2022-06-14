@@ -81,23 +81,23 @@ man ls
 
 ### Atajos en el teclado
 
-TAB					                   			Autocompletar comandos y nombres de archivos
+**TAB**				                   	 Autocompletar comandos y nombres de archivos
 
-Flechas arriba y abajo				   Navegar en la historia de comandos
+**Flechas arriba y abajo**				   Navegar en la historia de comandos
 
-Botón derecho del ratón			  Copiar y pegar texto
+**Botón derecho del ratón**			  Copiar y pegar texto
 
-Ctrl+e											   Ir al final de una línea
+**Ctrl+e**											   Ir al final de una línea
 
-Ctrl+a                       					    Ir al inicio de una línea
+**Ctrl+a**                       					    Ir al inicio de una línea
 
-Ctrl+k                         				      Borrar una línea
+**Ctrl+k**                         				      Borrar una línea
 
-Ctrl+w                         					 Elimina una palabra completa, del final al principio
+**Ctrl+w**                        					 Elimina una palabra completa, del final al principio
 
-Ctrl+c                         					  Abortar la ejecución del último comando
+**Ctrl+c**                         					  Abortar la ejecución del último comando
 
-Ctrl+r+comando                			Busca en el historial las lineas ejecutadas que contienen el comando  
+**Ctrl+r+comando**                			Busca en el historial las lineas ejecutadas que contienen el comando  
 
 
 ### Bases de datos
@@ -272,24 +272,37 @@ less data/Raoultella_terrigena.gff
 #### Búsquedas y conteos
 
 `sort` Ordena una serie de líneas
+
 `cut` Corta una sección de cada línea
+
 `uniq` Filtra lineas repetidas
+
 `wc` Cuenta líneas, carácteres y bytes
 
  `grep` permite buscar patrones, algunas opciones que tiene:
+ 
 **--colour** Marca el texto que corresponde al patrón
+
 **-E** Interpreta el patrón como una expresión regular
+
 **-P** Interpreta el patrón como una expresión regular extendida, tipo Perl
+
 **-f** Lee uno o más patrones a partir de un archivo
+
 **-i** Ignora mayúsculas/minúsculas
+
 **-n** Imprime el número de línea donde se encontró el patrón -
+
 **-v** Selecciona las líneas en donde no ocurre el patrón
+
 **-w** Realiza una búsqueda estricta
+
 
 El uso de pipe `|` funciona para evitar la escritura o lectura innecesaria de disco, pues los análisis
 se llevan a acabo en RAM, un análisis en RAM es más rápido que un proceso de lectura y
 escritura. Permite crear tuberías de procesamiento de datos. La salida de un programa es la
 entrada de otro.
+
 La diferencia con `&&` es que `|` requiere la salida de una instrucción como entrada de la otra y
 `&&` ejecuta instrucciones independientes.
 
@@ -325,8 +338,7 @@ cut -f3-5 data/Raoultella_terrigena.gff | sort -u | cut -f1 | sort | uniq -c
 
 ```shell
 sort -k7,7 -k4,4n data/Raoultella_terrigena.gff | less -s
-sort -k7,7 -k4,4n data/Raoultella_terrigena.gff >
-results/R.terrigena_strand.gff
+sort -k7,7 -k4,4n data/Raoultella_terrigena.gff > results/R.terrigena_strand.gff
 ```
 
 * ¿Cuántos genes con diferente nombre existen en el genoma de R. terrigena?
@@ -344,14 +356,11 @@ grep -P "\tgene" data/Raoultella_terrigena.gff | head
 grep -P "\tgene" data/Raoultella_terrigena.gff | cut -f9 | head
 ## Separar esa info por ;
 ## Quedarnos con la columna 3
-grep -P "\tgene" data/Raoultella_terrigena.gff | cut -f9 | cut -d ';' -f3 |
-head
+grep -P "\tgene" data/Raoultella_terrigena.gff | cut -f9 | cut -d ';' -f3 | head
 ## Obtener los valores únicos
-grep -P "\tgene" data/Raoultella_terrigena.gff | cut -f9 | cut -d ';' -f3 |
-sort -u | head
+grep -P "\tgene" data/Raoultella_terrigena.gff | cut -f9 | cut -d ';' -f3 | sort -u | head
 ## Contar el número de valores únicos
-grep -P "\tgene" data/Raoultella_terrigena.gff | cut -f9 | cut -d ';' -f3 |
-sort -u | wc -l
+grep -P "\tgene" data/Raoultella_terrigena.gff | cut -f9 | cut -d ';' -f3 | sort -u | wc -l
 ```
 
 * ¿Cuántos genes (ID distinto) existen en el genoma de R. terrigena?
@@ -385,8 +394,7 @@ head -18 data/Raoultella_terrigena.faa | tail -2 | wc
 ```shell
 grep --color "fnr" data/Raoultella_terrigena.gff
 ### agreguémos más contexto
-grep --color ";gene=fnr" data/Raoultella_terrigena.gff | grep --color
-"protein_id"
+grep --color ";gene=fnr" data/Raoultella_terrigena.gff | grep --color "protein_id"
 ```
 
 * Extrae y guarda en un archivo fasta la secuencia de la proteina fnr de Raoultella terrigena
