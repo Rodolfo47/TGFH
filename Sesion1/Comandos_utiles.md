@@ -200,7 +200,7 @@ more data/md5sum_R.terrigena.txt
 Pero si son muchos?
 
 ```shell
-## no profundizaremos en la sintaxis de esta linea
+## 
 for gz in $(ls data/*.gz); do md5sum $gz ; done | cut -d ' ' -f1 >> results/md5sum_Rt.txt
 ```
 
@@ -215,15 +215,6 @@ existe.
 ln -s /home/dhernandez/extra_data/md5sum_Rt_edit.txt data/
 # revisemos si son iguales los id de los archivos
 diff data/md5sum_Rt_edit.txt results/md5sum_Rt.txt
-```
-
-* Notarás que son archivos comprimidos, vamos a descomprimirlos.
-
-```shell
-#Podemos correr esta linea indicando archivo por archivo
-gunzip data/Raoultella_terrigena.faa.gz
-#O podemos usar un comodin
-gunzip data/*.gz
 ```
 
 ##### También podríamos descargar todos los archivos de un BioProject de NCBI 
