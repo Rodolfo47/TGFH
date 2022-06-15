@@ -122,7 +122,7 @@ Revisar los resultados de mi nuevo ensamble
     #wake up quast
     conda activate /home/rangeles/.conda/envs/quast
     #run quast for my new assemblies
-    quast ../out/spadesHv/contigs.fasta ../out/spades/scaffolds.fasta  ../out/spadesYeast/scaffolds.fasta
+    quast ../out/spadesHv/contigs.fasta ../out/spadesHv/scaffolds.fasta  ../out/spadesYeast/scaffolds.fasta
     #run quast for all the yeast assemblies to be used in annotation practicing
     quast ../data/*.fna
 
