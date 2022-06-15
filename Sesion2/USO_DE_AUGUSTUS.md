@@ -241,6 +241,12 @@ Para visualizar una lista completa de parámetros se escribe `augustus --paramli
 # Elena Flores Callejas
 # June 2022
 
+#Log into the server
+ssh eflores@132.248.248.175 ServerAliveInterval=300
+
+#Clone repo 
+git clone https://github.com/Rodolfo47/TGFH
+
 #Create a directory for the AUGUSTUS_predictions | move to bin
 # mkdir TGFH/Sesion2/data/Gene_prediction/AUGUSTUS_predictions
 mkdir TGFH/Sesion2/data/Gene_prediction/augustus_predictions
@@ -248,8 +254,8 @@ cd /home/eflores/TGFH/Sesion2/bin/
 ```
 
 ```bash
-#Gene prediction in two different formats (amino acids and nucleotides), of a small genome (O.polymorpha 46) 
-ls -lhF TGFH/Sesion2/data/O.polymorpha_NCYC495.fna
+#Gene prediction in two different formats (amino acids and nucleotides), of a small genome (O.polymorpha 8.7M) 
+ls -lhF ../data/Yeasts_assembly/Hanpo2_AssemblyScaffolds.fasta 
 
 ##1st prediction. Output: Aminoacids FASTA.
 # augustus --species=saccharomyces_cerevisiae_S288C --progress=true --singlestrand=true --genemodel=complete ../data/Gene_prediction/O.polymorpha_NCYC495.fna > ../data/Gene_prediction/AUGUSTUS_predictions/O_polymorpha.gff
