@@ -12,7 +12,7 @@ Junio del 2022
 
 AUGUSTUS es un software predictor de genes en secuencias genómicas eucariotas. Su versión original era un método puramente *ab initio*, es decir, su predicción se basaba en la información contenida en la secuencia genómica a analizar. Una versión extendida del programa ahora puede usar información extrínseca adicional (ie. coincidencias con bases de datos de proteínas o alineaciones de secuencias genómicas) para mejorar la precisión de la predicción. 
 
-Sin embargo, la predicción de genes *ab initio* sigue siendo muy importante ya que para muchos genomas recién secuenciados hay pocas etiquetas de secuencias expresadas EST (expressed sequence tag) y genómicas relacionadas disponibles. Además de que a partir de alineaciones con secuencias proteicas solo se pueden encontrar aquellos genes que tienen parientes cercanos en las bases de datos. 
+Sin embargo, la predicción de genes *ab initio* sigue siendo muy importante ya que para muchos genomas recién secuenciados hay pocas marcadores de secuencias expresadas EST (expressed sequence tag) y genómicas relacionadas disponibles. Además de que a partir de alineaciones con secuencias proteicas solo se pueden encontrar aquellos genes que tienen parientes cercanos en las bases de datos. 
 
 AUGUSTUS es considerado el mejor programa en la categoría de predicción de genes *ab initio* (Guigó y Reese, 2005).  Se basa en un modelo de Markov oculto generalizado (HMM), que define distribuciones de probabilidad para las diversas secciones de las secuencias genómicas (intrones, exones, regiones intergénicas, etc.). 
 
