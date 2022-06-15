@@ -254,8 +254,10 @@ cd /home/eflores/TGFH/Sesion2/bin/
 ```
 
 ```bash
-#Gene prediction in two different formats (amino acids and nucleotides), of a small genome (O.polymorpha 8.7M) 
-ls -lhF ../data/Yeasts_assembly/Hanpo2_AssemblyScaffolds.fasta 
+#Gene prediction in two different formats (amino acids and nucleotides), of a small genome (O.polymorpha 8.7M) | View the file
+ls -lh ../data/Yeasts_assembly/Hanpo2_AssemblyScaffolds.fasta 
+## ls --help
+less -S ../data/Gene_prediction/O.polymorpha_NCYC495.fna
 
 ##1st prediction. Output: Aminoacids FASTA.
 # augustus --species=saccharomyces_cerevisiae_S288C --progress=true --singlestrand=true --genemodel=complete ../data/Gene_prediction/O.polymorpha_NCYC495.fna > ../data/Gene_prediction/AUGUSTUS_predictions/O_polymorpha.gff
@@ -263,36 +265,41 @@ ls -lhF ../data/Yeasts_assembly/Hanpo2_AssemblyScaffolds.fasta
 augustus --species=saccharomyces_cerevisiae_S288C --progress=true --singlestrand=true --genemodel=complete ../data/Gene_prediction/O.polymorpha_NCYC495.fna > ../data/Gene_prediction/augustus_predictions/O_polymorpha.gff
 
 ##Obtain the fasta aa
- # /usr/share/augustus/scripts/getAnnoFasta.pl ../data/Gene_prediction/AUGUSTUS_predictions/O_polymorpha.gff
- /usr/share/augustus/scripts/getAnnoFasta.pl ../data/Gene_prediction/augustus_predictions/O_polymorpha.gff
+ /usr/share/augustus/scripts/getAnnoFasta.pl ../data/Gene_prediction/AUGUSTUS_predictions/O_polymorpha.gff
+ # /usr/share/augustus/scripts/getAnnoFasta.pl ../data/Gene_prediction/augustus_predictions/O_polymorpha.gff
 ## 1 output: O_polymorpha.aa
+##View the file
+ less -S ../data/Gene_prediction/AUGUSTUS_predictions/O_polymorpha.aa
 
 ##2nd prediction. Output: Nucleotids FASTA.
 # augustus --species=saccharomyces_cerevisiae_S288C --progress=true --singlestrand=true --genemodel=complete --codingseq=on --protein=on ../data/Gene_prediction/O.polymorpha_NCYC495.fna > ../data/Gene_prediction/AUGUSTUS_predictions/O_polymorpha_codingseq.gff
 augustus --species=saccharomyces_cerevisiae_S288C --progress=true --singlestrand=true --genemodel=complete --codingseq=on --protein=on ../data/Gene_prediction/O.polymorpha_NCYC495.fna > ../data/Gene_prediction/augustus_predictions/O_polymorpha_codingseq.gff
 
 ##Obtain the fasta aa and the codingseq 
-# /usr/share/augustus/scripts/getAnnoFasta.pl ../data/Gene_prediction/AUGUSTUS_predictions/O_polymorpha_codingseq.gff
-/usr/share/augustus/scripts/getAnnoFasta.pl ../data/Gene_prediction/augustus_predictions/O_polymorpha_codingseq.gff
+/usr/share/augustus/scripts/getAnnoFasta.pl ../data/Gene_prediction/AUGUSTUS_predictions/O_polymorpha_codingseq.gff
+# /usr/share/augustus/scripts/getAnnoFasta.pl ../data/Gene_prediction/augustus_predictions/O_polymorpha_codingseq.gff
 ### 2 outputs: O_polymorpha_codingseq.aa O_polymorpha_codingseq.codingseq
+##View the files
+ less -S ../data/Gene_prediction/AUGUSTUS_predictions/O_polymorpha_codingseq.aa
+ less -S ../data/Gene_prediction/AUGUSTUS_predictions/O_polymorpha_codingseq.codingseq
 
 ##Are they the same gff files?
 # diff -s ../data/Gene_prediction/AUGUSTUS_predictions/O_polymorpha.gff ../data/Gene_prediction/AUGUSTUS_predictions/O_polymorpha_codingseq.gff 
-diff -s ../data/Gene_prediction/AUGUSTUS_predictions/O_polymorpha.gff ../data/Gene_prediction/augustus_predictions/O_polymorpha_codingseq.gff 
+diff -s ../data/Gene_prediction/augustus_predictions/O_polymorpha.gff ../data/Gene_prediction/augustus_predictions/O_polymorpha_codingseq.gff 
 #-s, --report-identical-files: report when two files are the same
 ##ARE IDENTICAL
 
 ##Number of predicted genes
 ###Aminoacids FASTA (aa)
-# grep -o ">" ../data/Gene_prediction/AUGUSTUS_predictions/O_polymorpha.aa | wc -l 
-grep -o ">" ../data/Gene_prediction/augustus_predictions/O_polymorpha.aa | wc -l 
+grep -o ">" ../data/Gene_prediction/AUGUSTUS_predictions/O_polymorpha.aa | wc -l #-o, --only-matching: show only nonempty parts of lines that match
+# grep -o ">" ../data/Gene_prediction/augustus_predictions/O_polymorpha.aa | wc -l 
 #no. genes 6652
-# grep -o ">" ../data/Gene_prediction/AUGUSTUS_predictions/O_polymorpha_codingseq.aa | wc -l 
-grep -o ">" ../data/Gene_prediction/augustus_predictions/O_polymorpha_codingseq.aa | wc -l 
+grep -o ">" ../data/Gene_prediction/AUGUSTUS_predictions/O_polymorpha_codingseq.aa | wc -l 
+# grep -o ">" ../data/Gene_prediction/augustus_predictions/O_polymorpha_codingseq.aa | wc -l 
 #no. genes 6652
 #Nucleotids FASTA (codingseq)
-# grep -o ">" ../data/Gene_prediction/AUGUSTUS_predictions/O_polymorpha_codingseq.codingseq | wc -l 
-grep -o ">" ../data/Gene_prediction/augustus_predictions/O_polymorpha_codingseq.codingseq | wc -l 
+grep -o ">" ../data/Gene_prediction/AUGUSTUS_predictions/O_polymorpha_codingseq.codingseq | wc -l 
+# grep -o ">" ../data/Gene_prediction/augustus_predictions/O_polymorpha_codingseq.codingseq | wc -l 
 #no. genes 6652
 
 ##ARE IDENTICAL
@@ -373,9 +380,12 @@ mkdir ../out
 mkdir ../out/Gene_prediction
 # mkdir ../out/Gene_prediction/blastp_predictions
 mkdir ../out/Gene_prediction/BLASTp_predictions
-#Make a directory or the data | copy all the aminoacids predictions into it
-mkdir ../data/Gene_prediction/AUGUSTUS_aa_predictions/
-cd ../data/Gene_prediction/AUGUSTUS_aa_predictions/
+#Make a directory for the data | copy all the aminoacids predictions into it
+# mkdir ../data/Gene_prediction/AUGUSTUS_aa_predictions/
+# cd ../data/Gene_prediction/AUGUSTUS_aa_predictions/
+# cp ../AUGUSTUS_predictions/Laccaria_bicolor_S238N_H82*.aa .
+mkdir ../data/Gene_prediction/augustus_aa_predictions/
+cd ../data/Gene_prediction/augustus_aa_predictions/
 cp ../AUGUSTUS_predictions/Laccaria_bicolor_S238N_H82*.aa .
 #Go back to bin
 cd ../../../bin/
@@ -393,11 +403,10 @@ for predictions in $(cat ../data/Gene_prediction/list_blastp.txt); do
 	for MiSSPs in $(cat ../data/Gene_prediction/list_MiSSPs.txt); do
 
     #Create database and specify subject data type (prot)
-    makeblastdb -in ../data/Gene_prediction/AUGUSTUS_aa_predictions/$predictions -dbtype prot    
+    makeblastdb -in ../data/Gene_prediction/augustus_aa_predictions/$predictions -dbtype prot    
 
     #Run blastp where query is an ".faa" and subject an ".faa" as well
-    # blastp -db ../data/Gene_prediction/AUGUSTUS_aa_predictions/$predictions -query ../data/Gene_prediction/MiSSPs_data/$MiSSPs.faa -out ../out/Gene_prediction/blastp_predictions/$MiSSPs.$predictions.m7 -outfmt 7 -evalue 0.0001
-	blastp -db ../data/Gene_prediction/AUGUSTUS_aa_predictions/$predictions -query ../data/Gene_prediction/MiSSPs_data/$MiSSPs.faa -out  ../out/Gene_prediction/BLASTp_predictions/$MiSSPs.$predictions.m7 -outfmt 7 -evalue 0.0001
+   	blastp -db ../data/Gene_prediction/augustus_aa_predictions/$predictions -query ../data/Gene_prediction/MiSSPs_data/$MiSSPs.faa -out  ../out/Gene_prediction/BLASTp_predictions/$MiSSPs.$predictions.m7 -outfmt 7 -evalue 0.0001
 
 	done
 done
