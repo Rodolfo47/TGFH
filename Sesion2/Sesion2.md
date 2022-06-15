@@ -353,7 +353,7 @@ Las salidas las guarda en el directorio `[...]/predict_results/`, son varios arc
 > > #create directory for this sample
 > > cd; mkdir TGFH/Sesion2/out/O.polymorpha_NCYC495
 > > #get Ogataea predictions
-> > cp -r ../rangeles/TGFH/Sesion2/old/out/O.polymorpha_NCYC495/predict_* TGFH/Sesion2/out/
+> > cp -r ../rangeles/TGFH/Sesion2/old/out/O.polymorpha_NCYC495/predict_* TGFH/Sesion2/out/O.polymorpha_NCYC495
 > > ```
 
 
