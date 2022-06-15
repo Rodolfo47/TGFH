@@ -18,53 +18,118 @@ Junio 2022
 ## Genómica de hongos fitopatógenos
 Ver la presentación.
 
-## Ensamble genómico
+Ensamble genómico
 
 Para iniciar con la práctica obtengamos los materiales.
 
-```sh
-#go to the server
-ssh rangeles@132.248.248.175
-#enter pw
-#your prompt must look like:
-#(base) rangeles@biogen:~$
-#if not tipe
-conda init #activate conda base and rest the shell
-exit
-ssh rangeles@132.248.248.175
-#enter pw
+    #go to the server
+    ssh rangeles@132.248.248.175
+    #enter pw
+    #your prompt must look like:
+    #(base) rangeles@biogen:~$
+    #if not tipe
+    conda init #activate conda base and rest the shell
+    exit
+    ssh rangeles@132.248.248.175
+    #enter pw
+    
+    #get all data and code for the workshor
+    git clone https://github.com/Rodolfo47/TGFH
+    #get in and check the code
+    cd TGFH/Session2/bin; ls
 
-#get all data and code for the workshor
-git clone https://github.com/Rodolfo47/TGFH
-#get in and check the code
-cd TGFH/Session2/bin; ls
-```
+Dependencias
 
-**Dependencias**
+Conda
 
-[Conda](https://docs.conda.io/en/latest/)
+SPAdes
 
-[SPAdes](https://cab.spbu.ru/software/spades/)
+Quast
 
-[Quast](http://quast.sourceforge.net/)
+FastQC
+
+trimseq
 
 
 
 Activar el ambiente conda del ensamblador Spades
 
-> ```sh
-> #Installing with conda
-> conda install -c bioconda spades
-> spades -h
-> ```
+    #Installing with conda
+    conda install -c bioconda spades
+    spades -h
+    mamba create -n quast quast
+    quast -h
+
+Ver la calidad y limpiar
+
+FastQC
+
+    #run fastQC analyses
+    fastqc -o fastQC -f fastq ../data/Hv6.1.fastq ../data/Hv6.2.fastq
+    #watch plots from my local compu
+    ##remember change user name
+    cd
+    scp -r rangeles@132.248.248.175:/home/rangeles/TGFH/Sesion2/data/fastQC .
+
+Limpieza
+
+    #clean raw data
+    trimseq --help
+    trimseq ../data/Hv6.1.fastq ../data/Hv6.1.trim.fq -window 5 -percent 50 -strict -osformat2 fastq
+    trimseq ../data/Hv6.2.fastq ../data/Hv6.2.trim.fq -window 5 -percent 50 -strict -osformat2 fastq
 
 Ensamblar un genoma deamentis con unos pequeños datos
+
+    #create out dir
+    mkdir ../out/spadesHv
+    #run spades
+    spades.py \
+        -1 ../data/Hv6.1.fastq \
+        -2 ../data/Hv6.2.fastq \
+        --careful \
+        -t 4 \
+        -k 31,41,51,61,71 \
+        -o ../out/spadesHv
+        
+    #ran in seconds
+
+Deberíamos haber usado las lecturas limpias en lo de arriba pero:
+
+    == Error ==  system call for: "['/usr/lib/spades/bin/spades-hammer', '/home/rangeles/TGFH/Sesion2/out/spades/corrected/configs/config.info']" finished abnormally, err code: 255
+
+Arreglarlo creo así https://github.com/rrwick/Unicycler/issues/152
 
 
 
 Ensamblar un genoma de levadura
 
+    #in real word you must to evaluate the quality and clean/trimm prior to assembling
+    #make out dir
+    mkdir ../out/spadesYeast
+    #run spades
+    spades.py \
+        -1 ../data/reads.R1.fq \
+        -2 ../data/reads.R2.fq \
+        --careful \
+        -t 4 \
+        -k 31,41,51,61,71 \
+        -o ../out/spadesYeast
+    #07:12:01
+    #
+
 Revisar los resultados de mi nuevo ensamble
+
+    #wake up quast
+    conda activate /home/rangeles/.conda/envs/quast
+    #run quast for my new assemblies
+    quast ../out/spadesHv/contigs.fasta ../out/spades/scaffolds.fasta  ../out/spadesYeast/scaffolds.fasta
+    #run quast for all the yeast assemblies to be used in annotation practicing
+    quast ../data/*.fna
+
+
+
+
+
 
 ## Predicción de genes
 
