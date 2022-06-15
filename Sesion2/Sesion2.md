@@ -20,7 +20,51 @@ Ver la presentación.
 
 ## Ensamble genómico
 
+Para iniciar con la práctica obtengamos los materiales.
 
+```sh
+#go to the server
+ssh rangeles@132.248.248.175
+#enter pw
+#your prompt must look like:
+#(base) rangeles@biogen:~$
+#if not tipe
+conda init #activate conda base and rest the shell
+exit
+ssh rangeles@132.248.248.175
+#enter pw
+
+#get all data and code for the workshor
+git clone https://github.com/Rodolfo47/TGFH
+#get in and check the code
+cd TGFH/Session2/bin; ls
+```
+
+**Dependencias**
+
+[Conda](https://docs.conda.io/en/latest/)
+
+[SPAdes](https://cab.spbu.ru/software/spades/)
+
+[Quast](http://quast.sourceforge.net/)
+
+
+
+Activar el ambiente conda del ensamblador Spades
+
+> ```sh
+> #Installing with conda
+> conda install -c bioconda spades
+> spades -h
+> ```
+
+Ensamblar un genoma deamentis con unos pequeños datos
+
+
+
+Ensamblar un genoma de levadura
+
+Revisar los resultados de mi nuevo ensamble
 
 ## Predicción de genes
 
