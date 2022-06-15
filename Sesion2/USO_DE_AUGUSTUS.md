@@ -350,6 +350,14 @@ augustus --species=laccaria_bicolor --progress=true --singlestrand=true --genemo
 ##Number of predicted genes
 grep -o ">" ../data/Gene_prediction/AUGUSTUS_predictions/Laccaria_bicolor_S238N_H82_exactlyone.aa | wc -l 
 #no. genes 1013
+
+#SUMMARY RESULTS
+#GENE MODEL    NO. GENES
+#atleastone      19273
+#partial         19005
+#complete        18971
+#intronless      18116
+#exactlyone      1013
 ```
 
 ```bash
