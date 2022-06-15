@@ -1,0 +1,97 @@
+/home/rangeles/.conda/envs/quast/bin/quast ../data/C.albicans_SC5314.fna ../data/O.polymorpha_NCYC495.fna ../data/P.pastoris_GS115.fna ../data/S.arboricola_H6.fna ../data/S.cerevisiae_M3707.fna ../data/S.cerevisiae_M3836.fna ../data/S.cerevisiae_S288C.fna ../data/S.eubayanus_FM1318.fna
+
+Version: 5.2.0
+
+System information:
+  OS: Linux-5.13.0-44-generic-x86_64-with-debian-bullseye-sid (linux_64)
+  Python version: 3.7.13
+  CPUs number: 64
+
+Started: 2022-06-15 07:46:48
+
+Logging to /home/rangeles/TGFH/Sesion2/bin/quast_results/results_2022_06_15_07_46_48/quast.log
+NOTICE: Maximum number of threads is set to 16 (use --threads option to set it manually)
+
+CWD: /home/rangeles/TGFH/Sesion2/bin
+Main parameters: 
+  MODE: default, threads: 16, min contig length: 500, min alignment length: 65, min alignment IDY: 95.0, \
+  ambiguity: one, min local misassembly length: 200, min extensive misassembly length: 1000
+
+Contigs:
+  Pre-processing...
+  1  ../data/C.albicans_SC5314.fna ==> C.albicans_SC5314
+  2  ../data/O.polymorpha_NCYC495.fna ==> O.polymorpha_NCYC495
+  3  ../data/P.pastoris_GS115.fna ==> P.pastoris_GS115
+  4  ../data/S.arboricola_H6.fna ==> S.arboricola_H6
+  5  ../data/S.cerevisiae_M3707.fna ==> S.cerevisiae_M3707
+  6  ../data/S.cerevisiae_M3836.fna ==> S.cerevisiae_M3836
+  7  ../data/S.cerevisiae_S288C.fna ==> S.cerevisiae_S288C
+  8  ../data/S.eubayanus_FM1318.fna ==> S.eubayanus_FM1318
+
+2022-06-15 07:46:49
+Running Basic statistics processor...
+  Contig files: 
+    1  C.albicans_SC5314
+    2  O.polymorpha_NCYC495
+    3  P.pastoris_GS115
+    4  S.arboricola_H6
+    5  S.cerevisiae_M3707
+    6  S.cerevisiae_M3836
+    7  S.cerevisiae_S288C
+    8  S.eubayanus_FM1318
+  Calculating N50 and L50...
+    1  C.albicans_SC5314, N50 = 2231883, L50 = 3, auN = 2070270.9, Total length = 14282666, GC % = 33.46, # N's per 100 kbp =  57.31
+    2  O.polymorpha_NCYC495, N50 = 1302532, L50 = 4, auN = 1315233.6, Total length = 8974850, GC % = 47.86, # N's per 100 kbp =  5.37
+    3  P.pastoris_GS115, N50 = 2394163, L50 = 2, auN = 2361866.2, Total length = 9216378, GC % = 41.13, # N's per 100 kbp =  10.65
+    4  S.arboricola_H6, N50 = 879294, L50 = 6, auN = 856226.9, Total length = 11486716, GC % = 38.82, # N's per 100 kbp =  1923.53
+    5  S.cerevisiae_M3707, N50 = 683473, L50 = 7, auN = 645029.7, Total length = 11509707, GC % = 38.24, # N's per 100 kbp =  432.34
+    6  S.cerevisiae_M3836, N50 = 573220, L50 = 8, auN = 565919.4, Total length = 11532651, GC % = 38.25, # N's per 100 kbp =  294.60
+    7  S.cerevisiae_S288C, N50 = 924429, L50 = 6, auN = 910412.7, Total length = 12070898, GC % = 38.30, # N's per 100 kbp =  0.00
+    8  S.eubayanus_FM1318, N50 = 896107, L50 = 6, auN = 852024.4, Total length = 11670174, GC % = 39.98, # N's per 100 kbp =  1081.20
+  Drawing Nx plot...
+    saved to /home/rangeles/TGFH/Sesion2/bin/quast_results/results_2022_06_15_07_46_48/basic_stats/Nx_plot.pdf
+  Drawing cumulative plot...
+    saved to /home/rangeles/TGFH/Sesion2/bin/quast_results/results_2022_06_15_07_46_48/basic_stats/cumulative_plot.pdf
+  Drawing GC content plot...
+    saved to /home/rangeles/TGFH/Sesion2/bin/quast_results/results_2022_06_15_07_46_48/basic_stats/GC_content_plot.pdf
+  Drawing C.albicans_SC5314 GC content plot...
+    saved to /home/rangeles/TGFH/Sesion2/bin/quast_results/results_2022_06_15_07_46_48/basic_stats/C.albicans_SC5314_GC_content_plot.pdf
+  Drawing O.polymorpha_NCYC495 GC content plot...
+    saved to /home/rangeles/TGFH/Sesion2/bin/quast_results/results_2022_06_15_07_46_48/basic_stats/O.polymorpha_NCYC495_GC_content_plot.pdf
+  Drawing P.pastoris_GS115 GC content plot...
+    saved to /home/rangeles/TGFH/Sesion2/bin/quast_results/results_2022_06_15_07_46_48/basic_stats/P.pastoris_GS115_GC_content_plot.pdf
+  Drawing S.arboricola_H6 GC content plot...
+    saved to /home/rangeles/TGFH/Sesion2/bin/quast_results/results_2022_06_15_07_46_48/basic_stats/S.arboricola_H6_GC_content_plot.pdf
+  Drawing S.cerevisiae_M3707 GC content plot...
+    saved to /home/rangeles/TGFH/Sesion2/bin/quast_results/results_2022_06_15_07_46_48/basic_stats/S.cerevisiae_M3707_GC_content_plot.pdf
+  Drawing S.cerevisiae_M3836 GC content plot...
+    saved to /home/rangeles/TGFH/Sesion2/bin/quast_results/results_2022_06_15_07_46_48/basic_stats/S.cerevisiae_M3836_GC_content_plot.pdf
+  Drawing S.cerevisiae_S288C GC content plot...
+    saved to /home/rangeles/TGFH/Sesion2/bin/quast_results/results_2022_06_15_07_46_48/basic_stats/S.cerevisiae_S288C_GC_content_plot.pdf
+  Drawing S.eubayanus_FM1318 GC content plot...
+    saved to /home/rangeles/TGFH/Sesion2/bin/quast_results/results_2022_06_15_07_46_48/basic_stats/S.eubayanus_FM1318_GC_content_plot.pdf
+Done.
+
+NOTICE: Genes are not predicted by default. Use --gene-finding or --glimmer option to enable it.
+
+2022-06-15 07:46:55
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 2: Creating PDF with all tables and plots...
+  2 of 2: Creating Icarus viewers...
+Done
+
+2022-06-15 07:46:58
+RESULTS:
+  Text versions of total report are saved to /home/rangeles/TGFH/Sesion2/bin/quast_results/results_2022_06_15_07_46_48/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /home/rangeles/TGFH/Sesion2/bin/quast_results/results_2022_06_15_07_46_48/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) is saved to /home/rangeles/TGFH/Sesion2/bin/quast_results/results_2022_06_15_07_46_48/report.html
+  PDF version (tables and plots) is saved to /home/rangeles/TGFH/Sesion2/bin/quast_results/results_2022_06_15_07_46_48/report.pdf
+  Icarus (contig browser) is saved to /home/rangeles/TGFH/Sesion2/bin/quast_results/results_2022_06_15_07_46_48/icarus.html
+  Log is saved to /home/rangeles/TGFH/Sesion2/bin/quast_results/results_2022_06_15_07_46_48/quast.log
+
+Finished: 2022-06-15 07:46:58
+Elapsed time: 0:00:10.326227
+NOTICEs: 2; WARNINGs: 0; non-fatal ERRORs: 0
+
+Thank you for using QUAST!
