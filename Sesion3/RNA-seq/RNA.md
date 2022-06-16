@@ -51,7 +51,7 @@ Los análisis metatranscriptómicos hacen uso de las herramientas de la metagen�
 
 # Práctica de metatranscriptómica
 
-Para este ejercicio, haremos uso de los datos de la publicación de [Paolinelli *et al.*](https://link.springer.com/article/10.1007/s00248-021-01801-z) en el cual se analizó la composición de la comunidad de microorganismos endófifos de hojas de *Vitis vinifera* sintomáticas y asintomáticas a la enfermedad del tronco de la vid.
+Para este ejercicio, haremos uso de los datos de la publicación de [Paolinelli *et al.*](https://link.springer.com/article/10.1007/s00248-021-01801-z) en el cual se analizó la composición de la comunidad de microorganismos endófifos de hojas de *Vitis vinifera* sintomáticas y asintomáticas a la enfermedad del tronco de la vid. Las bibliotecas fueron preparadas por disminución de RNA y la secuencición se realizó en Illumina HiSeq4000 generando 2 × 100 bp.
 
 En total se utilizaron:
 
@@ -79,6 +79,7 @@ Softwares necesarios para esta práctica:
 * Kraken2
 * KrakenTools
 * SPAdes
+* QUAST
 * Salmon
 
 Paqueterías de R:
@@ -179,6 +180,16 @@ mkdir ../data/trimmed
 
 Ahora corremos trimmomatic:
 
+Activamos el ambiente con trimmomatic:
+
+```
+#Si estamos en (base)
+conda deactivate
+
+conda activate trimmomatic
+
+```
+
 ```
 # Quality filter with Trimmomatic
 
@@ -191,7 +202,12 @@ ILLUMINACLIP:/usr/share/trimmomatic/TruSeq3-PE-2.fa:2:30:10 SLIDINGWINDOW:4:15 L
 done
 
 ```
+Salimos del ambiente de Trimmomatic y activamos el ambiente base:
 
+```
+conda deactivate
+conda activate
+```
 Evaluamos la calidad de nuestras secuencias filtradas:
 
 Creamos una carpeta para los reportes de calidad de las secuencias filtradas:
