@@ -372,12 +372,17 @@ Podemos evaluar la calidad de nuestro ensamble con el software **Quast**:
 
 ```
 quast.py -t 4 ../data/assembly/all_assembly/transcripts.fasta -o ../data/assembly/
-``
+```
 
 
 Para hacer la cuantificación de los transcritos utilizaromos el software **Salmon**, antes de hacer la cuantificación, tenemos que generar un índice de nuestros transcritos:
 
-Crear una carpeta para 
+Crear una carpeta para guardar la cuantificación:
+
+```
+mkdir -p ../data/function/count
+```
+Generamos el índice:
 
 ```
 #Índice
@@ -389,9 +394,8 @@ Corremos la cuantificación:
 ```
 #Run salmon
 for archivo in `ls ../data/trimmed/ | grep ".fastq.gz" | sed "s/_1_paired.fastq.gz//"| sed "s/_2_paired.fastq.gz//" | sed "s/_1_unpaired.fastq.gz//"| sed "s/_2_unpaired.fastq.gz//"| uniq`;
-do salmon quant -i unmapped -p 2 -l A -1 ../data/nonhost/${archivo}_p_R1_filtered.fastq -2 ../data/nonhost/${sample}_p_R2_filtered.fastq -o ../data/function/count/${sample}_quant
+do salmon quant -i unmapped -p 2 -l A -1 ../data/nonhost/${archivo}_p_R1_filtered.fastq -2 ../data/nonhost/${sample}_p_R2_filtered.fastq -o ../data/function/count/${archivo}_quant
 done
-
 ```
 
 Una vez teniendo estos archivos, los descargamos en nuestra computadora:
