@@ -304,12 +304,14 @@ mv nochimeras97.fasta otutable
 
 mv blasttable.xml otutable  
     
-zip -q megan_in.zip nochimeras97.fasta blasttable.xml  
+zip -q megan_in.zip nochimeras97.fasta blasttable.xml 
+```  
 
-**abrir megan e importar ambos archivos y exportar como reads, regresarlo al cluster**
 
+**abrir megan e importar ambos archivos y exportar como reads (meganout.fasta), y regresarlo al cluster**
+
+```  
 scp meganout.fasta aarguelles@**IPdelcluster**:~/cursoLAVIS3/data/FungalITSextractor/clustering/blast/otutable  
-
 
 cp ~/cursoLAVIS3/python_scripts/*.py ~/cursoLAVIS3/data/FungalITSextractor/clustering/blast/otutable    
   
@@ -330,8 +332,11 @@ head fungal_otu_table.txt
 git clone [https://github.com/UMNFuN/FUNGuild](https://github.com/UMNFuN/FUNGuild)  
 cd FUNGuild/  
   
-conda deactivate  
-  
+conda deactivate 
+```  
+**pon tu archivo modificado**
+
+```    
 python FUNGuild.py taxa -otu example/otu_table.txt -format tsv -column taxonomy -classifier unite
   
 python FUNGuild.py guild -taxa example/otu_table.taxa.txt
