@@ -306,10 +306,11 @@ mv blasttable.xml otutable
     
 zip -q megan_in.zip nochimeras97.fasta blasttable.xml  
 
+**abrir megan e importar ambos archivos y exportar como reads, regresarlo al cluster**
+
 scp meganout.fasta aarguelles@**IPdelcluster**:~/cursoLAVIS3/data/FungalITSextractor/clustering/blast/otutable  
-  
-scp meganout.fasta aarguelles@**IPdelcluster**:~/cursoLAVIS3/data/FungalITSextractor/clustering/blast/otutable  
-  
+
+
 cp ~/cursoLAVIS3/python_scripts/*.py ~/cursoLAVIS3/data/FungalITSextractor/clustering/blast/otutable    
   
 python2 fasta_number.py meganout.fasta OTU_>fungalotus_numbered.fa  
