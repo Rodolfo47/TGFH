@@ -228,6 +228,7 @@ grep -c ">" ITS2.fasta
 **#29348 seqs**  
   
 ## Similarity clustering  
+Hacemos un pretratamiento
 ```  
 mkdir clustering  
 mv ITS2.fasta clustering/  
@@ -237,26 +238,52 @@ cp ITS2.fasta ITS2ok.fasta
   
 head ITS2ok.fasta  
   
-sed -i "/>/c\>otu" ITS2ok.fasta  
+sed 's/M00262:65:000000000-A4NV9:1://' ITS2ok.fasta >ITS2_sorted.fasta #simplificamos el nombre
+
+head ITS2_sorted.fasta
+
+```  
+Empezamos a agrupar (clustering). Esto tiene por fin no blastear la misma secuencia N veces y para construir la tabla de otus
+
+```  
   
-usearch11 -fastx_uniques ITS2ok.fasta -fastaout derep.fasta -sizeout  
+usearch11 -fastx_uniques ITS2_sorted.fasta -fastaout derep.fasta -sizeout  
   
-grep -c ">" derep.fasta  
-  
+grep -c ">" derep.fasta 
+
+head derep.fasta
+```  
+
+* #Observemos que ahora se incluye "size=" esto significa cuantas veces está este grupo al 97%*
+ 
+Ordenamos por tamaño
+```    
 usearch11 -sortbysize derep.fasta -fastaout sorted.fasta -minsize 2  
   
 grep -c ">" sorted.fasta  
-  
+
+head sorted.fasta
+```
+
+Procedemos a hacer un nuevo fasta pero ahora solo los grupos con la secuencia representativa
+
+```
 usearch11 -cluster_otus sorted.fasta -otus output_file_otus.fasta  
   
 grep -c ">" output_file_otus.fasta  
   
 head output_file_otus.fasta  
-  
+```
+eliminamos el ruido (denoise)
+
+```  
 usearch11 -unoise3 output_file_otus.fasta -zotus zotus.fasta  
   
 head zotus.fasta  
-  
+```
+Creamos el fasta
+
+```
 usearch11 -uchime3_denovo output_file_otus.fasta -nonchimeras nochimeras97.fasta -chimeras chimeras.fasta -uchimeout otus+chimeras.txt  
   
 grep -c ">" nochimeras97.fasta  
@@ -271,15 +298,14 @@ grep -c ">" chimeras.fasta
   
 ###### #Input file: nochimeras97.fasta  
 ```  
-cp nochimeras97.fasta blast  
-  
 mkdir blast  
-  
+cp nochimeras97.fasta blast    
 cd blast  
-  
-wget https://files.plutof.ut.ee/doi/87/C9/87C97D15437BA13125B61403810C6E46D1319B68A0E6E3BC77BFC57C8D0A67A3.zip
 
-  
+wget https://files.plutof.ut.ee/doi/87/C9/87C97D15437BA13125B61403810C6E46D1319B68A0E6E3BC77BFC57C8D0A67A3.zip
+```
+Lo renombramos
+```
 mv 87C97D15437BA13125B61403810C6E46D1319B68A0E6E3BC77BFC57C8D0A67A3.zip unite.zip
   
 unzip unite.zip  
@@ -288,7 +314,11 @@ unzip unite.zip
 **#format database**  
 ```
 makeblastdb -in UNITE_public_01.12.2017.fasta -dbtype nucl -out unitforblast  
+```
+
   
+**#Hacemos el Blast con la opción de best hit**  esta opcion tambies nos ayuda para funguild
+```
 blastn -db unitforblast -query nochimeras97.fasta -outfmt "6 qseqid salltitles" -out blasttable.tsv -num_threads=4 -evalue 0.001 -max_target_seqs 1  
  ``` 
   
@@ -303,6 +333,8 @@ mkdir otutable
 mv nochimeras97.fasta otutable  
 
 mv blasttable.xml otutable  
+
+cd otutable
     
 zip -q megan_in.zip nochimeras97.fasta blasttable.xml 
 ```  
