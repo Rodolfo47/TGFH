@@ -176,7 +176,7 @@ grep -c "+" paired_assembled_good.fastq
 ```  
 cp ~/cursoLAVIS3/Scripts_to_supply/demultiplex.sh ~/cursoLAVIS3/data  
   
-bash demultiplex.sh forward_labels.csv reverse_labels.csv paired_assembled_good.fastq  `
+bash demultiplex.sh forward_labels.csv reverse_labels.csv paired_assembled_good.fastq
 ```  
 ##### #se hacen un monton de archivos  
 ```  
