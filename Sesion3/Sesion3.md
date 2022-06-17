@@ -292,7 +292,7 @@ grep -c ">" zotus.fasta
   
 grep -c ">" chimeras.fasta  
 ```  
-**#544 seqs #5 seqs #520 seqs**
+**#545 seqs #220 seqs #5 seqs**
   
 ## Blast  
   
