@@ -16,12 +16,10 @@ Junio 2022
   - descanso
 - Metatranscriptómica (VFA)
 
-**Estructura de la sesión**
+# Metabarcode (AAM)
 
-- Genomica de hongos micorrízicos (RGO)
-  - descanso
-  - 
-- Metabarcode (AAM)
+El metabarcode es la obtención masiva (utilizando herramientas de secuenciacón masiva de alto rendimiento) del código de barras de las especies. Esto permite la identificación simultanea de las especies en una muestra. Esta identificación es a nivel de OTUs, MOTUs, eMOTUS, etc. La metagenómica se enfoca en varias regiones y se intenta recuperar regiones codificantes para inferir funciones. Más información en https://en.wikipedia.org/wiki/Metabarcoding
+
 # Iniciamos en el server
 
 ```
@@ -200,7 +198,7 @@ grep -c ">" trimmed.fasta
   
 ## Extract fungal ITS  
   
-***### check or install HMMER ver. 3, be patient :)***  
+**#check or install HMMER ver. 3, be patient :)**  **#Se obtuvo el código y la carpeta de http://www.emerencia.org/FungalITSextractor.zip**
 ```  
 git clone https://github.com/arg-and/code-base1.git
 
@@ -213,6 +211,8 @@ cp ~/cursoLAVIS3/data/trimmed.fasta ~/cursoLAVIS3/data/code-base1/FungalITSextra
 
 mv trimmed.fasta indata.fasta  
 ```  
+
+**#Usar ITSx extractor https://microbiology.se/software/itsx/ Bengtsson-Palme, J., Ryberg, M., Hartmann, M., Branco, S., Wang, Z., Godhe, A., ... & Nilsson, R. H. (2013). Improved software detection and extraction of ITS1 and ITS2 from ribosomal ITS sequences of fungi and other eukaryotes for analysis of environmental sequencing data. Methods Ecol Evol. 2013; 4 (10): 914–9.**
 
 #### *#usa la mitad de los nucleos*
 ```  
